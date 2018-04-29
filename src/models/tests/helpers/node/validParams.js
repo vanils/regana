@@ -1,5 +1,5 @@
 
-module.exports = (Node, validNode) => {
+module.exports = (Node) => {
   test('should work with magnitude of 0.5', () => {
 
     const node = new Node('node-example', '/path/to/file.js', {

@@ -135,6 +135,6 @@ class Node {
       column: nodeInterface.loc.end.column
     };
   }
-};
+}
 
 module.exports = Node;

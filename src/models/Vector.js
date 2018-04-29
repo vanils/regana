@@ -1,5 +1,6 @@
 
 const Node = require('./Node');
+const asStringValue = require('../utils/asStringValue');
 
 /**
  * Vector representing one way connection between nodes
@@ -79,6 +80,6 @@ class Vector {
      */
     this.magnitude = magnitude;
   }
-};
+}
 
 module.exports = Vector;
