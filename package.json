@@ -24,6 +24,7 @@
   "homepage": "https://github.com/vanils/regression-analysis#readme",
   "dependencies": {
     "babylon": "^6.18.0",
+    "hoek": "^5.0.3",
     "jsdoc": "^3.5.5",
     "jsdoc-template": "github:braintree/jsdoc-template",
     "minimist": "^1.2.0",
