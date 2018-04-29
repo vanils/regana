@@ -4,7 +4,7 @@
   "description": "Tool to analyse risk for regressions based on git diff",
   "main": "index.js",
   "scripts": {
-    "docs": "node ./node_modules/jsdoc/jsdoc.js src -r -d docs -t ./node_modules/minami/",
+    "docs": "node ./node_modules/.bin/jsdoc --configure .jsdoc.json",
     "build": "node console.log('build');",
     "start": "node console.log('start');",
     "test": "node console.log('test');"
@@ -25,7 +25,7 @@
   "dependencies": {
     "babylon": "^6.18.0",
     "jsdoc": "^3.5.5",
-    "minami": "^1.2.3",
+    "jsdoc-template": "github:braintree/jsdoc-template",
     "minimist": "^1.2.0",
     "node-sass": "^4.9.0"
   }

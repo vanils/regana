@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>
-      Home - Documentation
+      node/Node.js - Documentation
   </title>
 
   <link href="https://www.braintreepayments.com/images/favicon-ccda0b14.png" rel="icon" type="image/png">
@@ -48,14 +50,14 @@
 
   <div class="top-nav-wrapper">
     <ul>
-      <li  class="active" >
+      <li >
         <a href="index.html">
           
-          
-            <svg fill="#0095dd" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+            <svg fill="#6D6D6D" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
               <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
               <path d="M0 0h24v24H0z" fill="none"/>
             </svg>
+          
           
         </a>
       </li>
@@ -75,23 +77,84 @@
 
   <div id="main">
     
+      <h1 class="page-title">
+        node/Node.js
+      </h1>
+    
 
     
       
 
+<section>
+  <article>
+    <pre class="prettyprint source linenums"><code>
+/**
+ * Node entity representing a logical scope
+ */
+class Node {
 
+  /**
+   * Create unique id for this node
+   * @return {string} Unique id.
+   */
+  static createId () {
+    return require('uniqid')('node-');
+  }
 
-    
+  /**
+   * Create a node.
+   * @param {string} parentId - Id of parent node
+   * @param {string} file - Path to file which contains this node
+   * @param {object} nodeInterface - Declaration entity which must follow format
+   * of babylon parser ES tree (see more from https://bit.ly/2I2Thnf)
+   */
+  constructor (parentId, file, nodeInterface) {
 
-      
+    /**
+     * Id for this node
+     * @type {string}
+     */
+    this.id = Node.createId();
 
+    /**
+     * Id for parent of this node
+     * @type {string}
+     */
+    this.parentId = parentId;
 
-  <section class="readme">
-    <article>
-      <h1>Regression analysis</h1><p>Tool to analyse risk for regressions based on git diff</p>
-    </article>
-  </section>
+    /**
+     * File src which this node belongs to
+     * @type {string}
+     */
+    this.file = file;
 
+    /**
+     * File src which this node belongs to
+     * @type {object}
+     * @property {number} line - Line number where scope of this node begins
+     * @property {number} column - Column number where scope of this node begins
+     */
+    this.start = {
+      line,
+      column
+    } = nodeInterface.loc.start;
+
+    /**
+     * File src which this node belongs to
+     * @type {object}
+     * @property {number} line - line number where scope of this node ends
+     * @property {number} column - column number where scope of this node ends
+     */
+    this.end = {
+      line,
+      column
+    } = nodeInterface.loc.end;
+  }
+};
+
+module.exports = Node;</code></pre>
+  </article>
+</section>
 
     
 

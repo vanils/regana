@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>
-      Home - Documentation
+      vector/Vector.js - Documentation
   </title>
 
   <link href="https://www.braintreepayments.com/images/favicon-ccda0b14.png" rel="icon" type="image/png">
@@ -48,14 +50,14 @@
 
   <div class="top-nav-wrapper">
     <ul>
-      <li  class="active" >
+      <li >
         <a href="index.html">
           
-          
-            <svg fill="#0095dd" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+            <svg fill="#6D6D6D" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
               <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
               <path d="M0 0h24v24H0z" fill="none"/>
             </svg>
+          
           
         </a>
       </li>
@@ -75,23 +77,54 @@
 
   <div id="main">
     
+      <h1 class="page-title">
+        vector/Vector.js
+      </h1>
+    
 
     
       
 
+<section>
+  <article>
+    <pre class="prettyprint source linenums"><code>
+/**
+ * Vector representing one way connection between nodes
+ */
+class Vector {
 
+  /**
+   * Create a Vector between nodes.
+   * @param {Node} fromNode - Source node of connection
+   * @param {Node} toNode - Target node of connection
+   * @param {number} magnitude - Factor which represents numeric value for
+   * distance between nodes.
+   */
+  constructor (fromNode, toNode, magnitude) {
 
-    
+    /**
+     * Node which 
+     * @type {Node}
+     */
+    this.fromNode = fromNode;
 
-      
+    /**
+     * Id for parent of this node
+     * @type {Node}
+     */
+    this.toNode = toNode;
 
+    /**
+     * File src which this node belongs to
+     * @type {number}
+     */
+    this.magnitude = magnitude;
+  }
+};
 
-  <section class="readme">
-    <article>
-      <h1>Regression analysis</h1><p>Tool to analyse risk for regressions based on git diff</p>
-    </article>
-  </section>
-
+module.exports = Vector;</code></pre>
+  </article>
+</section>
 
     
 
