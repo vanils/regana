@@ -1,0 +1,32 @@
+{
+  "name": "regression-analysis",
+  "version": "0.0.1",
+  "description": "Tool to analyse risk for regressions based on git diff",
+  "main": "index.js",
+  "scripts": {
+    "docs": "node ./node_modules/jsdoc/jsdoc.js src -r -d docs -t ./node_modules/minami/",
+    "build": "node console.log('build');",
+    "start": "node console.log('start');",
+    "test": "node console.log('test');"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vanils/regression-analysis.git"
+  },
+  "keywords": [
+    "regression"
+  ],
+  "author": "Matti Mehtonen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vanils/regression-analysis/issues"
+  },
+  "homepage": "https://github.com/vanils/regression-analysis#readme",
+  "dependencies": {
+    "babylon": "^6.18.0",
+    "jsdoc": "^3.5.5",
+    "minami": "^1.2.3",
+    "minimist": "^1.2.0",
+    "node-sass": "^4.9.0"
+  }
+}
