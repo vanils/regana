@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "description": "Tool to analyse risk for regressions based on git diff",
   "main": "index.js",
+  "pre-commit": [
+    "lint",
+    "test"
+  ],
   "scripts": {
     "docs": "node ./node_modules/.bin/jsdoc --configure .jsdocrc.json",
     "build": "node console.log('build');",
@@ -32,5 +36,8 @@
     "jsdoc-template": "github:braintree/jsdoc-template",
     "minimist": "^1.2.0",
     "uniqid": "^4.1.1"
+  },
+  "devDependencies": {
+    "pre-commit": "^1.2.2"
   }
 }

@@ -1,47 +1,47 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Vector #constructor should throw error with invalid file 1`] = `"asStringValue is not defined"`;
+exports[`Vector #constructor should throw error with invalid file 1`] = `"Invalid to node 'undefined'"`;
 
-exports[`Vector #constructor should throw error with invalid file 2`] = `"asStringValue is not defined"`;
+exports[`Vector #constructor should throw error with invalid file 2`] = `"Invalid to node ''"`;
 
-exports[`Vector #constructor should throw error with invalid file 3`] = `"asStringValue is not defined"`;
+exports[`Vector #constructor should throw error with invalid file 3`] = `"Invalid to node '[object Object]'"`;
 
-exports[`Vector #constructor should throw error with invalid file 4`] = `"asStringValue is not defined"`;
+exports[`Vector #constructor should throw error with invalid file 4`] = `"Invalid to node '[object Array]'"`;
 
-exports[`Vector #constructor should throw error with invalid file 5`] = `"asStringValue is not defined"`;
+exports[`Vector #constructor should throw error with invalid file 5`] = `"Invalid to node 'null'"`;
 
-exports[`Vector #constructor should throw error with invalid file 6`] = `"asStringValue is not defined"`;
+exports[`Vector #constructor should throw error with invalid file 6`] = `"Invalid to node 'NaN'"`;
 
-exports[`Vector #constructor should throw error with invalid file 7`] = `"asStringValue is not defined"`;
+exports[`Vector #constructor should throw error with invalid file 7`] = `"Invalid to node '1'"`;
 
-exports[`Vector #constructor should throw error with invalid file 8`] = `"asStringValue is not defined"`;
+exports[`Vector #constructor should throw error with invalid file 8`] = `"Invalid to node '[object Date]'"`;
 
-exports[`Vector #constructor should throw error with invalid nodeInterface 1`] = `"asStringValue is not defined"`;
+exports[`Vector #constructor should throw error with invalid nodeInterface 1`] = `"Invalid magnitude 'undefined'"`;
 
-exports[`Vector #constructor should throw error with invalid nodeInterface 2`] = `"asStringValue is not defined"`;
+exports[`Vector #constructor should throw error with invalid nodeInterface 2`] = `"Invalid magnitude ''"`;
 
-exports[`Vector #constructor should throw error with invalid nodeInterface 3`] = `"asStringValue is not defined"`;
+exports[`Vector #constructor should throw error with invalid nodeInterface 3`] = `"Invalid magnitude '[object Object]'"`;
 
-exports[`Vector #constructor should throw error with invalid nodeInterface 4`] = `"asStringValue is not defined"`;
+exports[`Vector #constructor should throw error with invalid nodeInterface 4`] = `"Invalid magnitude '[object Array]'"`;
 
-exports[`Vector #constructor should throw error with invalid nodeInterface 5`] = `"asStringValue is not defined"`;
+exports[`Vector #constructor should throw error with invalid nodeInterface 5`] = `"Invalid magnitude 'null'"`;
 
-exports[`Vector #constructor should throw error with invalid nodeInterface 6`] = `"asStringValue is not defined"`;
+exports[`Vector #constructor should throw error with invalid nodeInterface 6`] = `"Invalid magnitude 'NaN'"`;
 
-exports[`Vector #constructor should throw error with invalid nodeInterface 7`] = `"asStringValue is not defined"`;
+exports[`Vector #constructor should throw error with invalid nodeInterface 7`] = `"Invalid magnitude '[object Date]'"`;
 
-exports[`Vector #constructor should throw error with invalid parentId 1`] = `"asStringValue is not defined"`;
+exports[`Vector #constructor should throw error with invalid parentId 1`] = `"Invalid from node 'undefined'"`;
 
-exports[`Vector #constructor should throw error with invalid parentId 2`] = `"asStringValue is not defined"`;
+exports[`Vector #constructor should throw error with invalid parentId 2`] = `"Invalid from node ''"`;
 
-exports[`Vector #constructor should throw error with invalid parentId 3`] = `"asStringValue is not defined"`;
+exports[`Vector #constructor should throw error with invalid parentId 3`] = `"Invalid from node '[object Object]'"`;
 
-exports[`Vector #constructor should throw error with invalid parentId 4`] = `"asStringValue is not defined"`;
+exports[`Vector #constructor should throw error with invalid parentId 4`] = `"Invalid from node '[object Array]'"`;
 
-exports[`Vector #constructor should throw error with invalid parentId 5`] = `"asStringValue is not defined"`;
+exports[`Vector #constructor should throw error with invalid parentId 5`] = `"Invalid from node 'null'"`;
 
-exports[`Vector #constructor should throw error with invalid parentId 6`] = `"asStringValue is not defined"`;
+exports[`Vector #constructor should throw error with invalid parentId 6`] = `"Invalid from node 'NaN'"`;
 
-exports[`Vector #constructor should throw error with invalid parentId 7`] = `"asStringValue is not defined"`;
+exports[`Vector #constructor should throw error with invalid parentId 7`] = `"Invalid from node '1'"`;
 
-exports[`Vector #constructor should throw error with invalid parentId 8`] = `"asStringValue is not defined"`;
+exports[`Vector #constructor should throw error with invalid parentId 8`] = `"Invalid from node '[object Date]'"`;
