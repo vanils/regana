@@ -1,6 +1,6 @@
 {
   "name": "regression-analysis",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Tool to analyse risk for regressions based on git diff",
   "main": "index.js",
   "pre-commit": [
