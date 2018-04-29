@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Node #constructor should throw error with invalid file 1`] = `"Invalid file 'undefined'"`;
+
+exports[`Node #constructor should throw error with invalid file 2`] = `"Invalid file ''"`;
+
+exports[`Node #constructor should throw error with invalid file 3`] = `"Invalid file '1'"`;
+
+exports[`Node #constructor should throw error with invalid file 4`] = `"Invalid file '[object Object]'"`;
+
+exports[`Node #constructor should throw error with invalid file 5`] = `"Invalid file '[object Array]'"`;
+
+exports[`Node #constructor should throw error with invalid file 6`] = `"Invalid file 'null'"`;
+
+exports[`Node #constructor should throw error with invalid nodeInterface 1`] = `"Invalid node interface 'undefined'"`;
+
+exports[`Node #constructor should throw error with invalid nodeInterface 2`] = `"Invalid node interface ''"`;
+
+exports[`Node #constructor should throw error with invalid nodeInterface 3`] = `"Invalid node interface '1'"`;
+
+exports[`Node #constructor should throw error with invalid nodeInterface 4`] = `"Invalid node interface '[object Object]'"`;
+
+exports[`Node #constructor should throw error with invalid nodeInterface 5`] = `"Invalid node interface '[object Array]'"`;
+
+exports[`Node #constructor should throw error with invalid nodeInterface 6`] = `"Invalid node interface 'null'"`;
+
+exports[`Node #constructor should throw error with invalid parentId 1`] = `"Invalid parent id 'undefined'"`;
+
+exports[`Node #constructor should throw error with invalid parentId 2`] = `"Invalid parent id ''"`;
+
+exports[`Node #constructor should throw error with invalid parentId 3`] = `"Invalid parent id '1'"`;
+
+exports[`Node #constructor should throw error with invalid parentId 4`] = `"Invalid parent id '[object Object]'"`;
+
+exports[`Node #constructor should throw error with invalid parentId 5`] = `"Invalid parent id '[object Array]'"`;
+
+exports[`Node #constructor should throw error with invalid parentId 6`] = `"Invalid parent id 'null'"`;

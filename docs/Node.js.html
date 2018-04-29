@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>
-      vector/Vector.js - Documentation
+      Node.js - Documentation
   </title>
 
   <link href="https://www.braintreepayments.com/images/favicon-ccda0b14.png" rel="icon" type="image/png">
@@ -72,13 +72,13 @@
       Regression Analysis
     </h3>
 
-    <h3>Classes</h3><ul><li id="Node-nav"><a href="Node.html">Node</a><ul class='methods'><li data-type="method" id="Node-createId-nav"><a href="Node.html#.createId">createId</a></li></ul></li><li id="Vector-nav"><a href="Vector.html">Vector</a></li></ul>
+    <h3>Classes</h3><ul><li id="Node-nav"><a href="Node.html">Node</a><ul class='methods'><li data-type="method" id="Node-createId-nav"><a href="Node.html#.createId">createId</a></li><li data-type="method" id="Node-isValidFile-nav"><a href="Node.html#.isValidFile">isValidFile</a></li><li data-type="method" id="Node-isValidId-nav"><a href="Node.html#.isValidId">isValidId</a></li><li data-type="method" id="Node-isValidNodeInterface-nav"><a href="Node.html#.isValidNodeInterface">isValidNodeInterface</a></li></ul></li><li id="Vector-nav"><a href="Vector.html">Vector</a><ul class='methods'><li data-type="method" id="Vector-isValidNode-nav"><a href="Vector.html#.isValidNode">isValidNode</a></li></ul></li></ul>
   </nav>
 
   <div id="main">
     
       <h1 class="page-title">
-        vector/Vector.js
+        Node.js
       </h1>
     
 
@@ -88,41 +88,145 @@
 <section>
   <article>
     <pre class="prettyprint source linenums"><code>
+const asStringValue = require('../utils/asStringValue');
+
 /**
- * Vector representing one way connection between nodes
+ * Node entity representing a logical scope
  */
-class Vector {
+class Node {
 
   /**
-   * Create a Vector between nodes.
-   * @param {Node} fromNode - Source node of connection
-   * @param {Node} toNode - Target node of connection
-   * @param {number} magnitude - Factor which represents numeric value for
-   * distance between nodes.
+   * Create unique id for this node
+   * @return {string} Unique id.
    */
-  constructor (fromNode, toNode, magnitude) {
+  static createId () {
+    return require('uniqid')('node-');
+  }
+
+  /**
+   * Check if id is valid Node id
+   * @param {string} id - Id to verify
+   * @return {boolean} if value is valid node id
+   */
+  static isValidId (id) {
+
+    if (typeof id !== 'string') {
+      return false;
+    }
+
+    if (!id) {
+      return false;
+    }
+
+    /*
+     * TODO, verify that id is actually registered
+     */
+    return true;
+  }
+
+  /**
+   * Check if file source is valid
+   * @param {string} file - file to verify
+   * @return {boolean} if value is valid file
+   */
+  static isValidFile (file) {
+
+    if (typeof file !== 'string') {
+      return false;
+    }
+
+    if (!file) {
+      return false;
+    }
+
+    /*
+     * TODO, verify that file actually exists
+     */
+    return true;
+  }
+
+  /**
+   * Check if node interface is valid
+   * @param {object} nodeInterface - value to check
+   * @return {boolean} if value is node interface
+   */
+  static isValidNodeInterface (nodeInterface) {
+
+    if (!nodeInterface) {
+      return false;
+    }
+
+    if (!nodeInterface.loc) {
+      return false;
+    }
+
+    return true;
+  }
+
+  /**
+   * Create a node.
+   * @param {string} parentId - Id of parent node
+   * @param {string} file - Path to file which contains this node
+   * @param {object} nodeInterface - Declaration entity which must follow format
+   * of babylon parser ES tree (see more from https://bit.ly/2I2Thnf)
+   */
+  constructor (parentId, file, nodeInterface) {
+
+    if (!Node.isValidId(parentId)) {
+      throw new Error(`Invalid parent id '${asStringValue(parentId)}'`);
+    }
+
+    if (!Node.isValidFile(file)) {
+      throw new Error(`Invalid file '${asStringValue(file)}'`);
+    }
+
+    if (!Node.isValidNodeInterface(nodeInterface)) {
+      throw new Error(`Invalid node interface '${asStringValue(nodeInterface)}'`);
+    }
 
     /**
-     * Node which 
-     * @type {Node}
+     * Id for this node
+     * @type {string}
      */
-    this.fromNode = fromNode;
+    this.id = Node.createId();
 
     /**
      * Id for parent of this node
-     * @type {Node}
+     * @type {string}
      */
-    this.toNode = toNode;
+    this.parentId = parentId;
 
     /**
      * File src which this node belongs to
-     * @type {number}
+     * @type {string}
      */
-    this.magnitude = magnitude;
+    this.file = file;
+
+    /**
+     * File src which this node belongs to
+     * @type {object}
+     * @property {number} line - Line number where scope of this node begins
+     * @property {number} column - Column number where scope of this node begins
+     */
+    this.start = {
+      line: nodeInterface.loc.start.line,
+      column: nodeInterface.loc.start.column
+    };
+
+    /**
+     * File src which this node belongs to
+     * @type {object}
+     * @property {number} line - line number where scope of this node ends
+     * @property {number} column - column number where scope of this node ends
+     */
+    this.end = {
+      line: nodeInterface.loc.end.line,
+      column: nodeInterface.loc.end.column
+    };
   }
 };
 
-module.exports = Vector;</code></pre>
+module.exports = Node;</code></pre>
   </article>
 </section>
 

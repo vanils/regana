@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Vector #constructor should throw error with invalid file 1`] = `"asStringValue is not defined"`;
+
+exports[`Vector #constructor should throw error with invalid file 2`] = `"asStringValue is not defined"`;
+
+exports[`Vector #constructor should throw error with invalid file 3`] = `"asStringValue is not defined"`;
+
+exports[`Vector #constructor should throw error with invalid file 4`] = `"asStringValue is not defined"`;
+
+exports[`Vector #constructor should throw error with invalid file 5`] = `"asStringValue is not defined"`;
+
+exports[`Vector #constructor should throw error with invalid file 6`] = `"asStringValue is not defined"`;
+
+exports[`Vector #constructor should throw error with invalid file 7`] = `"asStringValue is not defined"`;
+
+exports[`Vector #constructor should throw error with invalid file 8`] = `"asStringValue is not defined"`;
+
+exports[`Vector #constructor should throw error with invalid nodeInterface 1`] = `"asStringValue is not defined"`;
+
+exports[`Vector #constructor should throw error with invalid nodeInterface 2`] = `"asStringValue is not defined"`;
+
+exports[`Vector #constructor should throw error with invalid nodeInterface 3`] = `"asStringValue is not defined"`;
+
+exports[`Vector #constructor should throw error with invalid nodeInterface 4`] = `"asStringValue is not defined"`;
+
+exports[`Vector #constructor should throw error with invalid nodeInterface 5`] = `"asStringValue is not defined"`;
+
+exports[`Vector #constructor should throw error with invalid nodeInterface 6`] = `"asStringValue is not defined"`;
+
+exports[`Vector #constructor should throw error with invalid nodeInterface 7`] = `"asStringValue is not defined"`;
+
+exports[`Vector #constructor should throw error with invalid parentId 1`] = `"asStringValue is not defined"`;
+
+exports[`Vector #constructor should throw error with invalid parentId 2`] = `"asStringValue is not defined"`;
+
+exports[`Vector #constructor should throw error with invalid parentId 3`] = `"asStringValue is not defined"`;
+
+exports[`Vector #constructor should throw error with invalid parentId 4`] = `"asStringValue is not defined"`;
+
+exports[`Vector #constructor should throw error with invalid parentId 5`] = `"asStringValue is not defined"`;
+
+exports[`Vector #constructor should throw error with invalid parentId 6`] = `"asStringValue is not defined"`;
+
+exports[`Vector #constructor should throw error with invalid parentId 7`] = `"asStringValue is not defined"`;
+
+exports[`Vector #constructor should throw error with invalid parentId 8`] = `"asStringValue is not defined"`;

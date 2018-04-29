@@ -4,10 +4,10 @@
   "description": "Tool to analyse risk for regressions based on git diff",
   "main": "index.js",
   "scripts": {
-    "docs": "node ./node_modules/.bin/jsdoc --configure .jsdoc.json",
+    "docs": "node ./node_modules/.bin/jsdoc --configure .jsdocrc.json",
     "build": "node console.log('build');",
     "start": "node console.log('start');",
-    "test": "node console.log('test');"
+    "test": "node ./node_modules/.bin/jest --config=.jestrc.json"
   },
   "repository": {
     "type": "git",
@@ -24,10 +24,10 @@
   "homepage": "https://github.com/vanils/regression-analysis#readme",
   "dependencies": {
     "babylon": "^6.18.0",
-    "hoek": "^5.0.3",
+    "jest": "^22.4.3",
     "jsdoc": "^3.5.5",
     "jsdoc-template": "github:braintree/jsdoc-template",
     "minimist": "^1.2.0",
-    "node-sass": "^4.9.0"
+    "uniqid": "^4.1.1"
   }
 }
