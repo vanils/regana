@@ -11,7 +11,7 @@
     "docs": "node ./node_modules/.bin/jsdoc --configure .jsdocrc.json",
     "build": "node console.log('build');",
     "start": "node console.log('start');",
-    "test": "node ./node_modules/.bin/jest --config=.jestrc.json",
+    "test": "node ./node_modules/.bin/jest --config=.jestrc.json && ./node_modules/.bin/codecov",
     "lint": "node ./node_modules/.bin/eslint --config=.eslintrc.json src/**/**"
   },
   "repository": {
@@ -29,6 +29,7 @@
   "homepage": "https://github.com/vanils/regression-analysis#readme",
   "dependencies": {
     "babylon": "^6.18.0",
+    "codecov": "^3.0.1",
     "eslint": "^4.19.1",
     "eslint-plugin-jest": "^21.15.1",
     "jest": "^22.4.3",
