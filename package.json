@@ -3,16 +3,13 @@
   "version": "0.1.0",
   "description": "Tool to analyse risk for regressions based on git diff",
   "main": "index.js",
-  "pre-commit": [
-    "lint",
-    "test"
-  ],
   "scripts": {
     "docs": "node ./node_modules/.bin/jsdoc --configure .jsdocrc.json",
     "build": "node console.log('build');",
     "start": "node console.log('start');",
-    "test": "node ./node_modules/.bin/jest --config=.jestrc.json && ./node_modules/.bin/codecov",
-    "lint": "node ./node_modules/.bin/eslint --config=.eslintrc.json src/**/**"
+    "test": "node ./node_modules/.bin/jest --config=.jestrc.json",
+    "lint": "node ./node_modules/.bin/eslint --config=.eslintrc.json src/**/**",
+    "codecov": "node ./node_modules/.bin/codecov"
   },
   "repository": {
     "type": "git",
@@ -37,8 +34,5 @@
     "jsdoc-template": "github:braintree/jsdoc-template",
     "minimist": "^1.2.0",
     "uniqid": "^4.1.1"
-  },
-  "devDependencies": {
-    "pre-commit": "^1.2.2"
   }
 }
