@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vanils/regression-analysis.git"
+    "url": "https://github.com/vanils/regression-analysis.git"
   },
   "keywords": [
     "regression"
@@ -35,6 +35,7 @@
     "eslint-plugin-jest": "^21.15.1",
     "jest": "^22.4.3",
     "jsdoc": "^3.5.5",
+    "semantic-release": "^15.1.8",
     "taffydb": "^2.7.3"
   }
 }
