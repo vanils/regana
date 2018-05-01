@@ -115,7 +115,7 @@ class Scope {
    */
   constructor (parentScope) {
 
-    if (parentScope &amp;&amp; !Scope.isValidScope(parentScope)) {
+    if (typeof parentScope !== 'undefined' &amp;&amp; !Scope.isValidScope(parentScope)) {
       throw new Error(`Invalid parent scope '${asStringValue(parentScope)}'`);
     }
 
@@ -123,7 +123,7 @@ class Scope {
      * Parent scope of this scope
      * @type {Scope}
      */
-    this.parentScope = parentScope;
+    this.parentScope = parentScope || null;
   }
 }
 
