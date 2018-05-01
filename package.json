@@ -38,7 +38,6 @@
     "jest": "^22.4.3",
     "jsdoc": "^3.5.5",
     "semantic-release": "^15.1.8",
-    "taffydb": "^2.7.3",
-    "travis-deploy-once": "^5.0.0"
+    "taffydb": "^2.7.3"
   }
 }
