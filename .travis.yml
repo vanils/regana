@@ -13,8 +13,7 @@ script:
   - npm run codecov
 
 deploy:
-  provider: npm
-  email: matti@vanils.fi
-  api_key: $NPM_TOKEN
-  on:
-    tags: true
+  provider: script
+  skip_cleanup: true
+  script:
+    - npx semantic-release
