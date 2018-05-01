@@ -2,7 +2,7 @@
 const asStringValue = require('../utils/asStringValue');
 
 /**
- * Node entity representing a logical scope
+ * Node representing a logical point within the code
  */
 class Node {
 

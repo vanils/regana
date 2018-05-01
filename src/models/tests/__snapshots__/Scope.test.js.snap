@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Scope #constructor should throw error with invalid parent scope 1`] = `"Invalid parent scope ''"`;
+
+exports[`Scope #constructor should throw error with invalid parent scope 2`] = `"Invalid parent scope '[object Object]'"`;
+
+exports[`Scope #constructor should throw error with invalid parent scope 3`] = `"Invalid parent scope '[object Array]'"`;
+
+exports[`Scope #constructor should throw error with invalid parent scope 4`] = `"Invalid parent scope 'null'"`;
+
+exports[`Scope #constructor should throw error with invalid parent scope 5`] = `"Invalid parent scope 'NaN'"`;
+
+exports[`Scope #constructor should throw error with invalid parent scope 6`] = `"Invalid parent scope '1'"`;
+
+exports[`Scope #constructor should throw error with invalid parent scope 7`] = `"Invalid parent scope '[object Date]'"`;

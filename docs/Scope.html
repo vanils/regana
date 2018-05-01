@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>
-      Node.js - Documentation
+      Scope - Documentation
   </title>
 
   <link href="https://www.braintreepayments.com/images/favicon-ccda0b14.png" rel="icon" type="image/png">
@@ -78,159 +76,427 @@
   <div id="main">
     
       <h1 class="page-title">
-        Node.js
+        Scope
       </h1>
     
 
     
-      
 
 <section>
+  <header>
+    
+      <h2>
+        
+        Scope
+        
+      </h2>
+
+      
+        <div class="class-description">
+          <p>Scope entity representing a scope</p>
+        </div>
+      
+    
+  </header>
+
   <article>
-    <pre class="prettyprint source linenums"><code>
-const asStringValue = require('../utils/asStringValue');
+    <div class="container-overview">
+      
+        
 
-/**
- * Node representing a logical point within the code
- */
-class Node {
 
-  /**
-   * Create unique id for this node
-   * @return {string} Unique id.
-   */
-  static createId () {
-    return require('uniqid')('node-');
-  }
+  
+    <h2>Constructor</h2>
+  
 
-  /**
-   * Check if id is valid Node id
-   * @param {string} id - Id to verify
-   * @return {boolean} if value is valid node id
-   */
-  static isValidId (id) {
+  <span class='name-container'>
+    <a class="link-icon" href="#Scope">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="Scope">
+      <span class="type-signature"></span>new Scope<span class="signature">(parentScope<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span>
+    </h4>
+  </span>
 
-    if (typeof id !== 'string') {
-      return false;
-    }
+  
 
-    if (!id) {
-      return false;
-    }
 
-    /*
-     * TODO, verify that id is actually registered
-     */
-    return true;
-  }
 
-  /**
-   * Check if file source is valid
-   * @param {string} file - file to verify
-   * @return {boolean} if value is valid file
-   */
-  static isValidFile (file) {
+  <div class="description">
+    <p>Create a scope.</p>
+  </div>
 
-    if (typeof file !== 'string') {
-      return false;
-    }
 
-    if (!file) {
-      return false;
-    }
 
-    /*
-     * TODO, verify that file actually exists
-     */
-    return true;
-  }
 
-  /**
-   * Check if node interface is valid
-   * @param {object} nodeInterface - value to check
-   * @return {boolean} if value is node interface
-   */
-  static isValidNodeInterface (nodeInterface) {
 
-    if (!nodeInterface) {
-      return false;
-    }
 
-    if (!nodeInterface.loc) {
-      return false;
-    }
 
-    return true;
-  }
+  <h5>Parameters:</h5>
+  
 
-  /**
-   * Create a node.
-   * @param {string} parentId - Id of parent node
-   * @param {string} file - Path to file which contains this node
-   * @param {object} nodeInterface - Declaration entity which must follow format
-   * of babylon parser ES tree (see more from https://bit.ly/2I2Thnf)
-   */
-  constructor (parentId, file, nodeInterface) {
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
 
-    if (!Node.isValidId(parentId)) {
-      throw new Error(`Invalid parent id '${asStringValue(parentId)}'`);
-    }
+      <th>Type</th>
 
-    if (!Node.isValidFile(file)) {
-      throw new Error(`Invalid file '${asStringValue(file)}'`);
-    }
+      
+        <th>Attributes</th>
+      
 
-    if (!Node.isValidNodeInterface(nodeInterface)) {
-      throw new Error(`Invalid node interface '${asStringValue(nodeInterface)}'`);
-    }
+      
 
-    /**
-     * Id for this node
-     * @type {string}
-     */
-    this.id = Node.createId();
+      <th class="last">Description</th>
+    </tr>
+  </thead>
 
-    /**
-     * Id for parent of this node
-     * @type {string}
-     */
-    this.parentId = parentId;
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>parentScope</code></td>
+        
 
-    /**
-     * File src which this node belongs to
-     * @type {string}
-     */
-    this.file = file;
+        <td class="type">
+          
+            
+    <span class="param-type">
+      <a href="Scope.html">Scope</a>
+    </span>
 
-    /**
-     * File src which this node belongs to
-     * @type {object}
-     * @property {number} line - Line number where scope of this node begins
-     * @property {number} column - Column number where scope of this node begins
-     */
-    this.start = {
-      line: nodeInterface.loc.start.line,
-      column: nodeInterface.loc.start.column
-    };
+    
 
-    /**
-     * File src which this node belongs to
-     * @type {object}
-     * @property {number} line - line number where scope of this node ends
-     * @property {number} column - column number where scope of this node ends
-     */
-    this.end = {
-      line: nodeInterface.loc.end.line,
-      column: nodeInterface.loc.end.column
-    };
-  }
-}
 
-module.exports = Node;</code></pre>
+          
+        </td>
+
+        
+          <td class="attributes">
+            
+              &lt;optional><br>
+            
+
+            
+
+            
+          </td>
+        
+
+        
+
+        <td class="description last">
+          <p>Id of parent node</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="Scope.js.html">Scope.js</a>, <a href="Scope.js.html#line7">line 7</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+    </div>
+
+    
+
+    
+
+    
+
+     
+
+    
+
+    
+        <h3 class="subsection-title">Members</h3>
+
+        
+            
+
+<h4 class="name" id="parentScope">
+  <span class="type-signature"></span>parentScope<span class="type-signature"> :<a href="Scope.html">Scope</a></span>
+</h4>
+
+
+
+
+  <div class="description">
+    <p>Parent scope of this scope</p>
+  </div>
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="Scope.js.html">Scope.js</a>, <a href="Scope.js.html#line37">line 37</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+          
+        
+    
+
+    
+      <h3 class="subsection-title">Methods</h3>
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#.isValidScope">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id=".isValidScope">
+      <span class="type-signature">(static) </span>isValidScope<span class="signature">(value)</span><span class="type-signature"> &rarr; {boolean}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Check if value is valid scope</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>value</code></td>
+        
+
+        <td class="type">
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>Id to verify</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="Scope.js.html">Scope.js</a>, <a href="Scope.js.html#line14">line 14</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+    
+
+    
+
+    
   </article>
 </section>
 
-    
+
 
 
   </div>
