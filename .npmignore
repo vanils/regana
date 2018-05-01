@@ -12,6 +12,10 @@ Thumbs.db
 # Project files #
 ######################
 .jsdoc-template
+.jsdocrc.json
+.jestrc.json
+.eslintrc.json
+.travis.yml
 node_modules
 coverage
 docs
