@@ -1,4 +1,7 @@
 
+const pkg = require('./package.json');
+require('please-upgrade-node')(pkg);
+
 // const Node = require('./src/utils/models/node/Node');
 
 const minimist = require('minimist');
