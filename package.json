@@ -5,13 +5,6 @@
   "name": "regression-analysis",
   "version": "0.1.0",
   "description": "Tool to analyse risk for regressions based on git diff",
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm test",
-      "pre-push": "npm test",
-      "...": "..."
-    }
-  },
   "main": "index.js",
   "scripts": {
     "docs": "node ./node_modules/.bin/jsdoc --configure .jsdocrc.json",
