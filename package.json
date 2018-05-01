@@ -1,7 +1,17 @@
 {
+  "engines": {
+    "node": ">=8"
+  },
   "name": "regression-analysis",
   "version": "0.1.0",
   "description": "Tool to analyse risk for regressions based on git diff",
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test",
+      "pre-push": "npm test",
+      "...": "..."
+    }
+  },
   "main": "index.js",
   "scripts": {
     "docs": "node ./node_modules/.bin/jsdoc --configure .jsdocrc.json",
@@ -40,6 +50,7 @@
     "husky": "^0.14.3",
     "jest": "^22.4.3",
     "jsdoc": "^3.5.5",
+    "please-upgrade-node": "^3.0.2",
     "semantic-release": "^15.1.8",
     "taffydb": "^2.7.3"
   }
