@@ -17,9 +17,6 @@ const analyse = fileSrc => {
   const exposes = {};
   const variables = {};
   const file = createId('File_');
-  const files = {
-    [file]: fileSrc
-  };
 
   body.forEach(item => {
     if (item.type === 'VariableDeclaration') {
