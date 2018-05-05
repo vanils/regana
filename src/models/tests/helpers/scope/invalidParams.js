@@ -10,12 +10,12 @@ module.exports = (Scope) => {
   const invalid7 = new Date();
 
   test('should throw error with invalid parent scope', () => {
-    expect(() => new Scope(invalid1)).toThrowErrorMatchingSnapshot();
-    expect(() => new Scope(invalid2)).toThrowErrorMatchingSnapshot();
-    expect(() => new Scope(invalid3)).toThrowErrorMatchingSnapshot();
-    expect(() => new Scope(invalid4)).toThrowErrorMatchingSnapshot();
-    expect(() => new Scope(invalid5)).toThrowErrorMatchingSnapshot();
-    expect(() => new Scope(invalid6)).toThrowErrorMatchingSnapshot();
-    expect(() => new Scope(invalid7)).toThrowErrorMatchingSnapshot();
+    expect(() => new Scope({ parentScope: invalid1 })).toThrowErrorMatchingSnapshot();
+    expect(() => new Scope({ parentScope: invalid2 })).toThrowErrorMatchingSnapshot();
+    expect(() => new Scope({ parentScope: invalid3 })).toThrowErrorMatchingSnapshot();
+    expect(() => new Scope({ parentScope: invalid4 })).toThrowErrorMatchingSnapshot();
+    expect(() => new Scope({ parentScope: invalid5 })).toThrowErrorMatchingSnapshot();
+    expect(() => new Scope({ parentScope: invalid6 })).toThrowErrorMatchingSnapshot();
+    expect(() => new Scope({ parentScope: invalid7 })).toThrowErrorMatchingSnapshot();
   });
 };

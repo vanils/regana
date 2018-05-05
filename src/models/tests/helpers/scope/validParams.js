@@ -6,7 +6,7 @@ module.exports = (Scope) => {
   });
   test('should work with parent scope', () => {
     const parentScope = new Scope();
-    const childScope = new Scope(parentScope);
+    const childScope = new Scope({ parentScope });
     expect(childScope.parentScope).toEqual(parentScope);
   });
 };

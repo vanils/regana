@@ -11,3 +11,50 @@ exports[`regana #analyse analyse should throw error with invalid input 4`] = `"m
 exports[`regana #analyse analyse should throw error with invalid input 5`] = `"missing entry"`;
 
 exports[`regana #analyse analyse should throw error with invalid input 6`] = `"missing entry"`;
+
+exports[`regana #analyse analyse should work with valid input 1`] = `
+"{
+  \\"segments\\": {
+    \\"VariableDeclaration_432d87d705479b39aeea32466bae8de6\\": {
+      \\"start\\": 1,
+      \\"end\\": 21,
+      \\"pointers\\": [],
+      \\"fileSrc\\": \\"/Users/mattimehtonen/Projects/regana/src/tests/mocks/file1.js\\",
+      \\"id\\": \\"VariableDeclaration_432d87d705479b39aeea32466bae8de6\\"
+    }
+  },
+  \\"exposes\\": {},
+  \\"variables\\": {
+    \\"testValue\\": \\"VariableDeclaration_432d87d705479b39aeea32466bae8de6\\"
+  }
+}"
+`;
+
+exports[`regana #analyse analyse should work with valid input 2`] = `
+"{
+  \\"segments\\": {
+    \\"VariableDeclaration_41c2c0d071fc05f774e45e78ac0ad5fc\\": {
+      \\"start\\": 0,
+      \\"end\\": 15,
+      \\"pointers\\": [],
+      \\"fileSrc\\": \\"/Users/mattimehtonen/Projects/regana/src/tests/mocks/file2.js\\",
+      \\"id\\": \\"VariableDeclaration_41c2c0d071fc05f774e45e78ac0ad5fc\\"
+    },
+    \\"ExportNamedDeclaration_e4c1de1a804db9586e09be70125a53ba\\": {
+      \\"start\\": 16,
+      \\"end\\": 32,
+      \\"pointers\\": [
+        \\"VariableDeclaration_41c2c0d071fc05f774e45e78ac0ad5fc\\"
+      ],
+      \\"fileSrc\\": \\"/Users/mattimehtonen/Projects/regana/src/tests/mocks/file2.js\\",
+      \\"id\\": \\"ExportNamedDeclaration_e4c1de1a804db9586e09be70125a53ba\\"
+    }
+  },
+  \\"exposes\\": {
+    \\"test\\": \\"ExportNamedDeclaration_e4c1de1a804db9586e09be70125a53ba\\"
+  },
+  \\"variables\\": {
+    \\"test\\": \\"VariableDeclaration_41c2c0d071fc05f774e45e78ac0ad5fc\\"
+  }
+}"
+`;
