@@ -12,7 +12,7 @@ describe('utils', () => {
     test('should fail when file does not exist', () => {
       expect(() => {
         readFile(__dirname, './mocks/fileX.js');
-      }).toThrowErrorMatchingSnapshot();
+      }).toThrow();
     });
   });
 });
