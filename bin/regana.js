@@ -35,7 +35,7 @@ const argv = minimist(process.argv.slice(2));
 const [ entry ] = argv._;
 
 try {
-  regana.analyse(path.resolve(process.cwd(), entry));
+  console.log(regana.analyse(path.resolve(process.cwd(), entry)));
 } catch (e) {
   logError(e);
   process.exitCode = 0;

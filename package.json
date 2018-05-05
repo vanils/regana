@@ -10,7 +10,7 @@
   "description": "Tool to analyse risk for regressions based on git diff",
   "main": "src/regana.js",
   "scripts": {
-    "docs": "node ./node_modules/.bin/jsdoc --configure .jsdocrc.json",
+    "docs": "node ./node_modules/.bin/rmdir-cli docs && node ./node_modules/.bin/jsdoc --configure .jsdocrc.json",
     "build": "node console.log('build');",
     "start": "node console.log('start');",
     "test": "node ./node_modules/.bin/jest --config=.jestrc.json",
@@ -33,7 +33,8 @@
   },
   "homepage": "https://github.com/vanils/regana#readme",
   "dependencies": {
-    "babylon": "^6.18.0",
+    "babylon": "^7.0.0-beta.46",
+    "md5": "^2.2.1",
     "minimist": "^1.2.0",
     "uniqid": "^4.1.1"
   },
@@ -50,6 +51,7 @@
     "jest": "^22.4.3",
     "jsdoc": "^3.5.5",
     "please-upgrade-node": "^3.0.2",
+    "rmdir-cli": "^2.0.6",
     "semantic-release": "^15.1.8",
     "taffydb": "^2.7.3"
   }

@@ -31,7 +31,8 @@ describe('regana', () => {
     });
 
     test('analyse should work with valid input', () => {
-      expect(regana.analyse(path.resolve(__dirname, './mocks/file1.js'))).toBe(undefined);
+      expect(regana.analyse(path.resolve(__dirname, './mocks/file1.js'))).toMatchSnapshot();
+      expect(regana.analyse(path.resolve(__dirname, './mocks/file2.js'))).toMatchSnapshot();
     });
   });
 });

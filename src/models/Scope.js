@@ -22,9 +22,12 @@ class Scope {
 
   /**
    * Create a scope.
-   * @param {Scope} [parentScope] - Id of parent node
+   * @param {object} options
+   * @param {Scope} [options.parentScope] - Id of parent node
    */
-  constructor (parentScope) {
+  constructor (options = {}) {
+
+    const { parentScope } = options;
 
     if (typeof parentScope !== 'undefined' && !Scope.isValidScope(parentScope)) {
       throw new Error(`Invalid parent scope '${asStringValue(parentScope)}'`);
