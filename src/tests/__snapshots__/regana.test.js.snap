@@ -15,17 +15,17 @@ exports[`regana #analyse analyse should throw error with invalid input 6`] = `"m
 exports[`regana #analyse analyse should work with valid input 1`] = `
 "{
   \\"segments\\": {
-    \\"VariableDeclaration_432d87d705479b39aeea32466bae8de6\\": {
+    \\"VariableDeclaration_41c2c0d071fc05f774e45e78ac0ad5fc\\": {
       \\"start\\": 1,
       \\"end\\": 21,
       \\"pointers\\": [],
-      \\"fileSrc\\": \\"/Users/mattimehtonen/Projects/regana/src/tests/mocks/file1.js\\",
-      \\"id\\": \\"VariableDeclaration_432d87d705479b39aeea32466bae8de6\\"
+      \\"file\\": \\"File_8ba5c586d44c70ca777c0f66b5243b40\\",
+      \\"id\\": \\"VariableDeclaration_41c2c0d071fc05f774e45e78ac0ad5fc\\"
     }
   },
   \\"exposes\\": {},
   \\"variables\\": {
-    \\"testValue\\": \\"VariableDeclaration_432d87d705479b39aeea32466bae8de6\\"
+    \\"testValue\\": \\"VariableDeclaration_41c2c0d071fc05f774e45e78ac0ad5fc\\"
   }
 }"
 `;
@@ -33,28 +33,28 @@ exports[`regana #analyse analyse should work with valid input 1`] = `
 exports[`regana #analyse analyse should work with valid input 2`] = `
 "{
   \\"segments\\": {
-    \\"VariableDeclaration_41c2c0d071fc05f774e45e78ac0ad5fc\\": {
+    \\"VariableDeclaration_ba10fb9b241b9e39052c6a5d8a451d42\\": {
       \\"start\\": 0,
       \\"end\\": 15,
       \\"pointers\\": [],
-      \\"fileSrc\\": \\"/Users/mattimehtonen/Projects/regana/src/tests/mocks/file2.js\\",
-      \\"id\\": \\"VariableDeclaration_41c2c0d071fc05f774e45e78ac0ad5fc\\"
+      \\"file\\": \\"File_aac47180851be5de7f5b19fa7afa91b7\\",
+      \\"id\\": \\"VariableDeclaration_ba10fb9b241b9e39052c6a5d8a451d42\\"
     },
-    \\"ExportNamedDeclaration_e4c1de1a804db9586e09be70125a53ba\\": {
+    \\"ExportNamedDeclaration_675ae9dfbe2abcc8183078ae43de38a9\\": {
       \\"start\\": 16,
       \\"end\\": 32,
       \\"pointers\\": [
-        \\"VariableDeclaration_41c2c0d071fc05f774e45e78ac0ad5fc\\"
+        \\"VariableDeclaration_ba10fb9b241b9e39052c6a5d8a451d42\\"
       ],
-      \\"fileSrc\\": \\"/Users/mattimehtonen/Projects/regana/src/tests/mocks/file2.js\\",
-      \\"id\\": \\"ExportNamedDeclaration_e4c1de1a804db9586e09be70125a53ba\\"
+      \\"file\\": \\"File_aac47180851be5de7f5b19fa7afa91b7\\",
+      \\"id\\": \\"ExportNamedDeclaration_675ae9dfbe2abcc8183078ae43de38a9\\"
     }
   },
   \\"exposes\\": {
-    \\"test\\": \\"ExportNamedDeclaration_e4c1de1a804db9586e09be70125a53ba\\"
+    \\"test\\": \\"ExportNamedDeclaration_675ae9dfbe2abcc8183078ae43de38a9\\"
   },
   \\"variables\\": {
-    \\"test\\": \\"VariableDeclaration_41c2c0d071fc05f774e45e78ac0ad5fc\\"
+    \\"test\\": \\"VariableDeclaration_ba10fb9b241b9e39052c6a5d8a451d42\\"
   }
 }"
 `;

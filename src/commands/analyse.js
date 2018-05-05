@@ -16,6 +16,10 @@ const analyse = fileSrc => {
   const segments = {};
   const exposes = {};
   const variables = {};
+  const file = createId('File_');
+  const files = {
+    [file]: fileSrc
+  };
 
   body.forEach(item => {
     if (item.type === 'VariableDeclaration') {
@@ -24,7 +28,7 @@ const analyse = fileSrc => {
         start: item.start,
         end: item.end,
         pointers: [],
-        fileSrc,
+        file,
         id
       };
 
@@ -38,7 +42,7 @@ const analyse = fileSrc => {
         start: item.start,
         end: item.end,
         pointers: [ variables[item.specifiers[0].exported.name] ],
-        fileSrc,
+        file,
         id
       };
 
