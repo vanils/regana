@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: models/Scope.js</title>
+    <title>JSDoc: Source: utils/readFile.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: models/Scope.js</h1>
+    <h1 class="page-title">Source: utils/readFile.js</h1>
 
     
 
@@ -27,46 +27,28 @@
     <section>
         <article>
             <pre class="prettyprint source linenums"><code>
-const asStringValue = require('../utils/asStringValue');
+const fs = require('fs');
 
 /**
- * Scope entity representing a scope
+ * Read a file in a safe manner. Supports module extension addment according to
+ * configurations.
+ * @memberof utils
  */
-class Scope {
+const readFile = fileSrc => {
+  return fs.readFileSync(withExtension(fileSrc), { encoding: 'utf8' });
+};
 
-  /**
-   * Check if value is valid scope
-   * @param value - Id to verify
-   * @return {boolean} if value is valid scope
-   */
-  static isValidScope (value) {
+const withExtension = fileSrc => {
+  const stats = fs.statSync(fileSrc);
 
-    if (value instanceof Scope) {
-      return true;
-    }
-
-    return false;
+  if (stats.isFile()) {
+    return fileSrc;
   }
 
-  /**
-   * Create a scope.
-   * @param {Scope} [parentScope] - Id of parent node
-   */
-  constructor (parentScope) {
+  throw new Error(new Error(`file does not exist '${fileSrc}'`));
+};
 
-    if (typeof parentScope !== 'undefined' &amp;&amp; !Scope.isValidScope(parentScope)) {
-      throw new Error(`Invalid parent scope '${asStringValue(parentScope)}'`);
-    }
-
-    /**
-     * Parent scope of this scope
-     * @type {Scope}
-     */
-    this.parentScope = parentScope || null;
-  }
-}
-
-module.exports = Scope;</code></pre>
+module.exports = readFile;</code></pre>
         </article>
     </section>
 

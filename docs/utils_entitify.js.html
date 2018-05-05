@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: models/Scope.js</title>
+    <title>JSDoc: Source: utils/entitify.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: models/Scope.js</h1>
+    <h1 class="page-title">Source: utils/entitify.js</h1>
 
     
 
@@ -27,46 +27,27 @@
     <section>
         <article>
             <pre class="prettyprint source linenums"><code>
-const asStringValue = require('../utils/asStringValue');
+const babylon = require('babylon');
 
 /**
- * Scope entity representing a scope
+ * Turn file content into entities
+ * @memberof utils
  */
-class Scope {
+const entitify = content => {
 
-  /**
-   * Check if value is valid scope
-   * @param value - Id to verify
-   * @return {boolean} if value is valid scope
-   */
-  static isValidScope (value) {
+  const options = {
+    sourceType: 'module',
+    tokens: false,
+    plugins: [
+      'objectRestSpread',
+      'jsx'
+    ]
+  };
 
-    if (value instanceof Scope) {
-      return true;
-    }
+  return babylon.parse(content, options);
+};
 
-    return false;
-  }
-
-  /**
-   * Create a scope.
-   * @param {Scope} [parentScope] - Id of parent node
-   */
-  constructor (parentScope) {
-
-    if (typeof parentScope !== 'undefined' &amp;&amp; !Scope.isValidScope(parentScope)) {
-      throw new Error(`Invalid parent scope '${asStringValue(parentScope)}'`);
-    }
-
-    /**
-     * Parent scope of this scope
-     * @type {Scope}
-     */
-    this.parentScope = parentScope || null;
-  }
-}
-
-module.exports = Scope;</code></pre>
+module.exports = entitify;</code></pre>
         </article>
     </section>
 
