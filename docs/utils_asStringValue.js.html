@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: regana.js</title>
+    <title>JSDoc: Source: utils/asStringValue.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: regana.js</h1>
+    <h1 class="page-title">Source: utils/asStringValue.js</h1>
 
     
 
@@ -27,28 +27,32 @@
     <section>
         <article>
             <pre class="prettyprint source linenums"><code>
-'use strict';
-
-const readFile = require('./utils/readFile');
-const entitify = require('./utils/entitify');
-
 /**
- * @file Expose out Analyser and other tools
- * @author Matti Mehtonen
+ * Turn any value into string format. Useful for loggin any value.
+ * @memberof utils
  */
+const asStringValue = value => {
 
-module.exports = {
-  analyse: (entry) => {
-
-    if (!entry || typeof entry !== 'string') {
-      throw new Error('missing entry');
-    }
-
-    const content = readFile(entry);
-    const entities = entitify(content);
-    console.log(JSON.stringify(entities, null, 2));
+  if (typeof value === 'undefined') {
+    return 'undefined';
   }
-};</code></pre>
+
+  if (value === null) {
+    return 'null';
+  }
+
+  if (typeof value === 'string') {
+    return value;
+  }
+
+  if (typeof value === 'number') {
+    return value.toString();
+  }
+
+  return Object.prototype.toString.call(value);
+};
+
+module.exports = asStringValue;</code></pre>
         </article>
     </section>
 

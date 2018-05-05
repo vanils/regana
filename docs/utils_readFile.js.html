@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: regana.js</title>
+    <title>JSDoc: Source: utils/readFile.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: regana.js</h1>
+    <h1 class="page-title">Source: utils/readFile.js</h1>
 
     
 
@@ -27,28 +27,28 @@
     <section>
         <article>
             <pre class="prettyprint source linenums"><code>
-'use strict';
-
-const readFile = require('./utils/readFile');
-const entitify = require('./utils/entitify');
+const fs = require('fs');
 
 /**
- * @file Expose out Analyser and other tools
- * @author Matti Mehtonen
+ * Read a file in a safe manner. Supports module extension addment according to
+ * configurations.
+ * @memberof utils
  */
+const readFile = fileSrc => {
+  return fs.readFileSync(withExtension(fileSrc), { encoding: 'utf8' });
+};
 
-module.exports = {
-  analyse: (entry) => {
+const withExtension = fileSrc => {
+  const stats = fs.statSync(fileSrc);
 
-    if (!entry || typeof entry !== 'string') {
-      throw new Error('missing entry');
-    }
-
-    const content = readFile(entry);
-    const entities = entitify(content);
-    console.log(JSON.stringify(entities, null, 2));
+  if (stats.isFile()) {
+    return fileSrc;
   }
-};</code></pre>
+
+  throw new Error(new Error(`file does not exist '${fileSrc}'`));
+};
+
+module.exports = readFile;</code></pre>
         </article>
     </section>
 

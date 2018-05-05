@@ -14,7 +14,7 @@
     "build": "node console.log('build');",
     "start": "node console.log('start');",
     "test": "node ./node_modules/.bin/jest --config=.jestrc.json",
-    "lint": "node ./node_modules/.bin/eslint --config=.eslintrc.json src/**/** bin/**/**",
+    "lint": "node ./node_modules/.bin/eslint --ignore-pattern=**/mocks/** --config=.eslintrc.json src/**/** bin/**/**",
     "codecov": "node ./node_modules/.bin/codecov",
     "commitmsg": "commitlint -e $GIT_PARAMS",
     "precommit": "npm run test && npm run lint && npm run docs"
