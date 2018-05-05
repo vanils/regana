@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`regana #analyse analyse should throw error with invalid input 1`] = `"missing entry"`;
+
+exports[`regana #analyse analyse should throw error with invalid input 2`] = `"missing entry"`;
+
+exports[`regana #analyse analyse should throw error with invalid input 3`] = `"missing entry"`;
+
+exports[`regana #analyse analyse should throw error with invalid input 4`] = `"missing entry"`;
+
+exports[`regana #analyse analyse should throw error with invalid input 5`] = `"missing entry"`;
+
+exports[`regana #analyse analyse should throw error with invalid input 6`] = `"missing entry"`;

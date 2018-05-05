@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: regana.js</title>
+    <title>JSDoc: Source: utils/logError.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: regana.js</h1>
+    <h1 class="page-title">Source: utils/logError.js</h1>
 
     
 
@@ -28,11 +28,20 @@
         <article>
             <pre class="prettyprint source linenums"><code>
 /**
- * @file Expose out Analyser and other tools
- * @author Matti Mehtonen
+ * Utilities
+ * @memberof utils
  */
+const logError = (message) => {
+  console.log();
+  console.log(chalk.red(`Error: ${message}`));
+  console.log();
+  console.log('usage: regana [options] entry.js');
+  console.log('  options:');
+  console.log('    -c, --compare   branch to compare with, defaults to master');
+  console.log();
+};
 
-module.exports = {};</code></pre>
+module.exports = logError;</code></pre>
         </article>
     </section>
 

@@ -1,5 +1,8 @@
 
-
+/**
+ * Turn any value into string format. Useful for loggin any value.
+ * @memberof utils
+ */
 const asStringValue = value => {
 
   if (typeof value === 'undefined') {

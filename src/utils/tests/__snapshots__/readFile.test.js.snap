@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`utils #readFile should fail when file does not exist 1`] = `"Error: file does not exist '/Users/mattimehtonen/Projects/regana/src/utils/tests'"`;
