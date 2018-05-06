@@ -35,6 +35,11 @@ const argv = minimist(process.argv.slice(2));
 const [ entry ] = argv._;
 
 try {
+
+  if (!entry || typeof entry !== 'string') {
+    throw new Error('missing entry');
+  }
+
   console.log(regana.analyse(path.resolve(process.cwd(), entry)));
 } catch (e) {
   logError(e);

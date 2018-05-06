@@ -15,7 +15,7 @@ const analyse = fileSrc => {
   const { body } = entities.program;
   const segments = {};
   const exposes = {};
-  const variables = {};
+  const pointers = {};
   const file = createId('File_');
 
   body.forEach(item => {
@@ -24,12 +24,12 @@ const analyse = fileSrc => {
       const segment = {
         start: item.start,
         end: item.end,
-        pointers: [],
+        uses: [],
         file,
         id
       };
 
-      variables[item.declarations[0].id.name] = segment.id;
+      pointers[item.declarations[0].id.name] = segment.id;
       segments[segment.id] = segment;
     }
 
@@ -38,7 +38,7 @@ const analyse = fileSrc => {
       const segment = {
         start: item.start,
         end: item.end,
-        pointers: [ variables[item.specifiers[0].exported.name] ],
+        uses: [ pointers[item.specifiers[0].exported.name] ],
         file,
         id
       };
@@ -51,7 +51,7 @@ const analyse = fileSrc => {
   return JSON.stringify({
     segments,
     exposes,
-    variables
+    pointers
   }, null, 2);
 };
 

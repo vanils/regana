@@ -9,12 +9,5 @@ const analyse = require('./commands/analyse');
  */
 
 module.exports = {
-  analyse: (entry) => {
-
-    if (!entry || typeof entry !== 'string') {
-      throw new Error('missing entry');
-    }
-
-    return analyse(entry);
-  }
+  analyse
 };
