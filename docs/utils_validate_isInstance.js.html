@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: utils/readFile.js</title>
+    <title>JSDoc: Source: utils/validate/isInstance.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: utils/readFile.js</h1>
+    <h1 class="page-title">Source: utils/validate/isInstance.js</h1>
 
     
 
@@ -27,28 +27,15 @@
     <section>
         <article>
             <pre class="prettyprint source linenums"><code>
-const fs = require('fs');
-
 /**
- * Read a file in a safe manner. Supports module extension addment according to
- * configurations.
- * @memberof utils
+ * Check if value is instance of certain class
+ * @memberof utils.validate
  */
-const readFile = fileSrc => {
-  return fs.readFileSync(withExtension(fileSrc), { encoding: 'utf8' });
+const isInstance = (value, Class) => {
+  return value instanceof Class;
 };
 
-const withExtension = fileSrc => {
-  const stats = fs.statSync(fileSrc);
-
-  if (stats.isFile()) {
-    return fileSrc;
-  }
-
-  throw new Error(new Error(`file does not exist '${fileSrc}'`));
-};
-
-module.exports = readFile;</code></pre>
+module.exports = isInstance;</code></pre>
         </article>
     </section>
 
