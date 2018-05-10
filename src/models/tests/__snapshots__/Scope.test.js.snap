@@ -1,15 +1,59 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Scope #constructor should throw error with invalid parent scope 1`] = `"Invalid parent scope ''"`;
+exports[`Scope #constructor should throw error when file not specified 1`] = `"Cannot assosiate scope with any file"`;
 
-exports[`Scope #constructor should throw error with invalid parent scope 2`] = `"Invalid parent scope '[object Object]'"`;
+exports[`Scope #constructor should throw error with invalid end 1`] = `"Invalid scope end value ''"`;
 
-exports[`Scope #constructor should throw error with invalid parent scope 3`] = `"Invalid parent scope '[object Array]'"`;
+exports[`Scope #constructor should throw error with invalid end 2`] = `"Invalid scope end value '[object Object]'"`;
 
-exports[`Scope #constructor should throw error with invalid parent scope 4`] = `"Invalid parent scope 'null'"`;
+exports[`Scope #constructor should throw error with invalid end 3`] = `"Invalid scope end value '[object Array]'"`;
 
-exports[`Scope #constructor should throw error with invalid parent scope 5`] = `"Invalid parent scope 'NaN'"`;
+exports[`Scope #constructor should throw error with invalid end 4`] = `"Invalid scope end value 'null'"`;
 
-exports[`Scope #constructor should throw error with invalid parent scope 6`] = `"Invalid parent scope '1'"`;
+exports[`Scope #constructor should throw error with invalid end 5`] = `"Invalid scope end value 'NaN'"`;
 
-exports[`Scope #constructor should throw error with invalid parent scope 7`] = `"Invalid parent scope '[object Date]'"`;
+exports[`Scope #constructor should throw error with invalid end 6`] = `"Invalid scope end value 'Infinity'"`;
+
+exports[`Scope #constructor should throw error with invalid end 7`] = `"Invalid scope end value '[object Date]'"`;
+
+exports[`Scope #constructor should throw error with invalid file 1`] = `"Invalid file ''"`;
+
+exports[`Scope #constructor should throw error with invalid file 2`] = `"Invalid file '[object Object]'"`;
+
+exports[`Scope #constructor should throw error with invalid file 3`] = `"Invalid file '[object Array]'"`;
+
+exports[`Scope #constructor should throw error with invalid file 4`] = `"Invalid file 'null'"`;
+
+exports[`Scope #constructor should throw error with invalid file 5`] = `"Invalid file 'NaN'"`;
+
+exports[`Scope #constructor should throw error with invalid file 6`] = `"Invalid file 'Infinity'"`;
+
+exports[`Scope #constructor should throw error with invalid file 7`] = `"Invalid file '[object Date]'"`;
+
+exports[`Scope #constructor should throw error with invalid start 1`] = `"Invalid scope start value ''"`;
+
+exports[`Scope #constructor should throw error with invalid start 2`] = `"Invalid scope start value '[object Object]'"`;
+
+exports[`Scope #constructor should throw error with invalid start 3`] = `"Invalid scope start value '[object Array]'"`;
+
+exports[`Scope #constructor should throw error with invalid start 4`] = `"Invalid scope start value 'null'"`;
+
+exports[`Scope #constructor should throw error with invalid start 5`] = `"Invalid scope start value 'NaN'"`;
+
+exports[`Scope #constructor should throw error with invalid start 6`] = `"Invalid scope start value 'Infinity'"`;
+
+exports[`Scope #constructor should throw error with invalid start 7`] = `"Invalid scope start value '[object Date]'"`;
+
+exports[`Scope #constructor should throw error with parent scope 1`] = `"Invalid parent scope ''"`;
+
+exports[`Scope #constructor should throw error with parent scope 2`] = `"Invalid parent scope '[object Object]'"`;
+
+exports[`Scope #constructor should throw error with parent scope 3`] = `"Invalid parent scope '[object Array]'"`;
+
+exports[`Scope #constructor should throw error with parent scope 4`] = `"Invalid parent scope 'null'"`;
+
+exports[`Scope #constructor should throw error with parent scope 5`] = `"Invalid parent scope 'NaN'"`;
+
+exports[`Scope #constructor should throw error with parent scope 6`] = `"Invalid parent scope '1'"`;
+
+exports[`Scope #constructor should throw error with parent scope 7`] = `"Invalid parent scope '[object Date]'"`;
