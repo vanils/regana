@@ -1,5 +1,9 @@
 
 const asStringValue = require('../utils/asStringValue');
+const isInstance = require('../utils/validate/isInstance');
+const isUndefined = require('../utils/validate/isUndefined');
+const isNumber = require('../utils/validate/isNumber');
+const isFile = require('../utils/validate/isFile');
 
 /**
  * Scope entity representing a scope
@@ -7,30 +11,39 @@ const asStringValue = require('../utils/asStringValue');
 class Scope {
 
   /**
-   * Check if value is valid scope
-   * @param value - Id to verify
-   * @return {boolean} if value is valid scope
+   * Create a scope.
+   * @param {number} start - index of first character of this scope
+   * @param {number} end - index of first character after this scope
+   * @param {object} options
+   * @param {Scope} [options.parentScope] - Parent Scope
+   * @param {Scope} [options.file] - file assosiated with this scope. If not
+   * specified, will be inherited from parent scope.
    */
-  static isValidScope (value) {
+  constructor (start, end, options = {}) {
 
-    if (value instanceof Scope) {
-      return true;
+    const {
+      parentScope,
+      file
+    } = options;
+
+    if (!isNumber(start)) {
+      throw new Error(`Invalid scope start value '${asStringValue(start)}'`);
     }
 
-    return false;
-  }
+    if (!isNumber(end)) {
+      throw new Error(`Invalid scope end value '${asStringValue(end)}'`);
+    }
 
-  /**
-   * Create a scope.
-   * @param {object} options
-   * @param {Scope} [options.parentScope] - Id of parent node
-   */
-  constructor (options = {}) {
-
-    const { parentScope } = options;
-
-    if (typeof parentScope !== 'undefined' && !Scope.isValidScope(parentScope)) {
+    if (!isUndefined(parentScope) && !isInstance(parentScope, Scope)) {
       throw new Error(`Invalid parent scope '${asStringValue(parentScope)}'`);
+    }
+
+    if (!isUndefined(file) && !isFile(file)) {
+      throw new Error(`Invalid file '${asStringValue(file)}'`);
+    }
+
+    if (isUndefined(file) && (isUndefined(parentScope) || isUndefined(parentScope.file))) {
+      throw new Error(`Cannot assosiate scope with any file`);
     }
 
     /**
@@ -38,6 +51,30 @@ class Scope {
      * @type {Scope}
      */
     this.parentScope = parentScope || null;
+
+    /**
+     * File in which this scope belongs to
+     * @type {string}
+     */
+    this.file = file || this.parentScope.file;
+
+    /**
+     * Segments within this scope
+     * @type {object}
+     */
+    this.segments = {};
+
+    /**
+     * List of exposed items within this scope
+     * @type {object}
+     */
+    this.exposes = {};
+
+    /**
+     * List of pointers within this scope
+     * @type {object}
+     */
+    this.pointers = {};
   }
 }
 

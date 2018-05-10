@@ -1,6 +1,5 @@
 
-const md5 = require('md5');
-const map = {};
+/* eslint-disable no-plusplus */
 
 let index = 0;
 
@@ -9,18 +8,6 @@ let index = 0;
  * same output.
  * @memberof utils
  */
-const createId = (prefix) => {
-
-  let id = 0;
-
-  while (!id || map[id]) {
-    index += 1;
-    id = prefix + md5(prefix + index);
-  }
-
-  map[id] = true;
-
-  return id;
-};
+const createId = (prefix = 'Undefined') => `${prefix}_${index++}`;
 
 module.exports = createId;

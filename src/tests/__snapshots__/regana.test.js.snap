@@ -14,47 +14,48 @@ exports[`regana #analyse analyse should throw error with invalid input 6`] = `"p
 
 exports[`regana #analyse analyse should work with valid input 1`] = `
 "{
+  \\"parentScope\\": null,
+  \\"file\\": \\"File_0\\",
   \\"segments\\": {
-    \\"VariableDeclaration_41c2c0d071fc05f774e45e78ac0ad5fc\\": {
+    \\"VariableDeclaration_1\\": {
       \\"start\\": 1,
       \\"end\\": 21,
       \\"uses\\": [],
-      \\"file\\": \\"File_8ba5c586d44c70ca777c0f66b5243b40\\",
-      \\"id\\": \\"VariableDeclaration_41c2c0d071fc05f774e45e78ac0ad5fc\\"
+      \\"id\\": \\"VariableDeclaration_1\\"
     }
   },
   \\"exposes\\": {},
   \\"pointers\\": {
-    \\"testValue\\": \\"VariableDeclaration_41c2c0d071fc05f774e45e78ac0ad5fc\\"
+    \\"testValue\\": \\"VariableDeclaration_1\\"
   }
 }"
 `;
 
 exports[`regana #analyse analyse should work with valid input 2`] = `
 "{
+  \\"parentScope\\": null,
+  \\"file\\": \\"File_2\\",
   \\"segments\\": {
-    \\"VariableDeclaration_ba10fb9b241b9e39052c6a5d8a451d42\\": {
+    \\"VariableDeclaration_3\\": {
       \\"start\\": 0,
       \\"end\\": 15,
       \\"uses\\": [],
-      \\"file\\": \\"File_aac47180851be5de7f5b19fa7afa91b7\\",
-      \\"id\\": \\"VariableDeclaration_ba10fb9b241b9e39052c6a5d8a451d42\\"
+      \\"id\\": \\"VariableDeclaration_3\\"
     },
-    \\"ExportNamedDeclaration_675ae9dfbe2abcc8183078ae43de38a9\\": {
+    \\"ExportNamedDeclaration_4\\": {
       \\"start\\": 16,
       \\"end\\": 32,
       \\"uses\\": [
-        \\"VariableDeclaration_ba10fb9b241b9e39052c6a5d8a451d42\\"
+        \\"VariableDeclaration_3\\"
       ],
-      \\"file\\": \\"File_aac47180851be5de7f5b19fa7afa91b7\\",
-      \\"id\\": \\"ExportNamedDeclaration_675ae9dfbe2abcc8183078ae43de38a9\\"
+      \\"id\\": \\"ExportNamedDeclaration_4\\"
     }
   },
   \\"exposes\\": {
-    \\"test\\": \\"ExportNamedDeclaration_675ae9dfbe2abcc8183078ae43de38a9\\"
+    \\"test\\": \\"ExportNamedDeclaration_4\\"
   },
   \\"pointers\\": {
-    \\"test\\": \\"VariableDeclaration_ba10fb9b241b9e39052c6a5d8a451d42\\"
+    \\"test\\": \\"VariableDeclaration_3\\"
   }
 }"
 `;

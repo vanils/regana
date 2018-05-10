@@ -1,21 +1,53 @@
 
 module.exports = (Scope) => {
 
-  const invalid1 = '';
-  const invalid2 = {};
-  const invalid3 = [];
-  const invalid4 = null;
-  const invalid5 = NaN;
-  const invalid6 = 1;
-  const invalid7 = new Date();
+  const validStart = 10;
+  const validEnd = 50;
+  const validFile = 'File_1';
 
-  test('should throw error with invalid parent scope', () => {
-    expect(() => new Scope({ parentScope: invalid1 })).toThrowErrorMatchingSnapshot();
-    expect(() => new Scope({ parentScope: invalid2 })).toThrowErrorMatchingSnapshot();
-    expect(() => new Scope({ parentScope: invalid3 })).toThrowErrorMatchingSnapshot();
-    expect(() => new Scope({ parentScope: invalid4 })).toThrowErrorMatchingSnapshot();
-    expect(() => new Scope({ parentScope: invalid5 })).toThrowErrorMatchingSnapshot();
-    expect(() => new Scope({ parentScope: invalid6 })).toThrowErrorMatchingSnapshot();
-    expect(() => new Scope({ parentScope: invalid7 })).toThrowErrorMatchingSnapshot();
+  const validScope = new Scope(validStart, validEnd, { file: validFile });
+
+  test('should throw error when file not specified', () => {
+    expect(() => new Scope(validStart, validEnd)).toThrowErrorMatchingSnapshot();
+  });
+
+  test('should throw error with invalid file', () => {
+    expect(() => new Scope(validStart, validEnd, { file: '' })).toThrowErrorMatchingSnapshot();
+    expect(() => new Scope(validStart, validEnd, { file: {} })).toThrowErrorMatchingSnapshot();
+    expect(() => new Scope(validStart, validEnd, { file: [] })).toThrowErrorMatchingSnapshot();
+    expect(() => new Scope(validStart, validEnd, { file: null })).toThrowErrorMatchingSnapshot();
+    expect(() => new Scope(validStart, validEnd, { file: NaN })).toThrowErrorMatchingSnapshot();
+    expect(() => new Scope(validStart, validEnd, { file: Infinity })).toThrowErrorMatchingSnapshot();
+    expect(() => new Scope(validStart, validEnd, { file: new Date() })).toThrowErrorMatchingSnapshot();
+  });
+
+  test('should throw error with invalid start', () => {
+    expect(() => new Scope('', validEnd, { parentScope: validScope })).toThrowErrorMatchingSnapshot();
+    expect(() => new Scope({}, validEnd, { parentScope: validScope })).toThrowErrorMatchingSnapshot();
+    expect(() => new Scope([], validEnd, { parentScope: validScope })).toThrowErrorMatchingSnapshot();
+    expect(() => new Scope(null, validEnd, { parentScope: validScope })).toThrowErrorMatchingSnapshot();
+    expect(() => new Scope(NaN, validEnd, { parentScope: validScope })).toThrowErrorMatchingSnapshot();
+    expect(() => new Scope(Infinity, validEnd, { parentScope: validScope })).toThrowErrorMatchingSnapshot();
+    expect(() => new Scope(new Date(), validEnd, { parentScope: validScope })).toThrowErrorMatchingSnapshot();
+  });
+
+  test('should throw error with invalid end', () => {
+    expect(() => new Scope(validStart, '', { parentScope: validScope })).toThrowErrorMatchingSnapshot();
+    expect(() => new Scope(validStart, {}, { parentScope: validScope })).toThrowErrorMatchingSnapshot();
+    expect(() => new Scope(validStart, [], { parentScope: validScope })).toThrowErrorMatchingSnapshot();
+    expect(() => new Scope(validStart, null, { parentScope: validScope })).toThrowErrorMatchingSnapshot();
+    expect(() => new Scope(validStart, NaN, { parentScope: validScope })).toThrowErrorMatchingSnapshot();
+    expect(() => new Scope(validStart, Infinity, { parentScope: validScope })).toThrowErrorMatchingSnapshot();
+    expect(() => new Scope(validStart, new Date(), { parentScope: validScope })).toThrowErrorMatchingSnapshot();
+  });
+
+  test('should throw error with parent scope', () => {
+    expect(() => new Scope(validStart, validEnd, { parentScope: '' })).toThrowErrorMatchingSnapshot();
+    expect(() => new Scope(validStart, validEnd, { parentScope: {} })).toThrowErrorMatchingSnapshot();
+    expect(() => new Scope(validStart, validEnd, { parentScope: [] })).toThrowErrorMatchingSnapshot();
+    expect(() => new Scope(validStart, validEnd, { parentScope: null })).toThrowErrorMatchingSnapshot();
+    expect(() => new Scope(validStart, validEnd, { parentScope: NaN })).toThrowErrorMatchingSnapshot();
+    expect(() => new Scope(validStart, validEnd, { parentScope: 1 })).toThrowErrorMatchingSnapshot();
+    expect(() => new Scope(validStart, validEnd, { parentScope: new Date() })).toThrowErrorMatchingSnapshot();
   });
 };

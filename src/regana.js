@@ -1,7 +1,7 @@
 
 'use strict';
 
-const analyse = require('./commands/analyse');
+const analyse = require('./analyse/file');
 
 /**
  * @file Expose out Analyser and other tools
