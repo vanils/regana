@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: utils/readFile.js</title>
+    <title>JSDoc: Source: analyse/body.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: utils/readFile.js</h1>
+    <h1 class="page-title">Source: analyse/body.js</h1>
 
     
 
@@ -27,33 +27,43 @@
     <section>
         <article>
             <pre class="prettyprint source linenums"><code>
-const fs = require('fs');
+const Scope = require('../models/Scope');
+
+const analyseVariable = require('./types/declarations/variable');
+const analyseExportNamed = require('./types/modules/exports/exportNamed');
 
 /**
- * Reads file by using src path. This will handle adding file extensions for
- * imports.
+ * Analyse a body block.
  *
- * @memberof utils
- * @param {string} fileSrc - Path to file to read.
+ * @memberof analyse
+ * @param {number} start - First character of this body.
+ * @param {number} end - First character after this body.
+ * @param {Array} body - Array of entities on this body.
+ * @param {Scope} parentScope - Parent scope for this body.
+ * @returns {Scope} Scope of this body block.
  *
  * @example
- * readFile('/path/to/file');  // returns file content as utf8
+ * analyseBody(10, 56, [...], scope);  // returns analyse
  */
-const readFile = fileSrc => {
-  return fs.readFileSync(withExtension(fileSrc), { encoding: 'utf8' });
+const analyseBody = (start, end, body, parentScope) => {
+
+  const scope = new Scope(start, end, { parentScope });
+
+  body.forEach(item => {
+    switch (item.type) {
+      case 'VariableDeclaration':
+        return analyseVariable(item, scope);
+      case 'ExportNamedDeclaration':
+        return analyseExportNamed(item, scope);
+      default:
+        throw new Error(`Failed to parse, unknown entity type '${item.type}'`);
+    }
+  });
+
+  return scope;
 };
 
-const withExtension = fileSrc => {
-  const stats = fs.statSync(fileSrc);
-
-  if (stats.isFile()) {
-    return fileSrc;
-  }
-
-  throw new Error(new Error(`file does not exist '${fileSrc}'`));
-};
-
-module.exports = readFile;</code></pre>
+module.exports = analyseBody;</code></pre>
         </article>
     </section>
 
