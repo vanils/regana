@@ -16,7 +16,15 @@ exports[`regana #analyse analyse should work with valid input 1`] = `
 "{
   \\"start\\": 0,
   \\"end\\": 21,
-  \\"parentScope\\": null,
+  \\"parentScope\\": {
+    \\"start\\": 0,
+    \\"end\\": 21,
+    \\"parentScope\\": null,
+    \\"file\\": \\"File_0\\",
+    \\"segments\\": {},
+    \\"exposes\\": {},
+    \\"pointers\\": {}
+  },
   \\"file\\": \\"File_0\\",
   \\"segments\\": {
     \\"VariableDeclaration_1\\": {
@@ -37,7 +45,15 @@ exports[`regana #analyse analyse should work with valid input 2`] = `
 "{
   \\"start\\": 0,
   \\"end\\": 32,
-  \\"parentScope\\": null,
+  \\"parentScope\\": {
+    \\"start\\": 0,
+    \\"end\\": 32,
+    \\"parentScope\\": null,
+    \\"file\\": \\"File_2\\",
+    \\"segments\\": {},
+    \\"exposes\\": {},
+    \\"pointers\\": {}
+  },
   \\"file\\": \\"File_2\\",
   \\"segments\\": {
     \\"VariableDeclaration_3\\": {

@@ -2,9 +2,14 @@
 const fs = require('fs');
 
 /**
- * Read a file in a safe manner. Supports module extension addment according to
- * configurations.
+ * Reads file by using src path. This will handle adding file extensions for
+ * imports.
+ *
  * @memberof utils
+ * @param {string} fileSrc - Path to file to read.
+ *
+ * @example
+ * readFile('/path/to/file');  // returns file content as utf8
  */
 const readFile = fileSrc => {
   return fs.readFileSync(withExtension(fileSrc), { encoding: 'utf8' });

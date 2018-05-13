@@ -2,8 +2,13 @@
 const babylon = require('babylon');
 
 /**
- * Turn file content into entities
+ * Transform file content into entities.
+ *
  * @memberof utils
+ * @param {string} content - Script content of file to parse.
+ *
+ * @example
+ * entitify('const test = 1');  // returns entities from babylon
  */
 const entitify = content => {
 
