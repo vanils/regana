@@ -8,6 +8,16 @@ const analyse = require('./analyse/file');
  * @author Matti Mehtonen
  */
 
+/**
+ * Utilities
+ * @namespace utils
+ */
+
+/**
+ * Validator utilities
+ * @namespace utils.validate
+ */
+
 module.exports = {
   analyse
 };
