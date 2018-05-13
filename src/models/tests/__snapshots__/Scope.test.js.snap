@@ -1,5 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Scope #addSegment segment addment throw properly 1`] = `"Invalid segment id 'null'"`;
+
+exports[`Scope #addSegment segment addment throw properly 2`] = `"Invalid segment id ''"`;
+
+exports[`Scope #addSegment segment addment throw properly 3`] = `"Invalid segment id '70'"`;
+
+exports[`Scope #addSegment segment addment throw properly 4`] = `"Invalid segment start value 'null'"`;
+
+exports[`Scope #addSegment segment addment throw properly 5`] = `"Invalid segment start value 'NaN'"`;
+
+exports[`Scope #addSegment segment addment throw properly 6`] = `"Invalid segment start value '10'"`;
+
+exports[`Scope #addSegment segment addment throw properly 7`] = `"Invalid segment end value 'null'"`;
+
+exports[`Scope #addSegment segment addment throw properly 8`] = `"Invalid segment end value 'NaN'"`;
+
+exports[`Scope #addSegment segment addment throw properly 9`] = `"Invalid segment start value '50'"`;
+
+exports[`Scope #addSegment segment addment throw properly 10`] = `"Segment 'Segment_1' not within the scope"`;
+
+exports[`Scope #addSegment segment addment throw properly 11`] = `"Segment 'Segment_1' not within the scope"`;
+
+exports[`Scope #addSegment segment addment throw properly 12`] = `"Segment 'Segment_1' not within the scope"`;
+
 exports[`Scope #constructor should throw error when file not specified 1`] = `"Cannot assosiate scope with any file"`;
 
 exports[`Scope #constructor should throw error with invalid end 1`] = `"Invalid scope end value ''"`;
@@ -30,6 +54,20 @@ exports[`Scope #constructor should throw error with invalid file 6`] = `"Invalid
 
 exports[`Scope #constructor should throw error with invalid file 7`] = `"Invalid file '[object Date]'"`;
 
+exports[`Scope #constructor should throw error with invalid parent scope 1`] = `"Invalid parent scope ''"`;
+
+exports[`Scope #constructor should throw error with invalid parent scope 2`] = `"Invalid parent scope '[object Object]'"`;
+
+exports[`Scope #constructor should throw error with invalid parent scope 3`] = `"Invalid parent scope '[object Array]'"`;
+
+exports[`Scope #constructor should throw error with invalid parent scope 4`] = `"Invalid parent scope 'null'"`;
+
+exports[`Scope #constructor should throw error with invalid parent scope 5`] = `"Invalid parent scope 'NaN'"`;
+
+exports[`Scope #constructor should throw error with invalid parent scope 6`] = `"Invalid parent scope '1'"`;
+
+exports[`Scope #constructor should throw error with invalid parent scope 7`] = `"Invalid parent scope '[object Date]'"`;
+
 exports[`Scope #constructor should throw error with invalid start 1`] = `"Invalid scope start value ''"`;
 
 exports[`Scope #constructor should throw error with invalid start 2`] = `"Invalid scope start value '[object Object]'"`;
@@ -44,16 +82,14 @@ exports[`Scope #constructor should throw error with invalid start 6`] = `"Invali
 
 exports[`Scope #constructor should throw error with invalid start 7`] = `"Invalid scope start value '[object Date]'"`;
 
-exports[`Scope #constructor should throw error with parent scope 1`] = `"Invalid parent scope ''"`;
+exports[`Scope #constructor should throw error with parent scope with invalid start and end 1`] = `"Scope not within the parent scope"`;
 
-exports[`Scope #constructor should throw error with parent scope 2`] = `"Invalid parent scope '[object Object]'"`;
+exports[`Scope #constructor should throw error with parent scope with invalid start and end 2`] = `"Scope not within the parent scope"`;
 
-exports[`Scope #constructor should throw error with parent scope 3`] = `"Invalid parent scope '[object Array]'"`;
+exports[`Scope #constructor should throw error with parent scope with invalid start and end 3`] = `"Scope not within the parent scope"`;
 
-exports[`Scope #constructor should throw error with parent scope 4`] = `"Invalid parent scope 'null'"`;
+exports[`Scope #constructor should throw error with parent scope with invalid start and end 4`] = `"Scope not within the parent scope"`;
 
-exports[`Scope #constructor should throw error with parent scope 5`] = `"Invalid parent scope 'NaN'"`;
+exports[`Scope #getSegmentIdByPointer segment selection should throw error when not found 1`] = `"Pointer 'myPointer' does not exist in file File_1"`;
 
-exports[`Scope #constructor should throw error with parent scope 6`] = `"Invalid parent scope '1'"`;
-
-exports[`Scope #constructor should throw error with parent scope 7`] = `"Invalid parent scope '[object Date]'"`;
+exports[`Scope #getSegmentIdByPointer segment selection should throw error when not found from parent 1`] = `"Pointer 'myPointer' does not exist in file File_1"`;

@@ -32,7 +32,7 @@ const logError = (e) => {
 pleaseUpgradeNode(pkg);
 
 const argv = minimist(process.argv.slice(2));
-const [ entry ] = argv._;
+const [entry] = argv._;
 
 try {
 

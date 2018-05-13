@@ -17,30 +17,26 @@ const analyse = fileSrc => {
   const rootScope = new Scope(entities.start, entities.end, { file: createId('File') });
 
   body.forEach(item => {
-    if (item.type === 'VariableDeclaration') {
-      const id = createId(item.type);
-      const segment = {
-        start: item.start,
-        end: item.end,
-        uses: [],
-        id
-      };
 
-      rootScope.pointers[item.declarations[0].id.name] = segment.id;
-      rootScope.segments[segment.id] = segment;
+    const {
+      start,
+      type,
+      end
+    } = item;
+
+    const id = createId(type);
+
+    if (item.type === 'VariableDeclaration') {
+      const pointer = item.declarations[0].id.name;
+      rootScope.addSegment(id, start, end, { pointer });
     }
 
     if (item.type === 'ExportNamedDeclaration') {
-      const id = createId(item.type);
-      const segment = {
-        start: item.start,
-        end: item.end,
-        uses: [ rootScope.pointers[item.specifiers[0].exported.name] ],
-        id
-      };
-
-      rootScope.segments[segment.id] = segment;
-      rootScope.exposes[item.specifiers[0].exported.name] = segment.id;
+      const exported = item.specifiers[0].exported.name;
+      rootScope.addSegment(id, start, end, {
+        inputs: [exported],
+        exposes: [exported]
+      });
     }
   });
 

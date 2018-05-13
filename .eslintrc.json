@@ -12,7 +12,7 @@
   "rules": {
     "accessor-pairs": "error",
     "array-bracket-newline": "error",
-    "array-bracket-spacing": ["error", "always"],
+    "array-bracket-spacing": "error",
     "array-callback-return": "error",
     "array-element-newline": "error",
     "arrow-body-style": ["off"],
@@ -28,7 +28,7 @@
     "block-spacing": "error",
     "brace-style": "error",
     "callback-return": "error",
-    "camelcase": "error",
+    "camelcase": "off",
     "capitalized-comments": [
       "error",
       "always"
@@ -101,7 +101,7 @@
     "max-len": "off",
     "max-lines": "error",
     "max-nested-callbacks": "error",
-    "max-params": "error",
+    "max-params": "off",
     "max-statements": "off",
     "max-statements-per-line": "error",
     "multiline-comment-style": [

@@ -14,13 +14,15 @@ exports[`regana #analyse analyse should throw error with invalid input 6`] = `"p
 
 exports[`regana #analyse analyse should work with valid input 1`] = `
 "{
+  \\"start\\": 0,
+  \\"end\\": 21,
   \\"parentScope\\": null,
   \\"file\\": \\"File_0\\",
   \\"segments\\": {
     \\"VariableDeclaration_1\\": {
+      \\"uses\\": [],
       \\"start\\": 1,
       \\"end\\": 21,
-      \\"uses\\": [],
       \\"id\\": \\"VariableDeclaration_1\\"
     }
   },
@@ -33,21 +35,23 @@ exports[`regana #analyse analyse should work with valid input 1`] = `
 
 exports[`regana #analyse analyse should work with valid input 2`] = `
 "{
+  \\"start\\": 0,
+  \\"end\\": 32,
   \\"parentScope\\": null,
   \\"file\\": \\"File_2\\",
   \\"segments\\": {
     \\"VariableDeclaration_3\\": {
+      \\"uses\\": [],
       \\"start\\": 0,
       \\"end\\": 15,
-      \\"uses\\": [],
       \\"id\\": \\"VariableDeclaration_3\\"
     },
     \\"ExportNamedDeclaration_4\\": {
-      \\"start\\": 16,
-      \\"end\\": 32,
       \\"uses\\": [
         \\"VariableDeclaration_3\\"
       ],
+      \\"start\\": 16,
+      \\"end\\": 32,
       \\"id\\": \\"ExportNamedDeclaration_4\\"
     }
   },
