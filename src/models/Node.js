@@ -6,19 +6,10 @@ const asStringValue = require('../utils/asStringValue');
  */
 class Node {
 
-  /**
-   * Create unique id for this node
-   * @return {string} Unique id.
-   */
   static createId () {
     return require('uniqid')('node-');
   }
 
-  /**
-   * Check if id is valid Node id
-   * @param {string} id - Id to verify
-   * @return {boolean} if value is valid node id
-   */
   static isValidId (id) {
 
     if (typeof id !== 'string') {
@@ -35,11 +26,6 @@ class Node {
     return true;
   }
 
-  /**
-   * Check if file source is valid
-   * @param {string} file - file to verify
-   * @return {boolean} if value is valid file
-   */
   static isValidFile (file) {
 
     if (typeof file !== 'string') {
@@ -56,11 +42,6 @@ class Node {
     return true;
   }
 
-  /**
-   * Check if node interface is valid
-   * @param {object} nodeInterface - value to check
-   * @return {boolean} if value is node interface
-   */
   static isValidNodeInterface (nodeInterface) {
 
     if (!nodeInterface) {
@@ -76,10 +57,14 @@ class Node {
 
   /**
    * Create a node.
-   * @param {string} parentId - Id of parent node
-   * @param {string} file - Path to file which contains this node
-   * @param {object} nodeInterface - Declaration entity which must follow format
-   * of babylon parser ES tree (see more from https://bit.ly/2I2Thnf)
+   *
+   * @param {string} parentId - Id of parent node.
+   * @param {string} file - Path to file which contains this node.
+   * @param {Object} nodeInterface - Declaration entity which must follow format
+   * of babylon parser ES tree (see more from https://bit.ly/2I2Thnf).
+   *
+   * @example
+   * new Node('Node_1', 'path/to/file', entity);
    */
   constructor (parentId, file, nodeInterface) {
 

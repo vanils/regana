@@ -6,33 +6,33 @@ describe('regana', () => {
   describe('#analyse', () => {
 
     test('should expose proper properties', () => {
-      expect(regana.analyse).toBeDefined();
+      expect(regana.analyseFile).toBeDefined();
     });
 
     test('analyse should throw error with invalid input', () => {
       expect(() => {
-        regana.analyse();
+        regana.analyseFile();
       }).toThrowErrorMatchingSnapshot();
       expect(() => {
-        regana.analyse(null);
+        regana.analyseFile(null);
       }).toThrowErrorMatchingSnapshot();
       expect(() => {
-        regana.analyse(NaN);
+        regana.analyseFile(NaN);
       }).toThrowErrorMatchingSnapshot();
       expect(() => {
-        regana.analyse('');
+        regana.analyseFile('');
       }).toThrowErrorMatchingSnapshot();
       expect(() => {
-        regana.analyse({});
+        regana.analyseFile({});
       }).toThrowErrorMatchingSnapshot();
       expect(() => {
-        regana.analyse([]);
+        regana.analyseFile([]);
       }).toThrowErrorMatchingSnapshot();
     });
 
     test('analyse should work with valid input', () => {
-      expect(regana.analyse(path.resolve(__dirname, './mocks/file1.js'))).toMatchSnapshot();
-      expect(regana.analyse(path.resolve(__dirname, './mocks/file2.js'))).toMatchSnapshot();
+      expect(regana.analyseFile(path.resolve(__dirname, './mocks/file1.js'))).toMatchSnapshot();
+      expect(regana.analyseFile(path.resolve(__dirname, './mocks/file2.js'))).toMatchSnapshot();
     });
   });
 });

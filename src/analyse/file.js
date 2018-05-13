@@ -3,44 +3,27 @@ const readFile = require('../utils/readFile');
 const entitify = require('../utils/entitify');
 const createId = require('../utils/createId');
 const Scope = require('../models/Scope');
+const analyseBody = require('./body');
 
 /**
- * Analyse a file
- * @memberof commands
+ * Analyse a file and format into logical flow breakdown.
+ *
+ * @memberof analyse
+ * @param {string} fileSrc - Path to file to analyse.
+ *
+ * @example
+ * analyseFile('/path/to/file.js');  // return analyse
  */
-const analyse = fileSrc => {
+const analyseFile = fileSrc => {
 
   const content = readFile(fileSrc);
   const entities = entitify(content);
   const { body } = entities.program;
+  const { start, end } = entities;
+  const rootScope = new Scope(start, end, { file: createId('File') });
+  const scope = analyseBody(start, end, body, rootScope);
 
-  const rootScope = new Scope(entities.start, entities.end, { file: createId('File') });
-
-  body.forEach(item => {
-
-    const {
-      start,
-      type,
-      end
-    } = item;
-
-    const id = createId(type);
-
-    if (item.type === 'VariableDeclaration') {
-      const pointer = item.declarations[0].id.name;
-      rootScope.addSegment(id, start, end, { pointer });
-    }
-
-    if (item.type === 'ExportNamedDeclaration') {
-      const exported = item.specifiers[0].exported.name;
-      rootScope.addSegment(id, start, end, {
-        inputs: [exported],
-        exposes: [exported]
-      });
-    }
-  });
-
-  return JSON.stringify(rootScope, null, 2);
+  return JSON.stringify(scope, null, 2);
 };
 
-module.exports = analyse;
+module.exports = analyseFile;

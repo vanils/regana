@@ -7,18 +7,13 @@ const asStringValue = require('../utils/asStringValue');
  */
 class Vector {
 
-  /**
-   * Check if file source is valid
-   * @param {string} file - file to verify
-   * @return {boolean} if value is valid file
-   */
-  static isValidNode (node) {
+  static isValidNode (value) {
 
-    if (!node) {
+    if (!value) {
       return false;
     }
 
-    if (node instanceof Node) {
+    if (value instanceof Node) {
       return true;
     }
 
@@ -43,10 +38,14 @@ class Vector {
 
   /**
    * Create a Vector between nodes.
-   * @param {Node} fromNode - Source node of connection
-   * @param {Node} toNode - Target node of connection
+   *
+   * @param {Node} fromNode - Source node of connection.
+   * @param {Node} toNode - Target node of connection.
    * @param {number} magnitude - Factor which represents numeric value for
    * distance between nodes.
+   *
+   * @example
+   * new Vector(fromNode, toNode, 0.5)
    */
   constructor (fromNode, toNode, magnitude) {
 
