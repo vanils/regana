@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: utils/validate/isFile.js</title>
+    <title>JSDoc: Source: utils/validate/isId.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: utils/validate/isFile.js</h1>
+    <h1 class="page-title">Source: utils/validate/isId.js</h1>
 
     
 
@@ -28,18 +28,14 @@
         <article>
             <pre class="prettyprint source linenums"><code>
 /**
- * Check if value is proper file id
+ * Check if value is id
  * @memberof utils.validate
  */
-const isFile = (value) => {
-
-  /*
-   * TODO - better check
-   */
-  return typeof value === 'string' &amp;&amp; Boolean(value);
+const isId = (value) => {
+  return typeof value === 'string' &amp;&amp; value.length > 0;
 };
 
-module.exports = isFile;</code></pre>
+module.exports = isId;</code></pre>
         </article>
     </section>
 

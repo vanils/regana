@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: utils/validate/isFile.js</title>
+    <title>JSDoc: Source: utils/validate/isWithinRange.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: utils/validate/isFile.js</h1>
+    <h1 class="page-title">Source: utils/validate/isWithinRange.js</h1>
 
     
 
@@ -27,19 +27,19 @@
     <section>
         <article>
             <pre class="prettyprint source linenums"><code>
-/**
- * Check if value is proper file id
- * @memberof utils.validate
- */
-const isFile = (value) => {
-
-  /*
-   * TODO - better check
-   */
-  return typeof value === 'string' &amp;&amp; Boolean(value);
+const isBetween = (value, min, max) => {
+  return value >= min &amp;&amp; value &lt;= max;
 };
 
-module.exports = isFile;</code></pre>
+/**
+ * Check if values (start and end) are within range of another
+ * @memberof utils.validate
+ */
+const isWithinRange = (xStart, xEnd, yStart, yEnd) => {
+  return isBetween(xStart, yStart, yEnd) &amp;&amp; isBetween(xEnd, yStart, yEnd);
+};
+
+module.exports = isWithinRange;</code></pre>
         </article>
     </section>
 
