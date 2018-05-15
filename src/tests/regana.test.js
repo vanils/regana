@@ -34,5 +34,12 @@ describe('regana', () => {
       expect(regana.analyseFile(path.resolve(__dirname, './mocks/file1.js'))).toMatchSnapshot();
       expect(regana.analyseFile(path.resolve(__dirname, './mocks/file2.js'))).toMatchSnapshot();
     });
+
+    test('analyse should work with variable declarations', () => {
+      expect(regana.analyseFile(path.resolve(__dirname, './mocks/declarations/variable/mock1.js'))).toMatchSnapshot();
+      expect(regana.analyseFile(path.resolve(__dirname, './mocks/declarations/variable/mock2.js'))).toMatchSnapshot();
+      expect(regana.analyseFile(path.resolve(__dirname, './mocks/declarations/variable/mock3.js'))).toMatchSnapshot();
+      expect(regana.analyseFile(path.resolve(__dirname, './mocks/declarations/variable/mock4.js'))).toMatchSnapshot();
+    });
   });
 });

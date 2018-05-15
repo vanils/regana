@@ -3,16 +3,22 @@ const createId = require('../../../utils/createId');
 
 const analyseVariable = (entity, scope) => {
 
-  const {
-    start,
-    type,
-    end
-  } = entity;
+  entity.declarations.forEach(declarator => {
 
-  const id = createId(type);
-  const pointer = entity.declarations[0].id.name;
+    const {
+      start,
+      type,
+      end
+    } = declarator;
 
-  scope.addSegment(id, start, end, { pointer });
+    const id = createId(type);
+    const pointer = declarator.id.name;
+
+    // TODO - handle init property
+
+    scope.addSegment(id, start, end, { pointer });
+
+  });
 };
 
 module.exports = analyseVariable;
