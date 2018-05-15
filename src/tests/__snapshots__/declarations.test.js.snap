@@ -1,0 +1,164 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`regana #analyse #declarations analyse should work with variable declarations 1`] = `
+"{
+  \\"start\\": 0,
+  \\"end\\": 14,
+  \\"parentScope\\": {
+    \\"start\\": 0,
+    \\"end\\": 14,
+    \\"parentScope\\": null,
+    \\"file\\": \\"File_0\\",
+    \\"segments\\": {},
+    \\"exposes\\": {},
+    \\"pointers\\": {}
+  },
+  \\"file\\": \\"File_0\\",
+  \\"segments\\": {
+    \\"NumericLiteral_2\\": {
+      \\"uses\\": [],
+      \\"start\\": 12,
+      \\"end\\": 13,
+      \\"id\\": \\"NumericLiteral_2\\"
+    },
+    \\"VariableDeclarator_1\\": {
+      \\"uses\\": [
+        \\"NumericLiteral_2\\"
+      ],
+      \\"start\\": 5,
+      \\"end\\": 13,
+      \\"id\\": \\"VariableDeclarator_1\\"
+    }
+  },
+  \\"exposes\\": {},
+  \\"pointers\\": {
+    \\"test\\": \\"VariableDeclarator_1\\"
+  }
+}"
+`;
+
+exports[`regana #analyse #declarations analyse should work with variable declarations 2`] = `
+"{
+  \\"start\\": 0,
+  \\"end\\": 14,
+  \\"parentScope\\": {
+    \\"start\\": 0,
+    \\"end\\": 14,
+    \\"parentScope\\": null,
+    \\"file\\": \\"File_3\\",
+    \\"segments\\": {},
+    \\"exposes\\": {},
+    \\"pointers\\": {}
+  },
+  \\"file\\": \\"File_3\\",
+  \\"segments\\": {
+    \\"NumericLiteral_5\\": {
+      \\"uses\\": [],
+      \\"start\\": 12,
+      \\"end\\": 13,
+      \\"id\\": \\"NumericLiteral_5\\"
+    },
+    \\"VariableDeclarator_4\\": {
+      \\"uses\\": [
+        \\"NumericLiteral_5\\"
+      ],
+      \\"start\\": 5,
+      \\"end\\": 13,
+      \\"id\\": \\"VariableDeclarator_4\\"
+    }
+  },
+  \\"exposes\\": {},
+  \\"pointers\\": {
+    \\"test\\": \\"VariableDeclarator_4\\"
+  }
+}"
+`;
+
+exports[`regana #analyse #declarations analyse should work with variable declarations 3`] = `
+"{
+  \\"start\\": 0,
+  \\"end\\": 16,
+  \\"parentScope\\": {
+    \\"start\\": 0,
+    \\"end\\": 16,
+    \\"parentScope\\": null,
+    \\"file\\": \\"File_6\\",
+    \\"segments\\": {},
+    \\"exposes\\": {},
+    \\"pointers\\": {}
+  },
+  \\"file\\": \\"File_6\\",
+  \\"segments\\": {
+    \\"NumericLiteral_8\\": {
+      \\"uses\\": [],
+      \\"start\\": 14,
+      \\"end\\": 15,
+      \\"id\\": \\"NumericLiteral_8\\"
+    },
+    \\"VariableDeclarator_7\\": {
+      \\"uses\\": [
+        \\"NumericLiteral_8\\"
+      ],
+      \\"start\\": 7,
+      \\"end\\": 15,
+      \\"id\\": \\"VariableDeclarator_7\\"
+    }
+  },
+  \\"exposes\\": {},
+  \\"pointers\\": {
+    \\"test\\": \\"VariableDeclarator_7\\"
+  }
+}"
+`;
+
+exports[`regana #analyse #declarations analyse should work with variable declarations 4`] = `
+"{
+  \\"start\\": 0,
+  \\"end\\": 29,
+  \\"parentScope\\": {
+    \\"start\\": 0,
+    \\"end\\": 29,
+    \\"parentScope\\": null,
+    \\"file\\": \\"File_9\\",
+    \\"segments\\": {},
+    \\"exposes\\": {},
+    \\"pointers\\": {}
+  },
+  \\"file\\": \\"File_9\\",
+  \\"segments\\": {
+    \\"NumericLiteral_11\\": {
+      \\"uses\\": [],
+      \\"start\\": 14,
+      \\"end\\": 15,
+      \\"id\\": \\"NumericLiteral_11\\"
+    },
+    \\"VariableDeclarator_10\\": {
+      \\"uses\\": [
+        \\"NumericLiteral_11\\"
+      ],
+      \\"start\\": 7,
+      \\"end\\": 15,
+      \\"id\\": \\"VariableDeclarator_10\\"
+    },
+    \\"NumericLiteral_13\\": {
+      \\"uses\\": [],
+      \\"start\\": 27,
+      \\"end\\": 28,
+      \\"id\\": \\"NumericLiteral_13\\"
+    },
+    \\"VariableDeclarator_12\\": {
+      \\"uses\\": [
+        \\"NumericLiteral_13\\"
+      ],
+      \\"start\\": 17,
+      \\"end\\": 28,
+      \\"id\\": \\"VariableDeclarator_12\\"
+    }
+  },
+  \\"exposes\\": {},
+  \\"pointers\\": {
+    \\"test\\": \\"VariableDeclarator_10\\",
+    \\"another\\": \\"VariableDeclarator_12\\"
+  }
+}"
+`;

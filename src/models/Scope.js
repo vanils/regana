@@ -129,8 +129,10 @@ class Scope {
    * @param {number} start - Index of first character of this segment.
    * @param {number} end - Index of first character after this segment.
    * @param {Object} options - Optional parameters.
-   * @param {Scope} [options.inputs] - Array of inputs needed for this segment.
-   * Basically this means variables which this segment is using.
+   * @param {Scope} [options.uses] - Array of other segments which should be
+   * considered as part of this segment.
+   * @param {Scope} [options.usesPointers] - Array of pointers needed for
+   * this segment. Basically this means variables which this segment is using.
    * @param {Scope} [options.pointer] - If this segment is going to create a new
    * variable this would be the pointer to it.
    * @param {Scope} [options.exposes] - If this segment is going to expose
@@ -142,7 +144,8 @@ class Scope {
   addSegment (id, start, end, options = {}) {
 
     const {
-      inputs = [],
+      uses = [],
+      usesPointers = [],
       exposes = [],
       pointer = null
     } = options;
@@ -164,7 +167,7 @@ class Scope {
     }
 
     const segment = {
-      uses: inputs.map(input => this.getSegmentIdByPointer(input)),
+      uses: uses.concat(usesPointers.map(input => this.getSegmentIdByPointer(input))),
       start,
       end,
       id

@@ -13,9 +13,11 @@ const analyseExportNamed = (entity, scope) => {
   const exported = entity.specifiers[0].exported.name;
 
   scope.addSegment(id, start, end, {
-    inputs: [exported],
+    usesPointers: [exported],
     exposes: [exported]
   });
+
+  return [id];
 };
 
 module.exports = analyseExportNamed;
