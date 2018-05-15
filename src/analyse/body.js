@@ -1,8 +1,7 @@
 
 const Scope = require('../models/Scope');
 
-const analyseVariable = require('./types/declarations/variable');
-const analyseExportNamed = require('./types/modules/exports/exportNamed');
+const analyseNode = require('./node');
 
 /**
  * Analyse a body block.
@@ -21,16 +20,7 @@ const analyseBody = (start, end, body, parentScope) => {
 
   const scope = new Scope(start, end, { parentScope });
 
-  body.forEach(item => {
-    switch (item.type) {
-      case 'VariableDeclaration':
-        return analyseVariable(item, scope);
-      case 'ExportNamedDeclaration':
-        return analyseExportNamed(item, scope);
-      default:
-        throw new Error(`Failed to parse, unknown entity type '${item.type}'`);
-    }
-  });
+  body.forEach(item => analyseNode(item, scope));
 
   return scope;
 };
