@@ -1,6 +1,5 @@
 
 const createId = require('../../../utils/createId');
-const analyseNode = require('../../node');
 
 const analyseVariable = (entity, scope) => {
 
