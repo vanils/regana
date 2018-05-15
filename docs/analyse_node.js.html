@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: utils/validate/isFile.js</title>
+    <title>JSDoc: Source: analyse/node.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: utils/validate/isFile.js</h1>
+    <h1 class="page-title">Source: analyse/node.js</h1>
 
     
 
@@ -27,25 +27,38 @@
     <section>
         <article>
             <pre class="prettyprint source linenums"><code>
-/**
- * Check if value is proper file id.
- *
- * @memberof utils.validate
- * @param {*} value - Value to test.
- *
- * @example
- * isFile('File_1');  // true
- * isFile(null);      // false
- */
-const isFile = (value) => {
+const analyseVariable = require('./types/declarations/variable');
+const analyseExportNamed = require('./types/modules/exports/exportNamed');
 
-  /*
-   * TODO - better check
-   */
-  return typeof value === 'string' &amp;&amp; Boolean(value);
+/*
+ * Helper to find correct analyser
+ */
+const getAnalyser = node => {
+  switch (node.type) {
+    case 'VariableDeclaration':
+      return analyseVariable;
+    case 'ExportNamedDeclaration':
+      return analyseExportNamed;
+    default:
+      throw new Error(`Failed to parse, unknown entity type '${node.type}'`);
+  }
 };
 
-module.exports = isFile;</code></pre>
+/**
+ * Analyse a single node. Can be considered as router for other node types.
+ *
+ * @memberof analyse
+ * @param {Object} node - Node to be analysed.
+ * @param {Scope} scope - Scope attached to this node.
+ *
+ * @example
+ * analyseNode(node, scope);  // returns analyse
+ */
+const analyseNode = (node, scope) => {
+  getAnalyser(node)(node, scope);
+};
+
+module.exports = analyseNode;</code></pre>
         </article>
     </section>
 
