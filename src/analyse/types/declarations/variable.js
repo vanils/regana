@@ -1,9 +1,10 @@
 
 const createId = require('../../../utils/createId');
+const analyseNode = require('../../node');
 
 const analyseVariable = (entity, scope) => {
 
-  entity.declarations.forEach(declarator => {
+  return entity.declarations.map(declarator => {
 
     const {
       start,
@@ -13,11 +14,14 @@ const analyseVariable = (entity, scope) => {
 
     const id = createId(type);
     const pointer = declarator.id.name;
+    const uses = analyseNode(declarator.init, scope);
 
-    // TODO - handle init property
+    scope.addSegment(id, start, end, {
+      pointer,
+      uses
+    });
 
-    scope.addSegment(id, start, end, { pointer });
-
+    return id;
   });
 };
 

@@ -63,7 +63,7 @@ module.exports = (Scope) => {
     rootScope.addSegment('Segment_1', 10, 50, { pointer: 'myPointer' });
 
     rootScope.addSegment('Segment_2', 60, 70, {
-      inputs: ['myPointer'],
+      usesPointers: ['myPointer'],
       exposes: ['myPointer']
     });
 

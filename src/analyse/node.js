@@ -1,33 +1,34 @@
 
-const analyseVariable = require('./types/declarations/variable');
-const analyseExportNamed = require('./types/modules/exports/exportNamed');
-
-/*
- * Helper to find correct analyser
- */
-const getAnalyser = node => {
-  switch (node.type) {
-    case 'VariableDeclaration':
-      return analyseVariable;
-    case 'ExportNamedDeclaration':
-      return analyseExportNamed;
-    default:
-      throw new Error(`Failed to parse, unknown entity type '${node.type}'`);
-  }
-};
-
 /**
  * Analyse a single node. Can be considered as router for other node types.
  *
  * @memberof analyse
  * @param {Object} node - Node to be analysed.
  * @param {Scope} scope - Scope attached to this node.
+ * @returns {Array} Array of ids for segment.
  *
  * @example
  * analyseNode(node, scope);  // returns analyse
  */
 const analyseNode = (node, scope) => {
-  getAnalyser(node)(node, scope);
+  switch (node.type) {
+    case 'RegExpLiteral':
+      return require('./types/literals/regex')(node, scope);
+    case 'NullLiteral':
+      return require('./types/literals/null')(node, scope);
+    case 'StringLiteral':
+      return require('./types/literals/string')(node, scope);
+    case 'BooleanLiteral':
+      return require('./types/literals/boolean')(node, scope);
+    case 'NumericLiteral':
+      return require('./types/literals/numeric')(node, scope);
+    case 'VariableDeclaration':
+      return require('./types/declarations/variable')(node, scope);
+    case 'ExportNamedDeclaration':
+      return require('./types/modules/exports/exportNamed')(node, scope);
+    default:
+      throw new Error(`Failed to parse, unknown entity type '${node.type}'`);
+  }
 };
 
 module.exports = analyseNode;
