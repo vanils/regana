@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: analyse/body.js</title>
+    <title>JSDoc: Source: store/files.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: analyse/body.js</h1>
+    <h1 class="page-title">Source: store/files.js</h1>
 
     
 
@@ -27,33 +27,49 @@
     <section>
         <article>
             <pre class="prettyprint source linenums"><code>
+const readFile = require('../utils/readFile');
+const entitify = require('../utils/entitify');
+const createId = require('../utils/createId');
 const Scope = require('../models/Scope');
+const analyseBody = require('./body');
 
-const analyseNode = require('./node');
+const cache = [];
 
 /**
- * Analyse a body block.
+ * Storage for files
  *
- * @memberof analyse
- * @param {number} start - First character of this body.
- * @param {number} end - First character after this body.
- * @param {Array} body - Array of entities on this body.
- * @param {Scope} parentScope - Parent scope for this body.
- * @returns {Scope} Scope of this body block.
- *
- * @example
- * analyseBody(10, 56, [...], scope);  // returns analyse
+ * @namespace store.file
  */
-const analyseBody = (start, end, body, parentScope) => {
+const files = {
 
-  const scope = new Scope(start, end, { parentScope });
+  /**
+   * Add new file to file store
+   *
+   * @memberof store.file
+   * @param {File} file - File to be added to store.
+   *
+   * @example
+   * files.add(myFile);      // file is now added to storage
+   */
+  add: file => {
+    cache.push(file);
+  },
 
-  body.forEach(item => analyseNode(item, scope));
-
-  return scope;
+  /**
+   * Get file from store by id
+   *
+   * @memberof store.file
+   * @param {File} file - File to be added to store.
+   *
+   * @example
+   * files.add(myFile);      // file is now added to storage
+   */
+  get: id => {
+    return cache.find(file => file.id === id) || null;
+  }
 };
 
-module.exports = analyseBody;</code></pre>
+module.exports = files;</code></pre>
         </article>
     </section>
 

@@ -24,8 +24,14 @@ const analyseNode = (node, scope) => {
       return require('./types/literals/numeric')(node, scope);
     case 'VariableDeclaration':
       return require('./types/declarations/variable')(node, scope);
+    case 'ExpressionStatement':
+      return require('./types/statements/expression')(node, scope);
+    case 'BinaryExpression':
+      return require('./types/expressions/binary')(node, scope);
     case 'ExportNamedDeclaration':
       return require('./types/modules/exports/exportNamed')(node, scope);
+    case 'BinaryOperator':
+      return require('./types/extras/binaryOperator')(node, scope);
     default:
       throw new Error(`Failed to parse, unknown entity type '${node.type}'`);
   }

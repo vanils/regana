@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`regana #analyse #statements analyse should work with variable declarations 1`] = `
+"{
+  \\"start\\": 0,
+  \\"end\\": 27,
+  \\"parentScope\\": {
+    \\"start\\": 0,
+    \\"end\\": 27,
+    \\"parentScope\\": null,
+    \\"file\\": \\"File_0\\",
+    \\"segments\\": {},
+    \\"exposes\\": {},
+    \\"pointers\\": {}
+  },
+  \\"file\\": \\"File_0\\",
+  \\"segments\\": {
+    \\"NumericLiteral_1\\": {
+      \\"uses\\": [],
+      \\"start\\": 0,
+      \\"end\\": 1,
+      \\"id\\": \\"NumericLiteral_1\\"
+    },
+    \\"BinaryOperator_2\\": {
+      \\"uses\\": [],
+      \\"start\\": 2,
+      \\"end\\": 3,
+      \\"id\\": \\"BinaryOperator_2\\"
+    },
+    \\"NumericLiteral_3\\": {
+      \\"uses\\": [],
+      \\"start\\": 4,
+      \\"end\\": 6,
+      \\"id\\": \\"NumericLiteral_3\\"
+    },
+    \\"BinaryOperator_4\\": {
+      \\"uses\\": [],
+      \\"start\\": 7,
+      \\"end\\": 8,
+      \\"id\\": \\"BinaryOperator_4\\"
+    },
+    \\"NumericLiteral_5\\": {
+      \\"uses\\": [],
+      \\"start\\": 11,
+      \\"end\\": 13,
+      \\"id\\": \\"NumericLiteral_5\\"
+    },
+    \\"BinaryOperator_6\\": {
+      \\"uses\\": [],
+      \\"start\\": 14,
+      \\"end\\": 15,
+      \\"id\\": \\"BinaryOperator_6\\"
+    },
+    \\"NumericLiteral_7\\": {
+      \\"uses\\": [],
+      \\"start\\": 15,
+      \\"end\\": 17,
+      \\"id\\": \\"NumericLiteral_7\\"
+    },
+    \\"BinaryOperator_8\\": {
+      \\"uses\\": [],
+      \\"start\\": 17,
+      \\"end\\": 18,
+      \\"id\\": \\"BinaryOperator_8\\"
+    },
+    \\"NumericLiteral_9\\": {
+      \\"uses\\": [],
+      \\"start\\": 18,
+      \\"end\\": 19,
+      \\"id\\": \\"NumericLiteral_9\\"
+    },
+    \\"BinaryOperator_10\\": {
+      \\"uses\\": [],
+      \\"start\\": 19,
+      \\"end\\": 20,
+      \\"id\\": \\"BinaryOperator_10\\"
+    },
+    \\"NumericLiteral_11\\": {
+      \\"uses\\": [],
+      \\"start\\": 20,
+      \\"end\\": 22,
+      \\"id\\": \\"NumericLiteral_11\\"
+    },
+    \\"BinaryOperator_12\\": {
+      \\"uses\\": [],
+      \\"start\\": 22,
+      \\"end\\": 23,
+      \\"id\\": \\"BinaryOperator_12\\"
+    },
+    \\"NumericLiteral_13\\": {
+      \\"uses\\": [],
+      \\"start\\": 24,
+      \\"end\\": 26,
+      \\"id\\": \\"NumericLiteral_13\\"
+    }
+  },
+  \\"exposes\\": {},
+  \\"pointers\\": {}
+}"
+`;

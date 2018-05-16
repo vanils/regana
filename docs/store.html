@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: analyse/body.js</title>
+    <title>JSDoc: Namespace: store</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,45 +17,106 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: analyse/body.js</h1>
+    <h1 class="page-title">Namespace: store</h1>
 
     
 
 
 
+
+<section>
+
+<header>
     
-    <section>
-        <article>
-            <pre class="prettyprint source linenums"><code>
-const Scope = require('../models/Scope');
+        <h2>store</h2>
+        
+    
+</header>
 
-const analyseNode = require('./node');
+<article>
+    <div class="container-overview">
+    
+        
+            <div class="description"><p>Stores</p></div>
+        
 
-/**
- * Analyse a body block.
- *
- * @memberof analyse
- * @param {number} start - First character of this body.
- * @param {number} end - First character after this body.
- * @param {Array} body - Array of entities on this body.
- * @param {Scope} parentScope - Parent scope for this body.
- * @returns {Scope} Scope of this body block.
- *
- * @example
- * analyseBody(10, 56, [...], scope);  // returns analyse
- */
-const analyseBody = (start, end, body, parentScope) => {
+        
 
-  const scope = new Scope(start, end, { parentScope });
 
-  body.forEach(item => analyseNode(item, scope));
+<dl class="details">
 
-  return scope;
-};
+    
 
-module.exports = analyseBody;</code></pre>
-        </article>
-    </section>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="regana.js.html">regana.js</a>, <a href="regana.js.html#line11">line 11</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+    
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Namespaces</h3>
+
+        <dl>
+            <dt><a href="store.file.html">file</a></dt>
+            <dd></dd>
+        </dl>
+    
+
+    
+
+    
+
+    
+
+    
+</article>
+
+</section>
 
 
 
