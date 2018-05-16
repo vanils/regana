@@ -24,6 +24,8 @@ const analyseNode = (node, scope) => {
       return require('./types/literals/numeric')(node, scope);
     case 'VariableDeclaration':
       return require('./types/declarations/variable')(node, scope);
+    case 'EmptyStatement':
+      return require('./types/statements/empty')(node, scope);
     case 'ExpressionStatement':
       return require('./types/statements/expression')(node, scope);
     case 'BinaryExpression':

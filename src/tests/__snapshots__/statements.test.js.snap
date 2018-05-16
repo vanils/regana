@@ -1,6 +1,33 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`regana #analyse #statements analyse should work with variable declarations 1`] = `
+exports[`regana #analyse #statements analyse should work with empty statement 1`] = `
+"{
+  \\"start\\": 0,
+  \\"end\\": 1,
+  \\"parentScope\\": {
+    \\"start\\": 0,
+    \\"end\\": 1,
+    \\"parentScope\\": null,
+    \\"file\\": \\"File_14\\",
+    \\"segments\\": {},
+    \\"exposes\\": {},
+    \\"pointers\\": {}
+  },
+  \\"file\\": \\"File_14\\",
+  \\"segments\\": {
+    \\"EmptyStatement_15\\": {
+      \\"uses\\": [],
+      \\"start\\": 0,
+      \\"end\\": 1,
+      \\"id\\": \\"EmptyStatement_15\\"
+    }
+  },
+  \\"exposes\\": {},
+  \\"pointers\\": {}
+}"
+`;
+
+exports[`regana #analyse #statements analyse should work with expression statement 1`] = `
 "{
   \\"start\\": 0,
   \\"end\\": 27,
