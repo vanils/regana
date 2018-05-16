@@ -9,6 +9,11 @@ const analyseFile = require('./analyse/file');
  */
 
 /**
+ * Stores
+ * @namespace store
+ */
+
+/**
  * Commands
  * @namespace analyse
  */

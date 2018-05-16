@@ -3,6 +3,7 @@ const readFile = require('../utils/readFile');
 const entitify = require('../utils/entitify');
 const createId = require('../utils/createId');
 const Scope = require('../models/Scope');
+const store = require('../store/files');
 const analyseBody = require('./body');
 
 /**
@@ -16,11 +17,19 @@ const analyseBody = require('./body');
  */
 const analyseFile = fileSrc => {
 
+  const id = createId('File');
   const content = readFile(fileSrc);
   const entities = entitify(content);
   const { body } = entities.program;
   const { start, end } = entities;
-  const rootScope = new Scope(start, end, { file: createId('File') });
+
+  store.add({
+    id,
+    content,
+    entities
+  });
+
+  const rootScope = new Scope(start, end, { file: id });
   const scope = analyseBody(start, end, body, rootScope);
 
   return JSON.stringify(scope, null, 2);
