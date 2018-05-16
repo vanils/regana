@@ -162,3 +162,32 @@ exports[`regana #analyse #declarations analyse should work with variable declara
   }
 }"
 `;
+
+exports[`regana #analyse #declarations analyse should work with variable declarations 5`] = `
+"{
+  \\"start\\": 0,
+  \\"end\\": 10,
+  \\"parentScope\\": {
+    \\"start\\": 0,
+    \\"end\\": 10,
+    \\"parentScope\\": null,
+    \\"file\\": \\"File_14\\",
+    \\"segments\\": {},
+    \\"exposes\\": {},
+    \\"pointers\\": {}
+  },
+  \\"file\\": \\"File_14\\",
+  \\"segments\\": {
+    \\"VariableDeclarator_15\\": {
+      \\"uses\\": [],
+      \\"start\\": 5,
+      \\"end\\": 9,
+      \\"id\\": \\"VariableDeclarator_15\\"
+    }
+  },
+  \\"exposes\\": {},
+  \\"pointers\\": {
+    \\"test\\": \\"VariableDeclarator_15\\"
+  }
+}"
+`;
