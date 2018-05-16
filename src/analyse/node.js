@@ -26,6 +26,8 @@ const analyseNode = (node, scope) => {
       return require('./types/declarations/variable')(node, scope);
     case 'ExpressionStatement':
       return require('./types/statements/expression')(node, scope);
+    case 'DebuggerStatement':
+      return require('./types/statements/debugger')(node, scope);
     case 'BinaryExpression':
       return require('./types/expressions/binary')(node, scope);
     case 'ExportNamedDeclaration':

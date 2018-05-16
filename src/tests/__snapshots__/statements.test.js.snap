@@ -1,5 +1,32 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`regana #analyse #statements analyse should work with debugger statement 1`] = `
+"{
+  \\"start\\": 0,
+  \\"end\\": 9,
+  \\"parentScope\\": {
+    \\"start\\": 0,
+    \\"end\\": 9,
+    \\"parentScope\\": null,
+    \\"file\\": \\"File_14\\",
+    \\"segments\\": {},
+    \\"exposes\\": {},
+    \\"pointers\\": {}
+  },
+  \\"file\\": \\"File_14\\",
+  \\"segments\\": {
+    \\"DebuggerStatement_15\\": {
+      \\"uses\\": [],
+      \\"start\\": 0,
+      \\"end\\": 9,
+      \\"id\\": \\"DebuggerStatement_15\\"
+    }
+  },
+  \\"exposes\\": {},
+  \\"pointers\\": {}
+}"
+`;
+
 exports[`regana #analyse #statements analyse should work with variable declarations 1`] = `
 "{
   \\"start\\": 0,

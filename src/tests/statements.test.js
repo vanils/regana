@@ -8,6 +8,9 @@ describe('regana', () => {
       test('analyse should work with variable declarations', () => {
         expect(regana.analyseFile(path.resolve(__dirname, './mocks/statements/expression/mock1.js'))).toMatchSnapshot();
       });
+      test('analyse should work with debugger statement', () => {
+        expect(regana.analyseFile(path.resolve(__dirname, './mocks/statements/debugger/mock1.js'))).toMatchSnapshot();
+      });
     });
   });
 });
