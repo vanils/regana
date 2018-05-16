@@ -14,7 +14,7 @@ const analyseVariable = (entity, scope) => {
 
     const id = createId(type);
     const pointer = declarator.id.name;
-    const uses = analyseNode(declarator.init, scope);
+    const uses = declarator.init ? analyseNode(declarator.init, scope) : [];
 
     scope.addSegment(id, start, end, {
       pointer,
