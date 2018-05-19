@@ -6,7 +6,7 @@
     "node": ">=8"
   },
   "name": "regana",
-  "version": "1.1.14",
+  "version": "1.1.15",
   "description": "Tool to analyse risk for regressions based on git diff",
   "main": "src/regana.js",
   "scripts": {
