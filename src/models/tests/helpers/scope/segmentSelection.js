@@ -6,7 +6,7 @@ module.exports = (Scope) => {
     const rootScope = new Scope(0, 100, { file: 'File_1' });
     rootScope.addSegment('Segment_1', 10, 50, { pointer: 'myPointer' });
 
-    expect(rootScope.getSegmentIdByPointer('myPointer')).toEqual('Segment_1');
+    expect(rootScope.getSegmentIdsByPointer('myPointer')).toEqual(['Segment_1']);
   });
 
   test('segment selection should work from parent scope', () => {
@@ -17,26 +17,6 @@ module.exports = (Scope) => {
     const childScope1 = new Scope(0, 100, { parentScope: rootScope });
     const childScope2 = new Scope(0, 100, { parentScope: childScope1 });
 
-    expect(childScope2.getSegmentIdByPointer('myPointer')).toEqual('Segment_1');
-  });
-
-  test('segment selection should throw error when not found', () => {
-
-    const rootScope = new Scope(0, 100, { file: 'File_1' });
-
-    expect(() => {
-      rootScope.getSegmentIdByPointer('myPointer');
-    }).toThrowErrorMatchingSnapshot();
-  });
-
-  test('segment selection should throw error when not found from parent', () => {
-
-    const rootScope = new Scope(0, 100, { file: 'File_1' });
-    const childScope1 = new Scope(0, 100, { parentScope: rootScope });
-    const childScope2 = new Scope(0, 100, { parentScope: childScope1 });
-
-    expect(() => {
-      childScope2.getSegmentIdByPointer('myPointer');
-    }).toThrowErrorMatchingSnapshot();
+    expect(childScope2.getSegmentIdsByPointer('myPointer')).toEqual(['Segment_1']);
   });
 };

@@ -3,8 +3,8 @@ const readFile = require('../utils/readFile');
 const entitify = require('../utils/entitify');
 const createId = require('../utils/createId');
 const Scope = require('../models/Scope');
-const store = require('../store/files');
-const analyseBody = require('./body');
+const fileStore = require('../store/files');
+const analyseNode = require('./node');
 
 /**
  * Analyse a file and format into logical flow breakdown.
@@ -23,16 +23,17 @@ const analyseFile = fileSrc => {
   const { body } = entities.program;
   const { start, end } = entities;
 
-  store.add({
+  fileStore.add({
     id,
     content,
     entities
   });
 
-  const rootScope = new Scope(start, end, { file: id });
-  const scope = analyseBody(start, end, body, rootScope);
+  const scope = new Scope(start, end, { file: id });
 
-  return JSON.stringify(scope, null, 2);
+  body.forEach(item => analyseNode(item, scope));
+
+  return scope;
 };
 
 module.exports = analyseFile;

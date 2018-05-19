@@ -89,7 +89,3 @@ exports[`Scope #constructor should throw error with parent scope with invalid st
 exports[`Scope #constructor should throw error with parent scope with invalid start and end 3`] = `"Scope not within the parent scope"`;
 
 exports[`Scope #constructor should throw error with parent scope with invalid start and end 4`] = `"Scope not within the parent scope"`;
-
-exports[`Scope #getSegmentIdByPointer segment selection should throw error when not found 1`] = `"Pointer 'myPointer' does not exist in file File_1"`;
-
-exports[`Scope #getSegmentIdByPointer segment selection should throw error when not found from parent 1`] = `"Pointer 'myPointer' does not exist in file File_1"`;
