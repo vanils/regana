@@ -17,6 +17,12 @@ describe('regana', () => {
       test('analyse should work with with statement', () => {
         expect(regana.analyse(path.resolve(__dirname, './mocks/statements/with/mock1.js'))).toMatchSnapshot();
       });
+      test('analyse should work with return statement', () => {
+        expect(regana.analyse(path.resolve(__dirname, './mocks/statements/controlFlow/return.js'))).toMatchSnapshot();
+      });
+      test('analyse should work with labeled statement', () => {
+        expect(regana.analyse(path.resolve(__dirname, './mocks/statements/controlFlow/labeled.js'))).toMatchSnapshot();
+      });
     });
   });
 });

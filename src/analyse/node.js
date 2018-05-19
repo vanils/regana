@@ -26,6 +26,14 @@ const analyseNode = (node, scope) => {
       return require('./types/literals/numeric')(node, scope);
     case 'VariableDeclaration':
       return require('./types/declarations/variable')(node, scope);
+    case 'ReturnStatement':
+      return require('./types/statements/controlFlow/return')(node, scope);
+    case 'LabeledStatement':
+      return require('./types/statements/controlFlow/labeled')(node, scope);
+    case 'BreakStatement':
+      return require('./types/statements/controlFlow/break')(node, scope);
+    case 'ContinueStatement':
+      return require('./types/statements/controlFlow/continue')(node, scope);
     case 'BlockStatement':
       return require('./types/statements/block')(node, scope);
     case 'EmptyStatement':

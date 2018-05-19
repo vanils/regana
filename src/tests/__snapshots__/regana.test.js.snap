@@ -39,6 +39,7 @@ exports[`regana #analyse analyse should work with valid input 1`] = `
     \\"pointers\\": {
       \\"testValue\\": \\"VariableDeclarator_7\\"
     },
+    \\"labels\\": {},
     \\"withSegments\\": []
   }
 ]"
@@ -71,6 +72,7 @@ exports[`regana #analyse analyse should work with valid input 2`] = `
     \\"pointers\\": {
       \\"testValue\\": \\"VariableDeclarator_7\\"
     },
+    \\"labels\\": {},
     \\"withSegments\\": []
   },
   {
@@ -108,6 +110,7 @@ exports[`regana #analyse analyse should work with valid input 2`] = `
     \\"pointers\\": {
       \\"test\\": \\"VariableDeclarator_10\\"
     },
+    \\"labels\\": {},
     \\"withSegments\\": []
   }
 ]"

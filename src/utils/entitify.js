@@ -13,6 +13,7 @@ const babylon = require('babylon');
 const entitify = content => {
 
   const options = {
+    allowReturnOutsideFunction: true,
     sourceType: 'module',
     strictMode: false,
     tokens: false,

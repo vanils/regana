@@ -27,6 +27,7 @@ exports[`regana #analyse #declarations analyse should work with variable declara
     \\"pointers\\": {
       \\"test\\": \\"VariableDeclarator_1\\"
     },
+    \\"labels\\": {},
     \\"withSegments\\": []
   }
 ]"
@@ -59,6 +60,7 @@ exports[`regana #analyse #declarations analyse should work with variable declara
     \\"pointers\\": {
       \\"test\\": \\"VariableDeclarator_1\\"
     },
+    \\"labels\\": {},
     \\"withSegments\\": []
   },
   {
@@ -86,6 +88,7 @@ exports[`regana #analyse #declarations analyse should work with variable declara
     \\"pointers\\": {
       \\"test\\": \\"VariableDeclarator_4\\"
     },
+    \\"labels\\": {},
     \\"withSegments\\": []
   }
 ]"
@@ -118,6 +121,7 @@ exports[`regana #analyse #declarations analyse should work with variable declara
     \\"pointers\\": {
       \\"test\\": \\"VariableDeclarator_1\\"
     },
+    \\"labels\\": {},
     \\"withSegments\\": []
   },
   {
@@ -145,6 +149,7 @@ exports[`regana #analyse #declarations analyse should work with variable declara
     \\"pointers\\": {
       \\"test\\": \\"VariableDeclarator_4\\"
     },
+    \\"labels\\": {},
     \\"withSegments\\": []
   },
   {
@@ -172,6 +177,7 @@ exports[`regana #analyse #declarations analyse should work with variable declara
     \\"pointers\\": {
       \\"test\\": \\"VariableDeclarator_7\\"
     },
+    \\"labels\\": {},
     \\"withSegments\\": []
   }
 ]"
@@ -204,6 +210,7 @@ exports[`regana #analyse #declarations analyse should work with variable declara
     \\"pointers\\": {
       \\"test\\": \\"VariableDeclarator_1\\"
     },
+    \\"labels\\": {},
     \\"withSegments\\": []
   },
   {
@@ -231,6 +238,7 @@ exports[`regana #analyse #declarations analyse should work with variable declara
     \\"pointers\\": {
       \\"test\\": \\"VariableDeclarator_4\\"
     },
+    \\"labels\\": {},
     \\"withSegments\\": []
   },
   {
@@ -258,6 +266,7 @@ exports[`regana #analyse #declarations analyse should work with variable declara
     \\"pointers\\": {
       \\"test\\": \\"VariableDeclarator_7\\"
     },
+    \\"labels\\": {},
     \\"withSegments\\": []
   },
   {
@@ -300,6 +309,7 @@ exports[`regana #analyse #declarations analyse should work with variable declara
       \\"test\\": \\"VariableDeclarator_10\\",
       \\"another\\": \\"VariableDeclarator_12\\"
     },
+    \\"labels\\": {},
     \\"withSegments\\": []
   }
 ]"
@@ -332,6 +342,7 @@ exports[`regana #analyse #declarations analyse should work with variable declara
     \\"pointers\\": {
       \\"test\\": \\"VariableDeclarator_1\\"
     },
+    \\"labels\\": {},
     \\"withSegments\\": []
   },
   {
@@ -359,6 +370,7 @@ exports[`regana #analyse #declarations analyse should work with variable declara
     \\"pointers\\": {
       \\"test\\": \\"VariableDeclarator_4\\"
     },
+    \\"labels\\": {},
     \\"withSegments\\": []
   },
   {
@@ -386,6 +398,7 @@ exports[`regana #analyse #declarations analyse should work with variable declara
     \\"pointers\\": {
       \\"test\\": \\"VariableDeclarator_7\\"
     },
+    \\"labels\\": {},
     \\"withSegments\\": []
   },
   {
@@ -428,6 +441,7 @@ exports[`regana #analyse #declarations analyse should work with variable declara
       \\"test\\": \\"VariableDeclarator_10\\",
       \\"another\\": \\"VariableDeclarator_12\\"
     },
+    \\"labels\\": {},
     \\"withSegments\\": []
   },
   {
@@ -447,6 +461,7 @@ exports[`regana #analyse #declarations analyse should work with variable declara
     \\"pointers\\": {
       \\"test\\": \\"VariableDeclarator_15\\"
     },
+    \\"labels\\": {},
     \\"withSegments\\": []
   }
 ]"

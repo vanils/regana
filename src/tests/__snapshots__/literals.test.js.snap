@@ -27,6 +27,7 @@ exports[`regana #analyse #literals analyse should work with boolean literal 1`] 
     \\"pointers\\": {
       \\"test\\": \\"VariableDeclarator_1\\"
     },
+    \\"labels\\": {},
     \\"withSegments\\": []
   }
 ]"
@@ -59,6 +60,7 @@ exports[`regana #analyse #literals analyse should work with null literal 1`] = `
     \\"pointers\\": {
       \\"test\\": \\"VariableDeclarator_1\\"
     },
+    \\"labels\\": {},
     \\"withSegments\\": []
   },
   {
@@ -86,6 +88,7 @@ exports[`regana #analyse #literals analyse should work with null literal 1`] = `
     \\"pointers\\": {
       \\"test\\": \\"VariableDeclarator_4\\"
     },
+    \\"labels\\": {},
     \\"withSegments\\": []
   }
 ]"
@@ -118,6 +121,7 @@ exports[`regana #analyse #literals analyse should work with numeric literal 1`] 
     \\"pointers\\": {
       \\"test\\": \\"VariableDeclarator_1\\"
     },
+    \\"labels\\": {},
     \\"withSegments\\": []
   },
   {
@@ -145,6 +149,7 @@ exports[`regana #analyse #literals analyse should work with numeric literal 1`] 
     \\"pointers\\": {
       \\"test\\": \\"VariableDeclarator_4\\"
     },
+    \\"labels\\": {},
     \\"withSegments\\": []
   },
   {
@@ -172,6 +177,7 @@ exports[`regana #analyse #literals analyse should work with numeric literal 1`] 
     \\"pointers\\": {
       \\"test\\": \\"VariableDeclarator_7\\"
     },
+    \\"labels\\": {},
     \\"withSegments\\": []
   }
 ]"
@@ -204,6 +210,7 @@ exports[`regana #analyse #literals analyse should work with regex literal 1`] = 
     \\"pointers\\": {
       \\"test\\": \\"VariableDeclarator_1\\"
     },
+    \\"labels\\": {},
     \\"withSegments\\": []
   },
   {
@@ -231,6 +238,7 @@ exports[`regana #analyse #literals analyse should work with regex literal 1`] = 
     \\"pointers\\": {
       \\"test\\": \\"VariableDeclarator_4\\"
     },
+    \\"labels\\": {},
     \\"withSegments\\": []
   },
   {
@@ -258,6 +266,7 @@ exports[`regana #analyse #literals analyse should work with regex literal 1`] = 
     \\"pointers\\": {
       \\"test\\": \\"VariableDeclarator_7\\"
     },
+    \\"labels\\": {},
     \\"withSegments\\": []
   },
   {
@@ -285,6 +294,7 @@ exports[`regana #analyse #literals analyse should work with regex literal 1`] = 
     \\"pointers\\": {
       \\"test\\": \\"VariableDeclarator_10\\"
     },
+    \\"labels\\": {},
     \\"withSegments\\": []
   }
 ]"
@@ -317,6 +327,7 @@ exports[`regana #analyse #literals analyse should work with string literal 1`] =
     \\"pointers\\": {
       \\"test\\": \\"VariableDeclarator_1\\"
     },
+    \\"labels\\": {},
     \\"withSegments\\": []
   },
   {
@@ -344,6 +355,7 @@ exports[`regana #analyse #literals analyse should work with string literal 1`] =
     \\"pointers\\": {
       \\"test\\": \\"VariableDeclarator_4\\"
     },
+    \\"labels\\": {},
     \\"withSegments\\": []
   },
   {
@@ -371,6 +383,7 @@ exports[`regana #analyse #literals analyse should work with string literal 1`] =
     \\"pointers\\": {
       \\"test\\": \\"VariableDeclarator_7\\"
     },
+    \\"labels\\": {},
     \\"withSegments\\": []
   },
   {
@@ -398,6 +411,7 @@ exports[`regana #analyse #literals analyse should work with string literal 1`] =
     \\"pointers\\": {
       \\"test\\": \\"VariableDeclarator_10\\"
     },
+    \\"labels\\": {},
     \\"withSegments\\": []
   },
   {
@@ -425,6 +439,7 @@ exports[`regana #analyse #literals analyse should work with string literal 1`] =
     \\"pointers\\": {
       \\"test\\": \\"VariableDeclarator_13\\"
     },
+    \\"labels\\": {},
     \\"withSegments\\": []
   }
 ]"

@@ -100,6 +100,12 @@ class Scope {
     this.pointers = {};
 
     /**
+     * List of labels within this scope
+     * @type {object}
+     */
+    this.labels = {};
+
+    /**
      * Array of with segments within this scope
      * @type {object}
      */
@@ -139,13 +145,15 @@ class Scope {
    * @param {number} start - Index of first character of this segment.
    * @param {number} end - Index of first character after this segment.
    * @param {Object} options - Optional parameters.
-   * @param {Scope} [options.uses] - Array of other segments which should be
+   * @param {Object[]} [options.uses] - Array of other segments which should be
    * considered as part of this segment.
-   * @param {Scope} [options.usesPointers] - Array of pointers needed for
+   * @param {string[]} [options.usesPointers] - Array of pointers needed for
    * this segment. Basically this means variables which this segment is using.
-   * @param {Scope} [options.pointer] - If this segment is going to create a new
-   * variable this would be the pointer to it.
-   * @param {Scope} [options.exposes] - If this segment is going to expose
+   * @param {string} [options.pointer] - If this segment is going to create a
+   * new variable this would be the pointer to it.
+   * @param {string} [options.label] - If this segment is going to create a new
+   * label this would be the pointer to it.
+   * @param {string[]} [options.exposes] - If this segment is going to expose
    * something outside of scope.
    *
    * @example
