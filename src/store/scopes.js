@@ -25,7 +25,7 @@ const files = {
    * Get all scopes from store.
    *
    * @memberof store.scope
-   * @returns {[Scope]} Array of Scopes.
+   * @returns {Scope[]} Array of Scopes.
    *
    * @example
    * scopes.getAll();      // returns scope by that id or null
