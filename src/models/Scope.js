@@ -6,6 +6,7 @@ const isUndefined = require('../utils/validate/isUndefined');
 const isNumber = require('../utils/validate/isNumber');
 const isFile = require('../utils/validate/isFile');
 const isId = require('../utils/validate/isId');
+const store = require('../store/scopes');
 
 /**
  * Scope entity representing a scope.
@@ -97,6 +98,17 @@ class Scope {
      * @type {object}
      */
     this.pointers = {};
+
+    /**
+     * Array of with segments within this scope
+     * @type {object}
+     */
+    this.withSegments = [];
+
+    /*
+     * Add this scope to store of all scopes
+     */
+    store.add(this);
   }
 
   /**
@@ -104,22 +116,20 @@ class Scope {
    *
    * @param {string} pointer - Pointer to use to select segment. This would be
    * a variable name.
-   * @returns {string} Segment id.
+   * @returns {Array} Array of segment ids.
    *
    * @example
-   * const segmentId = scope.getSegmentIdByPointer('myVariable');
+   * const segmentId = scope.getSegmentIdsByPointer('myVariable');
    */
-  getSegmentIdByPointer (pointer) {
+  getSegmentIdsByPointer (pointer) {
 
     if (this.pointers[pointer]) {
-      return this.pointers[pointer];
+      return this.withSegments.concat([this.pointers[pointer]]);
     }
 
-    if (!this.parentScope) {
-      throw new Error(`Pointer '${pointer}' does not exist in file ${this.file}`);
-    }
+    const next = this.parentScope ? this.parentScope.getSegmentIdsByPointer(pointer) : [];
 
-    return this.parentScope.getSegmentIdByPointer(pointer);
+    return this.withSegments.concat(next);
   }
 
   /**
@@ -166,8 +176,13 @@ class Scope {
       throw new Error(`Segment '${asStringValue(id)}' not within the scope`);
     }
 
+    const usesAsPointers = usesPointers
+      .reduce((uses, input) => {
+        return uses.concat(this.getSegmentIdsByPointer(input));
+      }, []);
+
     const segment = {
-      uses: uses.concat(usesPointers.map(input => this.getSegmentIdByPointer(input))),
+      uses: uses.concat(usesAsPointers),
       start,
       end,
       id

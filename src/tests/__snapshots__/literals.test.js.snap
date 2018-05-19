@@ -1,186 +1,431 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`regana #analyse #literals analyse should work with boolean literal 1`] = `
-"{
-  \\"start\\": 0,
-  \\"end\\": 17,
-  \\"parentScope\\": {
+"[
+  {
     \\"start\\": 0,
     \\"end\\": 17,
     \\"parentScope\\": null,
     \\"file\\": \\"File_0\\",
-    \\"segments\\": {},
-    \\"exposes\\": {},
-    \\"pointers\\": {}
-  },
-  \\"file\\": \\"File_0\\",
-  \\"segments\\": {
-    \\"BooleanLiteral_2\\": {
-      \\"uses\\": [],
-      \\"start\\": 12,
-      \\"end\\": 16,
-      \\"id\\": \\"BooleanLiteral_2\\"
+    \\"segments\\": {
+      \\"BooleanLiteral_2\\": {
+        \\"uses\\": [],
+        \\"start\\": 12,
+        \\"end\\": 16,
+        \\"id\\": \\"BooleanLiteral_2\\"
+      },
+      \\"VariableDeclarator_1\\": {
+        \\"uses\\": [
+          \\"BooleanLiteral_2\\"
+        ],
+        \\"start\\": 5,
+        \\"end\\": 16,
+        \\"id\\": \\"VariableDeclarator_1\\"
+      }
     },
-    \\"VariableDeclarator_1\\": {
-      \\"uses\\": [
-        \\"BooleanLiteral_2\\"
-      ],
-      \\"start\\": 5,
-      \\"end\\": 16,
-      \\"id\\": \\"VariableDeclarator_1\\"
-    }
-  },
-  \\"exposes\\": {},
-  \\"pointers\\": {
-    \\"test\\": \\"VariableDeclarator_1\\"
+    \\"exposes\\": {},
+    \\"pointers\\": {
+      \\"test\\": \\"VariableDeclarator_1\\"
+    },
+    \\"withSegments\\": []
   }
-}"
+]"
 `;
 
 exports[`regana #analyse #literals analyse should work with null literal 1`] = `
-"{
-  \\"start\\": 0,
-  \\"end\\": 17,
-  \\"parentScope\\": {
+"[
+  {
+    \\"start\\": 0,
+    \\"end\\": 17,
+    \\"parentScope\\": null,
+    \\"file\\": \\"File_0\\",
+    \\"segments\\": {
+      \\"BooleanLiteral_2\\": {
+        \\"uses\\": [],
+        \\"start\\": 12,
+        \\"end\\": 16,
+        \\"id\\": \\"BooleanLiteral_2\\"
+      },
+      \\"VariableDeclarator_1\\": {
+        \\"uses\\": [
+          \\"BooleanLiteral_2\\"
+        ],
+        \\"start\\": 5,
+        \\"end\\": 16,
+        \\"id\\": \\"VariableDeclarator_1\\"
+      }
+    },
+    \\"exposes\\": {},
+    \\"pointers\\": {
+      \\"test\\": \\"VariableDeclarator_1\\"
+    },
+    \\"withSegments\\": []
+  },
+  {
     \\"start\\": 0,
     \\"end\\": 17,
     \\"parentScope\\": null,
     \\"file\\": \\"File_3\\",
-    \\"segments\\": {},
-    \\"exposes\\": {},
-    \\"pointers\\": {}
-  },
-  \\"file\\": \\"File_3\\",
-  \\"segments\\": {
-    \\"NullLiteral_5\\": {
-      \\"uses\\": [],
-      \\"start\\": 12,
-      \\"end\\": 16,
-      \\"id\\": \\"NullLiteral_5\\"
+    \\"segments\\": {
+      \\"NullLiteral_5\\": {
+        \\"uses\\": [],
+        \\"start\\": 12,
+        \\"end\\": 16,
+        \\"id\\": \\"NullLiteral_5\\"
+      },
+      \\"VariableDeclarator_4\\": {
+        \\"uses\\": [
+          \\"NullLiteral_5\\"
+        ],
+        \\"start\\": 5,
+        \\"end\\": 16,
+        \\"id\\": \\"VariableDeclarator_4\\"
+      }
     },
-    \\"VariableDeclarator_4\\": {
-      \\"uses\\": [
-        \\"NullLiteral_5\\"
-      ],
-      \\"start\\": 5,
-      \\"end\\": 16,
-      \\"id\\": \\"VariableDeclarator_4\\"
-    }
-  },
-  \\"exposes\\": {},
-  \\"pointers\\": {
-    \\"test\\": \\"VariableDeclarator_4\\"
+    \\"exposes\\": {},
+    \\"pointers\\": {
+      \\"test\\": \\"VariableDeclarator_4\\"
+    },
+    \\"withSegments\\": []
   }
-}"
+]"
 `;
 
 exports[`regana #analyse #literals analyse should work with numeric literal 1`] = `
-"{
-  \\"start\\": 0,
-  \\"end\\": 20,
-  \\"parentScope\\": {
+"[
+  {
+    \\"start\\": 0,
+    \\"end\\": 17,
+    \\"parentScope\\": null,
+    \\"file\\": \\"File_0\\",
+    \\"segments\\": {
+      \\"BooleanLiteral_2\\": {
+        \\"uses\\": [],
+        \\"start\\": 12,
+        \\"end\\": 16,
+        \\"id\\": \\"BooleanLiteral_2\\"
+      },
+      \\"VariableDeclarator_1\\": {
+        \\"uses\\": [
+          \\"BooleanLiteral_2\\"
+        ],
+        \\"start\\": 5,
+        \\"end\\": 16,
+        \\"id\\": \\"VariableDeclarator_1\\"
+      }
+    },
+    \\"exposes\\": {},
+    \\"pointers\\": {
+      \\"test\\": \\"VariableDeclarator_1\\"
+    },
+    \\"withSegments\\": []
+  },
+  {
+    \\"start\\": 0,
+    \\"end\\": 17,
+    \\"parentScope\\": null,
+    \\"file\\": \\"File_3\\",
+    \\"segments\\": {
+      \\"NullLiteral_5\\": {
+        \\"uses\\": [],
+        \\"start\\": 12,
+        \\"end\\": 16,
+        \\"id\\": \\"NullLiteral_5\\"
+      },
+      \\"VariableDeclarator_4\\": {
+        \\"uses\\": [
+          \\"NullLiteral_5\\"
+        ],
+        \\"start\\": 5,
+        \\"end\\": 16,
+        \\"id\\": \\"VariableDeclarator_4\\"
+      }
+    },
+    \\"exposes\\": {},
+    \\"pointers\\": {
+      \\"test\\": \\"VariableDeclarator_4\\"
+    },
+    \\"withSegments\\": []
+  },
+  {
     \\"start\\": 0,
     \\"end\\": 20,
     \\"parentScope\\": null,
     \\"file\\": \\"File_6\\",
-    \\"segments\\": {},
-    \\"exposes\\": {},
-    \\"pointers\\": {}
-  },
-  \\"file\\": \\"File_6\\",
-  \\"segments\\": {
-    \\"NumericLiteral_8\\": {
-      \\"uses\\": [],
-      \\"start\\": 12,
-      \\"end\\": 19,
-      \\"id\\": \\"NumericLiteral_8\\"
+    \\"segments\\": {
+      \\"NumericLiteral_8\\": {
+        \\"uses\\": [],
+        \\"start\\": 12,
+        \\"end\\": 19,
+        \\"id\\": \\"NumericLiteral_8\\"
+      },
+      \\"VariableDeclarator_7\\": {
+        \\"uses\\": [
+          \\"NumericLiteral_8\\"
+        ],
+        \\"start\\": 5,
+        \\"end\\": 19,
+        \\"id\\": \\"VariableDeclarator_7\\"
+      }
     },
-    \\"VariableDeclarator_7\\": {
-      \\"uses\\": [
-        \\"NumericLiteral_8\\"
-      ],
-      \\"start\\": 5,
-      \\"end\\": 19,
-      \\"id\\": \\"VariableDeclarator_7\\"
-    }
-  },
-  \\"exposes\\": {},
-  \\"pointers\\": {
-    \\"test\\": \\"VariableDeclarator_7\\"
+    \\"exposes\\": {},
+    \\"pointers\\": {
+      \\"test\\": \\"VariableDeclarator_7\\"
+    },
+    \\"withSegments\\": []
   }
-}"
+]"
 `;
 
 exports[`regana #analyse #literals analyse should work with regex literal 1`] = `
-"{
-  \\"start\\": 0,
-  \\"end\\": 18,
-  \\"parentScope\\": {
+"[
+  {
+    \\"start\\": 0,
+    \\"end\\": 17,
+    \\"parentScope\\": null,
+    \\"file\\": \\"File_0\\",
+    \\"segments\\": {
+      \\"BooleanLiteral_2\\": {
+        \\"uses\\": [],
+        \\"start\\": 12,
+        \\"end\\": 16,
+        \\"id\\": \\"BooleanLiteral_2\\"
+      },
+      \\"VariableDeclarator_1\\": {
+        \\"uses\\": [
+          \\"BooleanLiteral_2\\"
+        ],
+        \\"start\\": 5,
+        \\"end\\": 16,
+        \\"id\\": \\"VariableDeclarator_1\\"
+      }
+    },
+    \\"exposes\\": {},
+    \\"pointers\\": {
+      \\"test\\": \\"VariableDeclarator_1\\"
+    },
+    \\"withSegments\\": []
+  },
+  {
+    \\"start\\": 0,
+    \\"end\\": 17,
+    \\"parentScope\\": null,
+    \\"file\\": \\"File_3\\",
+    \\"segments\\": {
+      \\"NullLiteral_5\\": {
+        \\"uses\\": [],
+        \\"start\\": 12,
+        \\"end\\": 16,
+        \\"id\\": \\"NullLiteral_5\\"
+      },
+      \\"VariableDeclarator_4\\": {
+        \\"uses\\": [
+          \\"NullLiteral_5\\"
+        ],
+        \\"start\\": 5,
+        \\"end\\": 16,
+        \\"id\\": \\"VariableDeclarator_4\\"
+      }
+    },
+    \\"exposes\\": {},
+    \\"pointers\\": {
+      \\"test\\": \\"VariableDeclarator_4\\"
+    },
+    \\"withSegments\\": []
+  },
+  {
+    \\"start\\": 0,
+    \\"end\\": 20,
+    \\"parentScope\\": null,
+    \\"file\\": \\"File_6\\",
+    \\"segments\\": {
+      \\"NumericLiteral_8\\": {
+        \\"uses\\": [],
+        \\"start\\": 12,
+        \\"end\\": 19,
+        \\"id\\": \\"NumericLiteral_8\\"
+      },
+      \\"VariableDeclarator_7\\": {
+        \\"uses\\": [
+          \\"NumericLiteral_8\\"
+        ],
+        \\"start\\": 5,
+        \\"end\\": 19,
+        \\"id\\": \\"VariableDeclarator_7\\"
+      }
+    },
+    \\"exposes\\": {},
+    \\"pointers\\": {
+      \\"test\\": \\"VariableDeclarator_7\\"
+    },
+    \\"withSegments\\": []
+  },
+  {
     \\"start\\": 0,
     \\"end\\": 18,
     \\"parentScope\\": null,
     \\"file\\": \\"File_9\\",
-    \\"segments\\": {},
-    \\"exposes\\": {},
-    \\"pointers\\": {}
-  },
-  \\"file\\": \\"File_9\\",
-  \\"segments\\": {
-    \\"RegExpLiteral_11\\": {
-      \\"uses\\": [],
-      \\"start\\": 12,
-      \\"end\\": 17,
-      \\"id\\": \\"RegExpLiteral_11\\"
+    \\"segments\\": {
+      \\"RegExpLiteral_11\\": {
+        \\"uses\\": [],
+        \\"start\\": 12,
+        \\"end\\": 17,
+        \\"id\\": \\"RegExpLiteral_11\\"
+      },
+      \\"VariableDeclarator_10\\": {
+        \\"uses\\": [
+          \\"RegExpLiteral_11\\"
+        ],
+        \\"start\\": 5,
+        \\"end\\": 17,
+        \\"id\\": \\"VariableDeclarator_10\\"
+      }
     },
-    \\"VariableDeclarator_10\\": {
-      \\"uses\\": [
-        \\"RegExpLiteral_11\\"
-      ],
-      \\"start\\": 5,
-      \\"end\\": 17,
-      \\"id\\": \\"VariableDeclarator_10\\"
-    }
-  },
-  \\"exposes\\": {},
-  \\"pointers\\": {
-    \\"test\\": \\"VariableDeclarator_10\\"
+    \\"exposes\\": {},
+    \\"pointers\\": {
+      \\"test\\": \\"VariableDeclarator_10\\"
+    },
+    \\"withSegments\\": []
   }
-}"
+]"
 `;
 
 exports[`regana #analyse #literals analyse should work with string literal 1`] = `
-"{
-  \\"start\\": 0,
-  \\"end\\": 21,
-  \\"parentScope\\": {
+"[
+  {
+    \\"start\\": 0,
+    \\"end\\": 17,
+    \\"parentScope\\": null,
+    \\"file\\": \\"File_0\\",
+    \\"segments\\": {
+      \\"BooleanLiteral_2\\": {
+        \\"uses\\": [],
+        \\"start\\": 12,
+        \\"end\\": 16,
+        \\"id\\": \\"BooleanLiteral_2\\"
+      },
+      \\"VariableDeclarator_1\\": {
+        \\"uses\\": [
+          \\"BooleanLiteral_2\\"
+        ],
+        \\"start\\": 5,
+        \\"end\\": 16,
+        \\"id\\": \\"VariableDeclarator_1\\"
+      }
+    },
+    \\"exposes\\": {},
+    \\"pointers\\": {
+      \\"test\\": \\"VariableDeclarator_1\\"
+    },
+    \\"withSegments\\": []
+  },
+  {
+    \\"start\\": 0,
+    \\"end\\": 17,
+    \\"parentScope\\": null,
+    \\"file\\": \\"File_3\\",
+    \\"segments\\": {
+      \\"NullLiteral_5\\": {
+        \\"uses\\": [],
+        \\"start\\": 12,
+        \\"end\\": 16,
+        \\"id\\": \\"NullLiteral_5\\"
+      },
+      \\"VariableDeclarator_4\\": {
+        \\"uses\\": [
+          \\"NullLiteral_5\\"
+        ],
+        \\"start\\": 5,
+        \\"end\\": 16,
+        \\"id\\": \\"VariableDeclarator_4\\"
+      }
+    },
+    \\"exposes\\": {},
+    \\"pointers\\": {
+      \\"test\\": \\"VariableDeclarator_4\\"
+    },
+    \\"withSegments\\": []
+  },
+  {
+    \\"start\\": 0,
+    \\"end\\": 20,
+    \\"parentScope\\": null,
+    \\"file\\": \\"File_6\\",
+    \\"segments\\": {
+      \\"NumericLiteral_8\\": {
+        \\"uses\\": [],
+        \\"start\\": 12,
+        \\"end\\": 19,
+        \\"id\\": \\"NumericLiteral_8\\"
+      },
+      \\"VariableDeclarator_7\\": {
+        \\"uses\\": [
+          \\"NumericLiteral_8\\"
+        ],
+        \\"start\\": 5,
+        \\"end\\": 19,
+        \\"id\\": \\"VariableDeclarator_7\\"
+      }
+    },
+    \\"exposes\\": {},
+    \\"pointers\\": {
+      \\"test\\": \\"VariableDeclarator_7\\"
+    },
+    \\"withSegments\\": []
+  },
+  {
+    \\"start\\": 0,
+    \\"end\\": 18,
+    \\"parentScope\\": null,
+    \\"file\\": \\"File_9\\",
+    \\"segments\\": {
+      \\"RegExpLiteral_11\\": {
+        \\"uses\\": [],
+        \\"start\\": 12,
+        \\"end\\": 17,
+        \\"id\\": \\"RegExpLiteral_11\\"
+      },
+      \\"VariableDeclarator_10\\": {
+        \\"uses\\": [
+          \\"RegExpLiteral_11\\"
+        ],
+        \\"start\\": 5,
+        \\"end\\": 17,
+        \\"id\\": \\"VariableDeclarator_10\\"
+      }
+    },
+    \\"exposes\\": {},
+    \\"pointers\\": {
+      \\"test\\": \\"VariableDeclarator_10\\"
+    },
+    \\"withSegments\\": []
+  },
+  {
     \\"start\\": 0,
     \\"end\\": 21,
     \\"parentScope\\": null,
     \\"file\\": \\"File_12\\",
-    \\"segments\\": {},
-    \\"exposes\\": {},
-    \\"pointers\\": {}
-  },
-  \\"file\\": \\"File_12\\",
-  \\"segments\\": {
-    \\"StringLiteral_14\\": {
-      \\"uses\\": [],
-      \\"start\\": 12,
-      \\"end\\": 20,
-      \\"id\\": \\"StringLiteral_14\\"
+    \\"segments\\": {
+      \\"StringLiteral_14\\": {
+        \\"uses\\": [],
+        \\"start\\": 12,
+        \\"end\\": 20,
+        \\"id\\": \\"StringLiteral_14\\"
+      },
+      \\"VariableDeclarator_13\\": {
+        \\"uses\\": [
+          \\"StringLiteral_14\\"
+        ],
+        \\"start\\": 5,
+        \\"end\\": 20,
+        \\"id\\": \\"VariableDeclarator_13\\"
+      }
     },
-    \\"VariableDeclarator_13\\": {
-      \\"uses\\": [
-        \\"StringLiteral_14\\"
-      ],
-      \\"start\\": 5,
-      \\"end\\": 20,
-      \\"id\\": \\"VariableDeclarator_13\\"
-    }
-  },
-  \\"exposes\\": {},
-  \\"pointers\\": {
-    \\"test\\": \\"VariableDeclarator_13\\"
+    \\"exposes\\": {},
+    \\"pointers\\": {
+      \\"test\\": \\"VariableDeclarator_13\\"
+    },
+    \\"withSegments\\": []
   }
-}"
+]"
 `;

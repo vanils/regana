@@ -1,3 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`analyse #analyseBody should throw error if trying to analyse not valid entity type 1`] = `"Failed to parse, unknown entity type 'NotValid'"`;

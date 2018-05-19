@@ -12,6 +12,8 @@
  */
 const analyseNode = (node, scope) => {
   switch (node.type) {
+    case 'Identifier':
+      return require('./types/identifier')(node, scope);
     case 'RegExpLiteral':
       return require('./types/literals/regex')(node, scope);
     case 'NullLiteral':
@@ -24,12 +26,16 @@ const analyseNode = (node, scope) => {
       return require('./types/literals/numeric')(node, scope);
     case 'VariableDeclaration':
       return require('./types/declarations/variable')(node, scope);
+    case 'BlockStatement':
+      return require('./types/statements/block')(node, scope);
     case 'EmptyStatement':
       return require('./types/statements/empty')(node, scope);
     case 'ExpressionStatement':
       return require('./types/statements/expression')(node, scope);
     case 'DebuggerStatement':
       return require('./types/statements/debugger')(node, scope);
+    case 'WithStatement':
+      return require('./types/statements/with')(node, scope);
     case 'BinaryExpression':
       return require('./types/expressions/binary')(node, scope);
     case 'ExportNamedDeclaration':

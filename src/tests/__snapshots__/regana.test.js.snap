@@ -13,85 +13,102 @@ exports[`regana #analyse analyse should throw error with invalid input 5`] = `"p
 exports[`regana #analyse analyse should throw error with invalid input 6`] = `"path must be a string or Buffer"`;
 
 exports[`regana #analyse analyse should work with valid input 1`] = `
-"{
-  \\"start\\": 0,
-  \\"end\\": 21,
-  \\"parentScope\\": {
+"[
+  {
     \\"start\\": 0,
     \\"end\\": 21,
     \\"parentScope\\": null,
     \\"file\\": \\"File_6\\",
-    \\"segments\\": {},
-    \\"exposes\\": {},
-    \\"pointers\\": {}
-  },
-  \\"file\\": \\"File_6\\",
-  \\"segments\\": {
-    \\"NumericLiteral_8\\": {
-      \\"uses\\": [],
-      \\"start\\": 19,
-      \\"end\\": 20,
-      \\"id\\": \\"NumericLiteral_8\\"
+    \\"segments\\": {
+      \\"NumericLiteral_8\\": {
+        \\"uses\\": [],
+        \\"start\\": 19,
+        \\"end\\": 20,
+        \\"id\\": \\"NumericLiteral_8\\"
+      },
+      \\"VariableDeclarator_7\\": {
+        \\"uses\\": [
+          \\"NumericLiteral_8\\"
+        ],
+        \\"start\\": 7,
+        \\"end\\": 20,
+        \\"id\\": \\"VariableDeclarator_7\\"
+      }
     },
-    \\"VariableDeclarator_7\\": {
-      \\"uses\\": [
-        \\"NumericLiteral_8\\"
-      ],
-      \\"start\\": 7,
-      \\"end\\": 20,
-      \\"id\\": \\"VariableDeclarator_7\\"
-    }
-  },
-  \\"exposes\\": {},
-  \\"pointers\\": {
-    \\"testValue\\": \\"VariableDeclarator_7\\"
+    \\"exposes\\": {},
+    \\"pointers\\": {
+      \\"testValue\\": \\"VariableDeclarator_7\\"
+    },
+    \\"withSegments\\": []
   }
-}"
+]"
 `;
 
 exports[`regana #analyse analyse should work with valid input 2`] = `
-"{
-  \\"start\\": 0,
-  \\"end\\": 32,
-  \\"parentScope\\": {
+"[
+  {
+    \\"start\\": 0,
+    \\"end\\": 21,
+    \\"parentScope\\": null,
+    \\"file\\": \\"File_6\\",
+    \\"segments\\": {
+      \\"NumericLiteral_8\\": {
+        \\"uses\\": [],
+        \\"start\\": 19,
+        \\"end\\": 20,
+        \\"id\\": \\"NumericLiteral_8\\"
+      },
+      \\"VariableDeclarator_7\\": {
+        \\"uses\\": [
+          \\"NumericLiteral_8\\"
+        ],
+        \\"start\\": 7,
+        \\"end\\": 20,
+        \\"id\\": \\"VariableDeclarator_7\\"
+      }
+    },
+    \\"exposes\\": {},
+    \\"pointers\\": {
+      \\"testValue\\": \\"VariableDeclarator_7\\"
+    },
+    \\"withSegments\\": []
+  },
+  {
     \\"start\\": 0,
     \\"end\\": 32,
     \\"parentScope\\": null,
     \\"file\\": \\"File_9\\",
-    \\"segments\\": {},
-    \\"exposes\\": {},
-    \\"pointers\\": {}
-  },
-  \\"file\\": \\"File_9\\",
-  \\"segments\\": {
-    \\"NumericLiteral_11\\": {
-      \\"uses\\": [],
-      \\"start\\": 13,
-      \\"end\\": 14,
-      \\"id\\": \\"NumericLiteral_11\\"
+    \\"segments\\": {
+      \\"NumericLiteral_11\\": {
+        \\"uses\\": [],
+        \\"start\\": 13,
+        \\"end\\": 14,
+        \\"id\\": \\"NumericLiteral_11\\"
+      },
+      \\"VariableDeclarator_10\\": {
+        \\"uses\\": [
+          \\"NumericLiteral_11\\"
+        ],
+        \\"start\\": 6,
+        \\"end\\": 14,
+        \\"id\\": \\"VariableDeclarator_10\\"
+      },
+      \\"ExportNamedDeclaration_12\\": {
+        \\"uses\\": [
+          \\"VariableDeclarator_10\\"
+        ],
+        \\"start\\": 16,
+        \\"end\\": 32,
+        \\"id\\": \\"ExportNamedDeclaration_12\\"
+      }
     },
-    \\"VariableDeclarator_10\\": {
-      \\"uses\\": [
-        \\"NumericLiteral_11\\"
-      ],
-      \\"start\\": 6,
-      \\"end\\": 14,
-      \\"id\\": \\"VariableDeclarator_10\\"
+    \\"exposes\\": {
+      \\"test\\": \\"ExportNamedDeclaration_12\\"
     },
-    \\"ExportNamedDeclaration_12\\": {
-      \\"uses\\": [
-        \\"VariableDeclarator_10\\"
-      ],
-      \\"start\\": 16,
-      \\"end\\": 32,
-      \\"id\\": \\"ExportNamedDeclaration_12\\"
-    }
-  },
-  \\"exposes\\": {
-    \\"test\\": \\"ExportNamedDeclaration_12\\"
-  },
-  \\"pointers\\": {
-    \\"test\\": \\"VariableDeclarator_10\\"
+    \\"pointers\\": {
+      \\"test\\": \\"VariableDeclarator_10\\"
+    },
+    \\"withSegments\\": []
   }
-}"
+]"
 `;

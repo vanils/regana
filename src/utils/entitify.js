@@ -14,6 +14,7 @@ const entitify = content => {
 
   const options = {
     sourceType: 'module',
+    strictMode: false,
     tokens: false,
     plugins: [
       'objectRestSpread',

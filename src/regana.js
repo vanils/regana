@@ -1,7 +1,7 @@
 
 'use strict';
 
-const analyseFile = require('./analyse/file');
+const analyse = require('./analyse/entry');
 
 /**
  * @file Expose out Analyser and other tools
@@ -29,5 +29,5 @@ const analyseFile = require('./analyse/file');
  */
 
 module.exports = {
-  analyseFile
+  analyse
 };

@@ -1,154 +1,589 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`regana #analyse #statements analyse should work with debugger statement 1`] = `
-"{
-  \\"start\\": 0,
-  \\"end\\": 9,
-  \\"parentScope\\": {
-    \\"start\\": 0,
-    \\"end\\": 9,
-    \\"parentScope\\": null,
-    \\"file\\": \\"File_14\\",
-    \\"segments\\": {},
-    \\"exposes\\": {},
-    \\"pointers\\": {}
-  },
-  \\"file\\": \\"File_14\\",
-  \\"segments\\": {
-    \\"DebuggerStatement_15\\": {
-      \\"uses\\": [],
-      \\"start\\": 0,
-      \\"end\\": 9,
-      \\"id\\": \\"DebuggerStatement_15\\"
-    }
-  },
-  \\"exposes\\": {},
-  \\"pointers\\": {}
-}"
-`;
-
-exports[`regana #analyse #statements analyse should work with empty statement 1`] = `
-"{
-  \\"start\\": 0,
-  \\"end\\": 1,
-  \\"parentScope\\": {
-    \\"start\\": 0,
-    \\"end\\": 1,
-    \\"parentScope\\": null,
-    \\"file\\": \\"File_16\\",
-    \\"segments\\": {},
-    \\"exposes\\": {},
-    \\"pointers\\": {}
-  },
-  \\"file\\": \\"File_16\\",
-  \\"segments\\": {
-    \\"EmptyStatement_17\\": {
-      \\"uses\\": [],
-      \\"start\\": 0,
-      \\"end\\": 1,
-      \\"id\\": \\"EmptyStatement_17\\"
-    }
-  },
-  \\"exposes\\": {},
-  \\"pointers\\": {}
-}"
-`;
-
-exports[`regana #analyse #statements analyse should work with expression statement 1`] = `
-"{
-  \\"start\\": 0,
-  \\"end\\": 27,
-  \\"parentScope\\": {
+"[
+  {
     \\"start\\": 0,
     \\"end\\": 27,
     \\"parentScope\\": null,
     \\"file\\": \\"File_0\\",
-    \\"segments\\": {},
+    \\"segments\\": {
+      \\"NumericLiteral_1\\": {
+        \\"uses\\": [],
+        \\"start\\": 0,
+        \\"end\\": 1,
+        \\"id\\": \\"NumericLiteral_1\\"
+      },
+      \\"BinaryOperator_2\\": {
+        \\"uses\\": [],
+        \\"start\\": 2,
+        \\"end\\": 3,
+        \\"id\\": \\"BinaryOperator_2\\"
+      },
+      \\"NumericLiteral_3\\": {
+        \\"uses\\": [],
+        \\"start\\": 4,
+        \\"end\\": 6,
+        \\"id\\": \\"NumericLiteral_3\\"
+      },
+      \\"BinaryOperator_4\\": {
+        \\"uses\\": [],
+        \\"start\\": 7,
+        \\"end\\": 8,
+        \\"id\\": \\"BinaryOperator_4\\"
+      },
+      \\"NumericLiteral_5\\": {
+        \\"uses\\": [],
+        \\"start\\": 11,
+        \\"end\\": 13,
+        \\"id\\": \\"NumericLiteral_5\\"
+      },
+      \\"BinaryOperator_6\\": {
+        \\"uses\\": [],
+        \\"start\\": 14,
+        \\"end\\": 15,
+        \\"id\\": \\"BinaryOperator_6\\"
+      },
+      \\"NumericLiteral_7\\": {
+        \\"uses\\": [],
+        \\"start\\": 15,
+        \\"end\\": 17,
+        \\"id\\": \\"NumericLiteral_7\\"
+      },
+      \\"BinaryOperator_8\\": {
+        \\"uses\\": [],
+        \\"start\\": 17,
+        \\"end\\": 18,
+        \\"id\\": \\"BinaryOperator_8\\"
+      },
+      \\"NumericLiteral_9\\": {
+        \\"uses\\": [],
+        \\"start\\": 18,
+        \\"end\\": 19,
+        \\"id\\": \\"NumericLiteral_9\\"
+      },
+      \\"BinaryOperator_10\\": {
+        \\"uses\\": [],
+        \\"start\\": 19,
+        \\"end\\": 20,
+        \\"id\\": \\"BinaryOperator_10\\"
+      },
+      \\"NumericLiteral_11\\": {
+        \\"uses\\": [],
+        \\"start\\": 20,
+        \\"end\\": 22,
+        \\"id\\": \\"NumericLiteral_11\\"
+      },
+      \\"BinaryOperator_12\\": {
+        \\"uses\\": [],
+        \\"start\\": 22,
+        \\"end\\": 23,
+        \\"id\\": \\"BinaryOperator_12\\"
+      },
+      \\"NumericLiteral_13\\": {
+        \\"uses\\": [],
+        \\"start\\": 24,
+        \\"end\\": 26,
+        \\"id\\": \\"NumericLiteral_13\\"
+      }
+    },
     \\"exposes\\": {},
-    \\"pointers\\": {}
+    \\"pointers\\": {},
+    \\"withSegments\\": []
   },
-  \\"file\\": \\"File_0\\",
-  \\"segments\\": {
-    \\"NumericLiteral_1\\": {
-      \\"uses\\": [],
+  {
+    \\"start\\": 0,
+    \\"end\\": 9,
+    \\"parentScope\\": null,
+    \\"file\\": \\"File_14\\",
+    \\"segments\\": {
+      \\"DebuggerStatement_15\\": {
+        \\"uses\\": [],
+        \\"start\\": 0,
+        \\"end\\": 9,
+        \\"id\\": \\"DebuggerStatement_15\\"
+      }
+    },
+    \\"exposes\\": {},
+    \\"pointers\\": {},
+    \\"withSegments\\": []
+  }
+]"
+`;
+
+exports[`regana #analyse #statements analyse should work with empty statement 1`] = `
+"[
+  {
+    \\"start\\": 0,
+    \\"end\\": 27,
+    \\"parentScope\\": null,
+    \\"file\\": \\"File_0\\",
+    \\"segments\\": {
+      \\"NumericLiteral_1\\": {
+        \\"uses\\": [],
+        \\"start\\": 0,
+        \\"end\\": 1,
+        \\"id\\": \\"NumericLiteral_1\\"
+      },
+      \\"BinaryOperator_2\\": {
+        \\"uses\\": [],
+        \\"start\\": 2,
+        \\"end\\": 3,
+        \\"id\\": \\"BinaryOperator_2\\"
+      },
+      \\"NumericLiteral_3\\": {
+        \\"uses\\": [],
+        \\"start\\": 4,
+        \\"end\\": 6,
+        \\"id\\": \\"NumericLiteral_3\\"
+      },
+      \\"BinaryOperator_4\\": {
+        \\"uses\\": [],
+        \\"start\\": 7,
+        \\"end\\": 8,
+        \\"id\\": \\"BinaryOperator_4\\"
+      },
+      \\"NumericLiteral_5\\": {
+        \\"uses\\": [],
+        \\"start\\": 11,
+        \\"end\\": 13,
+        \\"id\\": \\"NumericLiteral_5\\"
+      },
+      \\"BinaryOperator_6\\": {
+        \\"uses\\": [],
+        \\"start\\": 14,
+        \\"end\\": 15,
+        \\"id\\": \\"BinaryOperator_6\\"
+      },
+      \\"NumericLiteral_7\\": {
+        \\"uses\\": [],
+        \\"start\\": 15,
+        \\"end\\": 17,
+        \\"id\\": \\"NumericLiteral_7\\"
+      },
+      \\"BinaryOperator_8\\": {
+        \\"uses\\": [],
+        \\"start\\": 17,
+        \\"end\\": 18,
+        \\"id\\": \\"BinaryOperator_8\\"
+      },
+      \\"NumericLiteral_9\\": {
+        \\"uses\\": [],
+        \\"start\\": 18,
+        \\"end\\": 19,
+        \\"id\\": \\"NumericLiteral_9\\"
+      },
+      \\"BinaryOperator_10\\": {
+        \\"uses\\": [],
+        \\"start\\": 19,
+        \\"end\\": 20,
+        \\"id\\": \\"BinaryOperator_10\\"
+      },
+      \\"NumericLiteral_11\\": {
+        \\"uses\\": [],
+        \\"start\\": 20,
+        \\"end\\": 22,
+        \\"id\\": \\"NumericLiteral_11\\"
+      },
+      \\"BinaryOperator_12\\": {
+        \\"uses\\": [],
+        \\"start\\": 22,
+        \\"end\\": 23,
+        \\"id\\": \\"BinaryOperator_12\\"
+      },
+      \\"NumericLiteral_13\\": {
+        \\"uses\\": [],
+        \\"start\\": 24,
+        \\"end\\": 26,
+        \\"id\\": \\"NumericLiteral_13\\"
+      }
+    },
+    \\"exposes\\": {},
+    \\"pointers\\": {},
+    \\"withSegments\\": []
+  },
+  {
+    \\"start\\": 0,
+    \\"end\\": 9,
+    \\"parentScope\\": null,
+    \\"file\\": \\"File_14\\",
+    \\"segments\\": {
+      \\"DebuggerStatement_15\\": {
+        \\"uses\\": [],
+        \\"start\\": 0,
+        \\"end\\": 9,
+        \\"id\\": \\"DebuggerStatement_15\\"
+      }
+    },
+    \\"exposes\\": {},
+    \\"pointers\\": {},
+    \\"withSegments\\": []
+  },
+  {
+    \\"start\\": 0,
+    \\"end\\": 1,
+    \\"parentScope\\": null,
+    \\"file\\": \\"File_16\\",
+    \\"segments\\": {
+      \\"EmptyStatement_17\\": {
+        \\"uses\\": [],
+        \\"start\\": 0,
+        \\"end\\": 1,
+        \\"id\\": \\"EmptyStatement_17\\"
+      }
+    },
+    \\"exposes\\": {},
+    \\"pointers\\": {},
+    \\"withSegments\\": []
+  }
+]"
+`;
+
+exports[`regana #analyse #statements analyse should work with expression statement 1`] = `
+"[
+  {
+    \\"start\\": 0,
+    \\"end\\": 27,
+    \\"parentScope\\": null,
+    \\"file\\": \\"File_0\\",
+    \\"segments\\": {
+      \\"NumericLiteral_1\\": {
+        \\"uses\\": [],
+        \\"start\\": 0,
+        \\"end\\": 1,
+        \\"id\\": \\"NumericLiteral_1\\"
+      },
+      \\"BinaryOperator_2\\": {
+        \\"uses\\": [],
+        \\"start\\": 2,
+        \\"end\\": 3,
+        \\"id\\": \\"BinaryOperator_2\\"
+      },
+      \\"NumericLiteral_3\\": {
+        \\"uses\\": [],
+        \\"start\\": 4,
+        \\"end\\": 6,
+        \\"id\\": \\"NumericLiteral_3\\"
+      },
+      \\"BinaryOperator_4\\": {
+        \\"uses\\": [],
+        \\"start\\": 7,
+        \\"end\\": 8,
+        \\"id\\": \\"BinaryOperator_4\\"
+      },
+      \\"NumericLiteral_5\\": {
+        \\"uses\\": [],
+        \\"start\\": 11,
+        \\"end\\": 13,
+        \\"id\\": \\"NumericLiteral_5\\"
+      },
+      \\"BinaryOperator_6\\": {
+        \\"uses\\": [],
+        \\"start\\": 14,
+        \\"end\\": 15,
+        \\"id\\": \\"BinaryOperator_6\\"
+      },
+      \\"NumericLiteral_7\\": {
+        \\"uses\\": [],
+        \\"start\\": 15,
+        \\"end\\": 17,
+        \\"id\\": \\"NumericLiteral_7\\"
+      },
+      \\"BinaryOperator_8\\": {
+        \\"uses\\": [],
+        \\"start\\": 17,
+        \\"end\\": 18,
+        \\"id\\": \\"BinaryOperator_8\\"
+      },
+      \\"NumericLiteral_9\\": {
+        \\"uses\\": [],
+        \\"start\\": 18,
+        \\"end\\": 19,
+        \\"id\\": \\"NumericLiteral_9\\"
+      },
+      \\"BinaryOperator_10\\": {
+        \\"uses\\": [],
+        \\"start\\": 19,
+        \\"end\\": 20,
+        \\"id\\": \\"BinaryOperator_10\\"
+      },
+      \\"NumericLiteral_11\\": {
+        \\"uses\\": [],
+        \\"start\\": 20,
+        \\"end\\": 22,
+        \\"id\\": \\"NumericLiteral_11\\"
+      },
+      \\"BinaryOperator_12\\": {
+        \\"uses\\": [],
+        \\"start\\": 22,
+        \\"end\\": 23,
+        \\"id\\": \\"BinaryOperator_12\\"
+      },
+      \\"NumericLiteral_13\\": {
+        \\"uses\\": [],
+        \\"start\\": 24,
+        \\"end\\": 26,
+        \\"id\\": \\"NumericLiteral_13\\"
+      }
+    },
+    \\"exposes\\": {},
+    \\"pointers\\": {},
+    \\"withSegments\\": []
+  }
+]"
+`;
+
+exports[`regana #analyse #statements analyse should work with with statement 1`] = `
+"[
+  {
+    \\"start\\": 0,
+    \\"end\\": 27,
+    \\"parentScope\\": null,
+    \\"file\\": \\"File_0\\",
+    \\"segments\\": {
+      \\"NumericLiteral_1\\": {
+        \\"uses\\": [],
+        \\"start\\": 0,
+        \\"end\\": 1,
+        \\"id\\": \\"NumericLiteral_1\\"
+      },
+      \\"BinaryOperator_2\\": {
+        \\"uses\\": [],
+        \\"start\\": 2,
+        \\"end\\": 3,
+        \\"id\\": \\"BinaryOperator_2\\"
+      },
+      \\"NumericLiteral_3\\": {
+        \\"uses\\": [],
+        \\"start\\": 4,
+        \\"end\\": 6,
+        \\"id\\": \\"NumericLiteral_3\\"
+      },
+      \\"BinaryOperator_4\\": {
+        \\"uses\\": [],
+        \\"start\\": 7,
+        \\"end\\": 8,
+        \\"id\\": \\"BinaryOperator_4\\"
+      },
+      \\"NumericLiteral_5\\": {
+        \\"uses\\": [],
+        \\"start\\": 11,
+        \\"end\\": 13,
+        \\"id\\": \\"NumericLiteral_5\\"
+      },
+      \\"BinaryOperator_6\\": {
+        \\"uses\\": [],
+        \\"start\\": 14,
+        \\"end\\": 15,
+        \\"id\\": \\"BinaryOperator_6\\"
+      },
+      \\"NumericLiteral_7\\": {
+        \\"uses\\": [],
+        \\"start\\": 15,
+        \\"end\\": 17,
+        \\"id\\": \\"NumericLiteral_7\\"
+      },
+      \\"BinaryOperator_8\\": {
+        \\"uses\\": [],
+        \\"start\\": 17,
+        \\"end\\": 18,
+        \\"id\\": \\"BinaryOperator_8\\"
+      },
+      \\"NumericLiteral_9\\": {
+        \\"uses\\": [],
+        \\"start\\": 18,
+        \\"end\\": 19,
+        \\"id\\": \\"NumericLiteral_9\\"
+      },
+      \\"BinaryOperator_10\\": {
+        \\"uses\\": [],
+        \\"start\\": 19,
+        \\"end\\": 20,
+        \\"id\\": \\"BinaryOperator_10\\"
+      },
+      \\"NumericLiteral_11\\": {
+        \\"uses\\": [],
+        \\"start\\": 20,
+        \\"end\\": 22,
+        \\"id\\": \\"NumericLiteral_11\\"
+      },
+      \\"BinaryOperator_12\\": {
+        \\"uses\\": [],
+        \\"start\\": 22,
+        \\"end\\": 23,
+        \\"id\\": \\"BinaryOperator_12\\"
+      },
+      \\"NumericLiteral_13\\": {
+        \\"uses\\": [],
+        \\"start\\": 24,
+        \\"end\\": 26,
+        \\"id\\": \\"NumericLiteral_13\\"
+      }
+    },
+    \\"exposes\\": {},
+    \\"pointers\\": {},
+    \\"withSegments\\": []
+  },
+  {
+    \\"start\\": 0,
+    \\"end\\": 9,
+    \\"parentScope\\": null,
+    \\"file\\": \\"File_14\\",
+    \\"segments\\": {
+      \\"DebuggerStatement_15\\": {
+        \\"uses\\": [],
+        \\"start\\": 0,
+        \\"end\\": 9,
+        \\"id\\": \\"DebuggerStatement_15\\"
+      }
+    },
+    \\"exposes\\": {},
+    \\"pointers\\": {},
+    \\"withSegments\\": []
+  },
+  {
+    \\"start\\": 0,
+    \\"end\\": 1,
+    \\"parentScope\\": null,
+    \\"file\\": \\"File_16\\",
+    \\"segments\\": {
+      \\"EmptyStatement_17\\": {
+        \\"uses\\": [],
+        \\"start\\": 0,
+        \\"end\\": 1,
+        \\"id\\": \\"EmptyStatement_17\\"
+      }
+    },
+    \\"exposes\\": {},
+    \\"pointers\\": {},
+    \\"withSegments\\": []
+  },
+  {
+    \\"start\\": 0,
+    \\"end\\": 37,
+    \\"parentScope\\": null,
+    \\"file\\": \\"File_18\\",
+    \\"segments\\": {
+      \\"WithStatement_19\\": {
+        \\"uses\\": [],
+        \\"start\\": 0,
+        \\"end\\": 37,
+        \\"id\\": \\"WithStatement_19\\"
+      }
+    },
+    \\"exposes\\": {},
+    \\"pointers\\": {},
+    \\"withSegments\\": []
+  },
+  {
+    \\"start\\": 0,
+    \\"end\\": 37,
+    \\"parentScope\\": {
       \\"start\\": 0,
-      \\"end\\": 1,
-      \\"id\\": \\"NumericLiteral_1\\"
+      \\"end\\": 37,
+      \\"parentScope\\": null,
+      \\"file\\": \\"File_18\\",
+      \\"segments\\": {
+        \\"WithStatement_19\\": {
+          \\"uses\\": [],
+          \\"start\\": 0,
+          \\"end\\": 37,
+          \\"id\\": \\"WithStatement_19\\"
+        }
+      },
+      \\"exposes\\": {},
+      \\"pointers\\": {},
+      \\"withSegments\\": []
     },
-    \\"BinaryOperator_2\\": {
-      \\"uses\\": [],
-      \\"start\\": 2,
-      \\"end\\": 3,
-      \\"id\\": \\"BinaryOperator_2\\"
+    \\"file\\": \\"File_18\\",
+    \\"segments\\": {
+      \\"NullLiteral_20\\": {
+        \\"uses\\": [],
+        \\"start\\": 6,
+        \\"end\\": 10,
+        \\"id\\": \\"NullLiteral_20\\"
+      },
+      \\"BlockStatement_21\\": {
+        \\"uses\\": [],
+        \\"start\\": 12,
+        \\"end\\": 37,
+        \\"id\\": \\"BlockStatement_21\\"
+      }
     },
-    \\"NumericLiteral_3\\": {
-      \\"uses\\": [],
-      \\"start\\": 4,
-      \\"end\\": 6,
-      \\"id\\": \\"NumericLiteral_3\\"
-    },
-    \\"BinaryOperator_4\\": {
-      \\"uses\\": [],
-      \\"start\\": 7,
-      \\"end\\": 8,
-      \\"id\\": \\"BinaryOperator_4\\"
-    },
-    \\"NumericLiteral_5\\": {
-      \\"uses\\": [],
-      \\"start\\": 11,
-      \\"end\\": 13,
-      \\"id\\": \\"NumericLiteral_5\\"
-    },
-    \\"BinaryOperator_6\\": {
-      \\"uses\\": [],
-      \\"start\\": 14,
-      \\"end\\": 15,
-      \\"id\\": \\"BinaryOperator_6\\"
-    },
-    \\"NumericLiteral_7\\": {
-      \\"uses\\": [],
-      \\"start\\": 15,
-      \\"end\\": 17,
-      \\"id\\": \\"NumericLiteral_7\\"
-    },
-    \\"BinaryOperator_8\\": {
-      \\"uses\\": [],
-      \\"start\\": 17,
-      \\"end\\": 18,
-      \\"id\\": \\"BinaryOperator_8\\"
-    },
-    \\"NumericLiteral_9\\": {
-      \\"uses\\": [],
-      \\"start\\": 18,
-      \\"end\\": 19,
-      \\"id\\": \\"NumericLiteral_9\\"
-    },
-    \\"BinaryOperator_10\\": {
-      \\"uses\\": [],
-      \\"start\\": 19,
-      \\"end\\": 20,
-      \\"id\\": \\"BinaryOperator_10\\"
-    },
-    \\"NumericLiteral_11\\": {
-      \\"uses\\": [],
-      \\"start\\": 20,
-      \\"end\\": 22,
-      \\"id\\": \\"NumericLiteral_11\\"
-    },
-    \\"BinaryOperator_12\\": {
-      \\"uses\\": [],
-      \\"start\\": 22,
-      \\"end\\": 23,
-      \\"id\\": \\"BinaryOperator_12\\"
-    },
-    \\"NumericLiteral_13\\": {
-      \\"uses\\": [],
-      \\"start\\": 24,
-      \\"end\\": 26,
-      \\"id\\": \\"NumericLiteral_13\\"
-    }
+    \\"exposes\\": {},
+    \\"pointers\\": {},
+    \\"withSegments\\": [
+      \\"NullLiteral_20\\"
+    ]
   },
-  \\"exposes\\": {},
-  \\"pointers\\": {}
-}"
+  {
+    \\"start\\": 12,
+    \\"end\\": 37,
+    \\"parentScope\\": {
+      \\"start\\": 0,
+      \\"end\\": 37,
+      \\"parentScope\\": {
+        \\"start\\": 0,
+        \\"end\\": 37,
+        \\"parentScope\\": null,
+        \\"file\\": \\"File_18\\",
+        \\"segments\\": {
+          \\"WithStatement_19\\": {
+            \\"uses\\": [],
+            \\"start\\": 0,
+            \\"end\\": 37,
+            \\"id\\": \\"WithStatement_19\\"
+          }
+        },
+        \\"exposes\\": {},
+        \\"pointers\\": {},
+        \\"withSegments\\": []
+      },
+      \\"file\\": \\"File_18\\",
+      \\"segments\\": {
+        \\"NullLiteral_20\\": {
+          \\"uses\\": [],
+          \\"start\\": 6,
+          \\"end\\": 10,
+          \\"id\\": \\"NullLiteral_20\\"
+        },
+        \\"BlockStatement_21\\": {
+          \\"uses\\": [],
+          \\"start\\": 12,
+          \\"end\\": 37,
+          \\"id\\": \\"BlockStatement_21\\"
+        }
+      },
+      \\"exposes\\": {},
+      \\"pointers\\": {},
+      \\"withSegments\\": [
+        \\"NullLiteral_20\\"
+      ]
+    },
+    \\"file\\": \\"File_18\\",
+    \\"segments\\": {
+      \\"Identifier_23\\": {
+        \\"uses\\": [
+          \\"NullLiteral_20\\"
+        ],
+        \\"start\\": 30,
+        \\"end\\": 34,
+        \\"id\\": \\"Identifier_23\\"
+      },
+      \\"VariableDeclarator_22\\": {
+        \\"uses\\": [
+          \\"Identifier_23\\"
+        ],
+        \\"start\\": 22,
+        \\"end\\": 34,
+        \\"id\\": \\"VariableDeclarator_22\\"
+      }
+    },
+    \\"exposes\\": {},
+    \\"pointers\\": {
+      \\"value\\": \\"VariableDeclarator_22\\"
+    },
+    \\"withSegments\\": []
+  }
+]"
 `;
