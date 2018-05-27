@@ -2,8 +2,8 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <base data-ice="baseUrl">
-  <title data-ice="title">Home | regana</title>
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">src/models/Node.js | regana</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
@@ -70,14 +70,133 @@
 </div>
 </nav>
 
-<div class="content" data-ice="content"><div data-ice="index" class="github-markdown"><h1 id="regression-analysis">Regression Analysis</h1><p>[work in process]</p>
-<p><a href="https://travis-ci.org/vanils/regana"><img src="https://travis-ci.org/vanils/regana.svg?branch=master" alt="Build Status"></a>
-<a href="https://codecov.io/gh/vanils/regana"><img src="https://codecov.io/gh/vanils/regana/branch/master/graph/badge.svg" alt="codecov"></a>
-<a href="https://david-dm.org/vanils/regana"><img src="https://david-dm.org/vanils/regana.svg" alt="Dependency Status"></a>
-<a href="https://david-dm.org/vanils/regana#info=devDependencies"><img src="https://david-dm.org/vanils/regana/dev-status.svg" alt="devDependency Status"></a></p>
-<p>Tool to analyse risk for regressions. Can be integrated with Github pull requests to highlight potential issues and used by QA people to plan regression tests.</p>
-<p>Read more from <a href="https://vanils.github.io/regana/">API documentation</a></p>
-</div>
+<div class="content" data-ice="content"><h1 data-ice="title">src/models/Node.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">
+const asStringValue = require(&apos;../utils/asStringValue&apos;);
+
+/**
+ * Node representing a logical point within the code
+ */
+class Node {
+
+  static createId () {
+    return require(&apos;uniqid&apos;)(&apos;node-&apos;);
+  }
+
+  static isValidId (id) {
+
+    if (typeof id !== &apos;string&apos;) {
+      return false;
+    }
+
+    if (!id) {
+      return false;
+    }
+
+    /*
+     * TODO, verify that id is actually registered
+     */
+    return true;
+  }
+
+  static isValidFile (file) {
+
+    if (typeof file !== &apos;string&apos;) {
+      return false;
+    }
+
+    if (!file) {
+      return false;
+    }
+
+    /*
+     * TODO, verify that file actually exists
+     */
+    return true;
+  }
+
+  static isValidNodeInterface (nodeInterface) {
+
+    if (!nodeInterface) {
+      return false;
+    }
+
+    if (!nodeInterface.loc) {
+      return false;
+    }
+
+    return true;
+  }
+
+  /**
+   * Create a node.
+   *
+   * @param {string} parentId - Id of parent node.
+   * @param {string} file - Path to file which contains this node.
+   * @param {Object} nodeInterface - Declaration entity which must follow format
+   * of babylon parser ES tree (see more from https://bit.ly/2I2Thnf).
+   *
+   * @example
+   * new Node(&apos;Node_1&apos;, &apos;path/to/file&apos;, entity);
+   */
+  constructor (parentId, file, nodeInterface) {
+
+    if (!Node.isValidId(parentId)) {
+      throw new Error(`Invalid parent id &apos;${asStringValue(parentId)}&apos;`);
+    }
+
+    if (!Node.isValidFile(file)) {
+      throw new Error(`Invalid file &apos;${asStringValue(file)}&apos;`);
+    }
+
+    if (!Node.isValidNodeInterface(nodeInterface)) {
+      throw new Error(`Invalid node interface &apos;${asStringValue(nodeInterface)}&apos;`);
+    }
+
+    /**
+     * Id for this node
+     * @type {string}
+     */
+    this.id = Node.createId();
+
+    /**
+     * Id for parent of this node
+     * @type {string}
+     */
+    this.parentId = parentId;
+
+    /**
+     * File src which this node belongs to
+     * @type {string}
+     */
+    this.file = file;
+
+    /**
+     * File src which this node belongs to
+     * @type {object}
+     * @property {number} line - Line number where scope of this node begins
+     * @property {number} column - Column number where scope of this node begins
+     */
+    this.start = {
+      line: nodeInterface.loc.start.line,
+      column: nodeInterface.loc.start.column
+    };
+
+    /**
+     * File src which this node belongs to
+     * @type {object}
+     * @property {number} line - line number where scope of this node ends
+     * @property {number} column - column number where scope of this node ends
+     */
+    this.end = {
+      line: nodeInterface.loc.end.line,
+      column: nodeInterface.loc.end.column
+    };
+  }
+}
+
+module.exports = Node;</code></pre>
+
 </div>
 
 <footer class="footer">
