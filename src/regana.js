@@ -9,6 +9,11 @@ const analyse = require('./analyse/entry');
  */
 
 /**
+ * Models
+ * @namespace models
+ */
+
+/**
  * Stores
  * @namespace store
  */
