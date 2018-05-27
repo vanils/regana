@@ -1,0 +1,4917 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "src/analyse/entry.js",
+    "content": "\nconst analyseFile = require('./file');\nconst scopeStore = require('../store/scopes');\n\n/**\n * Analyse a file and format into logical flow breakdown.\n *\n * @memberof analyse\n * @param {string} fileSrc - Path to file to analyse.\n *\n * @example\n * analyse('/path/to/file.js');  // returns all scopes\n */\nconst analyse = fileSrc => {\n  analyseFile(fileSrc);\n\n  return JSON.stringify(scopeStore.getAll(), null, 2);\n};\n\nmodule.exports = analyse;",
+    "static": true,
+    "longname": "/Users/mattimehtonen/Projects/regana/src/analyse/entry.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "variable",
+    "name": "analyseFile",
+    "memberof": "src/analyse/entry.js",
+    "static": true,
+    "longname": "src/analyse/entry.js~analyseFile",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/analyse/entry.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 50,
+    "kind": "variable",
+    "name": "scopeStore",
+    "memberof": "src/analyse/entry.js",
+    "static": true,
+    "longname": "src/analyse/entry.js~scopeStore",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/analyse/entry.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 51,
+    "kind": "function",
+    "name": "analyse",
+    "memberof": "src/analyse/entry.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/analyse/entry.js~analyse",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/analyse/entry.js",
+    "importStyle": null,
+    "description": "Analyse a file and format into logical flow breakdown.",
+    "examples": [
+      "analyse('/path/to/file.js');  // returns all scopes"
+    ],
+    "lineNumber": 14,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "fileSrc",
+        "description": "Path to file to analyse."
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 52,
+    "kind": "file",
+    "name": "src/analyse/file.js",
+    "content": "\nconst readFile = require('../utils/readFile');\nconst entitify = require('../utils/entitify');\nconst createId = require('../utils/createId');\nconst Scope = require('../models/Scope');\nconst fileStore = require('../store/files');\nconst analyseNode = require('./node');\n\n/**\n * Analyse a file and format into logical flow breakdown.\n *\n * @memberof analyse\n * @param {string} fileSrc - Path to file to analyse.\n *\n * @example\n * analyseFile('/path/to/file.js');  // return analyse\n */\nconst analyseFile = fileSrc => {\n\n  const id = createId('File');\n  const content = readFile(fileSrc);\n  const entities = entitify(content);\n  const { body } = entities.program;\n  const { start, end } = entities;\n\n  fileStore.add({\n    id,\n    content,\n    entities\n  });\n\n  const scope = new Scope(start, end, { file: id });\n\n  body.forEach(item => analyseNode(item, scope));\n\n  return scope;\n};\n\nmodule.exports = analyseFile;",
+    "static": true,
+    "longname": "/Users/mattimehtonen/Projects/regana/src/analyse/file.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 53,
+    "kind": "variable",
+    "name": "readFile",
+    "memberof": "src/analyse/file.js",
+    "static": true,
+    "longname": "src/analyse/file.js~readFile",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/analyse/file.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 54,
+    "kind": "variable",
+    "name": "entitify",
+    "memberof": "src/analyse/file.js",
+    "static": true,
+    "longname": "src/analyse/file.js~entitify",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/analyse/file.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 55,
+    "kind": "variable",
+    "name": "createId",
+    "memberof": "src/analyse/file.js",
+    "static": true,
+    "longname": "src/analyse/file.js~createId",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/analyse/file.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 56,
+    "kind": "variable",
+    "name": "Scope",
+    "memberof": "src/analyse/file.js",
+    "static": true,
+    "longname": "src/analyse/file.js~Scope",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/analyse/file.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 57,
+    "kind": "variable",
+    "name": "fileStore",
+    "memberof": "src/analyse/file.js",
+    "static": true,
+    "longname": "src/analyse/file.js~fileStore",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/analyse/file.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 58,
+    "kind": "variable",
+    "name": "analyseNode",
+    "memberof": "src/analyse/file.js",
+    "static": true,
+    "longname": "src/analyse/file.js~analyseNode",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/analyse/file.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 59,
+    "kind": "function",
+    "name": "analyseFile",
+    "memberof": "src/analyse/file.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/analyse/file.js~analyseFile",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/analyse/file.js",
+    "importStyle": null,
+    "description": "Analyse a file and format into logical flow breakdown.",
+    "examples": [
+      "analyseFile('/path/to/file.js');  // return analyse"
+    ],
+    "lineNumber": 18,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "fileSrc",
+        "description": "Path to file to analyse."
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 60,
+    "kind": "file",
+    "name": "src/analyse/node.js",
+    "content": "\n/**\n * Analyse a single node. Can be considered as router for other node types.\n *\n * @memberof analyse\n * @param {Object} node - Node to be analysed.\n * @param {Scope} scope - Scope attached to this node.\n * @returns {Array} Array of ids for segment.\n *\n * @example\n * analyseNode(node, scope);  // returns analyse\n */\nconst analyseNode = (node, scope) => {\n  switch (node.type) {\n    case 'Identifier':\n      return require('./types/identifier')(node, scope);\n    case 'RegExpLiteral':\n      return require('./types/literals/regex')(node, scope);\n    case 'NullLiteral':\n      return require('./types/literals/null')(node, scope);\n    case 'StringLiteral':\n      return require('./types/literals/string')(node, scope);\n    case 'BooleanLiteral':\n      return require('./types/literals/boolean')(node, scope);\n    case 'NumericLiteral':\n      return require('./types/literals/numeric')(node, scope);\n    case 'VariableDeclaration':\n      return require('./types/declarations/variable')(node, scope);\n    case 'ReturnStatement':\n      return require('./types/statements/controlFlow/return')(node, scope);\n    case 'LabeledStatement':\n      return require('./types/statements/controlFlow/labeled')(node, scope);\n    case 'BreakStatement':\n      return require('./types/statements/controlFlow/break')(node, scope);\n    case 'ContinueStatement':\n      return require('./types/statements/controlFlow/continue')(node, scope);\n    case 'BlockStatement':\n      return require('./types/statements/block')(node, scope);\n    case 'EmptyStatement':\n      return require('./types/statements/empty')(node, scope);\n    case 'ExpressionStatement':\n      return require('./types/statements/expression')(node, scope);\n    case 'DebuggerStatement':\n      return require('./types/statements/debugger')(node, scope);\n    case 'WithStatement':\n      return require('./types/statements/with')(node, scope);\n    case 'BinaryExpression':\n      return require('./types/expressions/binary')(node, scope);\n    case 'ExportNamedDeclaration':\n      return require('./types/modules/exports/exportNamed')(node, scope);\n    case 'BinaryOperator':\n      return require('./types/extras/binaryOperator')(node, scope);\n    default:\n      throw new Error(`Failed to parse, unknown entity type '${node.type}'`);\n  }\n};\n\nmodule.exports = analyseNode;",
+    "static": true,
+    "longname": "/Users/mattimehtonen/Projects/regana/src/analyse/node.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 61,
+    "kind": "function",
+    "name": "analyseNode",
+    "memberof": "src/analyse/node.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/analyse/node.js~analyseNode",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/analyse/node.js",
+    "importStyle": null,
+    "description": "Analyse a single node. Can be considered as router for other node types.",
+    "examples": [
+      "analyseNode(node, scope);  // returns analyse"
+    ],
+    "lineNumber": 13,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Array} Array of ids for segment."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "node",
+        "description": "Node to be analysed."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Scope"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "scope",
+        "description": "Scope attached to this node."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Array"
+      ],
+      "spread": false,
+      "description": "Array of ids for segment."
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 62,
+    "kind": "file",
+    "name": "src/analyse/types/declarations/variable.js",
+    "content": "\nconst createId = require('../../../utils/createId');\nconst analyseNode = require('../../node');\n\nconst analyseVariable = (entity, scope) => {\n\n  return entity.declarations.map(declarator => {\n\n    const {\n      start,\n      type,\n      end\n    } = declarator;\n\n    const id = createId(type);\n    const pointer = declarator.id.name;\n    const uses = declarator.init ? analyseNode(declarator.init, scope) : [];\n\n    scope.addSegment(id, start, end, {\n      pointer,\n      uses\n    });\n\n    return id;\n  });\n};\n\nmodule.exports = analyseVariable;",
+    "static": true,
+    "longname": "/Users/mattimehtonen/Projects/regana/src/analyse/types/declarations/variable.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 63,
+    "kind": "variable",
+    "name": "createId",
+    "memberof": "src/analyse/types/declarations/variable.js",
+    "static": true,
+    "longname": "src/analyse/types/declarations/variable.js~createId",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/analyse/types/declarations/variable.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 64,
+    "kind": "variable",
+    "name": "analyseNode",
+    "memberof": "src/analyse/types/declarations/variable.js",
+    "static": true,
+    "longname": "src/analyse/types/declarations/variable.js~analyseNode",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/analyse/types/declarations/variable.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 65,
+    "kind": "function",
+    "name": "analyseVariable",
+    "memberof": "src/analyse/types/declarations/variable.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/analyse/types/declarations/variable.js~analyseVariable",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/analyse/types/declarations/variable.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "params": [
+      {
+        "name": "entity",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "scope",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 66,
+    "kind": "file",
+    "name": "src/analyse/types/expressions/binary.js",
+    "content": "\nconst analyseNode = require('../../node');\nconst fileStore = require('../../../store/files');\n\nconst generateOperator = (from, to, operator, scope) => {\n\n  const text = fileStore.get(scope.file).content.substr(from, to - from);\n  const offset = text.indexOf(operator);\n  const start = from + offset;\n  const end = start + operator.length;\n\n  return {\n    type: 'BinaryOperator',\n    start,\n    end,\n    operator\n  };\n};\n\nconst analyseBinary = (entity, scope) => {\n\n  /*\n   * From left to right\n   */\n  const leftNode = analyseNode(entity.left, scope);\n  const operatorEntity = generateOperator(entity.left.end, entity.right.start, entity.operator, scope);\n  const operatorNode = analyseNode(operatorEntity, scope);\n  const rightNode = analyseNode(entity.right, scope);\n\n  return leftNode.concat(operatorNode, rightNode);\n};\n\nmodule.exports = analyseBinary;",
+    "static": true,
+    "longname": "/Users/mattimehtonen/Projects/regana/src/analyse/types/expressions/binary.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 67,
+    "kind": "variable",
+    "name": "analyseNode",
+    "memberof": "src/analyse/types/expressions/binary.js",
+    "static": true,
+    "longname": "src/analyse/types/expressions/binary.js~analyseNode",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/analyse/types/expressions/binary.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 68,
+    "kind": "variable",
+    "name": "fileStore",
+    "memberof": "src/analyse/types/expressions/binary.js",
+    "static": true,
+    "longname": "src/analyse/types/expressions/binary.js~fileStore",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/analyse/types/expressions/binary.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 69,
+    "kind": "function",
+    "name": "generateOperator",
+    "memberof": "src/analyse/types/expressions/binary.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/analyse/types/expressions/binary.js~generateOperator",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/analyse/types/expressions/binary.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "params": [
+      {
+        "name": "from",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "to",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "operator",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "scope",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "{\"type\": string, \"start\": *, \"end\": *, \"operator\": *}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 70,
+    "kind": "function",
+    "name": "analyseBinary",
+    "memberof": "src/analyse/types/expressions/binary.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/analyse/types/expressions/binary.js~analyseBinary",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/analyse/types/expressions/binary.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 20,
+    "undocument": true,
+    "params": [
+      {
+        "name": "entity",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "scope",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 71,
+    "kind": "file",
+    "name": "src/analyse/types/extras/binaryOperator.js",
+    "content": "\nconst createId = require('../../../utils/createId');\n\nconst analyseBinaryOperator = (entity, scope) => {\n\n  const {\n    start,\n    type,\n    end\n  } = entity;\n\n  const id = createId(type);\n  scope.addSegment(id, start, end);\n\n  return [id];\n};\n\nmodule.exports = analyseBinaryOperator;",
+    "static": true,
+    "longname": "/Users/mattimehtonen/Projects/regana/src/analyse/types/extras/binaryOperator.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 72,
+    "kind": "variable",
+    "name": "createId",
+    "memberof": "src/analyse/types/extras/binaryOperator.js",
+    "static": true,
+    "longname": "src/analyse/types/extras/binaryOperator.js~createId",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/analyse/types/extras/binaryOperator.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 73,
+    "kind": "function",
+    "name": "analyseBinaryOperator",
+    "memberof": "src/analyse/types/extras/binaryOperator.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/analyse/types/extras/binaryOperator.js~analyseBinaryOperator",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/analyse/types/extras/binaryOperator.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "params": [
+      {
+        "name": "entity",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "scope",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "undefined[]"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 74,
+    "kind": "file",
+    "name": "src/analyse/types/identifier.js",
+    "content": "\nconst createId = require('../../utils/createId');\n\nconst analyseIdentifier = (entity, scope) => {\n\n  const {\n    start,\n    type,\n    end\n  } = entity;\n\n  const id = createId(type);\n  const uses = scope.getSegmentIdsByPointer(entity.name);\n  scope.addSegment(id, start, end, { uses });\n\n  return [id];\n};\n\nmodule.exports = analyseIdentifier;",
+    "static": true,
+    "longname": "/Users/mattimehtonen/Projects/regana/src/analyse/types/identifier.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 75,
+    "kind": "variable",
+    "name": "createId",
+    "memberof": "src/analyse/types/identifier.js",
+    "static": true,
+    "longname": "src/analyse/types/identifier.js~createId",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/analyse/types/identifier.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 76,
+    "kind": "function",
+    "name": "analyseIdentifier",
+    "memberof": "src/analyse/types/identifier.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/analyse/types/identifier.js~analyseIdentifier",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/analyse/types/identifier.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "params": [
+      {
+        "name": "entity",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "scope",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "undefined[]"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 77,
+    "kind": "file",
+    "name": "src/analyse/types/literals/boolean.js",
+    "content": "\nconst createId = require('../../../utils/createId');\n\nconst analyseBoolean = (entity, scope) => {\n\n  const {\n    start,\n    type,\n    end\n  } = entity;\n\n  const id = createId(type);\n  scope.addSegment(id, start, end);\n\n  return [id];\n};\n\nmodule.exports = analyseBoolean;",
+    "static": true,
+    "longname": "/Users/mattimehtonen/Projects/regana/src/analyse/types/literals/boolean.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 78,
+    "kind": "variable",
+    "name": "createId",
+    "memberof": "src/analyse/types/literals/boolean.js",
+    "static": true,
+    "longname": "src/analyse/types/literals/boolean.js~createId",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/analyse/types/literals/boolean.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 79,
+    "kind": "function",
+    "name": "analyseBoolean",
+    "memberof": "src/analyse/types/literals/boolean.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/analyse/types/literals/boolean.js~analyseBoolean",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/analyse/types/literals/boolean.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "params": [
+      {
+        "name": "entity",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "scope",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "undefined[]"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 80,
+    "kind": "file",
+    "name": "src/analyse/types/literals/null.js",
+    "content": "\nconst createId = require('../../../utils/createId');\n\nconst analyseNull = (entity, scope) => {\n\n  const {\n    start,\n    type,\n    end\n  } = entity;\n\n  const id = createId(type);\n  scope.addSegment(id, start, end);\n\n  return [id];\n};\n\nmodule.exports = analyseNull;",
+    "static": true,
+    "longname": "/Users/mattimehtonen/Projects/regana/src/analyse/types/literals/null.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 81,
+    "kind": "variable",
+    "name": "createId",
+    "memberof": "src/analyse/types/literals/null.js",
+    "static": true,
+    "longname": "src/analyse/types/literals/null.js~createId",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/analyse/types/literals/null.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 82,
+    "kind": "function",
+    "name": "analyseNull",
+    "memberof": "src/analyse/types/literals/null.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/analyse/types/literals/null.js~analyseNull",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/analyse/types/literals/null.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "params": [
+      {
+        "name": "entity",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "scope",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "undefined[]"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 83,
+    "kind": "file",
+    "name": "src/analyse/types/literals/numeric.js",
+    "content": "\nconst createId = require('../../../utils/createId');\n\nconst analyseNumeric = (entity, scope) => {\n\n  const {\n    start,\n    type,\n    end\n  } = entity;\n\n  const id = createId(type);\n  scope.addSegment(id, start, end);\n\n  return [id];\n};\n\nmodule.exports = analyseNumeric;",
+    "static": true,
+    "longname": "/Users/mattimehtonen/Projects/regana/src/analyse/types/literals/numeric.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 84,
+    "kind": "variable",
+    "name": "createId",
+    "memberof": "src/analyse/types/literals/numeric.js",
+    "static": true,
+    "longname": "src/analyse/types/literals/numeric.js~createId",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/analyse/types/literals/numeric.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 85,
+    "kind": "function",
+    "name": "analyseNumeric",
+    "memberof": "src/analyse/types/literals/numeric.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/analyse/types/literals/numeric.js~analyseNumeric",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/analyse/types/literals/numeric.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "params": [
+      {
+        "name": "entity",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "scope",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "undefined[]"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 86,
+    "kind": "file",
+    "name": "src/analyse/types/literals/regex.js",
+    "content": "\nconst createId = require('../../../utils/createId');\n\nconst analyseRegex = (entity, scope) => {\n\n  const {\n    start,\n    type,\n    end\n  } = entity;\n\n  const id = createId(type);\n  scope.addSegment(id, start, end);\n\n  return [id];\n};\n\nmodule.exports = analyseRegex;",
+    "static": true,
+    "longname": "/Users/mattimehtonen/Projects/regana/src/analyse/types/literals/regex.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 87,
+    "kind": "variable",
+    "name": "createId",
+    "memberof": "src/analyse/types/literals/regex.js",
+    "static": true,
+    "longname": "src/analyse/types/literals/regex.js~createId",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/analyse/types/literals/regex.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 88,
+    "kind": "function",
+    "name": "analyseRegex",
+    "memberof": "src/analyse/types/literals/regex.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/analyse/types/literals/regex.js~analyseRegex",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/analyse/types/literals/regex.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "params": [
+      {
+        "name": "entity",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "scope",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "undefined[]"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 89,
+    "kind": "file",
+    "name": "src/analyse/types/literals/string.js",
+    "content": "\nconst createId = require('../../../utils/createId');\n\nconst analyseString = (entity, scope) => {\n\n  const {\n    start,\n    type,\n    end\n  } = entity;\n\n  const id = createId(type);\n  scope.addSegment(id, start, end);\n\n  return [id];\n};\n\nmodule.exports = analyseString;",
+    "static": true,
+    "longname": "/Users/mattimehtonen/Projects/regana/src/analyse/types/literals/string.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 90,
+    "kind": "variable",
+    "name": "createId",
+    "memberof": "src/analyse/types/literals/string.js",
+    "static": true,
+    "longname": "src/analyse/types/literals/string.js~createId",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/analyse/types/literals/string.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 91,
+    "kind": "function",
+    "name": "analyseString",
+    "memberof": "src/analyse/types/literals/string.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/analyse/types/literals/string.js~analyseString",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/analyse/types/literals/string.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "params": [
+      {
+        "name": "entity",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "scope",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "undefined[]"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 92,
+    "kind": "file",
+    "name": "src/analyse/types/modules/exports/exportNamed.js",
+    "content": "\nconst createId = require('../../../../utils/createId');\n\nconst analyseExportNamed = (entity, scope) => {\n\n  const {\n    start,\n    type,\n    end\n  } = entity;\n\n  const id = createId(type);\n  const exported = entity.specifiers[0].exported.name;\n\n  scope.addSegment(id, start, end, {\n    usesPointers: [exported],\n    exposes: [exported]\n  });\n\n  return [id];\n};\n\nmodule.exports = analyseExportNamed;",
+    "static": true,
+    "longname": "/Users/mattimehtonen/Projects/regana/src/analyse/types/modules/exports/exportNamed.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 93,
+    "kind": "variable",
+    "name": "createId",
+    "memberof": "src/analyse/types/modules/exports/exportNamed.js",
+    "static": true,
+    "longname": "src/analyse/types/modules/exports/exportNamed.js~createId",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/analyse/types/modules/exports/exportNamed.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 94,
+    "kind": "function",
+    "name": "analyseExportNamed",
+    "memberof": "src/analyse/types/modules/exports/exportNamed.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/analyse/types/modules/exports/exportNamed.js~analyseExportNamed",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/analyse/types/modules/exports/exportNamed.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "params": [
+      {
+        "name": "entity",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "scope",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "undefined[]"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 95,
+    "kind": "file",
+    "name": "src/analyse/types/statements/block.js",
+    "content": "\nconst createId = require('../../../utils/createId');\nconst Scope = require('../../../models/Scope');\nconst analyseNode = require('../../node');\n\nconst analyseBlock = (entity, parentScope) => {\n\n  const {\n    start,\n    type,\n    end\n  } = entity;\n\n  const id = createId(type);\n  parentScope.addSegment(id, start, end);\n\n  const scope = new Scope(start, end, { parentScope });\n\n  entity.body.forEach(item => analyseNode(item, scope));\n\n  return [];\n};\n\nmodule.exports = analyseBlock;",
+    "static": true,
+    "longname": "/Users/mattimehtonen/Projects/regana/src/analyse/types/statements/block.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 96,
+    "kind": "variable",
+    "name": "createId",
+    "memberof": "src/analyse/types/statements/block.js",
+    "static": true,
+    "longname": "src/analyse/types/statements/block.js~createId",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/analyse/types/statements/block.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 97,
+    "kind": "variable",
+    "name": "Scope",
+    "memberof": "src/analyse/types/statements/block.js",
+    "static": true,
+    "longname": "src/analyse/types/statements/block.js~Scope",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/analyse/types/statements/block.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 98,
+    "kind": "variable",
+    "name": "analyseNode",
+    "memberof": "src/analyse/types/statements/block.js",
+    "static": true,
+    "longname": "src/analyse/types/statements/block.js~analyseNode",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/analyse/types/statements/block.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 99,
+    "kind": "function",
+    "name": "analyseBlock",
+    "memberof": "src/analyse/types/statements/block.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/analyse/types/statements/block.js~analyseBlock",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/analyse/types/statements/block.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "params": [
+      {
+        "name": "entity",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "parentScope",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*[]"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 100,
+    "kind": "file",
+    "name": "src/analyse/types/statements/controlFlow/break.js",
+    "content": "\nconst createId = require('../../../../utils/createId');\n\nconst analyseBreak = (entity, scope) => {\n\n  const {\n    start,\n    type,\n    end\n  } = entity;\n\n  const id = createId(type);\n  scope.addSegment(id, start, end);\n\n  return [id];\n};\n\nmodule.exports = analyseBreak;",
+    "static": true,
+    "longname": "/Users/mattimehtonen/Projects/regana/src/analyse/types/statements/controlFlow/break.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 101,
+    "kind": "variable",
+    "name": "createId",
+    "memberof": "src/analyse/types/statements/controlFlow/break.js",
+    "static": true,
+    "longname": "src/analyse/types/statements/controlFlow/break.js~createId",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/analyse/types/statements/controlFlow/break.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 102,
+    "kind": "function",
+    "name": "analyseBreak",
+    "memberof": "src/analyse/types/statements/controlFlow/break.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/analyse/types/statements/controlFlow/break.js~analyseBreak",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/analyse/types/statements/controlFlow/break.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "params": [
+      {
+        "name": "entity",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "scope",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "undefined[]"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 103,
+    "kind": "file",
+    "name": "src/analyse/types/statements/controlFlow/continue.js",
+    "content": "\nconst createId = require('../../../../utils/createId');\n\nconst analyseContinue = (entity, scope) => {\n\n  const {\n    start,\n    type,\n    end\n  } = entity;\n\n  const id = createId(type);\n  scope.addSegment(id, start, end);\n\n  return [id];\n};\n\nmodule.exports = analyseContinue;",
+    "static": true,
+    "longname": "/Users/mattimehtonen/Projects/regana/src/analyse/types/statements/controlFlow/continue.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 104,
+    "kind": "variable",
+    "name": "createId",
+    "memberof": "src/analyse/types/statements/controlFlow/continue.js",
+    "static": true,
+    "longname": "src/analyse/types/statements/controlFlow/continue.js~createId",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/analyse/types/statements/controlFlow/continue.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 105,
+    "kind": "function",
+    "name": "analyseContinue",
+    "memberof": "src/analyse/types/statements/controlFlow/continue.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/analyse/types/statements/controlFlow/continue.js~analyseContinue",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/analyse/types/statements/controlFlow/continue.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "params": [
+      {
+        "name": "entity",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "scope",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "undefined[]"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 106,
+    "kind": "file",
+    "name": "src/analyse/types/statements/controlFlow/labeled.js",
+    "content": "\nconst createId = require('../../../../utils/createId');\nconst analyseNode = require('../../../node');\n\nconst analyseLabeled = (entity, scope) => {\n\n  const {\n    start,\n    type,\n    end\n  } = entity;\n\n  const id = createId(type);\n  const uses = analyseNode(entity.body, scope);\n\n  /*\n   * TODO - handle label property?\n   */\n\n  scope.addSegment(id, start, end, { uses });\n\n  return [id];\n};\n\nmodule.exports = analyseLabeled;",
+    "static": true,
+    "longname": "/Users/mattimehtonen/Projects/regana/src/analyse/types/statements/controlFlow/labeled.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 107,
+    "kind": "variable",
+    "name": "createId",
+    "memberof": "src/analyse/types/statements/controlFlow/labeled.js",
+    "static": true,
+    "longname": "src/analyse/types/statements/controlFlow/labeled.js~createId",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/analyse/types/statements/controlFlow/labeled.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 108,
+    "kind": "variable",
+    "name": "analyseNode",
+    "memberof": "src/analyse/types/statements/controlFlow/labeled.js",
+    "static": true,
+    "longname": "src/analyse/types/statements/controlFlow/labeled.js~analyseNode",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/analyse/types/statements/controlFlow/labeled.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 109,
+    "kind": "function",
+    "name": "analyseLabeled",
+    "memberof": "src/analyse/types/statements/controlFlow/labeled.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/analyse/types/statements/controlFlow/labeled.js~analyseLabeled",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/analyse/types/statements/controlFlow/labeled.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "params": [
+      {
+        "name": "entity",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "scope",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "undefined[]"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 110,
+    "kind": "file",
+    "name": "src/analyse/types/statements/controlFlow/return.js",
+    "content": "\nconst createId = require('../../../../utils/createId');\nconst analyseNode = require('../../../node');\n\nconst analyseReturn = (entity, scope) => {\n\n  const {\n    start,\n    type,\n    end\n  } = entity;\n\n  const id = createId(type);\n  const uses = analyseNode(entity.argument, scope);\n  scope.addSegment(id, start, end, { uses });\n\n  return [id];\n};\n\nmodule.exports = analyseReturn;",
+    "static": true,
+    "longname": "/Users/mattimehtonen/Projects/regana/src/analyse/types/statements/controlFlow/return.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 111,
+    "kind": "variable",
+    "name": "createId",
+    "memberof": "src/analyse/types/statements/controlFlow/return.js",
+    "static": true,
+    "longname": "src/analyse/types/statements/controlFlow/return.js~createId",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/analyse/types/statements/controlFlow/return.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 112,
+    "kind": "variable",
+    "name": "analyseNode",
+    "memberof": "src/analyse/types/statements/controlFlow/return.js",
+    "static": true,
+    "longname": "src/analyse/types/statements/controlFlow/return.js~analyseNode",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/analyse/types/statements/controlFlow/return.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 113,
+    "kind": "function",
+    "name": "analyseReturn",
+    "memberof": "src/analyse/types/statements/controlFlow/return.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/analyse/types/statements/controlFlow/return.js~analyseReturn",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/analyse/types/statements/controlFlow/return.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "params": [
+      {
+        "name": "entity",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "scope",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "undefined[]"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 114,
+    "kind": "file",
+    "name": "src/analyse/types/statements/debugger.js",
+    "content": "\nconst createId = require('../../../utils/createId');\n\nconst analyseDebugger = (entity, scope) => {\n\n  const {\n    start,\n    type,\n    end\n  } = entity;\n\n  const id = createId(type);\n  scope.addSegment(id, start, end);\n\n  return [id];\n};\n\nmodule.exports = analyseDebugger;",
+    "static": true,
+    "longname": "/Users/mattimehtonen/Projects/regana/src/analyse/types/statements/debugger.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 115,
+    "kind": "variable",
+    "name": "createId",
+    "memberof": "src/analyse/types/statements/debugger.js",
+    "static": true,
+    "longname": "src/analyse/types/statements/debugger.js~createId",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/analyse/types/statements/debugger.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 116,
+    "kind": "function",
+    "name": "analyseDebugger",
+    "memberof": "src/analyse/types/statements/debugger.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/analyse/types/statements/debugger.js~analyseDebugger",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/analyse/types/statements/debugger.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "params": [
+      {
+        "name": "entity",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "scope",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "undefined[]"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 117,
+    "kind": "file",
+    "name": "src/analyse/types/statements/empty.js",
+    "content": "\nconst createId = require('../../../utils/createId');\n\nconst analyseEmpty = (entity, scope) => {\n\n  const {\n    start,\n    type,\n    end\n  } = entity;\n\n  const id = createId(type);\n  scope.addSegment(id, start, end);\n\n  return [id];\n};\n\nmodule.exports = analyseEmpty;",
+    "static": true,
+    "longname": "/Users/mattimehtonen/Projects/regana/src/analyse/types/statements/empty.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 118,
+    "kind": "variable",
+    "name": "createId",
+    "memberof": "src/analyse/types/statements/empty.js",
+    "static": true,
+    "longname": "src/analyse/types/statements/empty.js~createId",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/analyse/types/statements/empty.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 119,
+    "kind": "function",
+    "name": "analyseEmpty",
+    "memberof": "src/analyse/types/statements/empty.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/analyse/types/statements/empty.js~analyseEmpty",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/analyse/types/statements/empty.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "params": [
+      {
+        "name": "entity",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "scope",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "undefined[]"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 120,
+    "kind": "file",
+    "name": "src/analyse/types/statements/expression.js",
+    "content": "\nconst analyseNode = require('../../node');\n\nconst analyseExpression = (entity, scope) => {\n  return analyseNode(entity.expression, scope);\n};\n\nmodule.exports = analyseExpression;",
+    "static": true,
+    "longname": "/Users/mattimehtonen/Projects/regana/src/analyse/types/statements/expression.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 121,
+    "kind": "variable",
+    "name": "analyseNode",
+    "memberof": "src/analyse/types/statements/expression.js",
+    "static": true,
+    "longname": "src/analyse/types/statements/expression.js~analyseNode",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/analyse/types/statements/expression.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 122,
+    "kind": "function",
+    "name": "analyseExpression",
+    "memberof": "src/analyse/types/statements/expression.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/analyse/types/statements/expression.js~analyseExpression",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/analyse/types/statements/expression.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "params": [
+      {
+        "name": "entity",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "scope",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 123,
+    "kind": "file",
+    "name": "src/analyse/types/statements/with.js",
+    "content": "\nconst createId = require('../../../utils/createId');\nconst Scope = require('../../../models/Scope');\nconst analyseNode = require('../../node');\n\nconst analyseWith = (entity, parentScope) => {\n\n  const {\n    start,\n    type,\n    end\n  } = entity;\n\n  const id = createId(type);\n  parentScope.addSegment(id, start, end);\n\n  const scope = new Scope(start, end, { parentScope });\n\n  const withSegments = analyseNode(entity.object, scope, true);\n  withSegments.forEach(segment => scope.withSegments.push(segment));\n  analyseNode(entity.body, scope);\n\n  return [];\n};\n\nmodule.exports = analyseWith;",
+    "static": true,
+    "longname": "/Users/mattimehtonen/Projects/regana/src/analyse/types/statements/with.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 124,
+    "kind": "variable",
+    "name": "createId",
+    "memberof": "src/analyse/types/statements/with.js",
+    "static": true,
+    "longname": "src/analyse/types/statements/with.js~createId",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/analyse/types/statements/with.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 125,
+    "kind": "variable",
+    "name": "Scope",
+    "memberof": "src/analyse/types/statements/with.js",
+    "static": true,
+    "longname": "src/analyse/types/statements/with.js~Scope",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/analyse/types/statements/with.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 126,
+    "kind": "variable",
+    "name": "analyseNode",
+    "memberof": "src/analyse/types/statements/with.js",
+    "static": true,
+    "longname": "src/analyse/types/statements/with.js~analyseNode",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/analyse/types/statements/with.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 127,
+    "kind": "function",
+    "name": "analyseWith",
+    "memberof": "src/analyse/types/statements/with.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/analyse/types/statements/with.js~analyseWith",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/analyse/types/statements/with.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "params": [
+      {
+        "name": "entity",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "parentScope",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*[]"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 128,
+    "kind": "file",
+    "name": "src/models/Node.js",
+    "content": "\nconst asStringValue = require('../utils/asStringValue');\n\n/**\n * Node representing a logical point within the code\n */\nclass Node {\n\n  static createId () {\n    return require('uniqid')('node-');\n  }\n\n  static isValidId (id) {\n\n    if (typeof id !== 'string') {\n      return false;\n    }\n\n    if (!id) {\n      return false;\n    }\n\n    /*\n     * TODO, verify that id is actually registered\n     */\n    return true;\n  }\n\n  static isValidFile (file) {\n\n    if (typeof file !== 'string') {\n      return false;\n    }\n\n    if (!file) {\n      return false;\n    }\n\n    /*\n     * TODO, verify that file actually exists\n     */\n    return true;\n  }\n\n  static isValidNodeInterface (nodeInterface) {\n\n    if (!nodeInterface) {\n      return false;\n    }\n\n    if (!nodeInterface.loc) {\n      return false;\n    }\n\n    return true;\n  }\n\n  /**\n   * Create a node.\n   *\n   * @param {string} parentId - Id of parent node.\n   * @param {string} file - Path to file which contains this node.\n   * @param {Object} nodeInterface - Declaration entity which must follow format\n   * of babylon parser ES tree (see more from https://bit.ly/2I2Thnf).\n   *\n   * @example\n   * new Node('Node_1', 'path/to/file', entity);\n   */\n  constructor (parentId, file, nodeInterface) {\n\n    if (!Node.isValidId(parentId)) {\n      throw new Error(`Invalid parent id '${asStringValue(parentId)}'`);\n    }\n\n    if (!Node.isValidFile(file)) {\n      throw new Error(`Invalid file '${asStringValue(file)}'`);\n    }\n\n    if (!Node.isValidNodeInterface(nodeInterface)) {\n      throw new Error(`Invalid node interface '${asStringValue(nodeInterface)}'`);\n    }\n\n    /**\n     * Id for this node\n     * @type {string}\n     */\n    this.id = Node.createId();\n\n    /**\n     * Id for parent of this node\n     * @type {string}\n     */\n    this.parentId = parentId;\n\n    /**\n     * File src which this node belongs to\n     * @type {string}\n     */\n    this.file = file;\n\n    /**\n     * File src which this node belongs to\n     * @type {object}\n     * @property {number} line - Line number where scope of this node begins\n     * @property {number} column - Column number where scope of this node begins\n     */\n    this.start = {\n      line: nodeInterface.loc.start.line,\n      column: nodeInterface.loc.start.column\n    };\n\n    /**\n     * File src which this node belongs to\n     * @type {object}\n     * @property {number} line - line number where scope of this node ends\n     * @property {number} column - column number where scope of this node ends\n     */\n    this.end = {\n      line: nodeInterface.loc.end.line,\n      column: nodeInterface.loc.end.column\n    };\n  }\n}\n\nmodule.exports = Node;",
+    "static": true,
+    "longname": "/Users/mattimehtonen/Projects/regana/src/models/Node.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 129,
+    "kind": "variable",
+    "name": "asStringValue",
+    "memberof": "src/models/Node.js",
+    "static": true,
+    "longname": "src/models/Node.js~asStringValue",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/models/Node.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 130,
+    "kind": "class",
+    "name": "Node",
+    "memberof": "src/models/Node.js",
+    "static": true,
+    "longname": "src/models/Node.js~Node",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/models/Node.js",
+    "importStyle": null,
+    "description": "Node representing a logical point within the code",
+    "lineNumber": 7,
+    "interface": false,
+    "ignore": true
+  },
+  {
+    "__docId__": 131,
+    "kind": "method",
+    "name": "createId",
+    "memberof": "src/models/Node.js~Node",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/models/Node.js~Node.createId",
+    "access": "public",
+    "description": null,
+    "lineNumber": 9,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 132,
+    "kind": "method",
+    "name": "isValidId",
+    "memberof": "src/models/Node.js~Node",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/models/Node.js~Node.isValidId",
+    "access": "public",
+    "description": null,
+    "lineNumber": 13,
+    "undocument": true,
+    "params": [
+      {
+        "name": "id",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "boolean"
+      ]
+    }
+  },
+  {
+    "__docId__": 133,
+    "kind": "method",
+    "name": "isValidFile",
+    "memberof": "src/models/Node.js~Node",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/models/Node.js~Node.isValidFile",
+    "access": "public",
+    "description": null,
+    "lineNumber": 29,
+    "undocument": true,
+    "params": [
+      {
+        "name": "file",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "boolean"
+      ]
+    }
+  },
+  {
+    "__docId__": 134,
+    "kind": "method",
+    "name": "isValidNodeInterface",
+    "memberof": "src/models/Node.js~Node",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/models/Node.js~Node.isValidNodeInterface",
+    "access": "public",
+    "description": null,
+    "lineNumber": 45,
+    "undocument": true,
+    "params": [
+      {
+        "name": "nodeInterface",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "boolean"
+      ]
+    }
+  },
+  {
+    "__docId__": 135,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/models/Node.js~Node",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/models/Node.js~Node#constructor",
+    "access": "public",
+    "description": "Create a node.",
+    "examples": [
+      "new Node('Node_1', 'path/to/file', entity);"
+    ],
+    "lineNumber": 69,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "parentId",
+        "description": "Id of parent node."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "file",
+        "description": "Path to file which contains this node."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "nodeInterface",
+        "description": "Declaration entity which must follow format\nof babylon parser ES tree (see more from https://bit.ly/2I2Thnf)."
+      }
+    ]
+  },
+  {
+    "__docId__": 136,
+    "kind": "member",
+    "name": "id",
+    "memberof": "src/models/Node.js~Node",
+    "static": false,
+    "longname": "src/models/Node.js~Node#id",
+    "access": "public",
+    "description": "Id for this node",
+    "lineNumber": 87,
+    "type": {
+      "nullable": null,
+      "types": [
+        "string"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 137,
+    "kind": "member",
+    "name": "parentId",
+    "memberof": "src/models/Node.js~Node",
+    "static": false,
+    "longname": "src/models/Node.js~Node#parentId",
+    "access": "public",
+    "description": "Id for parent of this node",
+    "lineNumber": 93,
+    "type": {
+      "nullable": null,
+      "types": [
+        "string"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 138,
+    "kind": "member",
+    "name": "file",
+    "memberof": "src/models/Node.js~Node",
+    "static": false,
+    "longname": "src/models/Node.js~Node#file",
+    "access": "public",
+    "description": "File src which this node belongs to",
+    "lineNumber": 99,
+    "type": {
+      "nullable": null,
+      "types": [
+        "string"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 139,
+    "kind": "member",
+    "name": "start",
+    "memberof": "src/models/Node.js~Node",
+    "static": false,
+    "longname": "src/models/Node.js~Node#start",
+    "access": "public",
+    "description": "File src which this node belongs to",
+    "lineNumber": 107,
+    "properties": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "line",
+        "description": "Line number where scope of this node begins"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "column",
+        "description": "Column number where scope of this node begins"
+      }
+    ],
+    "type": {
+      "nullable": null,
+      "types": [
+        "object"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 140,
+    "kind": "member",
+    "name": "end",
+    "memberof": "src/models/Node.js~Node",
+    "static": false,
+    "longname": "src/models/Node.js~Node#end",
+    "access": "public",
+    "description": "File src which this node belongs to",
+    "lineNumber": 118,
+    "properties": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "line",
+        "description": "line number where scope of this node ends"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "column",
+        "description": "column number where scope of this node ends"
+      }
+    ],
+    "type": {
+      "nullable": null,
+      "types": [
+        "object"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 141,
+    "kind": "file",
+    "name": "src/models/Scope.js",
+    "content": "\nconst isWithinRange = require('../utils/validate/isWithinRange');\nconst asStringValue = require('../utils/asStringValue');\nconst isInstance = require('../utils/validate/isInstance');\nconst isUndefined = require('../utils/validate/isUndefined');\nconst isNumber = require('../utils/validate/isNumber');\nconst isFile = require('../utils/validate/isFile');\nconst isId = require('../utils/validate/isId');\nconst store = require('../store/scopes');\n\n/**\n * Scope entity representing a scope.\n */\nclass Scope {\n\n  /**\n   * Create a scope.\n   *\n   * @param {number} start - Index of first character of this scope.\n   * @param {number} end - Index of first character after this scope.\n   * @param {Object} options - Optional parameters.\n   * @param {Scope} [options.parentScope] - Parent Scope.\n   * @param {Scope} [options.file] - File assosiated with this scope. If not\n   * specified, will be inherited from parent scope.\n   *\n   * @example\n   * new Scope(0, 200, { file: createId('File') })\n   */\n  constructor (start, end, options = {}) {\n\n    const {\n      parentScope,\n      file\n    } = options;\n\n    if (!isNumber(start)) {\n      throw new Error(`Invalid scope start value '${asStringValue(start)}'`);\n    }\n\n    if (!isNumber(end)) {\n      throw new Error(`Invalid scope end value '${asStringValue(end)}'`);\n    }\n\n    if (!isUndefined(parentScope) && !isInstance(parentScope, Scope)) {\n      throw new Error(`Invalid parent scope '${asStringValue(parentScope)}'`);\n    }\n\n    if (!isUndefined(file) && !isFile(file)) {\n      throw new Error(`Invalid file '${asStringValue(file)}'`);\n    }\n\n    if (isUndefined(file) && (isUndefined(parentScope) || isUndefined(parentScope.file))) {\n      throw new Error(`Cannot assosiate scope with any file`);\n    }\n\n    if (!isUndefined(parentScope) && !isWithinRange(start, end, parentScope.start, parentScope.end)) {\n      throw new Error(`Scope not within the parent scope`);\n    }\n\n    /**\n     * First character of this scope.\n     * @type {number}\n     */\n    this.start = start;\n\n    /**\n     * First character after this scope.\n     * @type {number}\n     */\n    this.end = end;\n\n    /**\n     * Parent scope of this scope\n     * @type {Scope}\n     */\n    this.parentScope = parentScope || null;\n\n    /**\n     * File in which this scope belongs to\n     * @type {string}\n     */\n    this.file = file || this.parentScope.file;\n\n    /**\n     * Segments within this scope\n     * @type {object}\n     */\n    this.segments = {};\n\n    /**\n     * List of exposed items within this scope\n     * @type {object}\n     */\n    this.exposes = {};\n\n    /**\n     * List of pointers within this scope\n     * @type {object}\n     */\n    this.pointers = {};\n\n    /**\n     * List of labels within this scope\n     * @type {object}\n     */\n    this.labels = {};\n\n    /**\n     * Array of with segments within this scope\n     * @type {object}\n     */\n    this.withSegments = [];\n\n    /*\n     * Add this scope to store of all scopes\n     */\n    store.add(this);\n  }\n\n  /**\n   * Get segment id by using pointer as selector.\n   *\n   * @param {string} pointer - Pointer to use to select segment. This would be\n   * a variable name.\n   * @returns {Array} Array of segment ids.\n   *\n   * @example\n   * const segmentId = scope.getSegmentIdsByPointer('myVariable');\n   */\n  getSegmentIdsByPointer (pointer) {\n\n    if (this.pointers[pointer]) {\n      return this.withSegments.concat([this.pointers[pointer]]);\n    }\n\n    const next = this.parentScope ? this.parentScope.getSegmentIdsByPointer(pointer) : [];\n\n    return this.withSegments.concat(next);\n  }\n\n  /**\n   * Add new segment to scope.\n   *\n   * @param {string} id - If of this segment.\n   * @param {number} start - Index of first character of this segment.\n   * @param {number} end - Index of first character after this segment.\n   * @param {Object} options - Optional parameters.\n   * @param {Object[]} [options.uses] - Array of other segments which should be\n   * considered as part of this segment.\n   * @param {string[]} [options.usesPointers] - Array of pointers needed for\n   * this segment. Basically this means variables which this segment is using.\n   * @param {string} [options.pointer] - If this segment is going to create a\n   * new variable this would be the pointer to it.\n   * @param {string} [options.label] - If this segment is going to create a new\n   * label this would be the pointer to it.\n   * @param {string[]} [options.exposes] - If this segment is going to expose\n   * something outside of scope.\n   *\n   * @example\n   * scope.addSegment(createId('VariableDeclaration'), 10, 33);\n   */\n  addSegment (id, start, end, options = {}) {\n\n    const {\n      uses = [],\n      usesPointers = [],\n      exposes = [],\n      pointer = null\n    } = options;\n\n    if (!isId(id)) {\n      throw new Error(`Invalid segment id '${asStringValue(id)}'`);\n    }\n\n    if (!isNumber(start)) {\n      throw new Error(`Invalid segment start value '${asStringValue(start)}'`);\n    }\n\n    if (!isNumber(end)) {\n      throw new Error(`Invalid segment end value '${asStringValue(end)}'`);\n    }\n\n    if (!isWithinRange(start, end, this.start, this.end)) {\n      throw new Error(`Segment '${asStringValue(id)}' not within the scope`);\n    }\n\n    const usesAsPointers = usesPointers\n      .reduce((uses, input) => {\n        return uses.concat(this.getSegmentIdsByPointer(input));\n      }, []);\n\n    const segment = {\n      uses: uses.concat(usesAsPointers),\n      start,\n      end,\n      id\n    };\n\n    if (pointer) {\n      this.pointers[pointer] = id;\n    }\n\n    exposes.forEach(expose => {\n      this.exposes[expose] = id;\n    });\n\n    this.segments[id] = segment;\n  }\n}\n\nmodule.exports = Scope;",
+    "static": true,
+    "longname": "/Users/mattimehtonen/Projects/regana/src/models/Scope.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 142,
+    "kind": "variable",
+    "name": "isWithinRange",
+    "memberof": "src/models/Scope.js",
+    "static": true,
+    "longname": "src/models/Scope.js~isWithinRange",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/models/Scope.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 143,
+    "kind": "variable",
+    "name": "asStringValue",
+    "memberof": "src/models/Scope.js",
+    "static": true,
+    "longname": "src/models/Scope.js~asStringValue",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/models/Scope.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 144,
+    "kind": "variable",
+    "name": "isInstance",
+    "memberof": "src/models/Scope.js",
+    "static": true,
+    "longname": "src/models/Scope.js~isInstance",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/models/Scope.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 145,
+    "kind": "variable",
+    "name": "isUndefined",
+    "memberof": "src/models/Scope.js",
+    "static": true,
+    "longname": "src/models/Scope.js~isUndefined",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/models/Scope.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 146,
+    "kind": "variable",
+    "name": "isNumber",
+    "memberof": "src/models/Scope.js",
+    "static": true,
+    "longname": "src/models/Scope.js~isNumber",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/models/Scope.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 147,
+    "kind": "variable",
+    "name": "isFile",
+    "memberof": "src/models/Scope.js",
+    "static": true,
+    "longname": "src/models/Scope.js~isFile",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/models/Scope.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 148,
+    "kind": "variable",
+    "name": "isId",
+    "memberof": "src/models/Scope.js",
+    "static": true,
+    "longname": "src/models/Scope.js~isId",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/models/Scope.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 149,
+    "kind": "variable",
+    "name": "store",
+    "memberof": "src/models/Scope.js",
+    "static": true,
+    "longname": "src/models/Scope.js~store",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/models/Scope.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 9,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 150,
+    "kind": "class",
+    "name": "Scope",
+    "memberof": "src/models/Scope.js",
+    "static": true,
+    "longname": "src/models/Scope.js~Scope",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/models/Scope.js",
+    "importStyle": null,
+    "description": "Scope entity representing a scope.",
+    "lineNumber": 14,
+    "interface": false,
+    "ignore": true
+  },
+  {
+    "__docId__": 151,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/models/Scope.js~Scope",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/models/Scope.js~Scope#constructor",
+    "access": "public",
+    "description": "Create a scope.",
+    "examples": [
+      "new Scope(0, 200, { file: createId('File') })"
+    ],
+    "lineNumber": 29,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "start",
+        "description": "Index of first character of this scope."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "end",
+        "description": "Index of first character after this scope."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "options",
+        "description": "Optional parameters."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Scope"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "options.parentScope",
+        "description": "Parent Scope."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Scope"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "options.file",
+        "description": "File assosiated with this scope. If not\nspecified, will be inherited from parent scope."
+      }
+    ]
+  },
+  {
+    "__docId__": 152,
+    "kind": "member",
+    "name": "start",
+    "memberof": "src/models/Scope.js~Scope",
+    "static": false,
+    "longname": "src/models/Scope.js~Scope#start",
+    "access": "public",
+    "description": "First character of this scope.",
+    "lineNumber": 64,
+    "type": {
+      "nullable": null,
+      "types": [
+        "number"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 153,
+    "kind": "member",
+    "name": "end",
+    "memberof": "src/models/Scope.js~Scope",
+    "static": false,
+    "longname": "src/models/Scope.js~Scope#end",
+    "access": "public",
+    "description": "First character after this scope.",
+    "lineNumber": 70,
+    "type": {
+      "nullable": null,
+      "types": [
+        "number"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 154,
+    "kind": "member",
+    "name": "parentScope",
+    "memberof": "src/models/Scope.js~Scope",
+    "static": false,
+    "longname": "src/models/Scope.js~Scope#parentScope",
+    "access": "public",
+    "description": "Parent scope of this scope",
+    "lineNumber": 76,
+    "type": {
+      "nullable": null,
+      "types": [
+        "Scope"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 155,
+    "kind": "member",
+    "name": "file",
+    "memberof": "src/models/Scope.js~Scope",
+    "static": false,
+    "longname": "src/models/Scope.js~Scope#file",
+    "access": "public",
+    "description": "File in which this scope belongs to",
+    "lineNumber": 82,
+    "type": {
+      "nullable": null,
+      "types": [
+        "string"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 156,
+    "kind": "member",
+    "name": "segments",
+    "memberof": "src/models/Scope.js~Scope",
+    "static": false,
+    "longname": "src/models/Scope.js~Scope#segments",
+    "access": "public",
+    "description": "Segments within this scope",
+    "lineNumber": 88,
+    "type": {
+      "nullable": null,
+      "types": [
+        "object"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 157,
+    "kind": "member",
+    "name": "exposes",
+    "memberof": "src/models/Scope.js~Scope",
+    "static": false,
+    "longname": "src/models/Scope.js~Scope#exposes",
+    "access": "public",
+    "description": "List of exposed items within this scope",
+    "lineNumber": 94,
+    "type": {
+      "nullable": null,
+      "types": [
+        "object"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 158,
+    "kind": "member",
+    "name": "pointers",
+    "memberof": "src/models/Scope.js~Scope",
+    "static": false,
+    "longname": "src/models/Scope.js~Scope#pointers",
+    "access": "public",
+    "description": "List of pointers within this scope",
+    "lineNumber": 100,
+    "type": {
+      "nullable": null,
+      "types": [
+        "object"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 159,
+    "kind": "member",
+    "name": "labels",
+    "memberof": "src/models/Scope.js~Scope",
+    "static": false,
+    "longname": "src/models/Scope.js~Scope#labels",
+    "access": "public",
+    "description": "List of labels within this scope",
+    "lineNumber": 106,
+    "type": {
+      "nullable": null,
+      "types": [
+        "object"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 160,
+    "kind": "member",
+    "name": "withSegments",
+    "memberof": "src/models/Scope.js~Scope",
+    "static": false,
+    "longname": "src/models/Scope.js~Scope#withSegments",
+    "access": "public",
+    "description": "Array of with segments within this scope",
+    "lineNumber": 112,
+    "type": {
+      "nullable": null,
+      "types": [
+        "object"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 161,
+    "kind": "method",
+    "name": "getSegmentIdsByPointer",
+    "memberof": "src/models/Scope.js~Scope",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/models/Scope.js~Scope#getSegmentIdsByPointer",
+    "access": "public",
+    "description": "Get segment id by using pointer as selector.",
+    "examples": [
+      "const segmentId = scope.getSegmentIdsByPointer('myVariable');"
+    ],
+    "lineNumber": 130,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{Array} Array of segment ids."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "pointer",
+        "description": "Pointer to use to select segment. This would be\na variable name."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Array"
+      ],
+      "spread": false,
+      "description": "Array of segment ids."
+    }
+  },
+  {
+    "__docId__": 162,
+    "kind": "method",
+    "name": "addSegment",
+    "memberof": "src/models/Scope.js~Scope",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/models/Scope.js~Scope#addSegment",
+    "access": "public",
+    "description": "Add new segment to scope.",
+    "examples": [
+      "scope.addSegment(createId('VariableDeclaration'), 10, 33);"
+    ],
+    "lineNumber": 162,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "id",
+        "description": "If of this segment."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "start",
+        "description": "Index of first character of this segment."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "end",
+        "description": "Index of first character after this segment."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "options",
+        "description": "Optional parameters."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object[]"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "options.uses",
+        "description": "Array of other segments which should be\nconsidered as part of this segment."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string[]"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "options.usesPointers",
+        "description": "Array of pointers needed for\nthis segment. Basically this means variables which this segment is using."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "options.pointer",
+        "description": "If this segment is going to create a\nnew variable this would be the pointer to it."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "options.label",
+        "description": "If this segment is going to create a new\nlabel this would be the pointer to it."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string[]"
+        ],
+        "spread": false,
+        "optional": true,
+        "name": "options.exposes",
+        "description": "If this segment is going to expose\nsomething outside of scope."
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 163,
+    "kind": "file",
+    "name": "src/models/Vector.js",
+    "content": "\nconst Node = require('./Node');\nconst asStringValue = require('../utils/asStringValue');\n\n/**\n * Vector representing one way connection between nodes\n */\nclass Vector {\n\n  static isValidNode (value) {\n\n    if (!value) {\n      return false;\n    }\n\n    if (value instanceof Node) {\n      return true;\n    }\n\n    return false;\n  }\n\n  static isValidMagnitude (magnitude) {\n\n    if (isNaN(magnitude)) {\n      return false;\n    }\n\n    if (typeof magnitude !== 'number') {\n      return false;\n    }\n\n    /*\n     * TODO, make this more specific\n     */\n    return true;\n  }\n\n  /**\n   * Create a Vector between nodes.\n   *\n   * @param {Node} fromNode - Source node of connection.\n   * @param {Node} toNode - Target node of connection.\n   * @param {number} magnitude - Factor which represents numeric value for\n   * distance between nodes.\n   *\n   * @example\n   * new Vector(fromNode, toNode, 0.5)\n   */\n  constructor (fromNode, toNode, magnitude) {\n\n    if (!Vector.isValidNode(fromNode)) {\n      throw new Error(`Invalid from node '${asStringValue(fromNode)}'`);\n    }\n\n    if (!Vector.isValidNode(toNode)) {\n      throw new Error(`Invalid to node '${asStringValue(toNode)}'`);\n    }\n\n    if (!Vector.isValidMagnitude(magnitude)) {\n      throw new Error(`Invalid magnitude '${asStringValue(magnitude)}'`);\n    }\n\n    /**\n     * Node which \n     * @type {Node}\n     */\n    this.fromNode = fromNode;\n\n    /**\n     * Id for parent of this node\n     * @type {Node}\n     */\n    this.toNode = toNode;\n\n    /**\n     * File src which this node belongs to\n     * @type {number}\n     */\n    this.magnitude = magnitude;\n  }\n}\n\nmodule.exports = Vector;",
+    "static": true,
+    "longname": "/Users/mattimehtonen/Projects/regana/src/models/Vector.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 164,
+    "kind": "variable",
+    "name": "Node",
+    "memberof": "src/models/Vector.js",
+    "static": true,
+    "longname": "src/models/Vector.js~Node",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/models/Vector.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 165,
+    "kind": "variable",
+    "name": "asStringValue",
+    "memberof": "src/models/Vector.js",
+    "static": true,
+    "longname": "src/models/Vector.js~asStringValue",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/models/Vector.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 166,
+    "kind": "class",
+    "name": "Vector",
+    "memberof": "src/models/Vector.js",
+    "static": true,
+    "longname": "src/models/Vector.js~Vector",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/models/Vector.js",
+    "importStyle": null,
+    "description": "Vector representing one way connection between nodes",
+    "lineNumber": 8,
+    "interface": false,
+    "ignore": true
+  },
+  {
+    "__docId__": 167,
+    "kind": "method",
+    "name": "isValidNode",
+    "memberof": "src/models/Vector.js~Vector",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/models/Vector.js~Vector.isValidNode",
+    "access": "public",
+    "description": null,
+    "lineNumber": 10,
+    "undocument": true,
+    "params": [
+      {
+        "name": "value",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "boolean"
+      ]
+    }
+  },
+  {
+    "__docId__": 168,
+    "kind": "method",
+    "name": "isValidMagnitude",
+    "memberof": "src/models/Vector.js~Vector",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/models/Vector.js~Vector.isValidMagnitude",
+    "access": "public",
+    "description": null,
+    "lineNumber": 23,
+    "undocument": true,
+    "params": [
+      {
+        "name": "magnitude",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "boolean"
+      ]
+    }
+  },
+  {
+    "__docId__": 169,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/models/Vector.js~Vector",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/models/Vector.js~Vector#constructor",
+    "access": "public",
+    "description": "Create a Vector between nodes.",
+    "examples": [
+      "new Vector(fromNode, toNode, 0.5)"
+    ],
+    "lineNumber": 50,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Node"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "fromNode",
+        "description": "Source node of connection."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Node"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "toNode",
+        "description": "Target node of connection."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "magnitude",
+        "description": "Factor which represents numeric value for\ndistance between nodes."
+      }
+    ]
+  },
+  {
+    "__docId__": 170,
+    "kind": "member",
+    "name": "fromNode",
+    "memberof": "src/models/Vector.js~Vector",
+    "static": false,
+    "longname": "src/models/Vector.js~Vector#fromNode",
+    "access": "public",
+    "description": "Node which ",
+    "lineNumber": 68,
+    "type": {
+      "nullable": null,
+      "types": [
+        "Node"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 171,
+    "kind": "member",
+    "name": "toNode",
+    "memberof": "src/models/Vector.js~Vector",
+    "static": false,
+    "longname": "src/models/Vector.js~Vector#toNode",
+    "access": "public",
+    "description": "Id for parent of this node",
+    "lineNumber": 74,
+    "type": {
+      "nullable": null,
+      "types": [
+        "Node"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 172,
+    "kind": "member",
+    "name": "magnitude",
+    "memberof": "src/models/Vector.js~Vector",
+    "static": false,
+    "longname": "src/models/Vector.js~Vector#magnitude",
+    "access": "public",
+    "description": "File src which this node belongs to",
+    "lineNumber": 80,
+    "type": {
+      "nullable": null,
+      "types": [
+        "number"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 173,
+    "kind": "file",
+    "name": "src/models/tests/helpers/node/invalidParams.js",
+    "content": "\nmodule.exports = (Node) => {\n\n  const validParentId = 'node-example';\n  const validFile = '/path/to/file.js';\n  const validNodeInterface = {\n    type: 'VariableDeclaration',\n    start: 1,\n    end: 28,\n    loc: {\n      start: {\n        line: 2,\n        column: 0\n      },\n      end: {\n        line: 4,\n        column: 2\n      }\n    }\n  };\n\n  const invalid1 = undefined;\n  const invalid2 = '';\n  const invalid3 = 1;\n  const invalid4 = {};\n  const invalid5 = [];\n  const invalid6 = null;\n\n  test('should throw error with invalid parentId', () => {\n    expect(() => new Node(invalid1, validFile, validNodeInterface)).toThrowErrorMatchingSnapshot();\n    expect(() => new Node(invalid2, validFile, validNodeInterface)).toThrowErrorMatchingSnapshot();\n    expect(() => new Node(invalid3, validFile, validNodeInterface)).toThrowErrorMatchingSnapshot();\n    expect(() => new Node(invalid4, validFile, validNodeInterface)).toThrowErrorMatchingSnapshot();\n    expect(() => new Node(invalid5, validFile, validNodeInterface)).toThrowErrorMatchingSnapshot();\n    expect(() => new Node(invalid6, validFile, validNodeInterface)).toThrowErrorMatchingSnapshot();\n  });\n\n  test('should throw error with invalid file', () => {\n    expect(() => new Node(validParentId, invalid1, validNodeInterface)).toThrowErrorMatchingSnapshot();\n    expect(() => new Node(validParentId, invalid2, validNodeInterface)).toThrowErrorMatchingSnapshot();\n    expect(() => new Node(validParentId, invalid3, validNodeInterface)).toThrowErrorMatchingSnapshot();\n    expect(() => new Node(validParentId, invalid4, validNodeInterface)).toThrowErrorMatchingSnapshot();\n    expect(() => new Node(validParentId, invalid5, validNodeInterface)).toThrowErrorMatchingSnapshot();\n    expect(() => new Node(validParentId, invalid6, validNodeInterface)).toThrowErrorMatchingSnapshot();\n  });\n\n  test('should throw error with invalid nodeInterface', () => {\n    expect(() => new Node(validParentId, validFile, invalid1)).toThrowErrorMatchingSnapshot();\n    expect(() => new Node(validParentId, validFile, invalid2)).toThrowErrorMatchingSnapshot();\n    expect(() => new Node(validParentId, validFile, invalid3)).toThrowErrorMatchingSnapshot();\n    expect(() => new Node(validParentId, validFile, invalid4)).toThrowErrorMatchingSnapshot();\n    expect(() => new Node(validParentId, validFile, invalid5)).toThrowErrorMatchingSnapshot();\n    expect(() => new Node(validParentId, validFile, invalid6)).toThrowErrorMatchingSnapshot();\n  });\n};",
+    "static": true,
+    "longname": "/Users/mattimehtonen/Projects/regana/src/models/tests/helpers/node/invalidParams.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 174,
+    "kind": "file",
+    "name": "src/models/tests/helpers/node/validParams.js",
+    "content": "\nmodule.exports = (Node) => {\n  test('should work with magnitude of 0.5', () => {\n\n    const node = new Node('node-example', '/path/to/file.js', {\n      type: 'VariableDeclaration',\n      start: 1,\n      end: 28,\n      loc: {\n        start: {\n          line: 2,\n          column: 0\n        },\n        end: {\n          line: 4,\n          column: 2\n        }\n      }\n    });\n\n    expect(node.parentId).toEqual('node-example');\n    expect(node.file).toEqual('/path/to/file.js');\n    expect(node.start).toEqual({\n      line: 2,\n      column: 0\n    });\n    expect(node.end).toEqual({\n      line: 4,\n      column: 2\n    });\n  });\n};",
+    "static": true,
+    "longname": "/Users/mattimehtonen/Projects/regana/src/models/tests/helpers/node/validParams.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 175,
+    "kind": "file",
+    "name": "src/models/tests/helpers/scope/invalidParams.js",
+    "content": "\nmodule.exports = (Scope) => {\n\n  const validStart = 10;\n  const validEnd = 50;\n  const validFile = 'File_1';\n\n  const validScope = new Scope(validStart, validEnd, { file: validFile });\n\n  test('should throw error when file not specified', () => {\n    expect(() => new Scope(validStart, validEnd)).toThrowErrorMatchingSnapshot();\n  });\n\n  test('should throw error with invalid file', () => {\n    expect(() => new Scope(validStart, validEnd, { file: '' })).toThrowErrorMatchingSnapshot();\n    expect(() => new Scope(validStart, validEnd, { file: {} })).toThrowErrorMatchingSnapshot();\n    expect(() => new Scope(validStart, validEnd, { file: [] })).toThrowErrorMatchingSnapshot();\n    expect(() => new Scope(validStart, validEnd, { file: null })).toThrowErrorMatchingSnapshot();\n    expect(() => new Scope(validStart, validEnd, { file: NaN })).toThrowErrorMatchingSnapshot();\n    expect(() => new Scope(validStart, validEnd, { file: Infinity })).toThrowErrorMatchingSnapshot();\n    expect(() => new Scope(validStart, validEnd, { file: new Date() })).toThrowErrorMatchingSnapshot();\n  });\n\n  test('should throw error with invalid start', () => {\n    expect(() => new Scope('', validEnd, { parentScope: validScope })).toThrowErrorMatchingSnapshot();\n    expect(() => new Scope({}, validEnd, { parentScope: validScope })).toThrowErrorMatchingSnapshot();\n    expect(() => new Scope([], validEnd, { parentScope: validScope })).toThrowErrorMatchingSnapshot();\n    expect(() => new Scope(null, validEnd, { parentScope: validScope })).toThrowErrorMatchingSnapshot();\n    expect(() => new Scope(NaN, validEnd, { parentScope: validScope })).toThrowErrorMatchingSnapshot();\n    expect(() => new Scope(Infinity, validEnd, { parentScope: validScope })).toThrowErrorMatchingSnapshot();\n    expect(() => new Scope(new Date(), validEnd, { parentScope: validScope })).toThrowErrorMatchingSnapshot();\n  });\n\n  test('should throw error with invalid end', () => {\n    expect(() => new Scope(validStart, '', { parentScope: validScope })).toThrowErrorMatchingSnapshot();\n    expect(() => new Scope(validStart, {}, { parentScope: validScope })).toThrowErrorMatchingSnapshot();\n    expect(() => new Scope(validStart, [], { parentScope: validScope })).toThrowErrorMatchingSnapshot();\n    expect(() => new Scope(validStart, null, { parentScope: validScope })).toThrowErrorMatchingSnapshot();\n    expect(() => new Scope(validStart, NaN, { parentScope: validScope })).toThrowErrorMatchingSnapshot();\n    expect(() => new Scope(validStart, Infinity, { parentScope: validScope })).toThrowErrorMatchingSnapshot();\n    expect(() => new Scope(validStart, new Date(), { parentScope: validScope })).toThrowErrorMatchingSnapshot();\n  });\n\n  test('should throw error with invalid parent scope', () => {\n    expect(() => new Scope(validStart, validEnd, { parentScope: '' })).toThrowErrorMatchingSnapshot();\n    expect(() => new Scope(validStart, validEnd, { parentScope: {} })).toThrowErrorMatchingSnapshot();\n    expect(() => new Scope(validStart, validEnd, { parentScope: [] })).toThrowErrorMatchingSnapshot();\n    expect(() => new Scope(validStart, validEnd, { parentScope: null })).toThrowErrorMatchingSnapshot();\n    expect(() => new Scope(validStart, validEnd, { parentScope: NaN })).toThrowErrorMatchingSnapshot();\n    expect(() => new Scope(validStart, validEnd, { parentScope: 1 })).toThrowErrorMatchingSnapshot();\n    expect(() => new Scope(validStart, validEnd, { parentScope: new Date() })).toThrowErrorMatchingSnapshot();\n  });\n\n  test('should throw error with parent scope with invalid start and end', () => {\n    const parentScope = new Scope(100, 200, { file: validFile });\n    expect(() => new Scope(95, 120, { parentScope })).toThrowErrorMatchingSnapshot();\n    expect(() => new Scope(80, 90, { parentScope })).toThrowErrorMatchingSnapshot();\n    expect(() => new Scope(120, 210, { parentScope })).toThrowErrorMatchingSnapshot();\n    expect(() => new Scope(210, 400, { parentScope })).toThrowErrorMatchingSnapshot();\n  });\n};",
+    "static": true,
+    "longname": "/Users/mattimehtonen/Projects/regana/src/models/tests/helpers/scope/invalidParams.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 176,
+    "kind": "file",
+    "name": "src/models/tests/helpers/scope/segmentCreation.js",
+    "content": "\nmodule.exports = (Scope) => {\n\n  test('segment addment throw properly', () => {\n    const rootScope = new Scope(10, 100, { file: 'File_1' });\n\n    expect(() => rootScope.addSegment(null, 10, 50)).toThrowErrorMatchingSnapshot();\n    expect(() => rootScope.addSegment('', 10, 50)).toThrowErrorMatchingSnapshot();\n    expect(() => rootScope.addSegment(70, 10, 50)).toThrowErrorMatchingSnapshot();\n\n    expect(() => rootScope.addSegment('Segment_1', null, 50)).toThrowErrorMatchingSnapshot();\n    expect(() => rootScope.addSegment('Segment_1', NaN, 50)).toThrowErrorMatchingSnapshot();\n    expect(() => rootScope.addSegment('Segment_1', '10', 50)).toThrowErrorMatchingSnapshot();\n\n    expect(() => rootScope.addSegment('Segment_1', 50, null)).toThrowErrorMatchingSnapshot();\n    expect(() => rootScope.addSegment('Segment_1', 50, NaN)).toThrowErrorMatchingSnapshot();\n    expect(() => rootScope.addSegment('Segment_1', '50', 10)).toThrowErrorMatchingSnapshot();\n\n    expect(() => rootScope.addSegment('Segment_1', 5, 95)).toThrowErrorMatchingSnapshot();\n    expect(() => rootScope.addSegment('Segment_1', 15, 120)).toThrowErrorMatchingSnapshot();\n    expect(() => rootScope.addSegment('Segment_1', 5, 120)).toThrowErrorMatchingSnapshot();\n  });\n\n  test('segment addment should work', () => {\n    const rootScope = new Scope(0, 100, { file: 'File_1' });\n    rootScope.addSegment('Segment_1', 10, 50);\n\n    expect(rootScope.pointers).toEqual({});\n\n    expect(rootScope.segments).toEqual({\n      Segment_1: {\n        end: 50,\n        id: 'Segment_1',\n        start: 10,\n        uses: []\n      }\n    });\n\n    expect(rootScope.exposes).toEqual({});\n  });\n\n  test('segment addment should work with pointer', () => {\n    const rootScope = new Scope(0, 100, { file: 'File_1' });\n    rootScope.addSegment('Segment_1', 10, 50, { pointer: 'myPointer' });\n\n    expect(rootScope.pointers).toEqual({ myPointer: 'Segment_1' });\n\n    expect(rootScope.segments).toEqual({\n      Segment_1: {\n        end: 50,\n        id: 'Segment_1',\n        start: 10,\n        uses: []\n      }\n    });\n\n    expect(rootScope.exposes).toEqual({});\n  });\n\n  test('segment addment should work with pointer and exposes', () => {\n    const rootScope = new Scope(0, 100, { file: 'File_1' });\n\n    rootScope.addSegment('Segment_1', 10, 50, { pointer: 'myPointer' });\n\n    rootScope.addSegment('Segment_2', 60, 70, {\n      usesPointers: ['myPointer'],\n      exposes: ['myPointer']\n    });\n\n    expect(rootScope.pointers).toEqual({ myPointer: 'Segment_1' });\n\n    expect(rootScope.segments).toEqual({\n      Segment_1: {\n        end: 50,\n        id: 'Segment_1',\n        start: 10,\n        uses: []\n      },\n      Segment_2: {\n        end: 70,\n        id: 'Segment_2',\n        start: 60,\n        uses: ['Segment_1']\n      }\n    });\n\n    expect(rootScope.exposes).toEqual({ myPointer: 'Segment_2' });\n  });\n};",
+    "static": true,
+    "longname": "/Users/mattimehtonen/Projects/regana/src/models/tests/helpers/scope/segmentCreation.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 177,
+    "kind": "file",
+    "name": "src/models/tests/helpers/scope/segmentSelection.js",
+    "content": "\nmodule.exports = (Scope) => {\n\n  test('segment selection should work directly with scope', () => {\n\n    const rootScope = new Scope(0, 100, { file: 'File_1' });\n    rootScope.addSegment('Segment_1', 10, 50, { pointer: 'myPointer' });\n\n    expect(rootScope.getSegmentIdsByPointer('myPointer')).toEqual(['Segment_1']);\n  });\n\n  test('segment selection should work from parent scope', () => {\n\n    const rootScope = new Scope(0, 100, { file: 'File_1' });\n    rootScope.addSegment('Segment_1', 10, 50, { pointer: 'myPointer' });\n\n    const childScope1 = new Scope(0, 100, { parentScope: rootScope });\n    const childScope2 = new Scope(0, 100, { parentScope: childScope1 });\n\n    expect(childScope2.getSegmentIdsByPointer('myPointer')).toEqual(['Segment_1']);\n  });\n};",
+    "static": true,
+    "longname": "/Users/mattimehtonen/Projects/regana/src/models/tests/helpers/scope/segmentSelection.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 178,
+    "kind": "file",
+    "name": "src/models/tests/helpers/scope/validParams.js",
+    "content": "\nmodule.exports = (Scope) => {\n\n  const validStart = 10;\n  const validEnd = 50;\n\n  test('should work without parent scope', () => {\n    const scope = new Scope(validStart, validEnd, { file: 'File_1' });\n    expect(scope.parentScope).toEqual(null);\n  });\n  test('should work with parent scope', () => {\n    const parentScope = new Scope(validStart, validEnd, { file: 'File_1' });\n    const childScope = new Scope(validStart, validEnd, { parentScope });\n    expect(childScope.parentScope).toEqual(parentScope);\n    expect(childScope.file).toEqual('File_1');\n  });\n};",
+    "static": true,
+    "longname": "/Users/mattimehtonen/Projects/regana/src/models/tests/helpers/scope/validParams.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 179,
+    "kind": "file",
+    "name": "src/models/tests/helpers/vector/invalidParams.js",
+    "content": "\nmodule.exports = (Vector, validNode) => {\n\n  const validMagnitude = 0.5;\n\n  const invalid1 = undefined;\n  const invalid2 = '';\n  const invalid3 = {};\n  const invalid4 = [];\n  const invalid5 = null;\n  const invalid6 = NaN;\n  const invalid7 = 1;\n  const invalid8 = new Date();\n\n  test('should throw error with invalid parentId', () => {\n    expect(() => new Vector(invalid1, validNode, validMagnitude)).toThrowErrorMatchingSnapshot();\n    expect(() => new Vector(invalid2, validNode, validMagnitude)).toThrowErrorMatchingSnapshot();\n    expect(() => new Vector(invalid3, validNode, validMagnitude)).toThrowErrorMatchingSnapshot();\n    expect(() => new Vector(invalid4, validNode, validMagnitude)).toThrowErrorMatchingSnapshot();\n    expect(() => new Vector(invalid5, validNode, validMagnitude)).toThrowErrorMatchingSnapshot();\n    expect(() => new Vector(invalid6, validNode, validMagnitude)).toThrowErrorMatchingSnapshot();\n    expect(() => new Vector(invalid7, validNode, validMagnitude)).toThrowErrorMatchingSnapshot();\n    expect(() => new Vector(invalid8, validNode, validMagnitude)).toThrowErrorMatchingSnapshot();\n  });\n\n  test('should throw error with invalid file', () => {\n    expect(() => new Vector(validNode, invalid1, validMagnitude)).toThrowErrorMatchingSnapshot();\n    expect(() => new Vector(validNode, invalid2, validMagnitude)).toThrowErrorMatchingSnapshot();\n    expect(() => new Vector(validNode, invalid3, validMagnitude)).toThrowErrorMatchingSnapshot();\n    expect(() => new Vector(validNode, invalid4, validMagnitude)).toThrowErrorMatchingSnapshot();\n    expect(() => new Vector(validNode, invalid5, validMagnitude)).toThrowErrorMatchingSnapshot();\n    expect(() => new Vector(validNode, invalid6, validMagnitude)).toThrowErrorMatchingSnapshot();\n    expect(() => new Vector(validNode, invalid7, validMagnitude)).toThrowErrorMatchingSnapshot();\n    expect(() => new Vector(validNode, invalid8, validMagnitude)).toThrowErrorMatchingSnapshot();\n  });\n\n  test('should throw error with invalid nodeInterface', () => {\n    expect(() => new Vector(validNode, validNode, invalid1)).toThrowErrorMatchingSnapshot();\n    expect(() => new Vector(validNode, validNode, invalid2)).toThrowErrorMatchingSnapshot();\n    expect(() => new Vector(validNode, validNode, invalid3)).toThrowErrorMatchingSnapshot();\n    expect(() => new Vector(validNode, validNode, invalid4)).toThrowErrorMatchingSnapshot();\n    expect(() => new Vector(validNode, validNode, invalid5)).toThrowErrorMatchingSnapshot();\n    expect(() => new Vector(validNode, validNode, invalid6)).toThrowErrorMatchingSnapshot();\n    expect(() => new Vector(validNode, validNode, invalid8)).toThrowErrorMatchingSnapshot();\n  });\n};",
+    "static": true,
+    "longname": "/Users/mattimehtonen/Projects/regana/src/models/tests/helpers/vector/invalidParams.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 180,
+    "kind": "file",
+    "name": "src/models/tests/helpers/vector/validParams.js",
+    "content": "\nmodule.exports = (Vector, validNode) => {\n  test('should work with magnitude of 0.5', () => {\n    const vector = new Vector(validNode, validNode, 0.5);\n    expect(vector.fromNode).toEqual(validNode);\n    expect(vector.toNode).toEqual(validNode);\n    expect(vector.magnitude).toEqual(0.5);\n  });\n};",
+    "static": true,
+    "longname": "/Users/mattimehtonen/Projects/regana/src/models/tests/helpers/vector/validParams.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 181,
+    "kind": "file",
+    "name": "src/regana.js",
+    "content": "\n'use strict';\n\nconst analyse = require('./analyse/entry');\n\n/**\n * @file Expose out Analyser and other tools\n * @author Matti Mehtonen\n */\n\n/**\n * Stores\n * @namespace store\n */\n\n/**\n * Commands\n * @namespace analyse\n */\n\n/**\n * Utilities\n * @namespace utils\n */\n\n/**\n * Validator utilities\n * @namespace utils.validate\n */\n\nmodule.exports = {\n  analyse\n};",
+    "static": true,
+    "longname": "/Users/mattimehtonen/Projects/regana/src/regana.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 182,
+    "kind": "variable",
+    "name": "analyse",
+    "memberof": "src/regana.js",
+    "static": true,
+    "longname": "src/regana.js~analyse",
+    "access": "public",
+    "export": false,
+    "importPath": "regana",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 183,
+    "kind": "file",
+    "name": "src/store/files.js",
+    "content": "\nconst cache = [];\n\n/**\n * Storage for files.\n *\n * @namespace store.file\n */\nconst files = {\n\n  /**\n   * Add new file to file store.\n   *\n   * @memberof store.file\n   * @param {File} file - File to be added to store.\n   *\n   * @example\n   * files.add(myFile);      // file is now added to storage\n   */\n  add: file => {\n    cache.push(file);\n  },\n\n  /**\n   * Get file from store by id.\n   *\n   * @memberof store.file\n   * @param {string} id - Id of the file you would like to access to.\n   * @returns {File} File which matches the id.\n   *\n   * @example\n   * files.get('File_1');      // returns file by that id or null\n   */\n  get: id => {\n    return cache.find(file => file.id === id) || null;\n  }\n};\n\nmodule.exports = files;",
+    "static": true,
+    "longname": "/Users/mattimehtonen/Projects/regana/src/store/files.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 184,
+    "kind": "variable",
+    "name": "cache",
+    "memberof": "src/store/files.js",
+    "static": true,
+    "longname": "src/store/files.js~cache",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/store/files.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*[]"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 185,
+    "kind": "variable",
+    "name": "files",
+    "memberof": "src/store/files.js",
+    "static": true,
+    "longname": "src/store/files.js~files",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/store/files.js",
+    "importStyle": null,
+    "description": "Storage for files.",
+    "lineNumber": 9,
+    "unknown": [
+      {
+        "tagName": "@namespace",
+        "tagValue": "store.file"
+      }
+    ],
+    "type": {
+      "types": [
+        "{\"add\": *, \"get\": *}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 186,
+    "kind": "file",
+    "name": "src/store/scopes.js",
+    "content": "\nconst cache = [];\n\n/**\n * Storage for scopes.\n *\n * @namespace store.scope\n */\nconst files = {\n\n  /**\n   * Add new scope to scope store.\n   *\n   * @memberof store.scope\n   * @param {Scope} scope - Scope to be added to store.\n   *\n   * @example\n   * scopes.add(myScope);      // scope is now added to storage\n   */\n  add: scope => {\n    cache.push(scope);\n  },\n\n  /**\n   * Get all scopes from store.\n   *\n   * @memberof store.scope\n   * @returns {Scope[]} Array of Scopes.\n   *\n   * @example\n   * scopes.getAll();      // returns scope by that id or null\n   */\n  getAll: () => cache\n};\n\nmodule.exports = files;",
+    "static": true,
+    "longname": "/Users/mattimehtonen/Projects/regana/src/store/scopes.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 187,
+    "kind": "variable",
+    "name": "cache",
+    "memberof": "src/store/scopes.js",
+    "static": true,
+    "longname": "src/store/scopes.js~cache",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/store/scopes.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*[]"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 188,
+    "kind": "variable",
+    "name": "files",
+    "memberof": "src/store/scopes.js",
+    "static": true,
+    "longname": "src/store/scopes.js~files",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/store/scopes.js",
+    "importStyle": null,
+    "description": "Storage for scopes.",
+    "lineNumber": 9,
+    "unknown": [
+      {
+        "tagName": "@namespace",
+        "tagValue": "store.scope"
+      }
+    ],
+    "type": {
+      "types": [
+        "{\"add\": *, \"getAll\": *}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 189,
+    "kind": "file",
+    "name": "src/tests/mocks/declarations/variable/mock1.js",
+    "content": "\nvar test = 1;",
+    "static": true,
+    "longname": "/Users/mattimehtonen/Projects/regana/src/tests/mocks/declarations/variable/mock1.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 190,
+    "kind": "variable",
+    "name": "test",
+    "memberof": "src/tests/mocks/declarations/variable/mock1.js",
+    "static": true,
+    "longname": "src/tests/mocks/declarations/variable/mock1.js~test",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/tests/mocks/declarations/variable/mock1.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "number"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 191,
+    "kind": "file",
+    "name": "src/tests/mocks/declarations/variable/mock2.js",
+    "content": "\nlet test = 1;",
+    "static": true,
+    "longname": "/Users/mattimehtonen/Projects/regana/src/tests/mocks/declarations/variable/mock2.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 192,
+    "kind": "variable",
+    "name": "test",
+    "memberof": "src/tests/mocks/declarations/variable/mock2.js",
+    "static": true,
+    "longname": "src/tests/mocks/declarations/variable/mock2.js~test",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/tests/mocks/declarations/variable/mock2.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "number"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 193,
+    "kind": "file",
+    "name": "src/tests/mocks/declarations/variable/mock3.js",
+    "content": "\nconst test = 1;",
+    "static": true,
+    "longname": "/Users/mattimehtonen/Projects/regana/src/tests/mocks/declarations/variable/mock3.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 194,
+    "kind": "variable",
+    "name": "test",
+    "memberof": "src/tests/mocks/declarations/variable/mock3.js",
+    "static": true,
+    "longname": "src/tests/mocks/declarations/variable/mock3.js~test",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/tests/mocks/declarations/variable/mock3.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "number"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 195,
+    "kind": "file",
+    "name": "src/tests/mocks/declarations/variable/mock4.js",
+    "content": "\nconst test = 1, another = 2;",
+    "static": true,
+    "longname": "/Users/mattimehtonen/Projects/regana/src/tests/mocks/declarations/variable/mock4.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 196,
+    "kind": "variable",
+    "name": "test",
+    "memberof": "src/tests/mocks/declarations/variable/mock4.js",
+    "static": true,
+    "longname": "src/tests/mocks/declarations/variable/mock4.js~test",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/tests/mocks/declarations/variable/mock4.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "number"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 197,
+    "kind": "file",
+    "name": "src/tests/mocks/declarations/variable/mock5.js",
+    "content": "\nvar test;",
+    "static": true,
+    "longname": "/Users/mattimehtonen/Projects/regana/src/tests/mocks/declarations/variable/mock5.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 198,
+    "kind": "file",
+    "name": "src/tests/mocks/file1.js",
+    "content": "\nconst testValue = 1;",
+    "static": true,
+    "longname": "/Users/mattimehtonen/Projects/regana/src/tests/mocks/file1.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 199,
+    "kind": "variable",
+    "name": "testValue",
+    "memberof": "src/tests/mocks/file1.js",
+    "static": true,
+    "longname": "src/tests/mocks/file1.js~testValue",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/tests/mocks/file1.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "number"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 200,
+    "kind": "file",
+    "name": "src/tests/mocks/file2.js",
+    "content": "const test = 1;\nexport { test };",
+    "static": true,
+    "longname": "/Users/mattimehtonen/Projects/regana/src/tests/mocks/file2.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 201,
+    "kind": "variable",
+    "name": "test",
+    "memberof": "src/tests/mocks/file2.js",
+    "static": true,
+    "longname": "src/tests/mocks/file2.js~test",
+    "access": "public",
+    "export": true,
+    "importPath": "regana/src/tests/mocks/file2.js",
+    "importStyle": "{test}",
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "number"
+      ]
+    }
+  },
+  {
+    "__docId__": 202,
+    "kind": "file",
+    "name": "src/tests/mocks/literals/boolean.js",
+    "content": "\nvar test = true;",
+    "static": true,
+    "longname": "/Users/mattimehtonen/Projects/regana/src/tests/mocks/literals/boolean.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 203,
+    "kind": "variable",
+    "name": "test",
+    "memberof": "src/tests/mocks/literals/boolean.js",
+    "static": true,
+    "longname": "src/tests/mocks/literals/boolean.js~test",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/tests/mocks/literals/boolean.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "boolean"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 204,
+    "kind": "file",
+    "name": "src/tests/mocks/literals/null.js",
+    "content": "\nvar test = null;",
+    "static": true,
+    "longname": "/Users/mattimehtonen/Projects/regana/src/tests/mocks/literals/null.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 205,
+    "kind": "variable",
+    "name": "test",
+    "memberof": "src/tests/mocks/literals/null.js",
+    "static": true,
+    "longname": "src/tests/mocks/literals/null.js~test",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/tests/mocks/literals/null.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 206,
+    "kind": "file",
+    "name": "src/tests/mocks/literals/numeric.js",
+    "content": "\nvar test = 1346.73;",
+    "static": true,
+    "longname": "/Users/mattimehtonen/Projects/regana/src/tests/mocks/literals/numeric.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 207,
+    "kind": "variable",
+    "name": "test",
+    "memberof": "src/tests/mocks/literals/numeric.js",
+    "static": true,
+    "longname": "src/tests/mocks/literals/numeric.js~test",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/tests/mocks/literals/numeric.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "number"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 208,
+    "kind": "file",
+    "name": "src/tests/mocks/literals/regex.js",
+    "content": "\nvar test = /\\d+/;",
+    "static": true,
+    "longname": "/Users/mattimehtonen/Projects/regana/src/tests/mocks/literals/regex.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 209,
+    "kind": "variable",
+    "name": "test",
+    "memberof": "src/tests/mocks/literals/regex.js",
+    "static": true,
+    "longname": "src/tests/mocks/literals/regex.js~test",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/tests/mocks/literals/regex.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "undefined"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 210,
+    "kind": "file",
+    "name": "src/tests/mocks/literals/string.js",
+    "content": "\nvar test = 'fhsgjk';",
+    "static": true,
+    "longname": "/Users/mattimehtonen/Projects/regana/src/tests/mocks/literals/string.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 211,
+    "kind": "variable",
+    "name": "test",
+    "memberof": "src/tests/mocks/literals/string.js",
+    "static": true,
+    "longname": "src/tests/mocks/literals/string.js~test",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/tests/mocks/literals/string.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 212,
+    "kind": "file",
+    "name": "src/tests/mocks/statements/controlFlow/labeled.js",
+    "content": "\ntest: {\n  break test;\n}",
+    "static": true,
+    "longname": "/Users/mattimehtonen/Projects/regana/src/tests/mocks/statements/controlFlow/labeled.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 213,
+    "kind": "file",
+    "name": "src/tests/mocks/statements/debugger/mock1.js",
+    "content": "debugger;",
+    "static": true,
+    "longname": "/Users/mattimehtonen/Projects/regana/src/tests/mocks/statements/debugger/mock1.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 214,
+    "kind": "file",
+    "name": "src/tests/mocks/statements/empty/mock1.js",
+    "content": ";",
+    "static": true,
+    "longname": "/Users/mattimehtonen/Projects/regana/src/tests/mocks/statements/empty/mock1.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 215,
+    "kind": "file",
+    "name": "src/tests/mocks/statements/expression/mock1.js",
+    "content": "1 + 10 +   20 +56-1*12/\n12;",
+    "static": true,
+    "longname": "/Users/mattimehtonen/Projects/regana/src/tests/mocks/statements/expression/mock1.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 216,
+    "kind": "file",
+    "name": "src/utils/asStringValue.js",
+    "content": "\n/**\n * Turn any value into string format. Useful for loggin any value.\n *\n * @memberof utils\n * @param {*} value - Value to transform into string.\n *\n * @example\n * asStringValue({});      // '[object Object]'\n * asStringValue([]);      // '[object Array]'\n * asStringValue('test');  // 'test'\n * asStringValue(1);       // '1'\n */\nconst asStringValue = value => {\n\n  if (typeof value === 'undefined') {\n    return 'undefined';\n  }\n\n  if (value === null) {\n    return 'null';\n  }\n\n  if (typeof value === 'string') {\n    return value;\n  }\n\n  if (typeof value === 'number') {\n    return value.toString();\n  }\n\n  return Object.prototype.toString.call(value);\n};\n\nmodule.exports = asStringValue;",
+    "static": true,
+    "longname": "/Users/mattimehtonen/Projects/regana/src/utils/asStringValue.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 217,
+    "kind": "function",
+    "name": "asStringValue",
+    "memberof": "src/utils/asStringValue.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/utils/asStringValue.js~asStringValue",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/utils/asStringValue.js",
+    "importStyle": null,
+    "description": "Turn any value into string format. Useful for loggin any value.",
+    "examples": [
+      "asStringValue({});      // '[object Object]'\nasStringValue([]);      // '[object Array]'\nasStringValue('test');  // 'test'\nasStringValue(1);       // '1'"
+    ],
+    "lineNumber": 14,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "value",
+        "description": "Value to transform into string."
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 218,
+    "kind": "file",
+    "name": "src/utils/createId.js",
+    "content": "\n/* eslint-disable no-plusplus */\n\nlet index = 0;\n\n/**\n * Create unique ids for segments.\n *\n * @memberof utils\n * @param {string} prefix - Prefix for id.\n *\n * @example\n * createId('VariableDeclaration');  // VariableDeclaration_1\n * createId();                       // Undefined_2\n */\nconst createId = (prefix = 'Undefined') => `${prefix}_${index++}`;\n\nmodule.exports = createId;",
+    "static": true,
+    "longname": "/Users/mattimehtonen/Projects/regana/src/utils/createId.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 219,
+    "kind": "variable",
+    "name": "index",
+    "memberof": "src/utils/createId.js",
+    "static": true,
+    "longname": "src/utils/createId.js~index",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/utils/createId.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "number"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 220,
+    "kind": "function",
+    "name": "createId",
+    "memberof": "src/utils/createId.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/utils/createId.js~createId",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/utils/createId.js",
+    "importStyle": null,
+    "description": "Create unique ids for segments.",
+    "examples": [
+      "createId('VariableDeclaration');  // VariableDeclaration_1\ncreateId();                       // Undefined_2"
+    ],
+    "lineNumber": 16,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "prefix",
+        "description": "Prefix for id."
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 221,
+    "kind": "file",
+    "name": "src/utils/entitify.js",
+    "content": "\nconst babylon = require('babylon');\n\n/**\n * Transform file content into entities.\n *\n * @memberof utils\n * @param {string} content - Script content of file to parse.\n *\n * @example\n * entitify('const test = 1');  // returns entities from babylon\n */\nconst entitify = content => {\n\n  const options = {\n    allowReturnOutsideFunction: true,\n    sourceType: 'module',\n    strictMode: false,\n    tokens: false,\n    plugins: [\n      'objectRestSpread',\n      'jsx'\n    ]\n  };\n\n  return babylon.parse(content, options);\n};\n\nmodule.exports = entitify;",
+    "static": true,
+    "longname": "/Users/mattimehtonen/Projects/regana/src/utils/entitify.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 222,
+    "kind": "variable",
+    "name": "babylon",
+    "memberof": "src/utils/entitify.js",
+    "static": true,
+    "longname": "src/utils/entitify.js~babylon",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/utils/entitify.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 223,
+    "kind": "function",
+    "name": "entitify",
+    "memberof": "src/utils/entitify.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/utils/entitify.js~entitify",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/utils/entitify.js",
+    "importStyle": null,
+    "description": "Transform file content into entities.",
+    "examples": [
+      "entitify('const test = 1');  // returns entities from babylon"
+    ],
+    "lineNumber": 13,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "content",
+        "description": "Script content of file to parse."
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 224,
+    "kind": "file",
+    "name": "src/utils/readFile.js",
+    "content": "\nconst fs = require('fs');\n\n/**\n * Reads file by using src path. This will handle adding file extensions for\n * imports.\n *\n * @memberof utils\n * @param {string} fileSrc - Path to file to read.\n *\n * @example\n * readFile('/path/to/file');  // returns file content as utf8\n */\nconst readFile = fileSrc => {\n  return fs.readFileSync(withExtension(fileSrc), { encoding: 'utf8' });\n};\n\nconst withExtension = fileSrc => {\n  const stats = fs.statSync(fileSrc);\n\n  if (stats.isFile()) {\n    return fileSrc;\n  }\n\n  throw new Error(new Error(`file does not exist '${fileSrc}'`));\n};\n\nmodule.exports = readFile;",
+    "static": true,
+    "longname": "/Users/mattimehtonen/Projects/regana/src/utils/readFile.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 225,
+    "kind": "variable",
+    "name": "fs",
+    "memberof": "src/utils/readFile.js",
+    "static": true,
+    "longname": "src/utils/readFile.js~fs",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/utils/readFile.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 226,
+    "kind": "function",
+    "name": "readFile",
+    "memberof": "src/utils/readFile.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/utils/readFile.js~readFile",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/utils/readFile.js",
+    "importStyle": null,
+    "description": "Reads file by using src path. This will handle adding file extensions for\nimports.",
+    "examples": [
+      "readFile('/path/to/file');  // returns file content as utf8"
+    ],
+    "lineNumber": 14,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "fileSrc",
+        "description": "Path to file to read."
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 227,
+    "kind": "function",
+    "name": "withExtension",
+    "memberof": "src/utils/readFile.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/utils/readFile.js~withExtension",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/utils/readFile.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 18,
+    "undocument": true,
+    "params": [
+      {
+        "name": "fileSrc",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 228,
+    "kind": "file",
+    "name": "src/utils/tests/mocks/file1.js",
+    "content": "const testValue = 1;",
+    "static": true,
+    "longname": "/Users/mattimehtonen/Projects/regana/src/utils/tests/mocks/file1.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 229,
+    "kind": "variable",
+    "name": "testValue",
+    "memberof": "src/utils/tests/mocks/file1.js",
+    "static": true,
+    "longname": "src/utils/tests/mocks/file1.js~testValue",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/utils/tests/mocks/file1.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "number"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 230,
+    "kind": "file",
+    "name": "src/utils/validate/isFile.js",
+    "content": "\n/**\n * Check if value is proper file id.\n *\n * @memberof utils.validate\n * @param {*} value - Value to test.\n *\n * @example\n * isFile('File_1');  // true\n * isFile(null);      // false\n */\nconst isFile = (value) => {\n\n  /*\n   * TODO - better check\n   */\n  return typeof value === 'string' && Boolean(value);\n};\n\nmodule.exports = isFile;",
+    "static": true,
+    "longname": "/Users/mattimehtonen/Projects/regana/src/utils/validate/isFile.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 231,
+    "kind": "function",
+    "name": "isFile",
+    "memberof": "src/utils/validate/isFile.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/utils/validate/isFile.js~isFile",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/utils/validate/isFile.js",
+    "importStyle": null,
+    "description": "Check if value is proper file id.",
+    "examples": [
+      "isFile('File_1');  // true\nisFile(null);      // false"
+    ],
+    "lineNumber": 12,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "value",
+        "description": "Value to test."
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 232,
+    "kind": "file",
+    "name": "src/utils/validate/isId.js",
+    "content": "\n/**\n * Check if value is valid id.\n *\n * @memberof utils.validate\n * @param {*} value - Value to test.\n *\n * @example\n * isId('File_10');  // true\n * isId(null);       // false\n */\nconst isId = (value) => {\n  return typeof value === 'string' && value.length > 0;\n};\n\nmodule.exports = isId;",
+    "static": true,
+    "longname": "/Users/mattimehtonen/Projects/regana/src/utils/validate/isId.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 233,
+    "kind": "function",
+    "name": "isId",
+    "memberof": "src/utils/validate/isId.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/utils/validate/isId.js~isId",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/utils/validate/isId.js",
+    "importStyle": null,
+    "description": "Check if value is valid id.",
+    "examples": [
+      "isId('File_10');  // true\nisId(null);       // false"
+    ],
+    "lineNumber": 12,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "value",
+        "description": "Value to test."
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 234,
+    "kind": "file",
+    "name": "src/utils/validate/isInstance.js",
+    "content": "\n/**\n * Check if value is instance of class.\n *\n * @memberof utils.validate\n * @param {*} value - Value to test.\n * @param {Class} Class - Class to check if value is instance of.\n *\n * @example\n * isInstance(scope, Scope); // true\n */\nconst isInstance = (value, Class) => {\n  return value instanceof Class;\n};\n\nmodule.exports = isInstance;",
+    "static": true,
+    "longname": "/Users/mattimehtonen/Projects/regana/src/utils/validate/isInstance.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 235,
+    "kind": "function",
+    "name": "isInstance",
+    "memberof": "src/utils/validate/isInstance.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/utils/validate/isInstance.js~isInstance",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/utils/validate/isInstance.js",
+    "importStyle": null,
+    "description": "Check if value is instance of class.",
+    "examples": [
+      "isInstance(scope, Scope); // true"
+    ],
+    "lineNumber": 12,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "value",
+        "description": "Value to test."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Class"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "Class",
+        "description": "Class to check if value is instance of."
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 236,
+    "kind": "file",
+    "name": "src/utils/validate/isNumber.js",
+    "content": "\n/**\n * Check if value is number.\n *\n * @memberof utils.validate\n * @param {*} value - Value to test.\n *\n * @example\n * isNumber(10);        // true\n * isNumber(438.34);    // true\n * isNumber(NaN);       // false\n * isNumber({});        // false\n * isNumber('124');     // false\n * isNumber(Infinity);  // false\n */\nconst isNumber = (value) => {\n  return isFinite(value) && !isNaN(value) && typeof value === 'number';\n};\n\nmodule.exports = isNumber;",
+    "static": true,
+    "longname": "/Users/mattimehtonen/Projects/regana/src/utils/validate/isNumber.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 237,
+    "kind": "function",
+    "name": "isNumber",
+    "memberof": "src/utils/validate/isNumber.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/utils/validate/isNumber.js~isNumber",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/utils/validate/isNumber.js",
+    "importStyle": null,
+    "description": "Check if value is number.",
+    "examples": [
+      "isNumber(10);        // true\nisNumber(438.34);    // true\nisNumber(NaN);       // false\nisNumber({});        // false\nisNumber('124');     // false\nisNumber(Infinity);  // false"
+    ],
+    "lineNumber": 16,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "value",
+        "description": "Value to test."
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 238,
+    "kind": "file",
+    "name": "src/utils/validate/isUndefined.js",
+    "content": "\n/**\n * Check if value is undefined.\n *\n * @memberof utils.validate\n * @param {*} value - Value to test.\n *\n * @example\n * isUndefined();             // true\n * isUndefined(undefined);    // true\n * isUndefined('undefined');  // false\n * isUndefined(null);         // false\n */\nconst isUndefined = value => {\n  return typeof value === 'undefined';\n};\n\nmodule.exports = isUndefined;",
+    "static": true,
+    "longname": "/Users/mattimehtonen/Projects/regana/src/utils/validate/isUndefined.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 239,
+    "kind": "function",
+    "name": "isUndefined",
+    "memberof": "src/utils/validate/isUndefined.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/utils/validate/isUndefined.js~isUndefined",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/utils/validate/isUndefined.js",
+    "importStyle": null,
+    "description": "Check if value is undefined.",
+    "examples": [
+      "isUndefined();             // true\nisUndefined(undefined);    // true\nisUndefined('undefined');  // false\nisUndefined(null);         // false"
+    ],
+    "lineNumber": 14,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "value",
+        "description": "Value to test."
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 240,
+    "kind": "file",
+    "name": "src/utils/validate/isWithinRange.js",
+    "content": "\n/*\n * Internal helper function to check if value is between of two other values\n */\nconst isBetween = (value, min, max) => {\n  return value >= min && value <= max;\n};\n\n/**\n * Check if values (start and end) are within range of another.\n *\n * @memberof utils.validate\n * @param {number} xStart - Start value you want to be within another range.\n * @param {number} xEnd - End value you want to be within another range.\n * @param {number} yStart - Start value of what you test against.\n * @param {number} yEnd - End value of what you test against.\n *\n * @example\n * isWithinRange(10, 20, 5, 30);  // true\n * isWithinRange(2, 20, 5, 30);   // false\n * isWithinRange(15, 35, 5, 30);  // false\n */\nconst isWithinRange = (xStart, xEnd, yStart, yEnd) => {\n  return isBetween(xStart, yStart, yEnd) && isBetween(xEnd, yStart, yEnd);\n};\n\nmodule.exports = isWithinRange;",
+    "static": true,
+    "longname": "/Users/mattimehtonen/Projects/regana/src/utils/validate/isWithinRange.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 241,
+    "kind": "function",
+    "name": "isBetween",
+    "memberof": "src/utils/validate/isWithinRange.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/utils/validate/isWithinRange.js~isBetween",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/utils/validate/isWithinRange.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "params": [
+      {
+        "name": "value",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "min",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "max",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 242,
+    "kind": "function",
+    "name": "isWithinRange",
+    "memberof": "src/utils/validate/isWithinRange.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/utils/validate/isWithinRange.js~isWithinRange",
+    "access": "public",
+    "export": false,
+    "importPath": "regana/src/utils/validate/isWithinRange.js",
+    "importStyle": null,
+    "description": "Check if values (start and end) are within range of another.",
+    "examples": [
+      "isWithinRange(10, 20, 5, 30);  // true\nisWithinRange(2, 20, 5, 30);   // false\nisWithinRange(15, 35, 5, 30);  // false"
+    ],
+    "lineNumber": 23,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "xStart",
+        "description": "Start value you want to be within another range."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "xEnd",
+        "description": "End value you want to be within another range."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "yStart",
+        "description": "Start value of what you test against."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "yEnd",
+        "description": "End value of what you test against."
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "kind": "index",
+    "content": "# Regression Analysis\n[work in process]\n\n[![Build Status](https://travis-ci.org/vanils/regana.svg?branch=master)](https://travis-ci.org/vanils/regana)\n[![codecov](https://codecov.io/gh/vanils/regana/branch/master/graph/badge.svg)](https://codecov.io/gh/vanils/regana)\n[![Dependency Status](https://david-dm.org/vanils/regana.svg)](https://david-dm.org/vanils/regana)\n[![devDependency Status](https://david-dm.org/vanils/regana/dev-status.svg)](https://david-dm.org/vanils/regana#info=devDependencies)\n\nTool to analyse risk for regressions. Can be integrated with Github pull requests to highlight potential issues and used by QA people to plan regression tests.\n\nRead more from [API documentation](https://vanils.github.io/regana/)\n",
+    "longname": "/Users/mattimehtonen/Projects/regana/README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\n  \"bin\": {\n    \"regana\": \"./bin/regana.js\"\n  },\n  \"engines\": {\n    \"node\": \">=8\"\n  },\n  \"name\": \"regana\",\n  \"version\": \"1.1.15\",\n  \"description\": \"Tool to analyse risk for regressions based on git diff\",\n  \"main\": \"src/regana.js\",\n  \"scripts\": {\n    \"docs\": \"node ./node_modules/.bin/rmdir-cli docs && ./node_modules/.bin/esdoc -c .esdoc.json\",\n    \"build\": \"node console.log('build');\",\n    \"start\": \"node console.log('start');\",\n    \"test\": \"node ./node_modules/.bin/jest --config=.jestrc.json\",\n    \"lint\": \"node ./node_modules/.bin/eslint --ignore-pattern=**/mocks/** --config=.eslintrc.json src/**/** bin/**/**\",\n    \"codecov\": \"node ./node_modules/.bin/codecov\",\n    \"commitmsg\": \"commitlint -e $GIT_PARAMS\",\n    \"precommit\": \"npm run test && npm run lint\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"https://github.com/vanils/regana.git\"\n  },\n  \"keywords\": [\n    \"regression\"\n  ],\n  \"author\": \"Matti Mehtonen\",\n  \"license\": \"MIT\",\n  \"bugs\": {\n    \"url\": \"https://github.com/vanils/regana/issues\"\n  },\n  \"homepage\": \"https://github.com/vanils/regana#readme\",\n  \"dependencies\": {\n    \"babylon\": \"^6.18.0\",\n    \"minimist\": \"^1.2.0\",\n    \"uniqid\": \"^4.1.1\"\n  },\n  \"devDependencies\": {\n    \"@commitlint/cli\": \"^6.2.0\",\n    \"@commitlint/config-conventional\": \"^6.1.3\",\n    \"@commitlint/travis-cli\": \"^6.2.0\",\n    \"@semantic-release/git\": \"^5.0.0\",\n    \"chalk\": \"^2.4.1\",\n    \"codecov\": \"^3.0.2\",\n    \"esdoc\": \"^1.1.0\",\n    \"esdoc-standard-plugin\": \"^1.0.0\",\n    \"eslint\": \"^4.19.1\",\n    \"eslint-plugin-jest\": \"^21.15.1\",\n    \"eslint-plugin-jsdoc\": \"^3.6.3\",\n    \"husky\": \"^0.14.3\",\n    \"jest\": \"^22.4.3\",\n    \"jsdoc\": \"^3.5.5\",\n    \"please-upgrade-node\": \"^3.0.2\",\n    \"rmdir-cli\": \"^2.0.6\",\n    \"semantic-release\": \"^15.4.0\",\n    \"taffydb\": \"^2.7.3\"\n  }\n}\n",
+    "longname": "/Users/mattimehtonen/Projects/regana/package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  }
+]

@@ -2,8 +2,8 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <base data-ice="baseUrl">
-  <title data-ice="title">Home | regana</title>
+  <base data-ice="baseUrl" href="../../../../">
+  <title data-ice="title">src/utils/validate/isId.js | regana</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
@@ -34,14 +34,24 @@
 </div>
 </nav>
 
-<div class="content" data-ice="content"><div data-ice="index" class="github-markdown"><h1 id="regression-analysis">Regression Analysis</h1><p>[work in process]</p>
-<p><a href="https://travis-ci.org/vanils/regana"><img src="https://travis-ci.org/vanils/regana.svg?branch=master" alt="Build Status"></a>
-<a href="https://codecov.io/gh/vanils/regana"><img src="https://codecov.io/gh/vanils/regana/branch/master/graph/badge.svg" alt="codecov"></a>
-<a href="https://david-dm.org/vanils/regana"><img src="https://david-dm.org/vanils/regana.svg" alt="Dependency Status"></a>
-<a href="https://david-dm.org/vanils/regana#info=devDependencies"><img src="https://david-dm.org/vanils/regana/dev-status.svg" alt="devDependency Status"></a></p>
-<p>Tool to analyse risk for regressions. Can be integrated with Github pull requests to highlight potential issues and used by QA people to plan regression tests.</p>
-<p>Read more from <a href="https://vanils.github.io/regana/">API documentation</a></p>
-</div>
+<div class="content" data-ice="content"><h1 data-ice="title">src/utils/validate/isId.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">
+/**
+ * Check if value is valid id.
+ *
+ * @memberof utils.validate
+ * @param {*} value - Value to test.
+ *
+ * @example
+ * isId(&apos;File_10&apos;);  // true
+ * isId(null);       // false
+ */
+const isId = (value) =&gt; {
+  return typeof value === &apos;string&apos; &amp;&amp; value.length &gt; 0;
+};
+
+module.exports = isId;</code></pre>
+
 </div>
 
 <footer class="footer">

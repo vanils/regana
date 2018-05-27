@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">src/models/Scope.js | regana</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Tool to analyse risk for regressions based on git diff"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="regana"><meta property="twitter:description" content="Tool to analyse risk for regressions based on git diff"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/vanils/regana.git"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#tests-mocks">tests/mocks</a><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-test">test</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/models/Scope.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">
+const isWithinRange = require(&apos;../utils/validate/isWithinRange&apos;);
+const asStringValue = require(&apos;../utils/asStringValue&apos;);
+const isInstance = require(&apos;../utils/validate/isInstance&apos;);
+const isUndefined = require(&apos;../utils/validate/isUndefined&apos;);
+const isNumber = require(&apos;../utils/validate/isNumber&apos;);
+const isFile = require(&apos;../utils/validate/isFile&apos;);
+const isId = require(&apos;../utils/validate/isId&apos;);
+const store = require(&apos;../store/scopes&apos;);
+
+/**
+ * Scope entity representing a scope.
+ */
+class Scope {
+
+  /**
+   * Create a scope.
+   *
+   * @param {number} start - Index of first character of this scope.
+   * @param {number} end - Index of first character after this scope.
+   * @param {Object} options - Optional parameters.
+   * @param {Scope} [options.parentScope] - Parent Scope.
+   * @param {Scope} [options.file] - File assosiated with this scope. If not
+   * specified, will be inherited from parent scope.
+   *
+   * @example
+   * new Scope(0, 200, { file: createId(&apos;File&apos;) })
+   */
+  constructor (start, end, options = {}) {
+
+    const {
+      parentScope,
+      file
+    } = options;
+
+    if (!isNumber(start)) {
+      throw new Error(`Invalid scope start value &apos;${asStringValue(start)}&apos;`);
+    }
+
+    if (!isNumber(end)) {
+      throw new Error(`Invalid scope end value &apos;${asStringValue(end)}&apos;`);
+    }
+
+    if (!isUndefined(parentScope) &amp;&amp; !isInstance(parentScope, Scope)) {
+      throw new Error(`Invalid parent scope &apos;${asStringValue(parentScope)}&apos;`);
+    }
+
+    if (!isUndefined(file) &amp;&amp; !isFile(file)) {
+      throw new Error(`Invalid file &apos;${asStringValue(file)}&apos;`);
+    }
+
+    if (isUndefined(file) &amp;&amp; (isUndefined(parentScope) || isUndefined(parentScope.file))) {
+      throw new Error(`Cannot assosiate scope with any file`);
+    }
+
+    if (!isUndefined(parentScope) &amp;&amp; !isWithinRange(start, end, parentScope.start, parentScope.end)) {
+      throw new Error(`Scope not within the parent scope`);
+    }
+
+    /**
+     * First character of this scope.
+     * @type {number}
+     */
+    this.start = start;
+
+    /**
+     * First character after this scope.
+     * @type {number}
+     */
+    this.end = end;
+
+    /**
+     * Parent scope of this scope
+     * @type {Scope}
+     */
+    this.parentScope = parentScope || null;
+
+    /**
+     * File in which this scope belongs to
+     * @type {string}
+     */
+    this.file = file || this.parentScope.file;
+
+    /**
+     * Segments within this scope
+     * @type {object}
+     */
+    this.segments = {};
+
+    /**
+     * List of exposed items within this scope
+     * @type {object}
+     */
+    this.exposes = {};
+
+    /**
+     * List of pointers within this scope
+     * @type {object}
+     */
+    this.pointers = {};
+
+    /**
+     * List of labels within this scope
+     * @type {object}
+     */
+    this.labels = {};
+
+    /**
+     * Array of with segments within this scope
+     * @type {object}
+     */
+    this.withSegments = [];
+
+    /*
+     * Add this scope to store of all scopes
+     */
+    store.add(this);
+  }
+
+  /**
+   * Get segment id by using pointer as selector.
+   *
+   * @param {string} pointer - Pointer to use to select segment. This would be
+   * a variable name.
+   * @returns {Array} Array of segment ids.
+   *
+   * @example
+   * const segmentId = scope.getSegmentIdsByPointer(&apos;myVariable&apos;);
+   */
+  getSegmentIdsByPointer (pointer) {
+
+    if (this.pointers[pointer]) {
+      return this.withSegments.concat([this.pointers[pointer]]);
+    }
+
+    const next = this.parentScope ? this.parentScope.getSegmentIdsByPointer(pointer) : [];
+
+    return this.withSegments.concat(next);
+  }
+
+  /**
+   * Add new segment to scope.
+   *
+   * @param {string} id - If of this segment.
+   * @param {number} start - Index of first character of this segment.
+   * @param {number} end - Index of first character after this segment.
+   * @param {Object} options - Optional parameters.
+   * @param {Object[]} [options.uses] - Array of other segments which should be
+   * considered as part of this segment.
+   * @param {string[]} [options.usesPointers] - Array of pointers needed for
+   * this segment. Basically this means variables which this segment is using.
+   * @param {string} [options.pointer] - If this segment is going to create a
+   * new variable this would be the pointer to it.
+   * @param {string} [options.label] - If this segment is going to create a new
+   * label this would be the pointer to it.
+   * @param {string[]} [options.exposes] - If this segment is going to expose
+   * something outside of scope.
+   *
+   * @example
+   * scope.addSegment(createId(&apos;VariableDeclaration&apos;), 10, 33);
+   */
+  addSegment (id, start, end, options = {}) {
+
+    const {
+      uses = [],
+      usesPointers = [],
+      exposes = [],
+      pointer = null
+    } = options;
+
+    if (!isId(id)) {
+      throw new Error(`Invalid segment id &apos;${asStringValue(id)}&apos;`);
+    }
+
+    if (!isNumber(start)) {
+      throw new Error(`Invalid segment start value &apos;${asStringValue(start)}&apos;`);
+    }
+
+    if (!isNumber(end)) {
+      throw new Error(`Invalid segment end value &apos;${asStringValue(end)}&apos;`);
+    }
+
+    if (!isWithinRange(start, end, this.start, this.end)) {
+      throw new Error(`Segment &apos;${asStringValue(id)}&apos; not within the scope`);
+    }
+
+    const usesAsPointers = usesPointers
+      .reduce((uses, input) =&gt; {
+        return uses.concat(this.getSegmentIdsByPointer(input));
+      }, []);
+
+    const segment = {
+      uses: uses.concat(usesAsPointers),
+      start,
+      end,
+      id
+    };
+
+    if (pointer) {
+      this.pointers[pointer] = id;
+    }
+
+    exposes.forEach(expose =&gt; {
+      this.exposes[expose] = id;
+    });
+
+    this.segments[id] = segment;
+  }
+}
+
+module.exports = Scope;</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

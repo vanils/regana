@@ -1,0 +1,392 @@
+{
+  "coverage": "30.3%",
+  "expectCount": 132,
+  "actualCount": 40,
+  "files": {
+    "src/analyse/entry.js": {
+      "expectCount": 3,
+      "actualCount": 1,
+      "undocumentLines": [
+        2,
+        3
+      ]
+    },
+    "src/analyse/file.js": {
+      "expectCount": 7,
+      "actualCount": 1,
+      "undocumentLines": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    "src/analyse/node.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/analyse/types/declarations/variable.js": {
+      "expectCount": 3,
+      "actualCount": 0,
+      "undocumentLines": [
+        2,
+        3,
+        5
+      ]
+    },
+    "src/analyse/types/expressions/binary.js": {
+      "expectCount": 4,
+      "actualCount": 0,
+      "undocumentLines": [
+        2,
+        3,
+        5,
+        20
+      ]
+    },
+    "src/analyse/types/extras/binaryOperator.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        2,
+        4
+      ]
+    },
+    "src/analyse/types/identifier.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        2,
+        4
+      ]
+    },
+    "src/analyse/types/literals/boolean.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        2,
+        4
+      ]
+    },
+    "src/analyse/types/literals/null.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        2,
+        4
+      ]
+    },
+    "src/analyse/types/literals/numeric.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        2,
+        4
+      ]
+    },
+    "src/analyse/types/literals/regex.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        2,
+        4
+      ]
+    },
+    "src/analyse/types/literals/string.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        2,
+        4
+      ]
+    },
+    "src/analyse/types/modules/exports/exportNamed.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        2,
+        4
+      ]
+    },
+    "src/analyse/types/statements/block.js": {
+      "expectCount": 4,
+      "actualCount": 0,
+      "undocumentLines": [
+        2,
+        3,
+        4,
+        6
+      ]
+    },
+    "src/analyse/types/statements/controlFlow/break.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        2,
+        4
+      ]
+    },
+    "src/analyse/types/statements/controlFlow/continue.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        2,
+        4
+      ]
+    },
+    "src/analyse/types/statements/controlFlow/labeled.js": {
+      "expectCount": 3,
+      "actualCount": 0,
+      "undocumentLines": [
+        2,
+        3,
+        5
+      ]
+    },
+    "src/analyse/types/statements/controlFlow/return.js": {
+      "expectCount": 3,
+      "actualCount": 0,
+      "undocumentLines": [
+        2,
+        3,
+        5
+      ]
+    },
+    "src/analyse/types/statements/debugger.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        2,
+        4
+      ]
+    },
+    "src/analyse/types/statements/empty.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        2,
+        4
+      ]
+    },
+    "src/analyse/types/statements/expression.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        2,
+        4
+      ]
+    },
+    "src/analyse/types/statements/with.js": {
+      "expectCount": 4,
+      "actualCount": 0,
+      "undocumentLines": [
+        2,
+        3,
+        4,
+        6
+      ]
+    },
+    "src/models/Node.js": {
+      "expectCount": 12,
+      "actualCount": 7,
+      "undocumentLines": [
+        2,
+        9,
+        13,
+        29,
+        45
+      ]
+    },
+    "src/models/Scope.js": {
+      "expectCount": 21,
+      "actualCount": 13,
+      "undocumentLines": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    "src/models/Vector.js": {
+      "expectCount": 9,
+      "actualCount": 5,
+      "undocumentLines": [
+        2,
+        3,
+        10,
+        23
+      ]
+    },
+    "src/regana.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        4
+      ]
+    },
+    "src/store/files.js": {
+      "expectCount": 2,
+      "actualCount": 1,
+      "undocumentLines": [
+        2
+      ]
+    },
+    "src/store/scopes.js": {
+      "expectCount": 2,
+      "actualCount": 1,
+      "undocumentLines": [
+        2
+      ]
+    },
+    "src/tests/mocks/declarations/variable/mock1.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        2
+      ]
+    },
+    "src/tests/mocks/declarations/variable/mock2.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        2
+      ]
+    },
+    "src/tests/mocks/declarations/variable/mock3.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        2
+      ]
+    },
+    "src/tests/mocks/declarations/variable/mock4.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        2
+      ]
+    },
+    "src/tests/mocks/file1.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        2
+      ]
+    },
+    "src/tests/mocks/file2.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        1
+      ]
+    },
+    "src/tests/mocks/literals/boolean.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        2
+      ]
+    },
+    "src/tests/mocks/literals/null.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        2
+      ]
+    },
+    "src/tests/mocks/literals/numeric.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        2
+      ]
+    },
+    "src/tests/mocks/literals/regex.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        2
+      ]
+    },
+    "src/tests/mocks/literals/string.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        2
+      ]
+    },
+    "src/utils/asStringValue.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/utils/createId.js": {
+      "expectCount": 2,
+      "actualCount": 1,
+      "undocumentLines": [
+        4
+      ]
+    },
+    "src/utils/entitify.js": {
+      "expectCount": 2,
+      "actualCount": 1,
+      "undocumentLines": [
+        2
+      ]
+    },
+    "src/utils/readFile.js": {
+      "expectCount": 3,
+      "actualCount": 1,
+      "undocumentLines": [
+        2,
+        18
+      ]
+    },
+    "src/utils/tests/mocks/file1.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        1
+      ]
+    },
+    "src/utils/validate/isFile.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/utils/validate/isId.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/utils/validate/isInstance.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/utils/validate/isNumber.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/utils/validate/isUndefined.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/utils/validate/isWithinRange.js": {
+      "expectCount": 2,
+      "actualCount": 1,
+      "undocumentLines": [
+        5
+      ]
+    }
+  }
+}
