@@ -1,7 +1,7 @@
 {
   "type": "File",
   "start": 0,
-  "end": 859,
+  "end": 857,
   "loc": {
     "start": {
       "line": 1,
@@ -9,13 +9,13 @@
     },
     "end": {
       "line": 27,
-      "column": 31
+      "column": 29
     }
   },
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 859,
+    "end": 857,
     "loc": {
       "start": {
         "line": 1,
@@ -23,7 +23,7 @@
       },
       "end": {
         "line": 27,
-        "column": 31
+        "column": 29
       }
     },
     "sourceType": "module",
@@ -355,7 +355,7 @@
         ]
       },
       {
-        "type": "VariableDeclaration",
+        "type": "Identifier",
         "start": 693,
         "end": 826,
         "loc": {
@@ -415,24 +415,7 @@
                   "column": 1
                 }
               },
-              "id": {
-                "type": "Identifier",
-                "start": 699,
-                "end": 712,
-                "loc": {
-                  "start": {
-                    "line": 23,
-                    "column": 6
-                  },
-                  "end": {
-                    "line": 23,
-                    "column": 19
-                  },
-                  "identifierName": "isWithinRange"
-                },
-                "name": "isWithinRange",
-                "leadingComments": null
-              },
+              "id": null,
               "generator": false,
               "expression": false,
               "async": false,
@@ -730,29 +713,14 @@
           }
         ],
         "kind": "const",
-        "leadingComments": [
-          {
-            "type": "CommentBlock",
-            "value": "*\n * Check if values (start and end) are within range of another.\n *\n * @memberof utils.validate\n * @param {number} xStart - Start value you want to be within another range.\n * @param {number} xEnd - End value you want to be within another range.\n * @param {number} yStart - Start value of what you test against.\n * @param {number} yEnd - End value of what you test against.\n *\n * @example\n * isWithinRange(10, 20, 5, 30);  // true\n * isWithinRange(2, 20, 5, 30);   // false\n * isWithinRange(15, 35, 5, 30);  // false\n ",
-            "start": 169,
-            "end": 692,
-            "loc": {
-              "start": {
-                "line": 9,
-                "column": 0
-              },
-              "end": {
-                "line": 22,
-                "column": 3
-              }
-            }
-          }
-        ]
+        "leadingComments": [],
+        "name": "_",
+        "trailingComments": []
       },
       {
-        "type": "ExpressionStatement",
+        "type": "Identifier",
         "start": 828,
-        "end": 859,
+        "end": 857,
         "loc": {
           "start": {
             "line": 27,
@@ -760,91 +728,439 @@
           },
           "end": {
             "line": 27,
-            "column": 31
+            "column": 29
           }
         },
-        "expression": {
-          "type": "AssignmentExpression",
-          "start": 828,
-          "end": 858,
+        "declaration": {
+          "type": "Identifier",
+          "start": 843,
+          "end": 856,
           "loc": {
             "start": {
               "line": 27,
-              "column": 0
+              "column": 15
             },
             "end": {
               "line": 27,
-              "column": 30
+              "column": 28
+            },
+            "identifierName": "isWithinRange"
+          },
+          "name": "isWithinRange"
+        },
+        "name": "_",
+        "leadingComments": [],
+        "trailingComments": []
+      },
+      {
+        "type": "ExportDefaultDeclaration",
+        "start": 828,
+        "end": 857,
+        "loc": {
+          "start": {
+            "line": 27,
+            "column": 0
+          },
+          "end": {
+            "line": 27,
+            "column": 29
+          }
+        },
+        "declaration": {
+          "type": "VariableDeclaration",
+          "start": 693,
+          "end": 826,
+          "loc": {
+            "start": {
+              "line": 23,
+              "column": 0
+            },
+            "end": {
+              "line": 25,
+              "column": 2
             }
           },
-          "operator": "=",
-          "left": {
-            "type": "MemberExpression",
-            "start": 828,
-            "end": 842,
-            "loc": {
-              "start": {
-                "line": 27,
-                "column": 0
-              },
-              "end": {
-                "line": 27,
-                "column": 14
-              }
-            },
-            "object": {
-              "type": "Identifier",
-              "start": 828,
-              "end": 834,
+          "declarations": [
+            {
+              "type": "VariableDeclarator",
+              "start": 699,
+              "end": 825,
               "loc": {
                 "start": {
-                  "line": 27,
+                  "line": 23,
+                  "column": 6
+                },
+                "end": {
+                  "line": 25,
+                  "column": 1
+                }
+              },
+              "id": {
+                "type": "Identifier",
+                "start": 699,
+                "end": 712,
+                "loc": {
+                  "start": {
+                    "line": 23,
+                    "column": 6
+                  },
+                  "end": {
+                    "line": 23,
+                    "column": 19
+                  },
+                  "identifierName": "isWithinRange"
+                },
+                "name": "isWithinRange",
+                "leadingComments": null
+              },
+              "init": {
+                "type": "ArrowFunctionExpression",
+                "start": 715,
+                "end": 825,
+                "loc": {
+                  "start": {
+                    "line": 23,
+                    "column": 22
+                  },
+                  "end": {
+                    "line": 25,
+                    "column": 1
+                  }
+                },
+                "id": {
+                  "type": "Identifier",
+                  "start": 699,
+                  "end": 712,
+                  "loc": {
+                    "start": {
+                      "line": 23,
+                      "column": 6
+                    },
+                    "end": {
+                      "line": 23,
+                      "column": 19
+                    },
+                    "identifierName": "isWithinRange"
+                  },
+                  "name": "isWithinRange",
+                  "leadingComments": null
+                },
+                "generator": false,
+                "expression": false,
+                "async": false,
+                "params": [
+                  {
+                    "type": "Identifier",
+                    "start": 716,
+                    "end": 722,
+                    "loc": {
+                      "start": {
+                        "line": 23,
+                        "column": 23
+                      },
+                      "end": {
+                        "line": 23,
+                        "column": 29
+                      },
+                      "identifierName": "xStart"
+                    },
+                    "name": "xStart"
+                  },
+                  {
+                    "type": "Identifier",
+                    "start": 724,
+                    "end": 728,
+                    "loc": {
+                      "start": {
+                        "line": 23,
+                        "column": 31
+                      },
+                      "end": {
+                        "line": 23,
+                        "column": 35
+                      },
+                      "identifierName": "xEnd"
+                    },
+                    "name": "xEnd"
+                  },
+                  {
+                    "type": "Identifier",
+                    "start": 730,
+                    "end": 736,
+                    "loc": {
+                      "start": {
+                        "line": 23,
+                        "column": 37
+                      },
+                      "end": {
+                        "line": 23,
+                        "column": 43
+                      },
+                      "identifierName": "yStart"
+                    },
+                    "name": "yStart"
+                  },
+                  {
+                    "type": "Identifier",
+                    "start": 738,
+                    "end": 742,
+                    "loc": {
+                      "start": {
+                        "line": 23,
+                        "column": 45
+                      },
+                      "end": {
+                        "line": 23,
+                        "column": 49
+                      },
+                      "identifierName": "yEnd"
+                    },
+                    "name": "yEnd"
+                  }
+                ],
+                "body": {
+                  "type": "BlockStatement",
+                  "start": 747,
+                  "end": 825,
+                  "loc": {
+                    "start": {
+                      "line": 23,
+                      "column": 54
+                    },
+                    "end": {
+                      "line": 25,
+                      "column": 1
+                    }
+                  },
+                  "body": [
+                    {
+                      "type": "ReturnStatement",
+                      "start": 751,
+                      "end": 823,
+                      "loc": {
+                        "start": {
+                          "line": 24,
+                          "column": 2
+                        },
+                        "end": {
+                          "line": 24,
+                          "column": 74
+                        }
+                      },
+                      "argument": {
+                        "type": "LogicalExpression",
+                        "start": 758,
+                        "end": 822,
+                        "loc": {
+                          "start": {
+                            "line": 24,
+                            "column": 9
+                          },
+                          "end": {
+                            "line": 24,
+                            "column": 73
+                          }
+                        },
+                        "left": {
+                          "type": "CallExpression",
+                          "start": 758,
+                          "end": 789,
+                          "loc": {
+                            "start": {
+                              "line": 24,
+                              "column": 9
+                            },
+                            "end": {
+                              "line": 24,
+                              "column": 40
+                            }
+                          },
+                          "callee": {
+                            "type": "Identifier",
+                            "start": 758,
+                            "end": 767,
+                            "loc": {
+                              "start": {
+                                "line": 24,
+                                "column": 9
+                              },
+                              "end": {
+                                "line": 24,
+                                "column": 18
+                              },
+                              "identifierName": "isBetween"
+                            },
+                            "name": "isBetween"
+                          },
+                          "arguments": [
+                            {
+                              "type": "Identifier",
+                              "start": 768,
+                              "end": 774,
+                              "loc": {
+                                "start": {
+                                  "line": 24,
+                                  "column": 19
+                                },
+                                "end": {
+                                  "line": 24,
+                                  "column": 25
+                                },
+                                "identifierName": "xStart"
+                              },
+                              "name": "xStart"
+                            },
+                            {
+                              "type": "Identifier",
+                              "start": 776,
+                              "end": 782,
+                              "loc": {
+                                "start": {
+                                  "line": 24,
+                                  "column": 27
+                                },
+                                "end": {
+                                  "line": 24,
+                                  "column": 33
+                                },
+                                "identifierName": "yStart"
+                              },
+                              "name": "yStart"
+                            },
+                            {
+                              "type": "Identifier",
+                              "start": 784,
+                              "end": 788,
+                              "loc": {
+                                "start": {
+                                  "line": 24,
+                                  "column": 35
+                                },
+                                "end": {
+                                  "line": 24,
+                                  "column": 39
+                                },
+                                "identifierName": "yEnd"
+                              },
+                              "name": "yEnd"
+                            }
+                          ]
+                        },
+                        "operator": "&&",
+                        "right": {
+                          "type": "CallExpression",
+                          "start": 793,
+                          "end": 822,
+                          "loc": {
+                            "start": {
+                              "line": 24,
+                              "column": 44
+                            },
+                            "end": {
+                              "line": 24,
+                              "column": 73
+                            }
+                          },
+                          "callee": {
+                            "type": "Identifier",
+                            "start": 793,
+                            "end": 802,
+                            "loc": {
+                              "start": {
+                                "line": 24,
+                                "column": 44
+                              },
+                              "end": {
+                                "line": 24,
+                                "column": 53
+                              },
+                              "identifierName": "isBetween"
+                            },
+                            "name": "isBetween"
+                          },
+                          "arguments": [
+                            {
+                              "type": "Identifier",
+                              "start": 803,
+                              "end": 807,
+                              "loc": {
+                                "start": {
+                                  "line": 24,
+                                  "column": 54
+                                },
+                                "end": {
+                                  "line": 24,
+                                  "column": 58
+                                },
+                                "identifierName": "xEnd"
+                              },
+                              "name": "xEnd"
+                            },
+                            {
+                              "type": "Identifier",
+                              "start": 809,
+                              "end": 815,
+                              "loc": {
+                                "start": {
+                                  "line": 24,
+                                  "column": 60
+                                },
+                                "end": {
+                                  "line": 24,
+                                  "column": 66
+                                },
+                                "identifierName": "yStart"
+                              },
+                              "name": "yStart"
+                            },
+                            {
+                              "type": "Identifier",
+                              "start": 817,
+                              "end": 821,
+                              "loc": {
+                                "start": {
+                                  "line": 24,
+                                  "column": 68
+                                },
+                                "end": {
+                                  "line": 24,
+                                  "column": 72
+                                },
+                                "identifierName": "yEnd"
+                              },
+                              "name": "yEnd"
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ],
+                  "directives": []
+                }
+              },
+              "leadingComments": null
+            }
+          ],
+          "kind": "const",
+          "leadingComments": [
+            {
+              "type": "CommentBlock",
+              "value": "*\n * Check if values (start and end) are within range of another.\n *\n * @memberof utils.validate\n * @param {number} xStart - Start value you want to be within another range.\n * @param {number} xEnd - End value you want to be within another range.\n * @param {number} yStart - Start value of what you test against.\n * @param {number} yEnd - End value of what you test against.\n *\n * @example\n * isWithinRange(10, 20, 5, 30);  // true\n * isWithinRange(2, 20, 5, 30);   // false\n * isWithinRange(15, 35, 5, 30);  // false\n ",
+              "start": 169,
+              "end": 692,
+              "loc": {
+                "start": {
+                  "line": 9,
                   "column": 0
                 },
                 "end": {
-                  "line": 27,
-                  "column": 6
-                },
-                "identifierName": "module"
-              },
-              "name": "module"
-            },
-            "property": {
-              "type": "Identifier",
-              "start": 835,
-              "end": 842,
-              "loc": {
-                "start": {
-                  "line": 27,
-                  "column": 7
-                },
-                "end": {
-                  "line": 27,
-                  "column": 14
-                },
-                "identifierName": "exports"
-              },
-              "name": "exports"
-            },
-            "computed": false
-          },
-          "right": {
-            "type": "Identifier",
-            "start": 845,
-            "end": 858,
-            "loc": {
-              "start": {
-                "line": 27,
-                "column": 17
-              },
-              "end": {
-                "line": 27,
-                "column": 30
-              },
-              "identifierName": "isWithinRange"
-            },
-            "name": "isWithinRange"
-          }
+                  "line": 22,
+                  "column": 3
+                }
+              }
+            }
+          ],
+          "trailingComments": []
         }
       }
     ],
@@ -2429,17 +2745,19 @@
     },
     {
       "type": {
-        "label": "name",
+        "label": "export",
+        "keyword": "export",
         "beforeExpr": false,
-        "startsExpr": true,
+        "startsExpr": false,
         "rightAssociative": false,
         "isLoop": false,
         "isAssign": false,
         "prefix": false,
         "postfix": false,
-        "binop": null
+        "binop": null,
+        "updateContext": null
       },
-      "value": "module",
+      "value": "export",
       "start": 828,
       "end": 834,
       "loc": {
@@ -2455,8 +2773,9 @@
     },
     {
       "type": {
-        "label": ".",
-        "beforeExpr": false,
+        "label": "default",
+        "keyword": "default",
+        "beforeExpr": true,
         "startsExpr": false,
         "rightAssociative": false,
         "isLoop": false,
@@ -2466,32 +2785,7 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 834,
-      "end": 835,
-      "loc": {
-        "start": {
-          "line": 27,
-          "column": 6
-        },
-        "end": {
-          "line": 27,
-          "column": 7
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "name",
-        "beforeExpr": false,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "value": "exports",
+      "value": "default",
       "start": 835,
       "end": 842,
       "loc": {
@@ -2502,33 +2796,6 @@
         "end": {
           "line": 27,
           "column": 14
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "=",
-        "beforeExpr": true,
-        "startsExpr": false,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": true,
-        "prefix": false,
-        "postfix": false,
-        "binop": null,
-        "updateContext": null
-      },
-      "value": "=",
-      "start": 843,
-      "end": 844,
-      "loc": {
-        "start": {
-          "line": 27,
-          "column": 15
-        },
-        "end": {
-          "line": 27,
-          "column": 16
         }
       }
     },
@@ -2545,16 +2812,16 @@
         "binop": null
       },
       "value": "isWithinRange",
-      "start": 845,
-      "end": 858,
+      "start": 843,
+      "end": 856,
       "loc": {
         "start": {
           "line": 27,
-          "column": 17
+          "column": 15
         },
         "end": {
           "line": 27,
-          "column": 30
+          "column": 28
         }
       }
     },
@@ -2571,16 +2838,16 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 858,
-      "end": 859,
+      "start": 856,
+      "end": 857,
       "loc": {
         "start": {
           "line": 27,
-          "column": 30
+          "column": 28
         },
         "end": {
           "line": 27,
-          "column": 31
+          "column": 29
         }
       }
     },
@@ -2597,16 +2864,16 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 859,
-      "end": 859,
+      "start": 857,
+      "end": 857,
       "loc": {
         "start": {
           "line": 27,
-          "column": 31
+          "column": 29
         },
         "end": {
           "line": 27,
-          "column": 31
+          "column": 29
         }
       }
     }

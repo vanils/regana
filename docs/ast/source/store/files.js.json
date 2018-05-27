@@ -1,7 +1,7 @@
 {
   "type": "File",
   "start": 0,
-  "end": 728,
+  "end": 726,
   "loc": {
     "start": {
       "line": 1,
@@ -9,13 +9,13 @@
     },
     "end": {
       "line": 39,
-      "column": 23
+      "column": 21
     }
   },
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 728,
+    "end": 726,
     "loc": {
       "start": {
         "line": 1,
@@ -23,7 +23,7 @@
       },
       "end": {
         "line": 39,
-        "column": 23
+        "column": 21
       }
     },
     "sourceType": "module",
@@ -113,7 +113,7 @@
         ]
       },
       {
-        "type": "VariableDeclaration",
+        "type": "Identifier",
         "start": 78,
         "end": 703,
         "loc": {
@@ -733,29 +733,14 @@
           }
         ],
         "kind": "const",
-        "leadingComments": [
-          {
-            "type": "CommentBlock",
-            "value": "*\n * Storage for files.\n *\n * @namespace store.file\n ",
-            "start": 20,
-            "end": 77,
-            "loc": {
-              "start": {
-                "line": 4,
-                "column": 0
-              },
-              "end": {
-                "line": 8,
-                "column": 3
-              }
-            }
-          }
-        ]
+        "leadingComments": [],
+        "name": "_",
+        "trailingComments": []
       },
       {
-        "type": "ExpressionStatement",
+        "type": "Identifier",
         "start": 705,
-        "end": 728,
+        "end": 726,
         "loc": {
           "start": {
             "line": 39,
@@ -763,91 +748,684 @@
           },
           "end": {
             "line": 39,
-            "column": 23
+            "column": 21
           }
         },
-        "expression": {
-          "type": "AssignmentExpression",
-          "start": 705,
-          "end": 727,
+        "declaration": {
+          "type": "Identifier",
+          "start": 720,
+          "end": 725,
           "loc": {
             "start": {
               "line": 39,
-              "column": 0
+              "column": 15
             },
             "end": {
               "line": 39,
-              "column": 22
+              "column": 20
+            },
+            "identifierName": "files"
+          },
+          "name": "files"
+        },
+        "name": "_",
+        "leadingComments": [],
+        "trailingComments": []
+      },
+      {
+        "type": "ExportDefaultDeclaration",
+        "start": 705,
+        "end": 726,
+        "loc": {
+          "start": {
+            "line": 39,
+            "column": 0
+          },
+          "end": {
+            "line": 39,
+            "column": 21
+          }
+        },
+        "declaration": {
+          "type": "VariableDeclaration",
+          "start": 78,
+          "end": 703,
+          "loc": {
+            "start": {
+              "line": 9,
+              "column": 0
+            },
+            "end": {
+              "line": 37,
+              "column": 2
             }
           },
-          "operator": "=",
-          "left": {
-            "type": "MemberExpression",
-            "start": 705,
-            "end": 719,
-            "loc": {
-              "start": {
-                "line": 39,
-                "column": 0
-              },
-              "end": {
-                "line": 39,
-                "column": 14
-              }
-            },
-            "object": {
-              "type": "Identifier",
-              "start": 705,
-              "end": 711,
+          "declarations": [
+            {
+              "type": "VariableDeclarator",
+              "start": 84,
+              "end": 702,
               "loc": {
                 "start": {
-                  "line": 39,
+                  "line": 9,
+                  "column": 6
+                },
+                "end": {
+                  "line": 37,
+                  "column": 1
+                }
+              },
+              "id": {
+                "type": "Identifier",
+                "start": 84,
+                "end": 89,
+                "loc": {
+                  "start": {
+                    "line": 9,
+                    "column": 6
+                  },
+                  "end": {
+                    "line": 9,
+                    "column": 11
+                  },
+                  "identifierName": "files"
+                },
+                "name": "files",
+                "leadingComments": null
+              },
+              "init": {
+                "type": "ObjectExpression",
+                "start": 92,
+                "end": 702,
+                "loc": {
+                  "start": {
+                    "line": 9,
+                    "column": 14
+                  },
+                  "end": {
+                    "line": 37,
+                    "column": 1
+                  }
+                },
+                "properties": [
+                  {
+                    "type": "ObjectProperty",
+                    "start": 306,
+                    "end": 346,
+                    "loc": {
+                      "start": {
+                        "line": 20,
+                        "column": 2
+                      },
+                      "end": {
+                        "line": 22,
+                        "column": 3
+                      }
+                    },
+                    "method": false,
+                    "shorthand": false,
+                    "computed": false,
+                    "key": {
+                      "type": "Identifier",
+                      "start": 306,
+                      "end": 309,
+                      "loc": {
+                        "start": {
+                          "line": 20,
+                          "column": 2
+                        },
+                        "end": {
+                          "line": 20,
+                          "column": 5
+                        },
+                        "identifierName": "add"
+                      },
+                      "name": "add",
+                      "leadingComments": null
+                    },
+                    "value": {
+                      "type": "ArrowFunctionExpression",
+                      "start": 311,
+                      "end": 346,
+                      "loc": {
+                        "start": {
+                          "line": 20,
+                          "column": 7
+                        },
+                        "end": {
+                          "line": 22,
+                          "column": 3
+                        }
+                      },
+                      "id": null,
+                      "generator": false,
+                      "expression": false,
+                      "async": false,
+                      "params": [
+                        {
+                          "type": "Identifier",
+                          "start": 311,
+                          "end": 315,
+                          "loc": {
+                            "start": {
+                              "line": 20,
+                              "column": 7
+                            },
+                            "end": {
+                              "line": 20,
+                              "column": 11
+                            },
+                            "identifierName": "file"
+                          },
+                          "name": "file"
+                        }
+                      ],
+                      "body": {
+                        "type": "BlockStatement",
+                        "start": 319,
+                        "end": 346,
+                        "loc": {
+                          "start": {
+                            "line": 20,
+                            "column": 15
+                          },
+                          "end": {
+                            "line": 22,
+                            "column": 3
+                          }
+                        },
+                        "body": [
+                          {
+                            "type": "ExpressionStatement",
+                            "start": 325,
+                            "end": 342,
+                            "loc": {
+                              "start": {
+                                "line": 21,
+                                "column": 4
+                              },
+                              "end": {
+                                "line": 21,
+                                "column": 21
+                              }
+                            },
+                            "expression": {
+                              "type": "CallExpression",
+                              "start": 325,
+                              "end": 341,
+                              "loc": {
+                                "start": {
+                                  "line": 21,
+                                  "column": 4
+                                },
+                                "end": {
+                                  "line": 21,
+                                  "column": 20
+                                }
+                              },
+                              "callee": {
+                                "type": "MemberExpression",
+                                "start": 325,
+                                "end": 335,
+                                "loc": {
+                                  "start": {
+                                    "line": 21,
+                                    "column": 4
+                                  },
+                                  "end": {
+                                    "line": 21,
+                                    "column": 14
+                                  }
+                                },
+                                "object": {
+                                  "type": "Identifier",
+                                  "start": 325,
+                                  "end": 330,
+                                  "loc": {
+                                    "start": {
+                                      "line": 21,
+                                      "column": 4
+                                    },
+                                    "end": {
+                                      "line": 21,
+                                      "column": 9
+                                    },
+                                    "identifierName": "cache"
+                                  },
+                                  "name": "cache"
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "start": 331,
+                                  "end": 335,
+                                  "loc": {
+                                    "start": {
+                                      "line": 21,
+                                      "column": 10
+                                    },
+                                    "end": {
+                                      "line": 21,
+                                      "column": 14
+                                    },
+                                    "identifierName": "push"
+                                  },
+                                  "name": "push"
+                                },
+                                "computed": false
+                              },
+                              "arguments": [
+                                {
+                                  "type": "Identifier",
+                                  "start": 336,
+                                  "end": 340,
+                                  "loc": {
+                                    "start": {
+                                      "line": 21,
+                                      "column": 15
+                                    },
+                                    "end": {
+                                      "line": 21,
+                                      "column": 19
+                                    },
+                                    "identifierName": "file"
+                                  },
+                                  "name": "file"
+                                }
+                              ]
+                            }
+                          }
+                        ],
+                        "directives": []
+                      }
+                    },
+                    "leadingComments": [
+                      {
+                        "type": "CommentBlock",
+                        "value": "*\n   * Add new file to file store.\n   *\n   * @memberof store.file\n   * @param {File} file - File to be added to store.\n   *\n   * @example\n   * files.add(myFile);      // file is now added to storage\n   ",
+                        "start": 97,
+                        "end": 303,
+                        "loc": {
+                          "start": {
+                            "line": 11,
+                            "column": 2
+                          },
+                          "end": {
+                            "line": 19,
+                            "column": 5
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "ObjectProperty",
+                    "start": 629,
+                    "end": 700,
+                    "loc": {
+                      "start": {
+                        "line": 34,
+                        "column": 2
+                      },
+                      "end": {
+                        "line": 36,
+                        "column": 3
+                      }
+                    },
+                    "method": false,
+                    "shorthand": false,
+                    "computed": false,
+                    "key": {
+                      "type": "Identifier",
+                      "start": 629,
+                      "end": 632,
+                      "loc": {
+                        "start": {
+                          "line": 34,
+                          "column": 2
+                        },
+                        "end": {
+                          "line": 34,
+                          "column": 5
+                        },
+                        "identifierName": "get"
+                      },
+                      "name": "get",
+                      "leadingComments": null
+                    },
+                    "value": {
+                      "type": "ArrowFunctionExpression",
+                      "start": 634,
+                      "end": 700,
+                      "loc": {
+                        "start": {
+                          "line": 34,
+                          "column": 7
+                        },
+                        "end": {
+                          "line": 36,
+                          "column": 3
+                        }
+                      },
+                      "id": null,
+                      "generator": false,
+                      "expression": false,
+                      "async": false,
+                      "params": [
+                        {
+                          "type": "Identifier",
+                          "start": 634,
+                          "end": 636,
+                          "loc": {
+                            "start": {
+                              "line": 34,
+                              "column": 7
+                            },
+                            "end": {
+                              "line": 34,
+                              "column": 9
+                            },
+                            "identifierName": "id"
+                          },
+                          "name": "id"
+                        }
+                      ],
+                      "body": {
+                        "type": "BlockStatement",
+                        "start": 640,
+                        "end": 700,
+                        "loc": {
+                          "start": {
+                            "line": 34,
+                            "column": 13
+                          },
+                          "end": {
+                            "line": 36,
+                            "column": 3
+                          }
+                        },
+                        "body": [
+                          {
+                            "type": "ReturnStatement",
+                            "start": 646,
+                            "end": 696,
+                            "loc": {
+                              "start": {
+                                "line": 35,
+                                "column": 4
+                              },
+                              "end": {
+                                "line": 35,
+                                "column": 54
+                              }
+                            },
+                            "argument": {
+                              "type": "LogicalExpression",
+                              "start": 653,
+                              "end": 695,
+                              "loc": {
+                                "start": {
+                                  "line": 35,
+                                  "column": 11
+                                },
+                                "end": {
+                                  "line": 35,
+                                  "column": 53
+                                }
+                              },
+                              "left": {
+                                "type": "CallExpression",
+                                "start": 653,
+                                "end": 687,
+                                "loc": {
+                                  "start": {
+                                    "line": 35,
+                                    "column": 11
+                                  },
+                                  "end": {
+                                    "line": 35,
+                                    "column": 45
+                                  }
+                                },
+                                "callee": {
+                                  "type": "MemberExpression",
+                                  "start": 653,
+                                  "end": 663,
+                                  "loc": {
+                                    "start": {
+                                      "line": 35,
+                                      "column": 11
+                                    },
+                                    "end": {
+                                      "line": 35,
+                                      "column": 21
+                                    }
+                                  },
+                                  "object": {
+                                    "type": "Identifier",
+                                    "start": 653,
+                                    "end": 658,
+                                    "loc": {
+                                      "start": {
+                                        "line": 35,
+                                        "column": 11
+                                      },
+                                      "end": {
+                                        "line": 35,
+                                        "column": 16
+                                      },
+                                      "identifierName": "cache"
+                                    },
+                                    "name": "cache"
+                                  },
+                                  "property": {
+                                    "type": "Identifier",
+                                    "start": 659,
+                                    "end": 663,
+                                    "loc": {
+                                      "start": {
+                                        "line": 35,
+                                        "column": 17
+                                      },
+                                      "end": {
+                                        "line": 35,
+                                        "column": 21
+                                      },
+                                      "identifierName": "find"
+                                    },
+                                    "name": "find"
+                                  },
+                                  "computed": false
+                                },
+                                "arguments": [
+                                  {
+                                    "type": "ArrowFunctionExpression",
+                                    "start": 664,
+                                    "end": 686,
+                                    "loc": {
+                                      "start": {
+                                        "line": 35,
+                                        "column": 22
+                                      },
+                                      "end": {
+                                        "line": 35,
+                                        "column": 44
+                                      }
+                                    },
+                                    "id": null,
+                                    "generator": false,
+                                    "expression": true,
+                                    "async": false,
+                                    "params": [
+                                      {
+                                        "type": "Identifier",
+                                        "start": 664,
+                                        "end": 668,
+                                        "loc": {
+                                          "start": {
+                                            "line": 35,
+                                            "column": 22
+                                          },
+                                          "end": {
+                                            "line": 35,
+                                            "column": 26
+                                          },
+                                          "identifierName": "file"
+                                        },
+                                        "name": "file"
+                                      }
+                                    ],
+                                    "body": {
+                                      "type": "BinaryExpression",
+                                      "start": 672,
+                                      "end": 686,
+                                      "loc": {
+                                        "start": {
+                                          "line": 35,
+                                          "column": 30
+                                        },
+                                        "end": {
+                                          "line": 35,
+                                          "column": 44
+                                        }
+                                      },
+                                      "left": {
+                                        "type": "MemberExpression",
+                                        "start": 672,
+                                        "end": 679,
+                                        "loc": {
+                                          "start": {
+                                            "line": 35,
+                                            "column": 30
+                                          },
+                                          "end": {
+                                            "line": 35,
+                                            "column": 37
+                                          }
+                                        },
+                                        "object": {
+                                          "type": "Identifier",
+                                          "start": 672,
+                                          "end": 676,
+                                          "loc": {
+                                            "start": {
+                                              "line": 35,
+                                              "column": 30
+                                            },
+                                            "end": {
+                                              "line": 35,
+                                              "column": 34
+                                            },
+                                            "identifierName": "file"
+                                          },
+                                          "name": "file"
+                                        },
+                                        "property": {
+                                          "type": "Identifier",
+                                          "start": 677,
+                                          "end": 679,
+                                          "loc": {
+                                            "start": {
+                                              "line": 35,
+                                              "column": 35
+                                            },
+                                            "end": {
+                                              "line": 35,
+                                              "column": 37
+                                            },
+                                            "identifierName": "id"
+                                          },
+                                          "name": "id"
+                                        },
+                                        "computed": false
+                                      },
+                                      "operator": "===",
+                                      "right": {
+                                        "type": "Identifier",
+                                        "start": 684,
+                                        "end": 686,
+                                        "loc": {
+                                          "start": {
+                                            "line": 35,
+                                            "column": 42
+                                          },
+                                          "end": {
+                                            "line": 35,
+                                            "column": 44
+                                          },
+                                          "identifierName": "id"
+                                        },
+                                        "name": "id"
+                                      }
+                                    }
+                                  }
+                                ]
+                              },
+                              "operator": "||",
+                              "right": {
+                                "type": "NullLiteral",
+                                "start": 691,
+                                "end": 695,
+                                "loc": {
+                                  "start": {
+                                    "line": 35,
+                                    "column": 49
+                                  },
+                                  "end": {
+                                    "line": 35,
+                                    "column": 53
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        ],
+                        "directives": []
+                      }
+                    },
+                    "leadingComments": [
+                      {
+                        "type": "CommentBlock",
+                        "value": "*\n   * Get file from store by id.\n   *\n   * @memberof store.file\n   * @param {string} id - Id of the file you would like to access to.\n   * @returns {File} File which matches the id.\n   *\n   * @example\n   * files.get('File_1');      // returns file by that id or null\n   ",
+                        "start": 351,
+                        "end": 626,
+                        "loc": {
+                          "start": {
+                            "line": 24,
+                            "column": 2
+                          },
+                          "end": {
+                            "line": 33,
+                            "column": 5
+                          }
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              "leadingComments": null
+            }
+          ],
+          "kind": "const",
+          "leadingComments": [
+            {
+              "type": "CommentBlock",
+              "value": "*\n * Storage for files.\n *\n * @namespace store.file\n ",
+              "start": 20,
+              "end": 77,
+              "loc": {
+                "start": {
+                  "line": 4,
                   "column": 0
                 },
                 "end": {
-                  "line": 39,
-                  "column": 6
-                },
-                "identifierName": "module"
-              },
-              "name": "module"
-            },
-            "property": {
-              "type": "Identifier",
-              "start": 712,
-              "end": 719,
-              "loc": {
-                "start": {
-                  "line": 39,
-                  "column": 7
-                },
-                "end": {
-                  "line": 39,
-                  "column": 14
-                },
-                "identifierName": "exports"
-              },
-              "name": "exports"
-            },
-            "computed": false
-          },
-          "right": {
-            "type": "Identifier",
-            "start": 722,
-            "end": 727,
-            "loc": {
-              "start": {
-                "line": 39,
-                "column": 17
-              },
-              "end": {
-                "line": 39,
-                "column": 22
-              },
-              "identifierName": "files"
-            },
-            "name": "files"
-          }
+                  "line": 8,
+                  "column": 3
+                }
+              }
+            }
+          ],
+          "trailingComments": []
         }
       }
     ],
@@ -2204,17 +2782,19 @@
     },
     {
       "type": {
-        "label": "name",
+        "label": "export",
+        "keyword": "export",
         "beforeExpr": false,
-        "startsExpr": true,
+        "startsExpr": false,
         "rightAssociative": false,
         "isLoop": false,
         "isAssign": false,
         "prefix": false,
         "postfix": false,
-        "binop": null
+        "binop": null,
+        "updateContext": null
       },
-      "value": "module",
+      "value": "export",
       "start": 705,
       "end": 711,
       "loc": {
@@ -2230,8 +2810,9 @@
     },
     {
       "type": {
-        "label": ".",
-        "beforeExpr": false,
+        "label": "default",
+        "keyword": "default",
+        "beforeExpr": true,
         "startsExpr": false,
         "rightAssociative": false,
         "isLoop": false,
@@ -2241,32 +2822,7 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 711,
-      "end": 712,
-      "loc": {
-        "start": {
-          "line": 39,
-          "column": 6
-        },
-        "end": {
-          "line": 39,
-          "column": 7
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "name",
-        "beforeExpr": false,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "value": "exports",
+      "value": "default",
       "start": 712,
       "end": 719,
       "loc": {
@@ -2277,33 +2833,6 @@
         "end": {
           "line": 39,
           "column": 14
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "=",
-        "beforeExpr": true,
-        "startsExpr": false,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": true,
-        "prefix": false,
-        "postfix": false,
-        "binop": null,
-        "updateContext": null
-      },
-      "value": "=",
-      "start": 720,
-      "end": 721,
-      "loc": {
-        "start": {
-          "line": 39,
-          "column": 15
-        },
-        "end": {
-          "line": 39,
-          "column": 16
         }
       }
     },
@@ -2320,16 +2849,16 @@
         "binop": null
       },
       "value": "files",
-      "start": 722,
-      "end": 727,
+      "start": 720,
+      "end": 725,
       "loc": {
         "start": {
           "line": 39,
-          "column": 17
+          "column": 15
         },
         "end": {
           "line": 39,
-          "column": 22
+          "column": 20
         }
       }
     },
@@ -2346,16 +2875,16 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 727,
-      "end": 728,
+      "start": 725,
+      "end": 726,
       "loc": {
         "start": {
           "line": 39,
-          "column": 22
+          "column": 20
         },
         "end": {
           "line": 39,
-          "column": 23
+          "column": 21
         }
       }
     },
@@ -2372,16 +2901,16 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 728,
-      "end": 728,
+      "start": 726,
+      "end": 726,
       "loc": {
         "start": {
           "line": 39,
-          "column": 23
+          "column": 21
         },
         "end": {
           "line": 39,
-          "column": 23
+          "column": 21
         }
       }
     }

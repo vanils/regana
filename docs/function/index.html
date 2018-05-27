@@ -1,0 +1,3551 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../">
+  <title data-ice="title">Function | regana</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Tool to analyse risk for regressions based on git diff"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="regana"><meta property="twitter:description" content="Tool to analyse risk for regressions based on git diff"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/vanils/regana.git"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#analyse">analyse</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-analyse">analyse</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-analyseFile">analyseFile</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-analyseNode">analyseNode</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#analyse-types">analyse/types</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-analyseIdentifier">analyseIdentifier</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#analyse-types-declarations">analyse/types/declarations</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-analyseVariable">analyseVariable</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#analyse-types-expressions">analyse/types/expressions</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-analyseBinary">analyseBinary</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#analyse-types-extras">analyse/types/extras</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-analyseBinaryOperator">analyseBinaryOperator</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#analyse-types-literals">analyse/types/literals</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-analyseBoolean">analyseBoolean</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-analyseNull">analyseNull</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-analyseNumeric">analyseNumeric</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-analyseRegex">analyseRegex</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-analyseString">analyseString</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#analyse-types-modules-exports">analyse/types/modules/exports</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-analyseExportNamed">analyseExportNamed</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#analyse-types-statements">analyse/types/statements</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-analyseBlock">analyseBlock</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-analyseDebugger">analyseDebugger</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-analyseEmpty">analyseEmpty</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-analyseExpression">analyseExpression</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-analyseWith">analyseWith</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#analyse-types-statements-controlflow">analyse/types/statements/controlFlow</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-analyseBreak">analyseBreak</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-analyseContinue">analyseContinue</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-analyseLabeled">analyseLabeled</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-analyseReturn">analyseReturn</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#models">models</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/models/Node.js~Node.html">Node</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/models/Scope.js~Scope.html">Scope</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/models/Vector.js~Vector.html">Vector</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#store">store</a><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-files">files</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-files">files</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#utils">utils</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-asStringValue">asStringValue</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-createId">createId</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-entitify">entitify</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-readFile">readFile</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#utils-validate">utils/validate</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isFile">isFile</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isId">isId</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isInstance">isInstance</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isNumber">isNumber</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isUndefined">isUndefined</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isWithinRange">isWithinRange</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">Function</h1>
+<div data-ice="summaries"><table class="summary" data-ice="summary">
+  <thead><tr><td data-ice="title" colspan="3">Static Public Summary</td></tr></thead>
+  <tbody>
+  
+  <tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-analyse">analyse</a></span></span><span class="code" data-ice="signature">(fileSrc: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>): <span>*</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Analyse a file and format into logical flow breakdown.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-analyseBinary">analyseBinary</a></span></span><span class="code" data-ice="signature">(entity: <span>*</span>, scope: <span>*</span>): <span>*</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-analyseBinaryOperator">analyseBinaryOperator</a></span></span><span class="code" data-ice="signature">(entity: <span>*</span>, scope: <span>*</span>): <span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span><span>[]</span></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-analyseBlock">analyseBlock</a></span></span><span class="code" data-ice="signature">(entity: <span>*</span>, parentScope: <span>*</span>): <span><span>*</span><span>[]</span></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-analyseBoolean">analyseBoolean</a></span></span><span class="code" data-ice="signature">(entity: <span>*</span>, scope: <span>*</span>): <span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span><span>[]</span></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-analyseBreak">analyseBreak</a></span></span><span class="code" data-ice="signature">(entity: <span>*</span>, scope: <span>*</span>): <span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span><span>[]</span></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-analyseContinue">analyseContinue</a></span></span><span class="code" data-ice="signature">(entity: <span>*</span>, scope: <span>*</span>): <span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span><span>[]</span></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-analyseDebugger">analyseDebugger</a></span></span><span class="code" data-ice="signature">(entity: <span>*</span>, scope: <span>*</span>): <span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span><span>[]</span></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-analyseEmpty">analyseEmpty</a></span></span><span class="code" data-ice="signature">(entity: <span>*</span>, scope: <span>*</span>): <span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span><span>[]</span></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-analyseExportNamed">analyseExportNamed</a></span></span><span class="code" data-ice="signature">(entity: <span>*</span>, scope: <span>*</span>): <span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span><span>[]</span></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-analyseExpression">analyseExpression</a></span></span><span class="code" data-ice="signature">(entity: <span>*</span>, scope: <span>*</span>): <span>*</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-analyseFile">analyseFile</a></span></span><span class="code" data-ice="signature">(fileSrc: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>): <span>*</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Analyse a file and format into logical flow breakdown.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-analyseIdentifier">analyseIdentifier</a></span></span><span class="code" data-ice="signature">(entity: <span>*</span>, scope: <span>*</span>): <span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span><span>[]</span></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-analyseLabeled">analyseLabeled</a></span></span><span class="code" data-ice="signature">(entity: <span>*</span>, scope: <span>*</span>): <span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span><span>[]</span></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-analyseNode">analyseNode</a></span></span><span class="code" data-ice="signature">(node: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span>, scope: <span><a href="class/src/models/Scope.js~Scope.html">Scope</a></span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Analyse a single node.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-analyseNull">analyseNull</a></span></span><span class="code" data-ice="signature">(entity: <span>*</span>, scope: <span>*</span>): <span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span><span>[]</span></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-analyseNumeric">analyseNumeric</a></span></span><span class="code" data-ice="signature">(entity: <span>*</span>, scope: <span>*</span>): <span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span><span>[]</span></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-analyseRegex">analyseRegex</a></span></span><span class="code" data-ice="signature">(entity: <span>*</span>, scope: <span>*</span>): <span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span><span>[]</span></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-analyseReturn">analyseReturn</a></span></span><span class="code" data-ice="signature">(entity: <span>*</span>, scope: <span>*</span>): <span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span><span>[]</span></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-analyseString">analyseString</a></span></span><span class="code" data-ice="signature">(entity: <span>*</span>, scope: <span>*</span>): <span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span><span>[]</span></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-analyseVariable">analyseVariable</a></span></span><span class="code" data-ice="signature">(entity: <span>*</span>, scope: <span>*</span>): <span>*</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-analyseWith">analyseWith</a></span></span><span class="code" data-ice="signature">(entity: <span>*</span>, parentScope: <span>*</span>): <span><span>*</span><span>[]</span></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-asStringValue">asStringValue</a></span></span><span class="code" data-ice="signature">(value: <span>*</span>): <span>*</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Turn any value into string format.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-createId">createId</a></span></span><span class="code" data-ice="signature">(prefix: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>)</span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Create unique ids for segments.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-entitify">entitify</a></span></span><span class="code" data-ice="signature">(content: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>): <span>*</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Transform file content into entities.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-isFile">isFile</a></span></span><span class="code" data-ice="signature">(value: <span>*</span>): <span>*</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Check if value is proper file id.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-isId">isId</a></span></span><span class="code" data-ice="signature">(value: <span>*</span>): <span>*</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Check if value is valid id.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-isInstance">isInstance</a></span></span><span class="code" data-ice="signature">(value: <span>*</span>, Class: <span>Class</span>): <span>*</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Check if value is instance of class.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-isNumber">isNumber</a></span></span><span class="code" data-ice="signature">(value: <span>*</span>): <span>*</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Check if value is number.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-isUndefined">isUndefined</a></span></span><span class="code" data-ice="signature">(value: <span>*</span>): <span>*</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Check if value is undefined.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-isWithinRange">isWithinRange</a></span></span><span class="code" data-ice="signature">(xStart: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>, xEnd: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>, yStart: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>, yEnd: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>): <span>*</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Check if values (start and end) are within range of another.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-readFile">readFile</a></span></span><span class="code" data-ice="signature">(fileSrc: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>): <span>*</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Reads file by using src path.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+</tbody>
+</table>
+</div>
+<div data-ice="details"><h2 data-ice="title">Static Public </h2>
+
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="static-function-analyse">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">analyse</span><span class="code" data-ice="signature">(fileSrc: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>): <span>*</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/analyse/entry.js.html#lineNumber14">source</a></span></span>
+    </span>
+  </h3>
+
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import analyse from &apos;<span><a href="file/src/analyse/entry.js.html#lineNumber14">regana/src/analyse/entry.js</a></span>&apos;</code></pre></div>
+  
+  
+  <div data-ice="description"><p>Analyse a file and format into logical flow breakdown.</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">fileSrc</td>
+      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>Path to file to analyse.</p>
+</td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span>*</span></td>
+          
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  <div data-ice="example">
+    <h4>Example:</h4>
+    
+  <div class="example-doc" data-ice="exampleDoc">
+      
+      <pre class="prettyprint source-code"><code data-ice="exampleCode">analyse(&apos;/path/to/file.js&apos;);  // returns all scopes</code></pre>
+    </div>
+</div>
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="static-function-analyseBinary">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">analyseBinary</span><span class="code" data-ice="signature">(entity: <span>*</span>, scope: <span>*</span>): <span>*</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/analyse/types/expressions/binary.js.html#lineNumber20">source</a></span></span>
+    </span>
+  </h3>
+
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import analyseBinary from &apos;<span><a href="file/src/analyse/types/expressions/binary.js.html#lineNumber20">regana/src/analyse/types/expressions/binary.js</a></span>&apos;</code></pre></div>
+  
+  
+  
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">entity</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">scope</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span>*</span></td>
+          
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="static-function-analyseBinaryOperator">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">analyseBinaryOperator</span><span class="code" data-ice="signature">(entity: <span>*</span>, scope: <span>*</span>): <span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span><span>[]</span></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/analyse/types/extras/binaryOperator.js.html#lineNumber4">source</a></span></span>
+    </span>
+  </h3>
+
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import analyseBinaryOperator from &apos;<span><a href="file/src/analyse/types/extras/binaryOperator.js.html#lineNumber4">regana/src/analyse/types/extras/binaryOperator.js</a></span>&apos;</code></pre></div>
+  
+  
+  
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">entity</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">scope</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span><span>[]</span></span></td>
+          
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="static-function-analyseBlock">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">analyseBlock</span><span class="code" data-ice="signature">(entity: <span>*</span>, parentScope: <span>*</span>): <span><span>*</span><span>[]</span></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/analyse/types/statements/block.js.html#lineNumber6">source</a></span></span>
+    </span>
+  </h3>
+
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import analyseBlock from &apos;<span><a href="file/src/analyse/types/statements/block.js.html#lineNumber6">regana/src/analyse/types/statements/block.js</a></span>&apos;</code></pre></div>
+  
+  
+  
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">entity</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">parentScope</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span><span>*</span><span>[]</span></span></td>
+          
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="static-function-analyseBoolean">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">analyseBoolean</span><span class="code" data-ice="signature">(entity: <span>*</span>, scope: <span>*</span>): <span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span><span>[]</span></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/analyse/types/literals/boolean.js.html#lineNumber4">source</a></span></span>
+    </span>
+  </h3>
+
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import analyseBoolean from &apos;<span><a href="file/src/analyse/types/literals/boolean.js.html#lineNumber4">regana/src/analyse/types/literals/boolean.js</a></span>&apos;</code></pre></div>
+  
+  
+  
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">entity</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">scope</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span><span>[]</span></span></td>
+          
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="static-function-analyseBreak">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">analyseBreak</span><span class="code" data-ice="signature">(entity: <span>*</span>, scope: <span>*</span>): <span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span><span>[]</span></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/analyse/types/statements/controlFlow/break.js.html#lineNumber4">source</a></span></span>
+    </span>
+  </h3>
+
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import analyseBreak from &apos;<span><a href="file/src/analyse/types/statements/controlFlow/break.js.html#lineNumber4">regana/src/analyse/types/statements/controlFlow/break.js</a></span>&apos;</code></pre></div>
+  
+  
+  
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">entity</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">scope</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span><span>[]</span></span></td>
+          
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="static-function-analyseContinue">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">analyseContinue</span><span class="code" data-ice="signature">(entity: <span>*</span>, scope: <span>*</span>): <span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span><span>[]</span></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/analyse/types/statements/controlFlow/continue.js.html#lineNumber4">source</a></span></span>
+    </span>
+  </h3>
+
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import analyseContinue from &apos;<span><a href="file/src/analyse/types/statements/controlFlow/continue.js.html#lineNumber4">regana/src/analyse/types/statements/controlFlow/continue.js</a></span>&apos;</code></pre></div>
+  
+  
+  
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">entity</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">scope</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span><span>[]</span></span></td>
+          
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="static-function-analyseDebugger">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">analyseDebugger</span><span class="code" data-ice="signature">(entity: <span>*</span>, scope: <span>*</span>): <span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span><span>[]</span></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/analyse/types/statements/debugger.js.html#lineNumber4">source</a></span></span>
+    </span>
+  </h3>
+
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import analyseDebugger from &apos;<span><a href="file/src/analyse/types/statements/debugger.js.html#lineNumber4">regana/src/analyse/types/statements/debugger.js</a></span>&apos;</code></pre></div>
+  
+  
+  
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">entity</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">scope</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span><span>[]</span></span></td>
+          
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="static-function-analyseEmpty">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">analyseEmpty</span><span class="code" data-ice="signature">(entity: <span>*</span>, scope: <span>*</span>): <span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span><span>[]</span></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/analyse/types/statements/empty.js.html#lineNumber4">source</a></span></span>
+    </span>
+  </h3>
+
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import analyseEmpty from &apos;<span><a href="file/src/analyse/types/statements/empty.js.html#lineNumber4">regana/src/analyse/types/statements/empty.js</a></span>&apos;</code></pre></div>
+  
+  
+  
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">entity</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">scope</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span><span>[]</span></span></td>
+          
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="static-function-analyseExportNamed">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">analyseExportNamed</span><span class="code" data-ice="signature">(entity: <span>*</span>, scope: <span>*</span>): <span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span><span>[]</span></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/analyse/types/modules/exports/exportNamed.js.html#lineNumber4">source</a></span></span>
+    </span>
+  </h3>
+
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import analyseExportNamed from &apos;<span><a href="file/src/analyse/types/modules/exports/exportNamed.js.html#lineNumber4">regana/src/analyse/types/modules/exports/exportNamed.js</a></span>&apos;</code></pre></div>
+  
+  
+  
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">entity</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">scope</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span><span>[]</span></span></td>
+          
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="static-function-analyseExpression">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">analyseExpression</span><span class="code" data-ice="signature">(entity: <span>*</span>, scope: <span>*</span>): <span>*</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/analyse/types/statements/expression.js.html#lineNumber4">source</a></span></span>
+    </span>
+  </h3>
+
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import analyseExpression from &apos;<span><a href="file/src/analyse/types/statements/expression.js.html#lineNumber4">regana/src/analyse/types/statements/expression.js</a></span>&apos;</code></pre></div>
+  
+  
+  
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">entity</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">scope</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span>*</span></td>
+          
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="static-function-analyseFile">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">analyseFile</span><span class="code" data-ice="signature">(fileSrc: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>): <span>*</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/analyse/file.js.html#lineNumber18">source</a></span></span>
+    </span>
+  </h3>
+
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import analyseFile from &apos;<span><a href="file/src/analyse/file.js.html#lineNumber18">regana/src/analyse/file.js</a></span>&apos;</code></pre></div>
+  
+  
+  <div data-ice="description"><p>Analyse a file and format into logical flow breakdown.</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">fileSrc</td>
+      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>Path to file to analyse.</p>
+</td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span>*</span></td>
+          
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  <div data-ice="example">
+    <h4>Example:</h4>
+    
+  <div class="example-doc" data-ice="exampleDoc">
+      
+      <pre class="prettyprint source-code"><code data-ice="exampleCode">analyseFile(&apos;/path/to/file.js&apos;);  // return analyse</code></pre>
+    </div>
+</div>
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="static-function-analyseIdentifier">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">analyseIdentifier</span><span class="code" data-ice="signature">(entity: <span>*</span>, scope: <span>*</span>): <span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span><span>[]</span></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/analyse/types/identifier.js.html#lineNumber4">source</a></span></span>
+    </span>
+  </h3>
+
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import analyseIdentifier from &apos;<span><a href="file/src/analyse/types/identifier.js.html#lineNumber4">regana/src/analyse/types/identifier.js</a></span>&apos;</code></pre></div>
+  
+  
+  
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">entity</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">scope</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span><span>[]</span></span></td>
+          
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="static-function-analyseLabeled">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">analyseLabeled</span><span class="code" data-ice="signature">(entity: <span>*</span>, scope: <span>*</span>): <span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span><span>[]</span></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/analyse/types/statements/controlFlow/labeled.js.html#lineNumber5">source</a></span></span>
+    </span>
+  </h3>
+
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import analyseLabeled from &apos;<span><a href="file/src/analyse/types/statements/controlFlow/labeled.js.html#lineNumber5">regana/src/analyse/types/statements/controlFlow/labeled.js</a></span>&apos;</code></pre></div>
+  
+  
+  
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">entity</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">scope</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span><span>[]</span></span></td>
+          
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="static-function-analyseNode">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">analyseNode</span><span class="code" data-ice="signature">(node: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span>, scope: <span><a href="class/src/models/Scope.js~Scope.html">Scope</a></span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/analyse/node.js.html#lineNumber13">source</a></span></span>
+    </span>
+  </h3>
+
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import analyseNode from &apos;<span><a href="file/src/analyse/node.js.html#lineNumber13">regana/src/analyse/node.js</a></span>&apos;</code></pre></div>
+  
+  
+  <div data-ice="description"><p>Analyse a single node. Can be considered as router for other node types.</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">node</td>
+      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>Node to be analysed.</p>
+</td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">scope</td>
+      <td data-ice="type" class="code"><span><a href="class/src/models/Scope.js~Scope.html">Scope</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>Scope attached to this node.</p>
+</td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span></td>
+          <td class="return-desc" data-ice="returnDescription"><p>Array of ids for segment.</p>
+</td>
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  <div data-ice="example">
+    <h4>Example:</h4>
+    
+  <div class="example-doc" data-ice="exampleDoc">
+      
+      <pre class="prettyprint source-code"><code data-ice="exampleCode">analyseNode(node, scope);  // returns analyse</code></pre>
+    </div>
+</div>
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="static-function-analyseNull">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">analyseNull</span><span class="code" data-ice="signature">(entity: <span>*</span>, scope: <span>*</span>): <span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span><span>[]</span></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/analyse/types/literals/null.js.html#lineNumber4">source</a></span></span>
+    </span>
+  </h3>
+
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import analyseNull from &apos;<span><a href="file/src/analyse/types/literals/null.js.html#lineNumber4">regana/src/analyse/types/literals/null.js</a></span>&apos;</code></pre></div>
+  
+  
+  
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">entity</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">scope</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span><span>[]</span></span></td>
+          
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="static-function-analyseNumeric">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">analyseNumeric</span><span class="code" data-ice="signature">(entity: <span>*</span>, scope: <span>*</span>): <span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span><span>[]</span></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/analyse/types/literals/numeric.js.html#lineNumber4">source</a></span></span>
+    </span>
+  </h3>
+
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import analyseNumeric from &apos;<span><a href="file/src/analyse/types/literals/numeric.js.html#lineNumber4">regana/src/analyse/types/literals/numeric.js</a></span>&apos;</code></pre></div>
+  
+  
+  
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">entity</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">scope</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span><span>[]</span></span></td>
+          
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="static-function-analyseRegex">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">analyseRegex</span><span class="code" data-ice="signature">(entity: <span>*</span>, scope: <span>*</span>): <span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span><span>[]</span></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/analyse/types/literals/regex.js.html#lineNumber4">source</a></span></span>
+    </span>
+  </h3>
+
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import analyseRegex from &apos;<span><a href="file/src/analyse/types/literals/regex.js.html#lineNumber4">regana/src/analyse/types/literals/regex.js</a></span>&apos;</code></pre></div>
+  
+  
+  
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">entity</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">scope</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span><span>[]</span></span></td>
+          
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="static-function-analyseReturn">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">analyseReturn</span><span class="code" data-ice="signature">(entity: <span>*</span>, scope: <span>*</span>): <span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span><span>[]</span></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/analyse/types/statements/controlFlow/return.js.html#lineNumber5">source</a></span></span>
+    </span>
+  </h3>
+
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import analyseReturn from &apos;<span><a href="file/src/analyse/types/statements/controlFlow/return.js.html#lineNumber5">regana/src/analyse/types/statements/controlFlow/return.js</a></span>&apos;</code></pre></div>
+  
+  
+  
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">entity</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">scope</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span><span>[]</span></span></td>
+          
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="static-function-analyseString">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">analyseString</span><span class="code" data-ice="signature">(entity: <span>*</span>, scope: <span>*</span>): <span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span><span>[]</span></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/analyse/types/literals/string.js.html#lineNumber4">source</a></span></span>
+    </span>
+  </h3>
+
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import analyseString from &apos;<span><a href="file/src/analyse/types/literals/string.js.html#lineNumber4">regana/src/analyse/types/literals/string.js</a></span>&apos;</code></pre></div>
+  
+  
+  
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">entity</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">scope</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span><span>[]</span></span></td>
+          
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="static-function-analyseVariable">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">analyseVariable</span><span class="code" data-ice="signature">(entity: <span>*</span>, scope: <span>*</span>): <span>*</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/analyse/types/declarations/variable.js.html#lineNumber5">source</a></span></span>
+    </span>
+  </h3>
+
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import analyseVariable from &apos;<span><a href="file/src/analyse/types/declarations/variable.js.html#lineNumber5">regana/src/analyse/types/declarations/variable.js</a></span>&apos;</code></pre></div>
+  
+  
+  
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">entity</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">scope</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span>*</span></td>
+          
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="static-function-analyseWith">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">analyseWith</span><span class="code" data-ice="signature">(entity: <span>*</span>, parentScope: <span>*</span>): <span><span>*</span><span>[]</span></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/analyse/types/statements/with.js.html#lineNumber6">source</a></span></span>
+    </span>
+  </h3>
+
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import analyseWith from &apos;<span><a href="file/src/analyse/types/statements/with.js.html#lineNumber6">regana/src/analyse/types/statements/with.js</a></span>&apos;</code></pre></div>
+  
+  
+  
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">entity</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">parentScope</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span><span>*</span><span>[]</span></span></td>
+          
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="static-function-asStringValue">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">asStringValue</span><span class="code" data-ice="signature">(value: <span>*</span>): <span>*</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/utils/asStringValue.js.html#lineNumber14">source</a></span></span>
+    </span>
+  </h3>
+
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import asStringValue from &apos;<span><a href="file/src/utils/asStringValue.js.html#lineNumber14">regana/src/utils/asStringValue.js</a></span>&apos;</code></pre></div>
+  
+  
+  <div data-ice="description"><p>Turn any value into string format. Useful for loggin any value.</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">value</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>Value to transform into string.</p>
+</td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span>*</span></td>
+          
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  <div data-ice="example">
+    <h4>Example:</h4>
+    
+  <div class="example-doc" data-ice="exampleDoc">
+      
+      <pre class="prettyprint source-code"><code data-ice="exampleCode">asStringValue({});      // &apos;[object Object]&apos;
+asStringValue([]);      // &apos;[object Array]&apos;
+asStringValue(&apos;test&apos;);  // &apos;test&apos;
+asStringValue(1);       // &apos;1&apos;</code></pre>
+    </div>
+</div>
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="static-function-createId">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">createId</span><span class="code" data-ice="signature">(prefix: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>)</span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/utils/createId.js.html#lineNumber16">source</a></span></span>
+    </span>
+  </h3>
+
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import createId from &apos;<span><a href="file/src/utils/createId.js.html#lineNumber16">regana/src/utils/createId.js</a></span>&apos;</code></pre></div>
+  
+  
+  <div data-ice="description"><p>Create unique ids for segments.</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">prefix</td>
+      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>Prefix for id.</p>
+</td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  <div data-ice="example">
+    <h4>Example:</h4>
+    
+  <div class="example-doc" data-ice="exampleDoc">
+      
+      <pre class="prettyprint source-code"><code data-ice="exampleCode">createId(&apos;VariableDeclaration&apos;);  // VariableDeclaration_1
+createId();                       // Undefined_2</code></pre>
+    </div>
+</div>
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="static-function-entitify">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">entitify</span><span class="code" data-ice="signature">(content: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>): <span>*</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/utils/entitify.js.html#lineNumber13">source</a></span></span>
+    </span>
+  </h3>
+
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import entitify from &apos;<span><a href="file/src/utils/entitify.js.html#lineNumber13">regana/src/utils/entitify.js</a></span>&apos;</code></pre></div>
+  
+  
+  <div data-ice="description"><p>Transform file content into entities.</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">content</td>
+      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>Script content of file to parse.</p>
+</td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span>*</span></td>
+          
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  <div data-ice="example">
+    <h4>Example:</h4>
+    
+  <div class="example-doc" data-ice="exampleDoc">
+      
+      <pre class="prettyprint source-code"><code data-ice="exampleCode">entitify(&apos;const test = 1&apos;);  // returns entities from babylon</code></pre>
+    </div>
+</div>
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="static-function-isFile">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">isFile</span><span class="code" data-ice="signature">(value: <span>*</span>): <span>*</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/utils/validate/isFile.js.html#lineNumber12">source</a></span></span>
+    </span>
+  </h3>
+
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import isFile from &apos;<span><a href="file/src/utils/validate/isFile.js.html#lineNumber12">regana/src/utils/validate/isFile.js</a></span>&apos;</code></pre></div>
+  
+  
+  <div data-ice="description"><p>Check if value is proper file id.</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">value</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>Value to test.</p>
+</td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span>*</span></td>
+          
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  <div data-ice="example">
+    <h4>Example:</h4>
+    
+  <div class="example-doc" data-ice="exampleDoc">
+      
+      <pre class="prettyprint source-code"><code data-ice="exampleCode">isFile(&apos;File_1&apos;);  // true
+isFile(null);      // false</code></pre>
+    </div>
+</div>
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="static-function-isId">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">isId</span><span class="code" data-ice="signature">(value: <span>*</span>): <span>*</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/utils/validate/isId.js.html#lineNumber12">source</a></span></span>
+    </span>
+  </h3>
+
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import isId from &apos;<span><a href="file/src/utils/validate/isId.js.html#lineNumber12">regana/src/utils/validate/isId.js</a></span>&apos;</code></pre></div>
+  
+  
+  <div data-ice="description"><p>Check if value is valid id.</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">value</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>Value to test.</p>
+</td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span>*</span></td>
+          
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  <div data-ice="example">
+    <h4>Example:</h4>
+    
+  <div class="example-doc" data-ice="exampleDoc">
+      
+      <pre class="prettyprint source-code"><code data-ice="exampleCode">isId(&apos;File_10&apos;);  // true
+isId(null);       // false</code></pre>
+    </div>
+</div>
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="static-function-isInstance">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">isInstance</span><span class="code" data-ice="signature">(value: <span>*</span>, Class: <span>Class</span>): <span>*</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/utils/validate/isInstance.js.html#lineNumber12">source</a></span></span>
+    </span>
+  </h3>
+
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import isInstance from &apos;<span><a href="file/src/utils/validate/isInstance.js.html#lineNumber12">regana/src/utils/validate/isInstance.js</a></span>&apos;</code></pre></div>
+  
+  
+  <div data-ice="description"><p>Check if value is instance of class.</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">value</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>Value to test.</p>
+</td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">Class</td>
+      <td data-ice="type" class="code"><span>Class</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>Class to check if value is instance of.</p>
+</td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span>*</span></td>
+          
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  <div data-ice="example">
+    <h4>Example:</h4>
+    
+  <div class="example-doc" data-ice="exampleDoc">
+      
+      <pre class="prettyprint source-code"><code data-ice="exampleCode">isInstance(scope, Scope); // true</code></pre>
+    </div>
+</div>
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="static-function-isNumber">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">isNumber</span><span class="code" data-ice="signature">(value: <span>*</span>): <span>*</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/utils/validate/isNumber.js.html#lineNumber16">source</a></span></span>
+    </span>
+  </h3>
+
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import isNumber from &apos;<span><a href="file/src/utils/validate/isNumber.js.html#lineNumber16">regana/src/utils/validate/isNumber.js</a></span>&apos;</code></pre></div>
+  
+  
+  <div data-ice="description"><p>Check if value is number.</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">value</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>Value to test.</p>
+</td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span>*</span></td>
+          
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  <div data-ice="example">
+    <h4>Example:</h4>
+    
+  <div class="example-doc" data-ice="exampleDoc">
+      
+      <pre class="prettyprint source-code"><code data-ice="exampleCode">isNumber(10);        // true
+isNumber(438.34);    // true
+isNumber(NaN);       // false
+isNumber({});        // false
+isNumber(&apos;124&apos;);     // false
+isNumber(Infinity);  // false</code></pre>
+    </div>
+</div>
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="static-function-isUndefined">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">isUndefined</span><span class="code" data-ice="signature">(value: <span>*</span>): <span>*</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/utils/validate/isUndefined.js.html#lineNumber14">source</a></span></span>
+    </span>
+  </h3>
+
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import isUndefined from &apos;<span><a href="file/src/utils/validate/isUndefined.js.html#lineNumber14">regana/src/utils/validate/isUndefined.js</a></span>&apos;</code></pre></div>
+  
+  
+  <div data-ice="description"><p>Check if value is undefined.</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">value</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>Value to test.</p>
+</td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span>*</span></td>
+          
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  <div data-ice="example">
+    <h4>Example:</h4>
+    
+  <div class="example-doc" data-ice="exampleDoc">
+      
+      <pre class="prettyprint source-code"><code data-ice="exampleCode">isUndefined();             // true
+isUndefined(undefined);    // true
+isUndefined(&apos;undefined&apos;);  // false
+isUndefined(null);         // false</code></pre>
+    </div>
+</div>
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="static-function-isWithinRange">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">isWithinRange</span><span class="code" data-ice="signature">(xStart: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>, xEnd: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>, yStart: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>, yEnd: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>): <span>*</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/utils/validate/isWithinRange.js.html#lineNumber23">source</a></span></span>
+    </span>
+  </h3>
+
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import isWithinRange from &apos;<span><a href="file/src/utils/validate/isWithinRange.js.html#lineNumber23">regana/src/utils/validate/isWithinRange.js</a></span>&apos;</code></pre></div>
+  
+  
+  <div data-ice="description"><p>Check if values (start and end) are within range of another.</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">xStart</td>
+      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>Start value you want to be within another range.</p>
+</td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">xEnd</td>
+      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>End value you want to be within another range.</p>
+</td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">yStart</td>
+      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>Start value of what you test against.</p>
+</td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">yEnd</td>
+      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>End value of what you test against.</p>
+</td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span>*</span></td>
+          
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  <div data-ice="example">
+    <h4>Example:</h4>
+    
+  <div class="example-doc" data-ice="exampleDoc">
+      
+      <pre class="prettyprint source-code"><code data-ice="exampleCode">isWithinRange(10, 20, 5, 30);  // true
+isWithinRange(2, 20, 5, 30);   // false
+isWithinRange(15, 35, 5, 30);  // false</code></pre>
+    </div>
+</div>
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="static-function-readFile">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">readFile</span><span class="code" data-ice="signature">(fileSrc: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>): <span>*</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/utils/readFile.js.html#lineNumber14">source</a></span></span>
+    </span>
+  </h3>
+
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import readFile from &apos;<span><a href="file/src/utils/readFile.js.html#lineNumber14">regana/src/utils/readFile.js</a></span>&apos;</code></pre></div>
+  
+  
+  <div data-ice="description"><p>Reads file by using src path. This will handle adding file extensions for
+imports.</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">fileSrc</td>
+      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>Path to file to read.</p>
+</td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span>*</span></td>
+          
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  <div data-ice="example">
+    <h4>Example:</h4>
+    
+  <div class="example-doc" data-ice="exampleDoc">
+      
+      <pre class="prettyprint source-code"><code data-ice="exampleCode">readFile(&apos;/path/to/file&apos;);  // returns file content as utf8</code></pre>
+    </div>
+</div>
+
+  
+
+  
+  
+</div>
+</div>
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">Scope | regana</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Tool to analyse risk for regressions based on git diff"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="regana"><meta property="twitter:description" content="Tool to analyse risk for regressions based on git diff"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/vanils/regana.git"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#analyse">analyse</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-analyse">analyse</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-analyseFile">analyseFile</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-analyseNode">analyseNode</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#analyse-types">analyse/types</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-analyseIdentifier">analyseIdentifier</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#analyse-types-declarations">analyse/types/declarations</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-analyseVariable">analyseVariable</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#analyse-types-expressions">analyse/types/expressions</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-analyseBinary">analyseBinary</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#analyse-types-extras">analyse/types/extras</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-analyseBinaryOperator">analyseBinaryOperator</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#analyse-types-literals">analyse/types/literals</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-analyseBoolean">analyseBoolean</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-analyseNull">analyseNull</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-analyseNumeric">analyseNumeric</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-analyseRegex">analyseRegex</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-analyseString">analyseString</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#analyse-types-modules-exports">analyse/types/modules/exports</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-analyseExportNamed">analyseExportNamed</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#analyse-types-statements">analyse/types/statements</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-analyseBlock">analyseBlock</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-analyseDebugger">analyseDebugger</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-analyseEmpty">analyseEmpty</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-analyseExpression">analyseExpression</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-analyseWith">analyseWith</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#analyse-types-statements-controlflow">analyse/types/statements/controlFlow</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-analyseBreak">analyseBreak</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-analyseContinue">analyseContinue</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-analyseLabeled">analyseLabeled</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-analyseReturn">analyseReturn</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#models">models</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/models/Node.js~Node.html">Node</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/models/Scope.js~Scope.html">Scope</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/models/Vector.js~Vector.html">Vector</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#store">store</a><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-files">files</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-files">files</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#utils">utils</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-asStringValue">asStringValue</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-createId">createId</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-entitify">entitify</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-readFile">readFile</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#utils-validate">utils/validate</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isFile">isFile</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isId">isId</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isInstance">isInstance</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isNumber">isNumber</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isUndefined">isUndefined</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isWithinRange">isWithinRange</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><div class="header-notice">
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import Scope from &apos;<span><a href="file/src/models/Scope.js.html#lineNumber14">regana/src/models/Scope.js</a></span>&apos;</code></pre></div>
+  <span data-ice="access">public</span>
+  <span data-ice="kind">class</span>
+  
+  
+  
+  <span data-ice="source">| <span><a href="file/src/models/Scope.js.html#lineNumber14">source</a></span></span>
+</div>
+
+<div class="self-detail detail">
+  <h1 data-ice="name">Scope</h1>
+
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  <div class="description" data-ice="description"><p>Scope entity representing a scope.</p>
+</div>
+  
+
+  
+
+  
+
+  
+
+  
+</div>
+
+
+
+<div data-ice="constructorSummary"><h2>Constructor Summary</h2><table class="summary" data-ice="summary">
+  <thead><tr><td data-ice="title" colspan="3">Public Constructor</td></tr></thead>
+  <tbody>
+  
+  <tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/src/models/Scope.js~Scope.html#instance-constructor-constructor">constructor</a></span></span><span class="code" data-ice="signature">(start: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>, end: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>, options: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span>)</span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Create a scope.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+</tbody>
+</table>
+</div>
+<div data-ice="memberSummary"><h2>Member Summary</h2><table class="summary" data-ice="summary">
+  <thead><tr><td data-ice="title" colspan="3">Public Members</td></tr></thead>
+  <tbody>
+  
+  <tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/src/models/Scope.js~Scope.html#instance-member-end">end</a></span></span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>First character after this scope.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/src/models/Scope.js~Scope.html#instance-member-exposes">exposes</a></span></span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>List of exposed items within this scope</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/src/models/Scope.js~Scope.html#instance-member-file">file</a></span></span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>File in which this scope belongs to</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/src/models/Scope.js~Scope.html#instance-member-labels">labels</a></span></span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>List of labels within this scope</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/src/models/Scope.js~Scope.html#instance-member-parentScope">parentScope</a></span></span><span class="code" data-ice="signature">: <span><a href="class/src/models/Scope.js~Scope.html">Scope</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Parent scope of this scope</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/src/models/Scope.js~Scope.html#instance-member-pointers">pointers</a></span></span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>List of pointers within this scope</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/src/models/Scope.js~Scope.html#instance-member-segments">segments</a></span></span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Segments within this scope</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/src/models/Scope.js~Scope.html#instance-member-start">start</a></span></span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>First character of this scope.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/src/models/Scope.js~Scope.html#instance-member-withSegments">withSegments</a></span></span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Array of with segments within this scope</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+</tbody>
+</table>
+</div>
+<div data-ice="methodSummary"><h2>Method Summary</h2><table class="summary" data-ice="summary">
+  <thead><tr><td data-ice="title" colspan="3">Public Methods</td></tr></thead>
+  <tbody>
+  
+  <tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/src/models/Scope.js~Scope.html#instance-method-addSegment">addSegment</a></span></span><span class="code" data-ice="signature">(id: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, start: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>, end: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>, options: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span>)</span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Add new segment to scope.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/src/models/Scope.js~Scope.html#instance-method-getSegmentIdsByPointer">getSegmentIdsByPointer</a></span></span><span class="code" data-ice="signature">(pointer: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Get segment id by using pointer as selector.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+</tbody>
+</table>
+</div>
+
+
+
+
+
+<div data-ice="constructorDetails"><h2 data-ice="title">Public Constructors</h2>
+
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-constructor-constructor">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">constructor</span><span class="code" data-ice="signature">(start: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>, end: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>, options: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span>)</span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/models/Scope.js.html#lineNumber29">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>Create a scope.</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">start</td>
+      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>Index of first character of this scope.</p>
+</td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">end</td>
+      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>Index of first character after this scope.</p>
+</td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">options</td>
+      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>Optional parameters.</p>
+</td>
+    </tr>
+<tr data-ice="property" data-depth="1">
+      <td data-ice="name" class="code" data-depth="1">options.parentScope</td>
+      <td data-ice="type" class="code"><span><a href="class/src/models/Scope.js~Scope.html">Scope</a></span></td>
+      <td data-ice="appendix"><ul><li>optional</li></ul></td>
+      <td data-ice="description"><p>Parent Scope.</p>
+</td>
+    </tr>
+<tr data-ice="property" data-depth="1">
+      <td data-ice="name" class="code" data-depth="1">options.file</td>
+      <td data-ice="type" class="code"><span><a href="class/src/models/Scope.js~Scope.html">Scope</a></span></td>
+      <td data-ice="appendix"><ul><li>optional</li></ul></td>
+      <td data-ice="description"><p>File assosiated with this scope. If not
+specified, will be inherited from parent scope.</p>
+</td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  <div data-ice="example">
+    <h4>Example:</h4>
+    
+  <div class="example-doc" data-ice="exampleDoc">
+      
+      <pre class="prettyprint source-code"><code data-ice="exampleCode">new Scope(0, 200, { file: createId(&apos;File&apos;) })</code></pre>
+    </div>
+</div>
+
+  
+
+  
+  
+</div>
+</div>
+<div data-ice="memberDetails"><h2 data-ice="title">Public Members</h2>
+
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-member-end">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">end</span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/models/Scope.js.html#lineNumber70">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>First character after this scope.</p>
+</div>
+
+  
+
+  <div data-ice="properties">
+</div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-member-exposes">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">exposes</span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/models/Scope.js.html#lineNumber94">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>List of exposed items within this scope</p>
+</div>
+
+  
+
+  <div data-ice="properties">
+</div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-member-file">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">file</span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/models/Scope.js.html#lineNumber82">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>File in which this scope belongs to</p>
+</div>
+
+  
+
+  <div data-ice="properties">
+</div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-member-labels">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">labels</span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/models/Scope.js.html#lineNumber106">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>List of labels within this scope</p>
+</div>
+
+  
+
+  <div data-ice="properties">
+</div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-member-parentScope">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">parentScope</span><span class="code" data-ice="signature">: <span><a href="class/src/models/Scope.js~Scope.html">Scope</a></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/models/Scope.js.html#lineNumber76">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>Parent scope of this scope</p>
+</div>
+
+  
+
+  <div data-ice="properties">
+</div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-member-pointers">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">pointers</span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/models/Scope.js.html#lineNumber100">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>List of pointers within this scope</p>
+</div>
+
+  
+
+  <div data-ice="properties">
+</div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-member-segments">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">segments</span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/models/Scope.js.html#lineNumber88">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>Segments within this scope</p>
+</div>
+
+  
+
+  <div data-ice="properties">
+</div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-member-start">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">start</span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/models/Scope.js.html#lineNumber64">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>First character of this scope.</p>
+</div>
+
+  
+
+  <div data-ice="properties">
+</div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-member-withSegments">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">withSegments</span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/models/Scope.js.html#lineNumber112">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>Array of with segments within this scope</p>
+</div>
+
+  
+
+  <div data-ice="properties">
+</div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+</div>
+<div data-ice="methodDetails"><h2 data-ice="title">Public Methods</h2>
+
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-addSegment">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">addSegment</span><span class="code" data-ice="signature">(id: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, start: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>, end: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>, options: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span>)</span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/models/Scope.js.html#lineNumber162">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>Add new segment to scope.</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">id</td>
+      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>If of this segment.</p>
+</td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">start</td>
+      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>Index of first character of this segment.</p>
+</td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">end</td>
+      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>Index of first character after this segment.</p>
+</td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">options</td>
+      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>Optional parameters.</p>
+</td>
+    </tr>
+<tr data-ice="property" data-depth="1">
+      <td data-ice="name" class="code" data-depth="1">options.uses</td>
+      <td data-ice="type" class="code"><span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span><span>[]</span></span></td>
+      <td data-ice="appendix"><ul><li>optional</li></ul></td>
+      <td data-ice="description"><p>Array of other segments which should be
+considered as part of this segment.</p>
+</td>
+    </tr>
+<tr data-ice="property" data-depth="1">
+      <td data-ice="name" class="code" data-depth="1">options.usesPointers</td>
+      <td data-ice="type" class="code"><span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span><span>[]</span></span></td>
+      <td data-ice="appendix"><ul><li>optional</li></ul></td>
+      <td data-ice="description"><p>Array of pointers needed for
+this segment. Basically this means variables which this segment is using.</p>
+</td>
+    </tr>
+<tr data-ice="property" data-depth="1">
+      <td data-ice="name" class="code" data-depth="1">options.pointer</td>
+      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></td>
+      <td data-ice="appendix"><ul><li>optional</li></ul></td>
+      <td data-ice="description"><p>If this segment is going to create a
+new variable this would be the pointer to it.</p>
+</td>
+    </tr>
+<tr data-ice="property" data-depth="1">
+      <td data-ice="name" class="code" data-depth="1">options.label</td>
+      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></td>
+      <td data-ice="appendix"><ul><li>optional</li></ul></td>
+      <td data-ice="description"><p>If this segment is going to create a new
+label this would be the pointer to it.</p>
+</td>
+    </tr>
+<tr data-ice="property" data-depth="1">
+      <td data-ice="name" class="code" data-depth="1">options.exposes</td>
+      <td data-ice="type" class="code"><span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span><span>[]</span></span></td>
+      <td data-ice="appendix"><ul><li>optional</li></ul></td>
+      <td data-ice="description"><p>If this segment is going to expose
+something outside of scope.</p>
+</td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  <div data-ice="example">
+    <h4>Example:</h4>
+    
+  <div class="example-doc" data-ice="exampleDoc">
+      
+      <pre class="prettyprint source-code"><code data-ice="exampleCode">scope.addSegment(createId(&apos;VariableDeclaration&apos;), 10, 33);</code></pre>
+    </div>
+</div>
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-getSegmentIdsByPointer">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">getSegmentIdsByPointer</span><span class="code" data-ice="signature">(pointer: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/models/Scope.js.html#lineNumber130">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>Get segment id by using pointer as selector.</p>
+</div>
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">pointer</td>
+      <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"><p>Pointer to use to select segment. This would be
+a variable name.</p>
+</td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span></td>
+          <td class="return-desc" data-ice="returnDescription"><p>Array of segment ids.</p>
+</td>
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  <div data-ice="example">
+    <h4>Example:</h4>
+    
+  <div class="example-doc" data-ice="exampleDoc">
+      
+      <pre class="prettyprint source-code"><code data-ice="exampleCode">const segmentId = scope.getSegmentIdsByPointer(&apos;myVariable&apos;);</code></pre>
+    </div>
+</div>
+
+  
+
+  
+  
+</div>
+</div>
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

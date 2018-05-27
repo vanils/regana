@@ -1,9 +1,225 @@
 window.esdocSearchIndex = [
   [
-    "regana/src/tests/mocks/file2.js~test",
-    "variable/index.html#static-variable-test",
-    "<span>test</span> <span class=\"search-result-import-path\">regana/src/tests/mocks/file2.js</span>",
+    "regana/src/models/node.js~node",
+    "class/src/models/Node.js~Node.html",
+    "<span>Node</span> <span class=\"search-result-import-path\">regana/src/models/Node.js</span>",
+    "class"
+  ],
+  [
+    "regana/src/models/scope.js~scope",
+    "class/src/models/Scope.js~Scope.html",
+    "<span>Scope</span> <span class=\"search-result-import-path\">regana/src/models/Scope.js</span>",
+    "class"
+  ],
+  [
+    "regana/src/models/vector.js~vector",
+    "class/src/models/Vector.js~Vector.html",
+    "<span>Vector</span> <span class=\"search-result-import-path\">regana/src/models/Vector.js</span>",
+    "class"
+  ],
+  [
+    "regana/src/analyse/entry.js~analyse",
+    "function/index.html#static-function-analyse",
+    "<span>analyse</span> <span class=\"search-result-import-path\">regana/src/analyse/entry.js</span>",
+    "function"
+  ],
+  [
+    "regana/src/analyse/types/expressions/binary.js~analysebinary",
+    "function/index.html#static-function-analyseBinary",
+    "<span>analyseBinary</span> <span class=\"search-result-import-path\">regana/src/analyse/types/expressions/binary.js</span>",
+    "function"
+  ],
+  [
+    "regana/src/analyse/types/extras/binaryoperator.js~analysebinaryoperator",
+    "function/index.html#static-function-analyseBinaryOperator",
+    "<span>analyseBinaryOperator</span> <span class=\"search-result-import-path\">regana/src/analyse/types/extras/binaryOperator.js</span>",
+    "function"
+  ],
+  [
+    "regana/src/analyse/types/statements/block.js~analyseblock",
+    "function/index.html#static-function-analyseBlock",
+    "<span>analyseBlock</span> <span class=\"search-result-import-path\">regana/src/analyse/types/statements/block.js</span>",
+    "function"
+  ],
+  [
+    "regana/src/analyse/types/literals/boolean.js~analyseboolean",
+    "function/index.html#static-function-analyseBoolean",
+    "<span>analyseBoolean</span> <span class=\"search-result-import-path\">regana/src/analyse/types/literals/boolean.js</span>",
+    "function"
+  ],
+  [
+    "regana/src/analyse/types/statements/controlflow/break.js~analysebreak",
+    "function/index.html#static-function-analyseBreak",
+    "<span>analyseBreak</span> <span class=\"search-result-import-path\">regana/src/analyse/types/statements/controlFlow/break.js</span>",
+    "function"
+  ],
+  [
+    "regana/src/analyse/types/statements/controlflow/continue.js~analysecontinue",
+    "function/index.html#static-function-analyseContinue",
+    "<span>analyseContinue</span> <span class=\"search-result-import-path\">regana/src/analyse/types/statements/controlFlow/continue.js</span>",
+    "function"
+  ],
+  [
+    "regana/src/analyse/types/statements/debugger.js~analysedebugger",
+    "function/index.html#static-function-analyseDebugger",
+    "<span>analyseDebugger</span> <span class=\"search-result-import-path\">regana/src/analyse/types/statements/debugger.js</span>",
+    "function"
+  ],
+  [
+    "regana/src/analyse/types/statements/empty.js~analyseempty",
+    "function/index.html#static-function-analyseEmpty",
+    "<span>analyseEmpty</span> <span class=\"search-result-import-path\">regana/src/analyse/types/statements/empty.js</span>",
+    "function"
+  ],
+  [
+    "regana/src/analyse/types/modules/exports/exportnamed.js~analyseexportnamed",
+    "function/index.html#static-function-analyseExportNamed",
+    "<span>analyseExportNamed</span> <span class=\"search-result-import-path\">regana/src/analyse/types/modules/exports/exportNamed.js</span>",
+    "function"
+  ],
+  [
+    "regana/src/analyse/types/statements/expression.js~analyseexpression",
+    "function/index.html#static-function-analyseExpression",
+    "<span>analyseExpression</span> <span class=\"search-result-import-path\">regana/src/analyse/types/statements/expression.js</span>",
+    "function"
+  ],
+  [
+    "regana/src/analyse/file.js~analysefile",
+    "function/index.html#static-function-analyseFile",
+    "<span>analyseFile</span> <span class=\"search-result-import-path\">regana/src/analyse/file.js</span>",
+    "function"
+  ],
+  [
+    "regana/src/analyse/types/identifier.js~analyseidentifier",
+    "function/index.html#static-function-analyseIdentifier",
+    "<span>analyseIdentifier</span> <span class=\"search-result-import-path\">regana/src/analyse/types/identifier.js</span>",
+    "function"
+  ],
+  [
+    "regana/src/analyse/types/statements/controlflow/labeled.js~analyselabeled",
+    "function/index.html#static-function-analyseLabeled",
+    "<span>analyseLabeled</span> <span class=\"search-result-import-path\">regana/src/analyse/types/statements/controlFlow/labeled.js</span>",
+    "function"
+  ],
+  [
+    "regana/src/analyse/node.js~analysenode",
+    "function/index.html#static-function-analyseNode",
+    "<span>analyseNode</span> <span class=\"search-result-import-path\">regana/src/analyse/node.js</span>",
+    "function"
+  ],
+  [
+    "regana/src/analyse/types/literals/null.js~analysenull",
+    "function/index.html#static-function-analyseNull",
+    "<span>analyseNull</span> <span class=\"search-result-import-path\">regana/src/analyse/types/literals/null.js</span>",
+    "function"
+  ],
+  [
+    "regana/src/analyse/types/literals/numeric.js~analysenumeric",
+    "function/index.html#static-function-analyseNumeric",
+    "<span>analyseNumeric</span> <span class=\"search-result-import-path\">regana/src/analyse/types/literals/numeric.js</span>",
+    "function"
+  ],
+  [
+    "regana/src/analyse/types/literals/regex.js~analyseregex",
+    "function/index.html#static-function-analyseRegex",
+    "<span>analyseRegex</span> <span class=\"search-result-import-path\">regana/src/analyse/types/literals/regex.js</span>",
+    "function"
+  ],
+  [
+    "regana/src/analyse/types/statements/controlflow/return.js~analysereturn",
+    "function/index.html#static-function-analyseReturn",
+    "<span>analyseReturn</span> <span class=\"search-result-import-path\">regana/src/analyse/types/statements/controlFlow/return.js</span>",
+    "function"
+  ],
+  [
+    "regana/src/analyse/types/literals/string.js~analysestring",
+    "function/index.html#static-function-analyseString",
+    "<span>analyseString</span> <span class=\"search-result-import-path\">regana/src/analyse/types/literals/string.js</span>",
+    "function"
+  ],
+  [
+    "regana/src/analyse/types/declarations/variable.js~analysevariable",
+    "function/index.html#static-function-analyseVariable",
+    "<span>analyseVariable</span> <span class=\"search-result-import-path\">regana/src/analyse/types/declarations/variable.js</span>",
+    "function"
+  ],
+  [
+    "regana/src/analyse/types/statements/with.js~analysewith",
+    "function/index.html#static-function-analyseWith",
+    "<span>analyseWith</span> <span class=\"search-result-import-path\">regana/src/analyse/types/statements/with.js</span>",
+    "function"
+  ],
+  [
+    "regana/src/utils/asstringvalue.js~asstringvalue",
+    "function/index.html#static-function-asStringValue",
+    "<span>asStringValue</span> <span class=\"search-result-import-path\">regana/src/utils/asStringValue.js</span>",
+    "function"
+  ],
+  [
+    "regana/src/utils/createid.js~createid",
+    "function/index.html#static-function-createId",
+    "<span>createId</span> <span class=\"search-result-import-path\">regana/src/utils/createId.js</span>",
+    "function"
+  ],
+  [
+    "regana/src/utils/entitify.js~entitify",
+    "function/index.html#static-function-entitify",
+    "<span>entitify</span> <span class=\"search-result-import-path\">regana/src/utils/entitify.js</span>",
+    "function"
+  ],
+  [
+    "regana/src/store/files.js~files",
+    "variable/index.html#static-variable-files",
+    "<span>files</span> <span class=\"search-result-import-path\">regana/src/store/files.js</span>",
     "variable"
+  ],
+  [
+    "regana/src/store/scopes.js~files",
+    "variable/index.html#static-variable-files",
+    "<span>files</span> <span class=\"search-result-import-path\">regana/src/store/scopes.js</span>",
+    "variable"
+  ],
+  [
+    "regana/src/utils/validate/isfile.js~isfile",
+    "function/index.html#static-function-isFile",
+    "<span>isFile</span> <span class=\"search-result-import-path\">regana/src/utils/validate/isFile.js</span>",
+    "function"
+  ],
+  [
+    "regana/src/utils/validate/isid.js~isid",
+    "function/index.html#static-function-isId",
+    "<span>isId</span> <span class=\"search-result-import-path\">regana/src/utils/validate/isId.js</span>",
+    "function"
+  ],
+  [
+    "regana/src/utils/validate/isinstance.js~isinstance",
+    "function/index.html#static-function-isInstance",
+    "<span>isInstance</span> <span class=\"search-result-import-path\">regana/src/utils/validate/isInstance.js</span>",
+    "function"
+  ],
+  [
+    "regana/src/utils/validate/isnumber.js~isnumber",
+    "function/index.html#static-function-isNumber",
+    "<span>isNumber</span> <span class=\"search-result-import-path\">regana/src/utils/validate/isNumber.js</span>",
+    "function"
+  ],
+  [
+    "regana/src/utils/validate/isundefined.js~isundefined",
+    "function/index.html#static-function-isUndefined",
+    "<span>isUndefined</span> <span class=\"search-result-import-path\">regana/src/utils/validate/isUndefined.js</span>",
+    "function"
+  ],
+  [
+    "regana/src/utils/validate/iswithinrange.js~iswithinrange",
+    "function/index.html#static-function-isWithinRange",
+    "<span>isWithinRange</span> <span class=\"search-result-import-path\">regana/src/utils/validate/isWithinRange.js</span>",
+    "function"
+  ],
+  [
+    "regana/src/utils/readfile.js~readfile",
+    "function/index.html#static-function-readFile",
+    "<span>readFile</span> <span class=\"search-result-import-path\">regana/src/utils/readFile.js</span>",
+    "function"
   ],
   [
     "src/.external-ecmascript.js~array",
@@ -426,10 +642,142 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
+    "src/models/node.js~node#constructor",
+    "class/src/models/Node.js~Node.html#instance-constructor-constructor",
+    "src/models/Node.js~Node#constructor",
+    "method"
+  ],
+  [
+    "src/models/node.js~node#end",
+    "class/src/models/Node.js~Node.html#instance-member-end",
+    "src/models/Node.js~Node#end",
+    "member"
+  ],
+  [
+    "src/models/node.js~node#file",
+    "class/src/models/Node.js~Node.html#instance-member-file",
+    "src/models/Node.js~Node#file",
+    "member"
+  ],
+  [
+    "src/models/node.js~node#id",
+    "class/src/models/Node.js~Node.html#instance-member-id",
+    "src/models/Node.js~Node#id",
+    "member"
+  ],
+  [
+    "src/models/node.js~node#parentid",
+    "class/src/models/Node.js~Node.html#instance-member-parentId",
+    "src/models/Node.js~Node#parentId",
+    "member"
+  ],
+  [
+    "src/models/node.js~node#start",
+    "class/src/models/Node.js~Node.html#instance-member-start",
+    "src/models/Node.js~Node#start",
+    "member"
+  ],
+  [
+    "src/models/node.js~node.createid",
+    "class/src/models/Node.js~Node.html#static-method-createId",
+    "src/models/Node.js~Node.createId",
+    "method"
+  ],
+  [
+    "src/models/node.js~node.isvalidfile",
+    "class/src/models/Node.js~Node.html#static-method-isValidFile",
+    "src/models/Node.js~Node.isValidFile",
+    "method"
+  ],
+  [
+    "src/models/node.js~node.isvalidid",
+    "class/src/models/Node.js~Node.html#static-method-isValidId",
+    "src/models/Node.js~Node.isValidId",
+    "method"
+  ],
+  [
+    "src/models/node.js~node.isvalidnodeinterface",
+    "class/src/models/Node.js~Node.html#static-method-isValidNodeInterface",
+    "src/models/Node.js~Node.isValidNodeInterface",
+    "method"
+  ],
+  [
     "src/models/scope.js",
     "file/src/models/Scope.js.html",
     "src/models/Scope.js",
     "file"
+  ],
+  [
+    "src/models/scope.js~scope#addsegment",
+    "class/src/models/Scope.js~Scope.html#instance-method-addSegment",
+    "src/models/Scope.js~Scope#addSegment",
+    "method"
+  ],
+  [
+    "src/models/scope.js~scope#constructor",
+    "class/src/models/Scope.js~Scope.html#instance-constructor-constructor",
+    "src/models/Scope.js~Scope#constructor",
+    "method"
+  ],
+  [
+    "src/models/scope.js~scope#end",
+    "class/src/models/Scope.js~Scope.html#instance-member-end",
+    "src/models/Scope.js~Scope#end",
+    "member"
+  ],
+  [
+    "src/models/scope.js~scope#exposes",
+    "class/src/models/Scope.js~Scope.html#instance-member-exposes",
+    "src/models/Scope.js~Scope#exposes",
+    "member"
+  ],
+  [
+    "src/models/scope.js~scope#file",
+    "class/src/models/Scope.js~Scope.html#instance-member-file",
+    "src/models/Scope.js~Scope#file",
+    "member"
+  ],
+  [
+    "src/models/scope.js~scope#getsegmentidsbypointer",
+    "class/src/models/Scope.js~Scope.html#instance-method-getSegmentIdsByPointer",
+    "src/models/Scope.js~Scope#getSegmentIdsByPointer",
+    "method"
+  ],
+  [
+    "src/models/scope.js~scope#labels",
+    "class/src/models/Scope.js~Scope.html#instance-member-labels",
+    "src/models/Scope.js~Scope#labels",
+    "member"
+  ],
+  [
+    "src/models/scope.js~scope#parentscope",
+    "class/src/models/Scope.js~Scope.html#instance-member-parentScope",
+    "src/models/Scope.js~Scope#parentScope",
+    "member"
+  ],
+  [
+    "src/models/scope.js~scope#pointers",
+    "class/src/models/Scope.js~Scope.html#instance-member-pointers",
+    "src/models/Scope.js~Scope#pointers",
+    "member"
+  ],
+  [
+    "src/models/scope.js~scope#segments",
+    "class/src/models/Scope.js~Scope.html#instance-member-segments",
+    "src/models/Scope.js~Scope#segments",
+    "member"
+  ],
+  [
+    "src/models/scope.js~scope#start",
+    "class/src/models/Scope.js~Scope.html#instance-member-start",
+    "src/models/Scope.js~Scope#start",
+    "member"
+  ],
+  [
+    "src/models/scope.js~scope#withsegments",
+    "class/src/models/Scope.js~Scope.html#instance-member-withSegments",
+    "src/models/Scope.js~Scope#withSegments",
+    "member"
   ],
   [
     "src/models/vector.js",
@@ -438,52 +786,40 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/models/tests/helpers/node/invalidparams.js",
-    "file/src/models/tests/helpers/node/invalidParams.js.html",
-    "src/models/tests/helpers/node/invalidParams.js",
-    "file"
+    "src/models/vector.js~vector#constructor",
+    "class/src/models/Vector.js~Vector.html#instance-constructor-constructor",
+    "src/models/Vector.js~Vector#constructor",
+    "method"
   ],
   [
-    "src/models/tests/helpers/node/validparams.js",
-    "file/src/models/tests/helpers/node/validParams.js.html",
-    "src/models/tests/helpers/node/validParams.js",
-    "file"
+    "src/models/vector.js~vector#fromnode",
+    "class/src/models/Vector.js~Vector.html#instance-member-fromNode",
+    "src/models/Vector.js~Vector#fromNode",
+    "member"
   ],
   [
-    "src/models/tests/helpers/scope/invalidparams.js",
-    "file/src/models/tests/helpers/scope/invalidParams.js.html",
-    "src/models/tests/helpers/scope/invalidParams.js",
-    "file"
+    "src/models/vector.js~vector#magnitude",
+    "class/src/models/Vector.js~Vector.html#instance-member-magnitude",
+    "src/models/Vector.js~Vector#magnitude",
+    "member"
   ],
   [
-    "src/models/tests/helpers/scope/segmentcreation.js",
-    "file/src/models/tests/helpers/scope/segmentCreation.js.html",
-    "src/models/tests/helpers/scope/segmentCreation.js",
-    "file"
+    "src/models/vector.js~vector#tonode",
+    "class/src/models/Vector.js~Vector.html#instance-member-toNode",
+    "src/models/Vector.js~Vector#toNode",
+    "member"
   ],
   [
-    "src/models/tests/helpers/scope/segmentselection.js",
-    "file/src/models/tests/helpers/scope/segmentSelection.js.html",
-    "src/models/tests/helpers/scope/segmentSelection.js",
-    "file"
+    "src/models/vector.js~vector.isvalidmagnitude",
+    "class/src/models/Vector.js~Vector.html#static-method-isValidMagnitude",
+    "src/models/Vector.js~Vector.isValidMagnitude",
+    "method"
   ],
   [
-    "src/models/tests/helpers/scope/validparams.js",
-    "file/src/models/tests/helpers/scope/validParams.js.html",
-    "src/models/tests/helpers/scope/validParams.js",
-    "file"
-  ],
-  [
-    "src/models/tests/helpers/vector/invalidparams.js",
-    "file/src/models/tests/helpers/vector/invalidParams.js.html",
-    "src/models/tests/helpers/vector/invalidParams.js",
-    "file"
-  ],
-  [
-    "src/models/tests/helpers/vector/validparams.js",
-    "file/src/models/tests/helpers/vector/validParams.js.html",
-    "src/models/tests/helpers/vector/validParams.js",
-    "file"
+    "src/models/vector.js~vector.isvalidnode",
+    "class/src/models/Vector.js~Vector.html#static-method-isValidNode",
+    "src/models/Vector.js~Vector.isValidNode",
+    "method"
   ],
   [
     "src/regana.js",
@@ -501,102 +837,6 @@ window.esdocSearchIndex = [
     "src/store/scopes.js",
     "file/src/store/scopes.js.html",
     "src/store/scopes.js",
-    "file"
-  ],
-  [
-    "src/tests/mocks/declarations/variable/mock1.js",
-    "file/src/tests/mocks/declarations/variable/mock1.js.html",
-    "src/tests/mocks/declarations/variable/mock1.js",
-    "file"
-  ],
-  [
-    "src/tests/mocks/declarations/variable/mock2.js",
-    "file/src/tests/mocks/declarations/variable/mock2.js.html",
-    "src/tests/mocks/declarations/variable/mock2.js",
-    "file"
-  ],
-  [
-    "src/tests/mocks/declarations/variable/mock3.js",
-    "file/src/tests/mocks/declarations/variable/mock3.js.html",
-    "src/tests/mocks/declarations/variable/mock3.js",
-    "file"
-  ],
-  [
-    "src/tests/mocks/declarations/variable/mock4.js",
-    "file/src/tests/mocks/declarations/variable/mock4.js.html",
-    "src/tests/mocks/declarations/variable/mock4.js",
-    "file"
-  ],
-  [
-    "src/tests/mocks/declarations/variable/mock5.js",
-    "file/src/tests/mocks/declarations/variable/mock5.js.html",
-    "src/tests/mocks/declarations/variable/mock5.js",
-    "file"
-  ],
-  [
-    "src/tests/mocks/file1.js",
-    "file/src/tests/mocks/file1.js.html",
-    "src/tests/mocks/file1.js",
-    "file"
-  ],
-  [
-    "src/tests/mocks/file2.js",
-    "file/src/tests/mocks/file2.js.html",
-    "src/tests/mocks/file2.js",
-    "file"
-  ],
-  [
-    "src/tests/mocks/literals/boolean.js",
-    "file/src/tests/mocks/literals/boolean.js.html",
-    "src/tests/mocks/literals/boolean.js",
-    "file"
-  ],
-  [
-    "src/tests/mocks/literals/null.js",
-    "file/src/tests/mocks/literals/null.js.html",
-    "src/tests/mocks/literals/null.js",
-    "file"
-  ],
-  [
-    "src/tests/mocks/literals/numeric.js",
-    "file/src/tests/mocks/literals/numeric.js.html",
-    "src/tests/mocks/literals/numeric.js",
-    "file"
-  ],
-  [
-    "src/tests/mocks/literals/regex.js",
-    "file/src/tests/mocks/literals/regex.js.html",
-    "src/tests/mocks/literals/regex.js",
-    "file"
-  ],
-  [
-    "src/tests/mocks/literals/string.js",
-    "file/src/tests/mocks/literals/string.js.html",
-    "src/tests/mocks/literals/string.js",
-    "file"
-  ],
-  [
-    "src/tests/mocks/statements/controlflow/labeled.js",
-    "file/src/tests/mocks/statements/controlFlow/labeled.js.html",
-    "src/tests/mocks/statements/controlFlow/labeled.js",
-    "file"
-  ],
-  [
-    "src/tests/mocks/statements/debugger/mock1.js",
-    "file/src/tests/mocks/statements/debugger/mock1.js.html",
-    "src/tests/mocks/statements/debugger/mock1.js",
-    "file"
-  ],
-  [
-    "src/tests/mocks/statements/empty/mock1.js",
-    "file/src/tests/mocks/statements/empty/mock1.js.html",
-    "src/tests/mocks/statements/empty/mock1.js",
-    "file"
-  ],
-  [
-    "src/tests/mocks/statements/expression/mock1.js",
-    "file/src/tests/mocks/statements/expression/mock1.js.html",
-    "src/tests/mocks/statements/expression/mock1.js",
     "file"
   ],
   [
@@ -621,12 +861,6 @@ window.esdocSearchIndex = [
     "src/utils/readfile.js",
     "file/src/utils/readFile.js.html",
     "src/utils/readFile.js",
-    "file"
-  ],
-  [
-    "src/utils/tests/mocks/file1.js",
-    "file/src/utils/tests/mocks/file1.js.html",
-    "src/utils/tests/mocks/file1.js",
     "file"
   ],
   [

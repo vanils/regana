@@ -1,37 +1,37 @@
 {
   "type": "File",
   "start": 0,
-  "end": 357,
+  "end": 340,
   "loc": {
     "start": {
       "line": 1,
       "column": 0
     },
     "end": {
-      "line": 33,
-      "column": 2
+      "line": 31,
+      "column": 19
     }
   },
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 357,
+    "end": 340,
     "loc": {
       "start": {
         "line": 1,
         "column": 0
       },
       "end": {
-        "line": 33,
-        "column": 2
+        "line": 31,
+        "column": 19
       }
     },
     "sourceType": "module",
     "body": [
       {
-        "type": "VariableDeclaration",
+        "type": "ImportDeclaration",
         "start": 16,
-        "end": 59,
+        "end": 54,
         "loc": {
           "start": {
             "line": 4,
@@ -39,104 +39,69 @@
           },
           "end": {
             "line": 4,
-            "column": 43
+            "column": 38
           }
         },
-        "declarations": [
+        "specifiers": [
           {
-            "type": "VariableDeclarator",
-            "start": 22,
-            "end": 58,
+            "type": "ImportDefaultSpecifier",
+            "start": 23,
+            "end": 30,
             "loc": {
               "start": {
                 "line": 4,
-                "column": 6
+                "column": 7
               },
               "end": {
                 "line": 4,
-                "column": 42
+                "column": 14
               }
             },
-            "id": {
+            "local": {
               "type": "Identifier",
-              "start": 22,
-              "end": 29,
+              "start": 23,
+              "end": 30,
               "loc": {
                 "start": {
                   "line": 4,
-                  "column": 6
+                  "column": 7
                 },
                 "end": {
                   "line": 4,
-                  "column": 13
+                  "column": 14
                 },
                 "identifierName": "analyse"
               },
               "name": "analyse"
-            },
-            "init": {
-              "type": "CallExpression",
-              "start": 32,
-              "end": 58,
-              "loc": {
-                "start": {
-                  "line": 4,
-                  "column": 16
-                },
-                "end": {
-                  "line": 4,
-                  "column": 42
-                }
-              },
-              "callee": {
-                "type": "Identifier",
-                "start": 32,
-                "end": 39,
-                "loc": {
-                  "start": {
-                    "line": 4,
-                    "column": 16
-                  },
-                  "end": {
-                    "line": 4,
-                    "column": 23
-                  },
-                  "identifierName": "require"
-                },
-                "name": "require"
-              },
-              "arguments": [
-                {
-                  "type": "StringLiteral",
-                  "start": 40,
-                  "end": 57,
-                  "loc": {
-                    "start": {
-                      "line": 4,
-                      "column": 24
-                    },
-                    "end": {
-                      "line": 4,
-                      "column": 41
-                    }
-                  },
-                  "extra": {
-                    "rawValue": "./analyse/entry",
-                    "raw": "'./analyse/entry'"
-                  },
-                  "value": "./analyse/entry"
-                }
-              ]
             }
           }
         ],
-        "kind": "const",
+        "source": {
+          "type": "StringLiteral",
+          "start": 36,
+          "end": 53,
+          "loc": {
+            "start": {
+              "line": 4,
+              "column": 20
+            },
+            "end": {
+              "line": 4,
+              "column": 37
+            }
+          },
+          "extra": {
+            "rawValue": "./analyse/entry",
+            "raw": "'./analyse/entry'"
+          },
+          "value": "./analyse/entry"
+        },
         "trailingComments": [
           {
             "type": "CommentBlock",
             "value": "*\n * @file Expose out Analyser and other tools\n * @author Matti Mehtonen\n ",
-            "start": 61,
-            "end": 139,
+            "start": 56,
+            "end": 134,
             "loc": {
               "start": {
                 "line": 6,
@@ -151,8 +116,8 @@
           {
             "type": "CommentBlock",
             "value": "*\n * Stores\n * @namespace store\n ",
-            "start": 141,
-            "end": 178,
+            "start": 136,
+            "end": 173,
             "loc": {
               "start": {
                 "line": 11,
@@ -167,8 +132,8 @@
           {
             "type": "CommentBlock",
             "value": "*\n * Commands\n * @namespace analyse\n ",
-            "start": 180,
-            "end": 221,
+            "start": 175,
+            "end": 216,
             "loc": {
               "start": {
                 "line": 16,
@@ -183,8 +148,8 @@
           {
             "type": "CommentBlock",
             "value": "*\n * Utilities\n * @namespace utils\n ",
-            "start": 223,
-            "end": 263,
+            "start": 218,
+            "end": 258,
             "loc": {
               "start": {
                 "line": 21,
@@ -199,8 +164,8 @@
           {
             "type": "CommentBlock",
             "value": "*\n * Validator utilities\n * @namespace utils.validate\n ",
-            "start": 265,
-            "end": 324,
+            "start": 260,
+            "end": 319,
             "loc": {
               "start": {
                 "line": 26,
@@ -215,166 +180,80 @@
         ]
       },
       {
-        "type": "ExpressionStatement",
-        "start": 326,
-        "end": 357,
+        "type": "ExportNamedDeclaration",
+        "start": 321,
+        "end": 340,
         "loc": {
           "start": {
             "line": 31,
             "column": 0
           },
           "end": {
-            "line": 33,
-            "column": 2
+            "line": 31,
+            "column": 19
           }
         },
-        "expression": {
-          "type": "AssignmentExpression",
-          "start": 326,
-          "end": 356,
-          "loc": {
-            "start": {
-              "line": 31,
-              "column": 0
-            },
-            "end": {
-              "line": 33,
-              "column": 1
-            }
-          },
-          "operator": "=",
-          "left": {
-            "type": "MemberExpression",
-            "start": 326,
-            "end": 340,
+        "declaration": null,
+        "specifiers": [
+          {
+            "type": "ExportSpecifier",
+            "start": 330,
+            "end": 337,
             "loc": {
               "start": {
                 "line": 31,
-                "column": 0
+                "column": 9
               },
               "end": {
                 "line": 31,
-                "column": 14
+                "column": 16
               }
             },
-            "object": {
+            "local": {
               "type": "Identifier",
-              "start": 326,
-              "end": 332,
+              "start": 330,
+              "end": 337,
               "loc": {
                 "start": {
                   "line": 31,
-                  "column": 0
+                  "column": 9
                 },
                 "end": {
                   "line": 31,
-                  "column": 6
+                  "column": 16
                 },
-                "identifierName": "module"
+                "identifierName": "analyse"
               },
-              "name": "module",
+              "name": "analyse",
               "leadingComments": null
             },
-            "property": {
+            "exported": {
               "type": "Identifier",
-              "start": 333,
-              "end": 340,
+              "start": 330,
+              "end": 337,
               "loc": {
                 "start": {
                   "line": 31,
-                  "column": 7
+                  "column": 9
                 },
                 "end": {
                   "line": 31,
-                  "column": 14
+                  "column": 16
                 },
-                "identifierName": "exports"
+                "identifierName": "analyse"
               },
-              "name": "exports"
+              "name": "analyse"
             },
-            "computed": false,
             "leadingComments": null
-          },
-          "right": {
-            "type": "ObjectExpression",
-            "start": 343,
-            "end": 356,
-            "loc": {
-              "start": {
-                "line": 31,
-                "column": 17
-              },
-              "end": {
-                "line": 33,
-                "column": 1
-              }
-            },
-            "properties": [
-              {
-                "type": "ObjectProperty",
-                "start": 347,
-                "end": 354,
-                "loc": {
-                  "start": {
-                    "line": 32,
-                    "column": 2
-                  },
-                  "end": {
-                    "line": 32,
-                    "column": 9
-                  }
-                },
-                "method": false,
-                "shorthand": true,
-                "computed": false,
-                "key": {
-                  "type": "Identifier",
-                  "start": 347,
-                  "end": 354,
-                  "loc": {
-                    "start": {
-                      "line": 32,
-                      "column": 2
-                    },
-                    "end": {
-                      "line": 32,
-                      "column": 9
-                    },
-                    "identifierName": "analyse"
-                  },
-                  "name": "analyse"
-                },
-                "value": {
-                  "type": "Identifier",
-                  "start": 347,
-                  "end": 354,
-                  "loc": {
-                    "start": {
-                      "line": 32,
-                      "column": 2
-                    },
-                    "end": {
-                      "line": 32,
-                      "column": 9
-                    },
-                    "identifierName": "analyse"
-                  },
-                  "name": "analyse"
-                },
-                "extra": {
-                  "shorthand": true
-                }
-              }
-            ]
-          },
-          "leadingComments": null
-        },
+          }
+        ],
+        "source": null,
         "leadingComments": [
           {
             "type": "CommentBlock",
             "value": "*\n * @file Expose out Analyser and other tools\n * @author Matti Mehtonen\n ",
-            "start": 61,
-            "end": 139,
+            "start": 56,
+            "end": 134,
             "loc": {
               "start": {
                 "line": 6,
@@ -389,8 +268,8 @@
           {
             "type": "CommentBlock",
             "value": "*\n * Stores\n * @namespace store\n ",
-            "start": 141,
-            "end": 178,
+            "start": 136,
+            "end": 173,
             "loc": {
               "start": {
                 "line": 11,
@@ -405,8 +284,8 @@
           {
             "type": "CommentBlock",
             "value": "*\n * Commands\n * @namespace analyse\n ",
-            "start": 180,
-            "end": 221,
+            "start": 175,
+            "end": 216,
             "loc": {
               "start": {
                 "line": 16,
@@ -421,8 +300,8 @@
           {
             "type": "CommentBlock",
             "value": "*\n * Utilities\n * @namespace utils\n ",
-            "start": 223,
-            "end": 263,
+            "start": 218,
+            "end": 258,
             "loc": {
               "start": {
                 "line": 21,
@@ -437,8 +316,8 @@
           {
             "type": "CommentBlock",
             "value": "*\n * Validator utilities\n * @namespace utils.validate\n ",
-            "start": 265,
-            "end": 324,
+            "start": 260,
+            "end": 319,
             "loc": {
               "start": {
                 "line": 26,
@@ -495,8 +374,8 @@
     {
       "type": "CommentBlock",
       "value": "*\n * @file Expose out Analyser and other tools\n * @author Matti Mehtonen\n ",
-      "start": 61,
-      "end": 139,
+      "start": 56,
+      "end": 134,
       "loc": {
         "start": {
           "line": 6,
@@ -511,8 +390,8 @@
     {
       "type": "CommentBlock",
       "value": "*\n * Stores\n * @namespace store\n ",
-      "start": 141,
-      "end": 178,
+      "start": 136,
+      "end": 173,
       "loc": {
         "start": {
           "line": 11,
@@ -527,8 +406,8 @@
     {
       "type": "CommentBlock",
       "value": "*\n * Commands\n * @namespace analyse\n ",
-      "start": 180,
-      "end": 221,
+      "start": 175,
+      "end": 216,
       "loc": {
         "start": {
           "line": 16,
@@ -543,8 +422,8 @@
     {
       "type": "CommentBlock",
       "value": "*\n * Utilities\n * @namespace utils\n ",
-      "start": 223,
-      "end": 263,
+      "start": 218,
+      "end": 258,
       "loc": {
         "start": {
           "line": 21,
@@ -559,8 +438,8 @@
     {
       "type": "CommentBlock",
       "value": "*\n * Validator utilities\n * @namespace utils.validate\n ",
-      "start": 265,
-      "end": 324,
+      "start": 260,
+      "end": 319,
       "loc": {
         "start": {
           "line": 26,
@@ -629,10 +508,10 @@
     },
     {
       "type": {
-        "label": "const",
-        "keyword": "const",
+        "label": "import",
+        "keyword": "import",
         "beforeExpr": false,
-        "startsExpr": false,
+        "startsExpr": true,
         "rightAssociative": false,
         "isLoop": false,
         "isAssign": false,
@@ -641,9 +520,9 @@
         "binop": null,
         "updateContext": null
       },
-      "value": "const",
+      "value": "import",
       "start": 16,
-      "end": 21,
+      "end": 22,
       "loc": {
         "start": {
           "line": 4,
@@ -651,7 +530,7 @@
         },
         "end": {
           "line": 4,
-          "column": 5
+          "column": 6
         }
       }
     },
@@ -668,43 +547,16 @@
         "binop": null
       },
       "value": "analyse",
-      "start": 22,
-      "end": 29,
+      "start": 23,
+      "end": 30,
       "loc": {
         "start": {
           "line": 4,
-          "column": 6
+          "column": 7
         },
         "end": {
-          "line": 4,
-          "column": 13
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "=",
-        "beforeExpr": true,
-        "startsExpr": false,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": true,
-        "prefix": false,
-        "postfix": false,
-        "binop": null,
-        "updateContext": null
-      },
-      "value": "=",
-      "start": 30,
-      "end": 31,
-      "loc": {
-        "start": {
           "line": 4,
           "column": 14
-        },
-        "end": {
-          "line": 4,
-          "column": 15
         }
       }
     },
@@ -720,42 +572,17 @@
         "postfix": false,
         "binop": null
       },
-      "value": "require",
-      "start": 32,
-      "end": 39,
+      "value": "from",
+      "start": 31,
+      "end": 35,
       "loc": {
         "start": {
           "line": 4,
-          "column": 16
+          "column": 15
         },
         "end": {
           "line": 4,
-          "column": 23
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "(",
-        "beforeExpr": true,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "start": 39,
-      "end": 40,
-      "loc": {
-        "start": {
-          "line": 4,
-          "column": 23
-        },
-        "end": {
-          "line": 4,
-          "column": 24
+          "column": 19
         }
       }
     },
@@ -773,41 +600,16 @@
         "updateContext": null
       },
       "value": "./analyse/entry",
-      "start": 40,
-      "end": 57,
+      "start": 36,
+      "end": 53,
       "loc": {
         "start": {
           "line": 4,
-          "column": 24
+          "column": 20
         },
         "end": {
           "line": 4,
-          "column": 41
-        }
-      }
-    },
-    {
-      "type": {
-        "label": ")",
-        "beforeExpr": false,
-        "startsExpr": false,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "start": 57,
-      "end": 58,
-      "loc": {
-        "start": {
-          "line": 4,
-          "column": 41
-        },
-        "end": {
-          "line": 4,
-          "column": 42
+          "column": 37
         }
       }
     },
@@ -824,24 +626,24 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 58,
-      "end": 59,
+      "start": 53,
+      "end": 54,
       "loc": {
         "start": {
           "line": 4,
-          "column": 42
+          "column": 37
         },
         "end": {
           "line": 4,
-          "column": 43
+          "column": 38
         }
       }
     },
     {
       "type": "CommentBlock",
       "value": "*\n * @file Expose out Analyser and other tools\n * @author Matti Mehtonen\n ",
-      "start": 61,
-      "end": 139,
+      "start": 56,
+      "end": 134,
       "loc": {
         "start": {
           "line": 6,
@@ -856,8 +658,8 @@
     {
       "type": "CommentBlock",
       "value": "*\n * Stores\n * @namespace store\n ",
-      "start": 141,
-      "end": 178,
+      "start": 136,
+      "end": 173,
       "loc": {
         "start": {
           "line": 11,
@@ -872,8 +674,8 @@
     {
       "type": "CommentBlock",
       "value": "*\n * Commands\n * @namespace analyse\n ",
-      "start": 180,
-      "end": 221,
+      "start": 175,
+      "end": 216,
       "loc": {
         "start": {
           "line": 16,
@@ -888,8 +690,8 @@
     {
       "type": "CommentBlock",
       "value": "*\n * Utilities\n * @namespace utils\n ",
-      "start": 223,
-      "end": 263,
+      "start": 218,
+      "end": 258,
       "loc": {
         "start": {
           "line": 21,
@@ -904,8 +706,8 @@
     {
       "type": "CommentBlock",
       "value": "*\n * Validator utilities\n * @namespace utils.validate\n ",
-      "start": 265,
-      "end": 324,
+      "start": 260,
+      "end": 319,
       "loc": {
         "start": {
           "line": 26,
@@ -919,19 +721,21 @@
     },
     {
       "type": {
-        "label": "name",
+        "label": "export",
+        "keyword": "export",
         "beforeExpr": false,
-        "startsExpr": true,
+        "startsExpr": false,
         "rightAssociative": false,
         "isLoop": false,
         "isAssign": false,
         "prefix": false,
         "postfix": false,
-        "binop": null
+        "binop": null,
+        "updateContext": null
       },
-      "value": "module",
-      "start": 326,
-      "end": 332,
+      "value": "export",
+      "start": 321,
+      "end": 327,
       "loc": {
         "start": {
           "line": 31,
@@ -940,85 +744,6 @@
         "end": {
           "line": 31,
           "column": 6
-        }
-      }
-    },
-    {
-      "type": {
-        "label": ".",
-        "beforeExpr": false,
-        "startsExpr": false,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null,
-        "updateContext": null
-      },
-      "start": 332,
-      "end": 333,
-      "loc": {
-        "start": {
-          "line": 31,
-          "column": 6
-        },
-        "end": {
-          "line": 31,
-          "column": 7
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "name",
-        "beforeExpr": false,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "value": "exports",
-      "start": 333,
-      "end": 340,
-      "loc": {
-        "start": {
-          "line": 31,
-          "column": 7
-        },
-        "end": {
-          "line": 31,
-          "column": 14
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "=",
-        "beforeExpr": true,
-        "startsExpr": false,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": true,
-        "prefix": false,
-        "postfix": false,
-        "binop": null,
-        "updateContext": null
-      },
-      "value": "=",
-      "start": 341,
-      "end": 342,
-      "loc": {
-        "start": {
-          "line": 31,
-          "column": 15
-        },
-        "end": {
-          "line": 31,
-          "column": 16
         }
       }
     },
@@ -1034,16 +759,16 @@
         "postfix": false,
         "binop": null
       },
-      "start": 343,
-      "end": 344,
+      "start": 328,
+      "end": 329,
       "loc": {
         "start": {
           "line": 31,
-          "column": 17
+          "column": 7
         },
         "end": {
           "line": 31,
-          "column": 18
+          "column": 8
         }
       }
     },
@@ -1060,16 +785,16 @@
         "binop": null
       },
       "value": "analyse",
-      "start": 347,
-      "end": 354,
+      "start": 330,
+      "end": 337,
       "loc": {
         "start": {
-          "line": 32,
-          "column": 2
+          "line": 31,
+          "column": 9
         },
         "end": {
-          "line": 32,
-          "column": 9
+          "line": 31,
+          "column": 16
         }
       }
     },
@@ -1085,16 +810,16 @@
         "postfix": false,
         "binop": null
       },
-      "start": 355,
-      "end": 356,
+      "start": 338,
+      "end": 339,
       "loc": {
         "start": {
-          "line": 33,
-          "column": 0
+          "line": 31,
+          "column": 17
         },
         "end": {
-          "line": 33,
-          "column": 1
+          "line": 31,
+          "column": 18
         }
       }
     },
@@ -1111,16 +836,16 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 356,
-      "end": 357,
+      "start": 339,
+      "end": 340,
       "loc": {
         "start": {
-          "line": 33,
-          "column": 1
+          "line": 31,
+          "column": 18
         },
         "end": {
-          "line": 33,
-          "column": 2
+          "line": 31,
+          "column": 19
         }
       }
     },
@@ -1137,16 +862,16 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 357,
-      "end": 357,
+      "start": 340,
+      "end": 340,
       "loc": {
         "start": {
-          "line": 33,
-          "column": 2
+          "line": 31,
+          "column": 19
         },
         "end": {
-          "line": 33,
-          "column": 2
+          "line": 31,
+          "column": 19
         }
       }
     }

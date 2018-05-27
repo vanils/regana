@@ -1,7 +1,7 @@
 {
   "type": "File",
   "start": 0,
-  "end": 381,
+  "end": 379,
   "loc": {
     "start": {
       "line": 1,
@@ -9,13 +9,13 @@
     },
     "end": {
       "line": 18,
-      "column": 29
+      "column": 27
     }
   },
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 381,
+    "end": 379,
     "loc": {
       "start": {
         "line": 1,
@@ -23,13 +23,13 @@
       },
       "end": {
         "line": 18,
-        "column": 29
+        "column": 27
       }
     },
     "sourceType": "module",
     "body": [
       {
-        "type": "VariableDeclaration",
+        "type": "Identifier",
         "start": 278,
         "end": 350,
         "loc": {
@@ -89,24 +89,7 @@
                   "column": 1
                 }
               },
-              "id": {
-                "type": "Identifier",
-                "start": 284,
-                "end": 295,
-                "loc": {
-                  "start": {
-                    "line": 14,
-                    "column": 6
-                  },
-                  "end": {
-                    "line": 14,
-                    "column": 17
-                  },
-                  "identifierName": "isUndefined"
-                },
-                "name": "isUndefined",
-                "leadingComments": null
-              },
+              "id": null,
               "generator": false,
               "expression": false,
               "async": false,
@@ -240,29 +223,14 @@
           }
         ],
         "kind": "const",
-        "leadingComments": [
-          {
-            "type": "CommentBlock",
-            "value": "*\n * Check if value is undefined.\n *\n * @memberof utils.validate\n * @param {*} value - Value to test.\n *\n * @example\n * isUndefined();             // true\n * isUndefined(undefined);    // true\n * isUndefined('undefined');  // false\n * isUndefined(null);         // false\n ",
-            "start": 1,
-            "end": 277,
-            "loc": {
-              "start": {
-                "line": 2,
-                "column": 0
-              },
-              "end": {
-                "line": 13,
-                "column": 3
-              }
-            }
-          }
-        ]
+        "leadingComments": [],
+        "name": "_",
+        "trailingComments": []
       },
       {
-        "type": "ExpressionStatement",
+        "type": "Identifier",
         "start": 352,
-        "end": 381,
+        "end": 379,
         "loc": {
           "start": {
             "line": 18,
@@ -270,91 +238,275 @@
           },
           "end": {
             "line": 18,
-            "column": 29
+            "column": 27
           }
         },
-        "expression": {
-          "type": "AssignmentExpression",
-          "start": 352,
-          "end": 380,
+        "declaration": {
+          "type": "Identifier",
+          "start": 367,
+          "end": 378,
           "loc": {
             "start": {
               "line": 18,
-              "column": 0
+              "column": 15
             },
             "end": {
               "line": 18,
-              "column": 28
+              "column": 26
+            },
+            "identifierName": "isUndefined"
+          },
+          "name": "isUndefined"
+        },
+        "name": "_",
+        "leadingComments": [],
+        "trailingComments": []
+      },
+      {
+        "type": "ExportDefaultDeclaration",
+        "start": 352,
+        "end": 379,
+        "loc": {
+          "start": {
+            "line": 18,
+            "column": 0
+          },
+          "end": {
+            "line": 18,
+            "column": 27
+          }
+        },
+        "declaration": {
+          "type": "VariableDeclaration",
+          "start": 278,
+          "end": 350,
+          "loc": {
+            "start": {
+              "line": 14,
+              "column": 0
+            },
+            "end": {
+              "line": 16,
+              "column": 2
             }
           },
-          "operator": "=",
-          "left": {
-            "type": "MemberExpression",
-            "start": 352,
-            "end": 366,
-            "loc": {
-              "start": {
-                "line": 18,
-                "column": 0
-              },
-              "end": {
-                "line": 18,
-                "column": 14
-              }
-            },
-            "object": {
-              "type": "Identifier",
-              "start": 352,
-              "end": 358,
+          "declarations": [
+            {
+              "type": "VariableDeclarator",
+              "start": 284,
+              "end": 349,
               "loc": {
                 "start": {
-                  "line": 18,
+                  "line": 14,
+                  "column": 6
+                },
+                "end": {
+                  "line": 16,
+                  "column": 1
+                }
+              },
+              "id": {
+                "type": "Identifier",
+                "start": 284,
+                "end": 295,
+                "loc": {
+                  "start": {
+                    "line": 14,
+                    "column": 6
+                  },
+                  "end": {
+                    "line": 14,
+                    "column": 17
+                  },
+                  "identifierName": "isUndefined"
+                },
+                "name": "isUndefined",
+                "leadingComments": null
+              },
+              "init": {
+                "type": "ArrowFunctionExpression",
+                "start": 298,
+                "end": 349,
+                "loc": {
+                  "start": {
+                    "line": 14,
+                    "column": 20
+                  },
+                  "end": {
+                    "line": 16,
+                    "column": 1
+                  }
+                },
+                "id": {
+                  "type": "Identifier",
+                  "start": 284,
+                  "end": 295,
+                  "loc": {
+                    "start": {
+                      "line": 14,
+                      "column": 6
+                    },
+                    "end": {
+                      "line": 14,
+                      "column": 17
+                    },
+                    "identifierName": "isUndefined"
+                  },
+                  "name": "isUndefined",
+                  "leadingComments": null
+                },
+                "generator": false,
+                "expression": false,
+                "async": false,
+                "params": [
+                  {
+                    "type": "Identifier",
+                    "start": 298,
+                    "end": 303,
+                    "loc": {
+                      "start": {
+                        "line": 14,
+                        "column": 20
+                      },
+                      "end": {
+                        "line": 14,
+                        "column": 25
+                      },
+                      "identifierName": "value"
+                    },
+                    "name": "value"
+                  }
+                ],
+                "body": {
+                  "type": "BlockStatement",
+                  "start": 307,
+                  "end": 349,
+                  "loc": {
+                    "start": {
+                      "line": 14,
+                      "column": 29
+                    },
+                    "end": {
+                      "line": 16,
+                      "column": 1
+                    }
+                  },
+                  "body": [
+                    {
+                      "type": "ReturnStatement",
+                      "start": 311,
+                      "end": 347,
+                      "loc": {
+                        "start": {
+                          "line": 15,
+                          "column": 2
+                        },
+                        "end": {
+                          "line": 15,
+                          "column": 38
+                        }
+                      },
+                      "argument": {
+                        "type": "BinaryExpression",
+                        "start": 318,
+                        "end": 346,
+                        "loc": {
+                          "start": {
+                            "line": 15,
+                            "column": 9
+                          },
+                          "end": {
+                            "line": 15,
+                            "column": 37
+                          }
+                        },
+                        "left": {
+                          "type": "UnaryExpression",
+                          "start": 318,
+                          "end": 330,
+                          "loc": {
+                            "start": {
+                              "line": 15,
+                              "column": 9
+                            },
+                            "end": {
+                              "line": 15,
+                              "column": 21
+                            }
+                          },
+                          "operator": "typeof",
+                          "prefix": true,
+                          "argument": {
+                            "type": "Identifier",
+                            "start": 325,
+                            "end": 330,
+                            "loc": {
+                              "start": {
+                                "line": 15,
+                                "column": 16
+                              },
+                              "end": {
+                                "line": 15,
+                                "column": 21
+                              },
+                              "identifierName": "value"
+                            },
+                            "name": "value"
+                          },
+                          "extra": {
+                            "parenthesizedArgument": false
+                          }
+                        },
+                        "operator": "===",
+                        "right": {
+                          "type": "StringLiteral",
+                          "start": 335,
+                          "end": 346,
+                          "loc": {
+                            "start": {
+                              "line": 15,
+                              "column": 26
+                            },
+                            "end": {
+                              "line": 15,
+                              "column": 37
+                            }
+                          },
+                          "extra": {
+                            "rawValue": "undefined",
+                            "raw": "'undefined'"
+                          },
+                          "value": "undefined"
+                        }
+                      }
+                    }
+                  ],
+                  "directives": []
+                }
+              },
+              "leadingComments": null
+            }
+          ],
+          "kind": "const",
+          "leadingComments": [
+            {
+              "type": "CommentBlock",
+              "value": "*\n * Check if value is undefined.\n *\n * @memberof utils.validate\n * @param {*} value - Value to test.\n *\n * @example\n * isUndefined();             // true\n * isUndefined(undefined);    // true\n * isUndefined('undefined');  // false\n * isUndefined(null);         // false\n ",
+              "start": 1,
+              "end": 277,
+              "loc": {
+                "start": {
+                  "line": 2,
                   "column": 0
                 },
                 "end": {
-                  "line": 18,
-                  "column": 6
-                },
-                "identifierName": "module"
-              },
-              "name": "module"
-            },
-            "property": {
-              "type": "Identifier",
-              "start": 359,
-              "end": 366,
-              "loc": {
-                "start": {
-                  "line": 18,
-                  "column": 7
-                },
-                "end": {
-                  "line": 18,
-                  "column": 14
-                },
-                "identifierName": "exports"
-              },
-              "name": "exports"
-            },
-            "computed": false
-          },
-          "right": {
-            "type": "Identifier",
-            "start": 369,
-            "end": 380,
-            "loc": {
-              "start": {
-                "line": 18,
-                "column": 17
-              },
-              "end": {
-                "line": 18,
-                "column": 28
-              },
-              "identifierName": "isUndefined"
-            },
-            "name": "isUndefined"
-          }
+                  "line": 13,
+                  "column": 3
+                }
+              }
+            }
+          ],
+          "trailingComments": []
         }
       }
     ],
@@ -768,17 +920,19 @@
     },
     {
       "type": {
-        "label": "name",
+        "label": "export",
+        "keyword": "export",
         "beforeExpr": false,
-        "startsExpr": true,
+        "startsExpr": false,
         "rightAssociative": false,
         "isLoop": false,
         "isAssign": false,
         "prefix": false,
         "postfix": false,
-        "binop": null
+        "binop": null,
+        "updateContext": null
       },
-      "value": "module",
+      "value": "export",
       "start": 352,
       "end": 358,
       "loc": {
@@ -794,8 +948,9 @@
     },
     {
       "type": {
-        "label": ".",
-        "beforeExpr": false,
+        "label": "default",
+        "keyword": "default",
+        "beforeExpr": true,
         "startsExpr": false,
         "rightAssociative": false,
         "isLoop": false,
@@ -805,32 +960,7 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 358,
-      "end": 359,
-      "loc": {
-        "start": {
-          "line": 18,
-          "column": 6
-        },
-        "end": {
-          "line": 18,
-          "column": 7
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "name",
-        "beforeExpr": false,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "value": "exports",
+      "value": "default",
       "start": 359,
       "end": 366,
       "loc": {
@@ -841,33 +971,6 @@
         "end": {
           "line": 18,
           "column": 14
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "=",
-        "beforeExpr": true,
-        "startsExpr": false,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": true,
-        "prefix": false,
-        "postfix": false,
-        "binop": null,
-        "updateContext": null
-      },
-      "value": "=",
-      "start": 367,
-      "end": 368,
-      "loc": {
-        "start": {
-          "line": 18,
-          "column": 15
-        },
-        "end": {
-          "line": 18,
-          "column": 16
         }
       }
     },
@@ -884,16 +987,16 @@
         "binop": null
       },
       "value": "isUndefined",
-      "start": 369,
-      "end": 380,
+      "start": 367,
+      "end": 378,
       "loc": {
         "start": {
           "line": 18,
-          "column": 17
+          "column": 15
         },
         "end": {
           "line": 18,
-          "column": 28
+          "column": 26
         }
       }
     },
@@ -910,16 +1013,16 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 380,
-      "end": 381,
+      "start": 378,
+      "end": 379,
       "loc": {
         "start": {
           "line": 18,
-          "column": 28
+          "column": 26
         },
         "end": {
           "line": 18,
-          "column": 29
+          "column": 27
         }
       }
     },
@@ -936,16 +1039,16 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 381,
-      "end": 381,
+      "start": 379,
+      "end": 379,
       "loc": {
         "start": {
           "line": 18,
-          "column": 29
+          "column": 27
         },
         "end": {
           "line": 18,
-          "column": 29
+          "column": 27
         }
       }
     }
