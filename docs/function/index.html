@@ -33,6 +33,7 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-analyseFile">analyseFile</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-analyseNode">analyseNode</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#analyse-types">analyse/types</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-analyseIdentifier">analyseIdentifier</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#analyse-types-choice">analyse/types/choice</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-analyseIf">analyseIf</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#analyse-types-declarations">analyse/types/declarations</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-analyseVariable">analyseVariable</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#analyse-types-expressions">analyse/types/expressions</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-analyseBinary">analyseBinary</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#analyse-types-extras">analyse/types/extras</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-analyseBinaryOperator">analyseBinaryOperator</a></span></span></li>
@@ -428,6 +429,34 @@
           
           
           <span class="code" data-ice="name"><span><a href="function/index.html#static-function-analyseIdentifier">analyseIdentifier</a></span></span><span class="code" data-ice="signature">(entity: <span>*</span>, scope: <span>*</span>): <span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></span><span>[]</span></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          
+          
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-analyseIf">analyseIf</a></span></span><span class="code" data-ice="signature">(entity: <span>*</span>, scope: <span>*</span>): <span>*</span></span>
         </p>
       </div>
       <div>
@@ -1997,6 +2026,83 @@
   
 </div>
 <div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="static-function-analyseIf">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    
+    <span class="code" data-ice="name">analyseIf</span><span class="code" data-ice="signature">(entity: <span>*</span>, scope: <span>*</span>): <span>*</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/analyse/types/choice/if.js.html#lineNumber6">source</a></span></span>
+    </span>
+  </h3>
+
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import analyseIf from &apos;<span><a href="file/src/analyse/types/choice/if.js.html#lineNumber6">regana/src/analyse/types/choice/if.js</a></span>&apos;</code></pre></div>
+  
+  
+  
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">entity</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" class="code" data-depth="0">scope</td>
+      <td data-ice="type" class="code"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tbody>
+        <tr>
+          <td class="return-type code" data-ice="returnType"><span>*</span></td>
+          
+        </tr>
+      </tbody>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
   <h3 data-ice="anchor" id="static-function-analyseLabeled">
     <span class="access" data-ice="access">public</span>
     
@@ -2085,11 +2191,11 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/analyse/node.js.html#lineNumber13">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/analyse/node.js.html#lineNumber15">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import analyseNode from &apos;<span><a href="file/src/analyse/node.js.html#lineNumber13">regana/src/analyse/node.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import analyseNode from &apos;<span><a href="file/src/analyse/node.js.html#lineNumber15">regana/src/analyse/node.js</a></span>&apos;</code></pre></div>
   
   
   <div data-ice="description"><p>Analyse a single node. Can be considered as router for other node types.</p>

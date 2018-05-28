@@ -96,6 +96,12 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
+    "regana/src/analyse/types/choice/if.js~analyseif",
+    "function/index.html#static-function-analyseIf",
+    "<span>analyseIf</span> <span class=\"search-result-import-path\">regana/src/analyse/types/choice/if.js</span>",
+    "function"
+  ],
+  [
     "regana/src/analyse/types/statements/controlflow/labeled.js~analyselabeled",
     "function/index.html#static-function-analyseLabeled",
     "<span>analyseLabeled</span> <span class=\"search-result-import-path\">regana/src/analyse/types/statements/controlFlow/labeled.js</span>",
@@ -519,6 +525,12 @@ window.esdocSearchIndex = [
     "src/analyse/node.js",
     "file/src/analyse/node.js.html",
     "src/analyse/node.js",
+    "file"
+  ],
+  [
+    "src/analyse/types/choice/if.js",
+    "file/src/analyse/types/choice/if.js.html",
+    "src/analyse/types/choice/if.js",
     "file"
   ],
   [

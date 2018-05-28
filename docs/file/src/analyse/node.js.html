@@ -33,6 +33,7 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-analyseFile">analyseFile</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-analyseNode">analyseNode</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#analyse-types">analyse/types</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-analyseIdentifier">analyseIdentifier</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#analyse-types-choice">analyse/types/choice</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-analyseIf">analyseIf</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#analyse-types-declarations">analyse/types/declarations</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-analyseVariable">analyseVariable</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#analyse-types-expressions">analyse/types/expressions</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-analyseBinary">analyseBinary</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#analyse-types-extras">analyse/types/extras</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-analyseBinaryOperator">analyseBinaryOperator</a></span></span></li>
@@ -72,6 +73,8 @@
 
 <div class="content" data-ice="content"><h1 data-ice="title">src/analyse/node.js</h1>
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">
+/* eslint-disable complexity */
+
 /**
  * Analyse a single node. Can be considered as router for other node types.
  *
@@ -87,6 +90,8 @@ const analyseNode = (node, scope) =&gt; {
   switch (node.type) {
     case &apos;Identifier&apos;:
       return require(&apos;./types/identifier&apos;)(node, scope);
+    case &apos;IfStatement&apos;:
+      return require(&apos;./types/choice/if&apos;)(node, scope);
     case &apos;RegExpLiteral&apos;:
       return require(&apos;./types/literals/regex&apos;)(node, scope);
     case &apos;NullLiteral&apos;:

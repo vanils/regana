@@ -1,6 +1,6 @@
 {
-  "coverage": "56.33%",
-  "expectCount": 71,
+  "coverage": "55.55%",
+  "expectCount": 72,
   "actualCount": 40,
   "files": {
     "src/analyse/entry.js": {
@@ -17,6 +17,13 @@
       "expectCount": 1,
       "actualCount": 1,
       "undocumentLines": []
+    },
+    "src/analyse/types/choice/if.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        6
+      ]
     },
     "src/analyse/types/declarations/variable.js": {
       "expectCount": 1,
