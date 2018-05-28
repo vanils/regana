@@ -4,8 +4,67 @@ exports[`regana #analyse #coice analyse should work with if statement 1`] = `
 "[
   {
     \\"start\\": 0,
-    \\"end\\": 0,
+    \\"end\\": 15,
     \\"parentScope\\": null,
+    \\"file\\": \\"File_0\\",
+    \\"segments\\": {
+      \\"IfStatement_1\\": {
+        \\"uses\\": [],
+        \\"start\\": 1,
+        \\"end\\": 15,
+        \\"id\\": \\"IfStatement_1\\"
+      },
+      \\"BooleanLiteral_2\\": {
+        \\"uses\\": [],
+        \\"start\\": 5,
+        \\"end\\": 9,
+        \\"id\\": \\"BooleanLiteral_2\\"
+      },
+      \\"BlockStatement_3\\": {
+        \\"uses\\": [],
+        \\"start\\": 11,
+        \\"end\\": 15,
+        \\"id\\": \\"BlockStatement_3\\"
+      }
+    },
+    \\"exposes\\": {},
+    \\"pointers\\": {},
+    \\"labels\\": {},
+    \\"withSegments\\": []
+  },
+  {
+    \\"start\\": 11,
+    \\"end\\": 15,
+    \\"parentScope\\": {
+      \\"start\\": 0,
+      \\"end\\": 15,
+      \\"parentScope\\": null,
+      \\"file\\": \\"File_0\\",
+      \\"segments\\": {
+        \\"IfStatement_1\\": {
+          \\"uses\\": [],
+          \\"start\\": 1,
+          \\"end\\": 15,
+          \\"id\\": \\"IfStatement_1\\"
+        },
+        \\"BooleanLiteral_2\\": {
+          \\"uses\\": [],
+          \\"start\\": 5,
+          \\"end\\": 9,
+          \\"id\\": \\"BooleanLiteral_2\\"
+        },
+        \\"BlockStatement_3\\": {
+          \\"uses\\": [],
+          \\"start\\": 11,
+          \\"end\\": 15,
+          \\"id\\": \\"BlockStatement_3\\"
+        }
+      },
+      \\"exposes\\": {},
+      \\"pointers\\": {},
+      \\"labels\\": {},
+      \\"withSegments\\": []
+    },
     \\"file\\": \\"File_0\\",
     \\"segments\\": {},
     \\"exposes\\": {},
