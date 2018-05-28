@@ -16,7 +16,7 @@ const analyseWith = (entity, parentScope) => {
 
   const scope = new Scope(start, end, { parentScope });
 
-  const withSegments = analyseNode(entity.object, scope, true);
+  const withSegments = analyseNode(entity.object, scope);
   withSegments.forEach(segment => scope.withSegments.push(segment));
   analyseNode(entity.body, scope);
 
