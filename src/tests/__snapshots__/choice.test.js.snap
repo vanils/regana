@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`regana #analyse #coice analyse should work with if statement 1`] = `
+exports[`regana #analyse #choice analyse should work with if statement 1`] = `
 "[
   {
     \\"start\\": 0,
