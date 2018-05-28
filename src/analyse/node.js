@@ -1,4 +1,6 @@
 
+/* eslint-disable complexity */
+
 /**
  * Analyse a single node. Can be considered as router for other node types.
  *
@@ -14,6 +16,8 @@ const analyseNode = (node, scope) => {
   switch (node.type) {
     case 'Identifier':
       return require('./types/identifier')(node, scope);
+    case 'IfStatement':
+      return require('./types/choice/if')(node, scope);
     case 'RegExpLiteral':
       return require('./types/literals/regex')(node, scope);
     case 'NullLiteral':
